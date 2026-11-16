@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revisão Concursos</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#12151c" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Revisão">
+</head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Revisão Concursos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d2433;--mut:#6a7280;--line:#e5e1d8;--acc:#1f5eff;--acc-ink:#fff;--alta:#d6403a;--media:#d98a14;--ok:#1f9d55;--neu:#8b93a1;--soft:#eef1fb;--shadow:0 1px 2px rgba(20,25,40,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1b202b;--ink:#e8ebf2;--mut:#98a1b3;--line:#2b3140;--acc:#6f95ff;--acc-ink:#0d1220;--alta:#ff6b63;--media:#f0a63a;--ok:#4cc27f;--neu:#7c8496;--soft:#222a3d;--shadow:none}}
+:root[data-theme="dark"]{--bg:#12151c;--card:#1b202b;--ink:#e8ebf2;--mut:#98a1b3;--line:#2b3140;--acc:#6f95ff;--acc-ink:#0d1220;--alta:#ff6b63;--media:#f0a63a;--ok:#4cc27f;--neu:#7c8496;--soft:#222a3d;--shadow:none}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 'IBM Plex Sans',system-ui,sans-serif;font-variant-numeric:tabular-nums;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.wrap{max-width:680px;margin:0 auto;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 16px max(16px,env(safe-area-inset-left))}
+h1,h2,h3{font-family:'Schibsted Grotesk',sans-serif;margin:0;letter-spacing:-.01em}
+h1{font-size:26px;font-weight:800}h2{font-size:17px;font-weight:700;margin:22px 0 10px}
+.sub{color:var(--mut);font-size:13px;margin-top:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
+.row{display:flex;gap:10px;align-items:center}.sp{justify-content:space-between}.grow{flex:1;min-width:0}
+.tag{font-size:11.5px;font-weight:600;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.ttl{font-family:'Schibsted Grotesk',sans-serif;font-weight:700;font-size:16.5px;line-height:1.25;margin:2px 0}
+.badge{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.b-alta{color:var(--alta)}.b-media{color:var(--media)}.b-ok{color:var(--ok)}.b-neu{color:var(--neu)}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;color:var(--mut);font-size:13px;margin-top:6px}
+.meta b{color:var(--ink);font-weight:600}
+.btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 14px 'IBM Plex Sans',sans-serif;padding:10px 14px;border-radius:10px;cursor:pointer;min-height:42px}
+.btn.p{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}.btn.s{min-height:34px;padding:6px 12px;font-size:13px}.btn.d{color:var(--alta)}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.tiles.t3{grid-template-columns:repeat(3,1fr)}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.tile .n{font-family:'Schibsted Grotesk',sans-serif;font-weight:800;font-size:26px;line-height:1.1}.tile.big .n{font-size:30px}
+.tile .l{font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;border-radius:99px}
+label{display:block;font-size:12.5px;font-weight:600;color:var(--mut);margin:12px 0 4px}
+input,select,textarea{width:100%;font:16px 'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px}
+input:focus,select:focus,textarea:focus,.btn:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);display:flex;padding:6px max(8px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));z-index:5}
+nav button{flex:1;appearance:none;border:0;background:none;color:var(--mut);font:600 11.5px 'IBM Plex Sans',sans-serif;padding:6px 2px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;min-height:48px;border-radius:10px}
+nav button svg{width:22px;height:22px}nav button.on{color:var(--acc)}
+.pv{background:var(--soft);border-radius:12px;padding:12px 14px;margin-top:14px}
+.pv .big{font-family:'Schibsted Grotesk',sans-serif;font-size:28px;font-weight:800}
+table{width:100%;border-collapse:collapse;font-size:14px}th{font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);text-align:right;padding:6px 4px;font-weight:600}th:first-child,td:first-child{text-align:left}
+td{padding:9px 4px;border-top:1px solid var(--line);text-align:right}td:first-child{font-weight:500}
+.sheet{position:fixed;inset:0;background:rgba(10,14,24,.5);z-index:10;display:flex;align-items:flex-end;justify-content:center}
+.sheet>div{background:var(--bg);width:100%;max-width:680px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:16px max(16px,env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(88px + env(safe-area-inset-bottom));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:99px;font-size:14px;z-index:20;max-width:90vw}
+.hist{font-size:13px;border-top:1px solid var(--line);padding:7px 0}
+.empty{color:var(--mut);text-align:center;padding:26px 8px}
+.msg{background:var(--soft);border-radius:12px;padding:14px;margin:12px 0}
+.cic-next{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
+.cic-venc{margin-top:12px;padding-top:8px;border-top:1px solid var(--line)}
+.cic-hint{margin-top:6px;font-size:12.5px;font-weight:600;color:var(--acc)}
+.cic-fontes{margin-top:8px;font-size:13.5px;display:grid;gap:3px}
+.cic-modo{margin-top:8px;font-size:13px;color:var(--acc);font-weight:600}
+.cic-seq{display:flex;flex-wrap:wrap;gap:5px}
+.cic-chip{font-size:11.5px;font-weight:600;padding:3px 7px;border-radius:7px;border:1px solid var(--line);color:var(--mut);background:var(--card)}
+.cic-chip.ok{background:var(--ok);border-color:var(--ok);color:var(--card)}
+.cic-chip.cur{border-color:var(--acc);color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
+.cic-dot{width:12px;height:12px;border-radius:50%;border:1.5px solid var(--line);display:inline-block}
+.cic-dot.ok{background:var(--ok);border-color:var(--ok)}
+.cic-bars{display:flex;align-items:flex-end;gap:6px;height:120px;padding-bottom:22px}
+.cic-bar{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;position:relative;min-width:0}
+.cic-bar i{display:block;width:100%;max-width:26px;border-radius:5px 5px 0 0}
+.cic-bar span{position:absolute;bottom:-19px;font-size:11px;color:var(--mut)}
+nav button{font-size:10px;padding:6px 0}
+.sim-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--bg);padding:8px 0 10px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.sim-timer{font-family:'Schibsted Grotesk',sans-serif;font-weight:800;font-size:20px}
+.sim-enun{white-space:pre-wrap;margin-top:8px;font-size:15.5px;line-height:1.5}
+.sim-alts{display:grid;gap:8px;margin-top:12px}
+.sim-alt{appearance:none;display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:10px 12px;font:15px/1.4 'IBM Plex Sans',sans-serif;cursor:pointer}
+.sim-alt.on{border-color:var(--acc);background:var(--soft);box-shadow:0 0 0 1px var(--acc) inset}
+.sim-alt{touch-action:manipulation;-webkit-user-select:none;user-select:none}.sim-alt.risc>span:last-child{text-decoration:line-through;text-decoration-thickness:2px;opacity:.45}.sim-alt.risc .sim-l{opacity:.45}.sim-alt.ro{cursor:default;-webkit-user-select:text;user-select:text;touch-action:auto}.sim-alt.gab{border-color:var(--ok);box-shadow:0 0 0 1px var(--ok) inset}.sim-alt.err{border-color:var(--alta);box-shadow:0 0 0 1px var(--alta) inset}
+.sim-l{font-weight:700;min-width:18px}
+.sim-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.sim-n{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:7px;font:600 12px 'IBM Plex Sans',sans-serif;padding:6px 0;cursor:pointer;min-width:0}
+.sim-n.ok{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}.sim-n.mk{box-shadow:0 0 0 2px var(--media) inset}.sim-n.cur{outline:2px solid var(--ink);outline-offset:1px}
+.sim-tx{margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg)}
+.sim-tx summary{cursor:pointer;font-weight:600}.sim-corpo{white-space:pre-wrap;margin-top:8px;line-height:1.55}
+.sim-com{background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:10px;font-size:14px;line-height:1.5}
+.btn[disabled]{opacity:.45}
+</style>
+<div class="wrap" id="app"><div class="empty">Carregando…</div></div>
+<nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
+<script>window.RC_VER='16/11/2026 · 835e976';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>
+/* Revisão Concursos — versão fora do Claude.
+   Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
+   - modo "sincronizado": arquivos JSON no ramo "dados" do repositório privado no GitHub, com cópia local (funciona offline);
+   - modo "local": dados só neste aparelho (localStorage).
+   O restante do app é o mesmo código do artefato. */
+(function () {
+  'use strict';
+  var FB_VER = '10.12.2';
+  var CONN_KEY = 'rc_conn_v1', LOCAL_KEY = 'rc_localdb_v1';
+  var LS = {
+    get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
+    del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+  };
+  var cp = function (o) { return o == null ? o : JSON.parse(JSON.stringify(o)); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  function say(t) { try { if (typeof window.toast === 'function') return window.toast(t); } catch (e) {} console.warn(t); }
+  function conn() { try { return JSON.parse(LS.get(CONN_KEY) || 'null'); } catch (e) { return null; } }
+  function setConn(c) { LS.set(CONN_KEY, JSON.stringify(c)); }
+
+  /* ---------- downloads ---------- */
+  var DL = {
+    save: function (o) {
+      return new Promise(function (res) {
+        var blob = new Blob([o.data], { type: /\.json$/.test(o.filename) ? 'application/json' : 'text/plain;charset=utf-8' });
+        var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = o.filename || 'arquivo.txt';
+        document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); res(); }, 400);
+      });
+    }
+  };
+
+  /* ---------- modo local ---------- */
+  function LocalDB() {
+    var st; try { st = JSON.parse(LS.get(LOCAL_KEY) || '{}'); } catch (e) { st = {}; }
+    st.docs = st.docs || {};
+    var L = new Set();
+    function persist() { if (!LS.set(LOCAL_KEY, JSON.stringify(st))) say('Espaço do navegador cheio: baixe um backup.'); }
+    function emit() { L.forEach(function (g) { try { g(); } catch (e) { console.error(e); } }); }
+    window.addEventListener('storage', function (ev) { if (ev.key === LOCAL_KEY) { try { st = JSON.parse(ev.newValue || '{}'); st.docs = st.docs || {}; } catch (e) {} emit(); } });
+    function depth(p) { return p.split('/').length; }
+    function docSnap(p) { return { exists: Object.prototype.hasOwnProperty.call(st.docs, p), id: p.split('/').pop(), data: function () { return cp(st.docs[p]); } }; }
+    function colSnap(c) {
+      var pre = c + '/', d = depth(c) + 1;
+      return { docs: Object.keys(st.docs).filter(function (p) { return p.indexOf(pre) === 0 && depth(p) === d; })
+        .map(function (p) { return { id: p.split('/').pop(), data: function () { return cp(st.docs[p]); } }; }) };
+    }
+    function listen(make, f) { var g = function () { f(make()); }; L.add(g); setTimeout(g, 0); return function () { L.delete(g); }; }
+    function ref(p) {
+      return {
+        set: function (d) { st.docs[p] = cp(d); persist(); emit(); return Promise.resolve(); },
+        delete: function () { delete st.docs[p]; persist(); emit(); return Promise.resolve(); },
+        onSnapshot: function (f) { return listen(function () { return docSnap(p); }, f); }
+      };
+    }
+    return {
+      doc: ref,
+      collection: function (c) {
+        return {
+          doc: function (id) { return ref(c + '/' + (id || ('x' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6)))); },
+          onSnapshot: function (f) { return listen(function () { return colSnap(c); }, f); }
+        };
+      }
+    };
+  }
+
+
+  /* ---------- modo sincronizado (GitHub) ----------
+     Cada coleção é um arquivo dados/<coleção>.json no ramo "dados":
+       {"v":1,"docs":{"<id>":{"t":<ms>,"d":{...}} | {"t":<ms>,"x":1}}}
+     t = hora da última alteração; x = apagado. Na junção vence o t maior, documento a documento.
+     O aparelho guarda uma cópia em localStorage e trabalha sempre nela; a rede só sincroniza. */
+  var GH = window.RC_GH || { owner: '', repo: '', branch: 'dados', dir: 'dados' };
+  var BUCKETS = ['app', 'sessoes', 'ciclo', 'sim_tent', 'simulados', 'qfeito', 'flash'];
+  var SLOW = { sim_tent: 90000 };           /* intervalo mínimo entre envios; o simulado grava a cada resposta */
+  var MIN_GAP = 8000, DEBOUNCE = 1500, POLL = 90000, TOMB_DIAS = 90;
+  var GKEY = 'rc_g1_', GMETA = 'rc_g1_meta';
+
+  function b64enc(str) {
+    var u = new TextEncoder().encode(str), s = '', i;
+    for (i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000));
+    return btoa(s);
+  }
+  function b64dec(b) {
+    var s = atob(String(b || '').replace(/\s+/g, '')), u = new Uint8Array(s.length), i;
+    for (i = 0; i < s.length; i++) u[i] = s.charCodeAt(i);
+    return new TextDecoder().decode(u);
+  }
+  function serial(docs) {
+    var ids = Object.keys(docs).sort();
+    return '{"v":1,"docs":{\n' + ids.map(function (id) { return JSON.stringify(id) + ':' + JSON.stringify(docs[id]); }).join(',\n') + '\n}}\n';
+  }
+
+  function GitDB(c) {
+    var B = {}, L = {}, meta, busy = false, again = false, timer = null, lastPush = {};
+    var sync = RC.sync = { st: 'ok', at: 0, msg: '' };
+    try { meta = JSON.parse(LS.get(GMETA) || '{}'); } catch (e) { meta = {}; }
+    meta.sha = meta.sha || {}; meta.dirty = meta.dirty || {};
+    BUCKETS.forEach(function (b) {
+      var o; try { o = JSON.parse(LS.get(GKEY + b) || '{}'); } catch (e) { o = {}; }
+      B[b] = o || {}; L[b] = new Set();
+    });
+    function saveMeta() { LS.set(GMETA, JSON.stringify(meta)); }
+    function saveB(b) { if (!LS.set(GKEY + b, JSON.stringify(B[b]))) say('Espaço do navegador cheio: avise o Claude.'); }
+    function emit(b) { L[b].forEach(function (g) { try { g(); } catch (e) { console.error(e); } }); }
+    function status(st, msg) {
+      sync.st = st; sync.msg = msg || ''; if (st === 'ok') sync.at = Date.now();
+      var el = document.getElementById('rc-sync'); if (el) el.innerHTML = RC_SYNCTXT();
+    }
+    function pend() { return BUCKETS.some(function (b) { return meta.dirty[b]; }); }
+
+    /* outra aba do mesmo navegador gravou */
+    window.addEventListener('storage', function (ev) {
+      if (!ev.key || ev.key.indexOf(GKEY) !== 0) return;
+      if (ev.key === GMETA) { try { meta = JSON.parse(ev.newValue || '{}'); meta.sha = meta.sha || {}; meta.dirty = meta.dirty || {}; } catch (e) {} return; }
+      var b = ev.key.slice(GKEY.length); if (!B[b]) return;
+      try { B[b] = JSON.parse(ev.newValue || '{}') || {}; } catch (e) {} emit(b);
+    });
+
+    /* ----- API do GitHub ----- */
+    var API = 'https://api.github.com/repos/' + c.owner + '/' + c.repo;
+    function gh(path, opt) {
+      opt = opt || {};
+      return fetch(API + path, {
+        method: opt.method || 'GET', cache: 'no-store',
+        headers: { 'Authorization': 'Bearer ' + c.token, 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+        body: opt.body ? JSON.stringify(opt.body) : undefined
+      });
+    }
+    function fail(r) { var e = new Error('http ' + r.status); e.status = r.status; return e; }
+    function listRemote() {
+      return gh('/contents/' + GH.dir + '?ref=' + GH.branch).then(function (r) {
+        if (r.status === 404) return {};
+        if (!r.ok) throw fail(r);
+        return r.json().then(function (a) { var o = {}; (a || []).forEach(function (f) { o[f.name] = f.sha; }); return o; });
+      });
+    }
+    function getRemote(b) {
+      return gh('/contents/' + GH.dir + '/' + b + '.json?ref=' + GH.branch).then(function (r) {
+        if (r.status === 404) return { sha: null, docs: {} };
+        if (!r.ok) throw fail(r);
+        return r.json().then(function (j) {
+          if (j.content) return { sha: j.sha, docs: (JSON.parse(b64dec(j.content)) || {}).docs || {} };
+          /* arquivo acima de 1 MB: o conteúdo vem pelo endereço do blob */
+          return gh('/git/blobs/' + j.sha).then(function (r2) { if (!r2.ok) throw fail(r2); return r2.json(); })
+            .then(function (k) { return { sha: j.sha, docs: (JSON.parse(b64dec(k.content)) || {}).docs || {} }; });
+        });
+      });
+    }
+    function putRemote(b, docs, sha) {
+      var body = { message: 'dados: ' + b + ' (app)', content: b64enc(serial(docs)), branch: GH.branch };
+      if (sha) body.sha = sha;
+      return gh('/contents/' + GH.dir + '/' + b + '.json', { method: 'PUT', body: body }).then(function (r) {
+        if (!r.ok) throw fail(r);
+        return r.json().then(function (j) { return j.content.sha; });
+      });
+    }
+    /* junta o remoto no local; devolve se o local mudou */
+    function merge(b, rem) {
+      var loc = B[b], ch = false;
+      Object.keys(rem).forEach(function (id) {
+        var r = rem[id], l = loc[id];
+        if (!r || typeof r.t !== 'number') return;
+        if (!l || r.t > l.t) { loc[id] = r; ch = true; }
+      });
+      return ch;
+    }
+    function differs(b, rem) {
+      var loc = B[b], ks = Object.keys(loc);
+      if (ks.length !== Object.keys(rem).length) return true;
+      return ks.some(function (id) { return !rem[id] || rem[id].t !== loc[id].t; });
+    }
+    function purge(b) {
+      var lim = Date.now() - TOMB_DIAS * 864e5, loc = B[b];
+      Object.keys(loc).forEach(function (id) { if (loc[id].x && loc[id].t < lim) delete loc[id]; });
+    }
+    function syncBucket(b, shaList, tries) {
+      var remSha = shaList[b + '.json'] || null;
+      var changedRemote = remSha !== (meta.sha[b] || null);
+      if (!changedRemote && !meta.dirty[b]) return Promise.resolve();
+      var wait = (SLOW[b] || MIN_GAP) - (Date.now() - (lastPush[b] || 0));
+      var p = changedRemote ? getRemote(b) : Promise.resolve(null);
+      return p.then(function (rem) {
+        var need = !!meta.dirty[b];
+        if (rem) {
+          if (merge(b, rem.docs)) { saveB(b); emit(b); }
+          remSha = rem.sha; need = differs(b, rem.docs);
+          if (!need) { meta.sha[b] = remSha; delete meta.dirty[b]; saveMeta(); return; }
+          meta.dirty[b] = 1; meta.sha[b] = remSha; saveMeta();
+        }
+        if (!need) return;
+        if (wait > 0 && !sync.force) { schedule(wait + 200); return; }
+        purge(b);
+        var snap = JSON.stringify(B[b]);
+        return putRemote(b, B[b], remSha).then(function (sha) {
+          lastPush[b] = Date.now(); meta.sha[b] = sha;
+          if (JSON.stringify(B[b]) === snap) delete meta.dirty[b]; else again = true;
+          saveMeta();
+        }, function (e) {
+          /* alguém gravou no meio do caminho: lê de novo e tenta outra vez */
+          if ((e.status === 409 || e.status === 422) && (tries || 0) < 3) {
+            return listRemote().then(function (l2) { meta.sha[b] = '?'; return syncBucket(b, l2, (tries || 0) + 1); });
+          }
+          throw e;
+        });
+      });
+    }
+    function run() {
+      if (busy) { again = true; return Promise.resolve(); }
+      if (navigator.onLine === false) { status(pend() ? 'pend' : 'ok', 'Sem internet'); return Promise.resolve(); }
+      busy = true; again = false; status('sync');
+      return listRemote().then(function (list) {
+        return BUCKETS.reduce(function (pr, b) { return pr.then(function () { return syncBucket(b, list); }); }, Promise.resolve());
+      }).then(function () {
+        status(pend() ? 'pend' : 'ok');
+      }, function (e) {
+        console.error(e);
+        if (e.status === 401) status('err', 'Chave do GitHub recusada: ela venceu ou foi apagada. Gere outra e troque em Mais › Conta.');
+        else if (e.status === 403 || e.status === 404) status('err', 'O GitHub negou o acesso ao repositório (erro ' + e.status + '). Confira a permissão da chave.');
+        else status(pend() ? 'pend' : 'ok', 'Sem conexão com o GitHub');
+      }).then(function () {
+        busy = false; sync.force = false;
+        if (again) schedule(DEBOUNCE);
+      });
+    }
+    function schedule(ms) { clearTimeout(timer); timer = setTimeout(run, ms == null ? DEBOUNCE : ms); }
+
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') schedule(300); else if (pend()) { sync.force = true; run(); } });
+    window.addEventListener('online', function () { schedule(300); });
+    setInterval(function () { if (document.visibilityState === 'visible') run(); }, POLL);
+
+    /* ----- interface igual à do Firestore usada pelo app ----- */
+    function split(p) { var i = p.indexOf('/'); return [p.slice(0, i), p.slice(i + 1)]; }
+    function write(p, doc) {
+      var s = split(p), b = s[0], id = s[1];
+      if (!B[b]) { B[b] = {}; L[b] = new Set(); BUCKETS.push(b); }
+      var old = B[b][id]; doc.t = Math.max(Date.now(), old ? old.t + 1 : 0);
+      B[b][id] = doc; saveB(b); meta.dirty[b] = 1; saveMeta(); emit(b);
+      if (sync.st !== 'err') status('pend');
+      schedule();
+      return Promise.resolve();
+    }
+    function live(b, id) { var x = B[b] && B[b][id]; return x && !x.x ? x : null; }
+    function listen(b, make, f) { if (!L[b]) { L[b] = new Set(); B[b] = B[b] || {}; } var g = function () { f(make()); }; L[b].add(g); setTimeout(g, 0); return function () { L[b].delete(g); }; }
+    function ref(p) {
+      var s = split(p), b = s[0], id = s[1];
+      return {
+        set: function (d) { return write(p, { d: cp(d) }); },
+        delete: function () { return write(p, { x: 1 }); },
+        onSnapshot: function (f) { return listen(b, function () { var x = live(b, id); return { exists: !!x, id: id, data: function () { return x ? cp(x.d) : undefined; } }; }, f); }
+      };
+    }
+    var db = {
+      doc: ref,
+      collection: function (col) {
+        return {
+          doc: function (id) { return ref(col + '/' + (id || ('x' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6)))); },
+          onSnapshot: function (f) {
+            return listen(col, function () {
+              var o = B[col] || {};
+              return { docs: Object.keys(o).filter(function (id) { return !o[id].x; }).map(function (id) { return { id: id, data: function () { return cp(o[id].d); } }; }) };
+            }, f);
+          }
+        };
+      }
+    };
+    return {
+      db: db, run: run,
+      now: function () { sync.force = true; return run(); },
+      first: !meta.ok,
+      markOk: function () { meta.ok = 1; saveMeta(); },
+      failed: function () { return sync.st === 'err' || (sync.msg && !meta.ok); }
+    };
+  }
+
+  /* aceita a chave do GitHub (github_pat_… ou ghp_…) ou o código de conexão copiado do outro aparelho */
+  function parseConn(txt) {
+    txt = String(txt || '').trim(); if (!txt) return null;
+    if (/^rc2:/.test(txt)) { try { var o = JSON.parse(b64dec(txt.slice(4))); return o && o.token ? o : null; } catch (e) { return null; } }
+    var m = txt.match(/(github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{20,})/);
+    return m ? { owner: GH.owner, repo: GH.repo, token: m[1] } : null;
+  }
+  function connCode(c) { return 'rc2:' + b64enc(JSON.stringify({ owner: c.owner, repo: c.repo, token: c.token })); }
+
+  /* ---------- telas de conexão ---------- */
+  var CSS = '#rc-setup{position:fixed;inset:0;z-index:50;overflow:auto;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif}' +
+    '#rc-setup .in{max-width:520px;margin:0 auto;padding:28px 16px 48px}#rc-setup h1{font:800 26px "Schibsted Grotesk",system-ui,sans-serif;margin:8px 0 6px}' +
+    '#rc-setup h2{font:700 17px "Schibsted Grotesk",system-ui,sans-serif;margin:0 0 6px}#rc-setup p{color:var(--mut);line-height:1.5;margin:0 0 12px;font-size:15px}' +
+    '#rc-setup .c{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}' +
+    '#rc-setup textarea,#rc-setup input{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;font-size:15px;background:var(--bg);color:var(--ink);margin:4px 0 10px}' +
+    '#rc-setup textarea{min-height:90px;font-family:ui-monospace,monospace;font-size:12.5px;word-break:break-all}' +
+    '#rc-setup button{border:0;border-radius:10px;padding:11px 14px;font:600 15px inherit;font-family:inherit;cursor:pointer;margin:2px 6px 2px 0;background:var(--soft);color:var(--ink)}' +
+    '#rc-setup button.p{background:var(--acc);color:var(--acc-ink)}#rc-setup .err{color:var(--alta);font-size:14px;min-height:18px;margin:4px 0}';
+  function screen(html) {
+    var el = document.getElementById('rc-setup');
+    if (!el) { var st = document.createElement('style'); st.textContent = CSS; document.head.appendChild(st); el = document.createElement('div'); el.id = 'rc-setup'; document.body.appendChild(el); }
+    el.innerHTML = '<div class="in">' + html + '</div>'; return el;
+  }
+  function closeScreen() { var el = document.getElementById('rc-setup'); if (el) el.remove(); }
+
+  function showSetup(start, msg) {
+    var el = screen(
+      '<h1>Revisão Concursos</h1><p>Para abrir seus dados neste aparelho, cole a <b>chave do GitHub</b> ou o <b>código de conexão</b> copiado do outro aparelho (aba Mais › Conta).</p>' +
+      '<div class="c"><h2>Sincronizar celular e computador</h2>' +
+      '<textarea id="rc-cfg" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="github_pat_…  ou  rc2:…"></textarea><div class="err" id="rc-e1">' + esc(msg || '') + '</div>' +
+      '<button class="p" id="rc-go">Continuar</button></div>' +
+      '<div class="c"><h2>Usar só neste aparelho</h2><p>Sem sincronizar e começando vazio. Os dados ficam só no navegador deste aparelho.</p><button id="rc-local">Usar só aqui</button></div>');
+    el.querySelector('#rc-go').onclick = function () {
+      var c = parseConn(el.querySelector('#rc-cfg').value), E = el.querySelector('#rc-e1');
+      if (!c) { E.textContent = 'Não reconheci. Cole a chave inteira (começa com github_pat_) ou o código de conexão (começa com rc2:).'; return; }
+      E.textContent = 'Conferindo…';
+      fetch('https://api.github.com/repos/' + c.owner + '/' + c.repo + '/contents/' + GH.dir + '?ref=' + GH.branch, { cache: 'no-store', headers: { 'Authorization': 'Bearer ' + c.token, 'Accept': 'application/vnd.github+json' } })
+        .then(function (r) {
+          if (r.status === 401) { E.textContent = 'O GitHub recusou a chave: ela está incompleta, vencida ou foi apagada.'; return; }
+          if (r.status === 403 || r.status === 404) { E.textContent = 'A chave funciona, mas não enxerga o repositório ' + c.repo + '. Ao criar a chave, selecione esse repositório e dê a permissão Contents: Read and write.'; return; }
+          if (!r.ok) { E.textContent = 'O GitHub respondeu com erro ' + r.status + '. Tente de novo em instantes.'; return; }
+          setConn({ modo: 'gh', owner: c.owner, repo: c.repo, token: c.token }); boot(start);
+        }, function () { E.textContent = 'Sem internet. A primeira conexão precisa de rede.'; });
+    };
+    el.querySelector('#rc-local').onclick = function () { setConn({ modo: 'local' }); boot(start); };
+  }
+
+  var started = false, RC = window.RC = { modo: null, sync: null };
+  function go(start, db) {
+    window.claude = { use: function (k) { return k === 'db' ? Promise.resolve(db) : k === 'downloads' ? Promise.resolve(DL) : Promise.reject(new Error('indisponível')); } };
+    closeScreen(); if (!started) { started = true; start(); }
+  }
+  function boot(start) {
+    var c = conn();
+    if (!c || (c.modo !== 'local' && c.modo !== 'gh')) return showSetup(start);
+    if (c.modo === 'local') { RC.modo = 'local'; return go(start, LocalDB()); }
+    RC.modo = 'gh'; RC.conn = c;
+    var g = RC.git = GitDB(c);
+    if (!g.first) { go(start, g.db); g.run(); return; }
+    /* primeira vez neste aparelho: baixa tudo antes de abrir, para o app não começar vazio e gravar por cima */
+    screen('<h1>Revisão Concursos</h1><p>Baixando seus dados…</p>');
+    g.run().then(function () {
+      if (RC.sync.st === 'err' || RC.sync.msg) {
+        var el = screen('<h1>Não foi possível baixar</h1><p>' + esc(RC.sync.msg || 'Sem conexão.') + '</p><button class="p" id="rc-rt">Tentar de novo</button> <button id="rc-ot">Trocar a chave</button>');
+        el.querySelector('#rc-rt').onclick = function () { location.reload(); };
+        el.querySelector('#rc-ot').onclick = function () { LS.del(CONN_KEY); location.reload(); };
+        return;
+      }
+      g.markOk(); go(start, g.db);
+    });
+  }
+  window.RC_BOOT = boot;
+
+  /* conteúdo que não pode ficar público (estudos de caso de curso pago): lido do repositório privado com a chave;
+     guarda uma cópia no aparelho para funcionar offline */
+  window.RC_PRIV = function (path) {
+    var key = 'rc_priv_' + path, c = RC.conn;
+    var cache = function () { try { return JSON.parse(LS.get(key) || 'null'); } catch (e) { return null; } };
+    if (!c || RC.modo !== 'gh') return Promise.resolve(cache());
+    return fetch('https://api.github.com/repos/' + c.owner + '/' + c.repo + '/contents/' + path + '?ref=main', {
+      cache: 'no-store', headers: { 'Authorization': 'Bearer ' + c.token, 'Accept': 'application/vnd.github.raw+json', 'X-GitHub-Api-Version': '2022-11-28' }
+    }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.text(); })
+      .then(function (t) { var j = JSON.parse(t); LS.set(key, t); return j; })
+      .catch(function () { return cache(); });
+  };
+
+  /* cartão "Conta" na aba Mais */
+  function hora(ms) { var d = new Date(ms), p = function (n) { return (n < 10 ? '0' : '') + n; }; return p(d.getHours()) + ':' + p(d.getMinutes()); }
+  window.RC_SYNCTXT = function () {
+    var s = RC.sync; if (!s) return '';
+    if (s.st === 'err') return '<b style="color:var(--alta)">Não está sincronizando.</b> ' + esc(s.msg);
+    if (s.st === 'sync') return 'Sincronizando…';
+    if (s.st === 'pend') return '<b>Há alterações guardadas só neste aparelho.</b> ' + (s.msg ? esc(s.msg) + ': sobem quando a conexão voltar.' : 'Sobem em instantes.');
+    return 'Tudo sincronizado' + (s.at ? ' às ' + hora(s.at) : '') + '.' + (s.msg ? ' ' + esc(s.msg) + '.' : '');
+  };
+  window.RC_CONTA = function () {
+    if (RC.modo === 'local') return '<h2>Conta</h2><div class="card"><div class="sub">Modo: <b>só neste aparelho</b>. Os dados não sincronizam.</div>' +
+      '<div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn" onclick="RC_TROCAR()">Conectar ao GitHub</button></div></div>';
+    if (RC.modo === 'gh') return '<h2>Conta</h2><div class="card"><div class="sub">Dados guardados no seu repositório privado <b>' + esc(RC.conn.owner + '/' + RC.conn.repo) + '</b>.</div>' +
+      '<div class="sub" id="rc-sync" style="margin-top:6px">' + RC_SYNCTXT() + '</div>' +
+      '<div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn p" onclick="RC_AGORA()">Sincronizar agora</button><button class="btn" onclick="RC_CODIGO()">Copiar código de conexão</button><button class="btn" onclick="RC_TROCAR()">Trocar a chave</button></div>' +
+      '<div class="sub" style="margin-top:8px">O código de conexão contém a sua chave: use só para ligar outro aparelho seu. Versão do app: ' + esc(window.RC_VER || '') + '</div></div>';
+    return '';
+  };
+  window.RC_AGORA = function () { if (RC.git) RC.git.now().then(function () { say(RC.sync.st === 'ok' && !RC.sync.msg ? 'Sincronizado' : (RC.sync.msg || 'Ainda há alterações para enviar')); }); };
+  window.RC_CODIGO = function () { var t = connCode(RC.conn); (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { say('Código copiado'); }, function () { prompt('Copie o código de conexão:', t); }); };
+  window.RC_TROCAR = function () { if (confirm('Trocar a conexão? Os dados já enviados continuam no GitHub; o app vai pedir a chave de novo.')) { LS.del(CONN_KEY); location.reload(); } };
+
+  if (('serviceWorker' in navigator) && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+  }
+})();
+
+</script>
+<script>
+/* ===== MOTOR (mesmas regras da planilha) ===== */
+const DAY = 864e5;
+function dn(iso){ if(!iso) return null; const p=iso.split('-'); return Math.floor(Date.UTC(+p[0],+p[1]-1,+p[2])/DAY); }
+function iso(n){ const d=new Date(n*DAY); return d.getUTCFullYear()+'-'+String(d.getUTCMonth()+1).padStart(2,'0')+'-'+String(d.getUTCDate()).padStart(2,'0'); }
+function todayNum(){ const t=new Date(); return Math.floor(Date.UTC(t.getFullYear(),t.getMonth(),t.getDate())/DAY); }
+function keyOf(m,a,s){ return ((m||'')+'|'+(a||'')+'|'+(s||'')).toLowerCase().replace(/\s+/g,' ').trim(); }
+const DEFAULT_CFG = {limite:4,minAmostra:10,altaPct:0.7,consPct:0.85,janela:7,escada:[1,3,7,14,30],degExtra:60,fAcAlto:1.3,fAcMed:1,fAcBaixo:0.7,fPeso5:0.8,fPeso4:0.9,fPeso3:1,fPeso12:1.2,pctZera:0.5,pctAlto:0.9,pctMed:0.8,dataPadrao:'2026-10-16',wRecente:0.6,prior:0.3,forca:10,qtdEq:5,satErro:0.5,horizonte:30,atrasoSat:14,urgVenc:0.85,ptsErro:50,ptsUrg:35,ptsPeso:15,minSubir:0.7,ativosFrente:true};
+
+/* escada adaptativa: degraus 1-3-7-14-30 (+60) ajustados pelo acerto e pelo peso.
+   - ponto de partida: o histórico do cadastro (questões anteriores ao app) já posiciona o assunto num degrau;
+   - revisão boa sobe um degrau; ruim desce dois; abaixo de pctZera volta ao início;
+   - amostra pequena mantém o degrau, mas soma com as próximas sessões até chegar ao mínimo de questões;
+   - degrau extra só para acerto alto (>= pctAlto) em assunto de peso até 3. */
+function fPeso(peso,cfg){peso=+peso||3;return peso>=5?cfg.fPeso5:peso>=4?cfg.fPeso4:peso>=3?cfg.fPeso3:cfg.fPeso12}
+function fAc(pct,cfg){return pct>=cfg.pctAlto?cfg.fAcAlto:pct>=cfg.pctMed?cfg.fAcMed:cfg.fAcBaixo}
+function degInicial(hist,cfg){if(!hist||!(hist.q>=cfg.minAmostra)||hist.p==null)return 0;return hist.p>=cfg.pctAlto?2:hist.p>=cfg.pctMed?1:0}
+function intervalo(V,pct,conf,peso,cfg){const E=cfg.escada,top=E.length-1;const base=V>top?cfg.degExtra:E[Math.min(V,top)];
+  return Math.max(1,Math.round(base*fPeso(peso,cfg)*(conf&&pct!=null?fAc(pct,cfg):1)))}
+function ladder(list, cfg, peso, hist){
+  const top=cfg.escada.length-1; let V=Math.min(degInicial(hist,cfg),top), bq=0, ba=0;
+  return list.map(s=>{
+    const q=+s.q||0, pct=q>0?(+s.ac||0)/q:0;
+    bq+=q; ba+=+s.ac||0;                       /* soma as amostras pequenas até atingir o mínimo */
+    const conf=bq>=cfg.minAmostra, pp=bq>0?ba/bq:0;
+    const boa=conf&&pp>=cfg.minSubir, ruim=conf&&pp<cfg.minSubir;
+    if(boa){ V+=1; const max=(cfg.degExtra>0&&pp>=cfg.pctAlto&&(+peso||3)<=3)?top+1:top; V=Math.min(V,max); }
+    else if(ruim) V=pp<cfg.pctZera?0:Math.max(0,V-2);
+    let interval=intervalo(V,pp,conf,peso,cfg);
+    if(!conf&&V===0&&bq>0&&pp>=cfg.minSubir) interval=Math.max(interval,intervalo(1,null,false,peso,cfg)); /* poucas questões, todas bem: não volta amanhã */
+    if(conf){bq=0;ba=0}
+    return Object.assign({},s,{pct,boa,ruim,V,interval,next:dn(s.d)+interval});
+  });
+}
+function sortSess(a,b){ return dn(a.d)-dn(b.d) || (a.n||0)-(b.n||0); }
+function round1(x){ return Math.round(x*10)/10; }
+
+function compute(items, sessions, cfg, today){
+  const byKey=new Map();
+  for(const s of sessions){ const k=keyOf(s.m,s.a,s.s); if(!byKey.has(k)) byKey.set(k,[]); byKey.get(k).push(s); }
+  const known=new Set(items.map(i=>keyOf(i.m,i.a,i.s)));
+  const orphan=sessions.filter(s=>!known.has(keyOf(s.m,s.a,s.s)));
+  const rows=items.map((it,idx)=>{
+    const k=keyOf(it.m,it.a,it.s);
+    const X0=+it.q0||0, hist={q:X0>0?X0:(it.p0!=null?cfg.minAmostra:0),p:X0>0?(+it.a0||0)/X0:(it.p0==null?null:+it.p0)};
+    const sess=ladder((byKey.get(k)||[]).slice().sort(sortSess),cfg,it.peso,hist);
+    const U=sess.length, last=U?sess[U-1]:null, first=U?sess[0]:null;
+    const qSes=sess.reduce((t,s)=>t+(+s.q||0),0), aSes=sess.reduce((t,s)=>t+(+s.ac||0),0);
+    const X=+it.q0||0, Y=+it.a0||0;
+    const qTot=qSes+X, aTot=aSes+Y;
+    const pInf=(it.p0==null)?null:+it.p0;
+    const pHist=qTot>0?aTot/qTot:pInf;
+    const AA=(X+qSes===0 && pInf!=null)?1:0;
+    let M=null; if(U) M=dn(last.d); else if(it.d0) M=dn(it.d0); else if(X>0||AA) M=dn(cfg.dataPadrao);
+    const N=U?last.interval:(M!=null?intervalo(degInicial(hist,cfg),hist.p,hist.q>=cfg.minAmostra,it.peso,cfg):null);
+    const AS=(M!=null&&N!=null)?M+N:null;
+    let AB=null, AC=null;
+    if(U){AB=last.q;AC=last.ac;} else if(X>0){AB=X;AC=Y;}
+    let AD=null; if(AB!=null&&AB>0) AD=AC/AB; else if(AA) AD=pInf;
+    const conf=(AB!=null&&AB>=cfg.minAmostra);
+    let pri='';
+    if(AD!=null){ pri=AA?'⚪ QTD DESCONHECIDA':!conf?'⚪ AMOSTRA PEQUENA':AD<cfg.altaPct?'🔴 ALTA':AD<cfg.consPct?'🟠 MÉDIA':'🟢 CONSOLIDADO'; }
+    const peso=it.peso||3;
+    const ABe=(AB==null||AB===0)?cfg.qtdEq:AB;
+    let AG=null; if(AD==null){ if(AS!=null) AG=cfg.prior; } else AG=(ABe*(1-AD)+cfg.forca*cfg.prior)/(ABe+cfg.forca);
+    let AH=null; if(pHist!=null){ const Ee=qTot>0?qTot:cfg.qtdEq; AH=(Ee*(1-pHist)+cfg.forca*cfg.prior)/(Ee+cfg.forca); }
+    const AI=AG==null?null:Math.min(1,(cfg.wRecente*AG+(1-cfg.wRecente)*(AH==null?AG:AH))/cfg.satErro);
+    const AT=AS==null?null:AS-today;
+    const AJ=AT==null?0:(AT<=0?cfg.urgVenc+(1-cfg.urgVenc)*Math.min(1,-AT/cfg.atrasoSat):Math.max(0,cfg.urgVenc*(1-AT/cfg.horizonte)));
+    const idxP=AI==null?null:round1(cfg.ptsErro*AI+cfg.ptsUrg*AJ+cfg.ptsPeso*peso/5);
+    const variacao=(U>=2&&conf!=null&&last&&first)?(last.pct-first.pct):null;
+    return {it,idx,key:k,sess,U,last,first,qTot,aTot,pHist,AA,M,N,AS,AB,AC,AD,conf,pri,peso,idxP,AT,ativo:(U>0||!!it.d0),variacao,plan:null};
+  });
+  /* nivelamento: no máximo N assuntos por dia; ativos primeiro, estoque preenche as vagas */
+  const doneKeys=new Set(sessions.filter(s=>dn(s.d)===today).map(s=>keyOf(s.m,s.a,s.s)));
+  const doneToday=doneKeys.size;
+  const cap=new Map(); const capOf=d=>cap.has(d)?cap.get(d):Math.max(0,cfg.limite-(d===today?doneToday:0));
+  const take=(r,from)=>{ let d=from; while(capOf(d)<=0) d++; cap.set(d,capOf(d)-1); r.plan=d; };
+  const cand=rows.filter(r=>r.AS!=null&&!doneKeys.has(r.key));
+  const ativos=cfg.ativosFrente?cand.filter(r=>r.ativo):cand;
+  const estoque=cfg.ativosFrente?cand.filter(r=>!r.ativo):[];
+  ativos.sort((a,b)=>(Math.max(today,a.AS)-Math.max(today,b.AS))||((b.idxP||0)-(a.idxP||0))||(a.idx-b.idx));
+  for(const r of ativos) take(r,Math.max(today,r.AS));
+  estoque.sort((a,b)=>((b.idxP||0)-(a.idxP||0))||(a.idx-b.idx));
+  for(const r of estoque) take(r,today);
+  const byDay=new Map();
+  for(const r of rows) if(r.plan!=null){ if(!byDay.has(r.plan)) byDay.set(r.plan,[]); byDay.get(r.plan).push(r); }
+  for(const l of byDay.values()) l.sort((a,b)=>((b.idxP||0)-(a.idxP||0))||(a.idx-b.idx));
+  return {rows,byDay,doneToday,orphan,today};
+}
+
+function painel(model, sessions, cfg){
+  const {rows,byDay,today}=model;
+  const mats=[...new Set(rows.map(r=>r.it.m))];
+  const per=mats.map(m=>{
+    const rs=rows.filter(r=>r.it.m===m);
+    const q=rs.reduce((t,r)=>t+r.qTot,0), a=rs.reduce((t,r)=>t+r.aTot,0);
+    const hoje=(byDay.get(today)||[]).filter(r=>r.it.m===m).length;
+    return {m,q,a,e:q-a,pct:q>0?a/q:null,alta:rs.filter(r=>r.pri.startsWith('🔴')).length,hoje};
+  }).sort((x,y)=>(x.pct==null?9:x.pct)-(y.pct==null?9:y.pct));
+  const tq=per.reduce((t,p)=>t+p.q,0), ta=per.reduce((t,p)=>t+p.a,0);
+  const win=(from,to)=>{ let q=0,a=0; for(const s of sessions){ const d=dn(s.d); if(d>=from&&d<=to){q+=+s.q||0;a+=+s.ac||0;} } return q>0?a/q:null; };
+  const p30=win(today-29,today), p60=win(today-59,today-30);
+  const multi=rows.filter(r=>r.variacao!=null);
+  const up=multi.filter(r=>r.variacao>0.00001).length, down=multi.filter(r=>r.variacao<-0.00001).length;
+  const media=multi.length?multi.reduce((t,r)=>t+r.variacao,0)/multi.length*100:null;
+  const count=f=>rows.filter(f).length;
+  const kpi={
+    materias:mats.length, assuntos:rows.length, hoje:(byDay.get(today)||[]).length,
+    atrasados:count(r=>r.ativo&&r.AT!=null&&r.AT<0),
+    prox:[...byDay.entries()].filter(([d])=>d>today&&d<=today+cfg.janela).reduce((t,[,l])=>t+l.length,0),
+    alta:count(r=>r.pri.startsWith('🔴')),media:count(r=>r.pri.startsWith('🟠')),cons:count(r=>r.pri.startsWith('🟢')),
+    peq:count(r=>r.pri.startsWith('⚪')),sem:count(r=>!r.pri)
+  };
+  const fracos=rows.filter(r=>r.pHist!=null&&r.qTot>=cfg.minAmostra).sort((x,y)=>x.pHist-y.pHist||x.idx-y.idx).slice(0,20);
+  const dia=d=>{ let q=0,a=0; for(const s of sessions){ if(dn(s.d)===d){q+=+s.q||0;a+=+s.ac||0;} } return {d,q,a,pct:q>0?a/q:null}; };
+  const hojeQ=dia(today), sem7=[]; for(let i=6;i>=0;i--) sem7.push(dia(today-i));
+  return {hojeQ,sem7,per,tq,ta,te:tq-ta,pctGeral:tq>0?ta/tq:null,p30,p60,up,down,estavel:multi.length-up-down,nMulti:multi.length,media,kpi,fracos};
+}
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pc=(x,d=1)=>x==null?'—':(x*100).toFixed(d).replace('.',',')+'%';
+const fd=n=>{if(n==null)return '—';const s=iso(n).split('-');return s[2]+'/'+s[1]};
+const fdi=i=>{if(!i)return '—';const s=i.split('-');return s[2]+'/'+s[1]+'/'+s[0]};
+const WD=['dom','seg','ter','qua','qui','sex','sáb'];
+const S={items:[],ses:[],cfg:{...DEFAULT_CFG},ready:false,tab:'hoje',db:null,err:null,reg:{},q:'',fm:'',fp:'',sel:null,hf:'hoje',hn:30,hq:'',ld:{a:false,s:false,c:false},ciclo:null,cic:[],flash:{},cm:null,cicAlt:{},sims:[],tents:[],simRun:null,simCq:null};
+let M=null,P=null;
+const T=()=>todayNum();
+function recalc(){ if(!S.ready)return; M=compute(S.items,S.ses,S.cfg,T()); P=painel(M,S.ses,S.cfg); }
+const priCls=p=>p.startsWith('🔴')?'b-alta':p.startsWith('🟠')?'b-media':p.startsWith('🟢')?'b-ok':'b-neu';
+const priTxt=p=>p?p.replace(/^\S+\s/,'').replace('⚪','').trim()||p:'sem dados';
+const badge=r=>`<span class="badge ${priCls(r.pri)}">${esc(priTxt(r.pri).toLowerCase())}</span>`;
+function toast(t){const e=$('#toast');e.innerHTML=`<div class="toast">${esc(t)}</div>`;clearTimeout(toast.t);toast.t=setTimeout(()=>e.innerHTML='',2400)}
+
+/* ---------- persistência (db) ---------- */
+async function init(){
+  regLoad();try{S.regModo=sessionStorage.getItem('rc_modo')||'uma'}catch(e){}
+  try{ S.db=await claude.use('db'); }catch(e){ S.db=null; }
+  if(!S.db){ S.err='Armazenamento indisponível neste navegador.'; render(); return; }
+  const chk=()=>{ if(S.ld.a&&S.ld.s&&S.ld.c){ if(!S.ready){S.ready=true; recalc(); render();} if(S.hasItems&&!S.cfg.pesosV2) migratePesos(); } };
+  S.db.doc('app/assuntos').onSnapshot(sn=>{ S.items=sn.exists?clean(sn.data().items||[]):[]; S.hasItems=sn.exists; S.ld.a=true; recalc(); chk(); bgRender(); });
+  S.db.doc('app/config').onSnapshot(sn=>{ S.cfg={...DEFAULT_CFG,...(sn.exists?clean(sn.data()):{})}; S.ld.c=true; recalc(); chk(); bgRender(); });
+  S.db.collection('sessoes').onSnapshot(sn=>{ S.ses=sn.docs.map(d=>({...clean(d.data()),_id:d.id})); S.ld.s=true; recalc(); chk(); bgRender(); });
+  S.db.doc('app/ciclo').onSnapshot(sn=>{ S.ciclo=sn.exists?clean(sn.data()):null; S._cicMats=null; S._qtot=null; bgRender(); });
+  S.db.collection('ciclo').onSnapshot(sn=>{ S.cic=sn.docs.map(d=>({...clean(d.data()),_id:d.id})); bgRender(); });
+  S.db.collection('simulados').onSnapshot(sn=>{ const dbs=sn.docs.map(d=>({...clean(d.data()),id:d.id})); S.simsDb=dbs; S.sims=simMerge(); bgRender(); });
+  simLoadFiles();
+  dcLoad();
+  S.db.collection('sim_tent').onSnapshot(sn=>{ const keep=S.simRun&&S.tents.find(x=>x._id===S.simRun.tid); S.tents=sn.docs.map(d=>({...clean(d.data()),_id:d.id})); if(keep){const db=S.tents.find(x=>x._id===keep._id); if(!db) S.tents.push(keep); else if(keep.fim||!db.fim){ /* nota do estudo de caso gravada fora deste aparelho (correção feita na conversa) */ if(keep.fim&&db.discNota!=null&&(keep.discNota!==db.discNota||JSON.stringify(keep.discGrade||null)!==JSON.stringify(db.discGrade||null))){keep.discNota=db.discNota;keep.discGrade=db.discGrade;if(S.discG)delete S.discG[keep._id]} S.tents=S.tents.map(x=>x._id===keep._id?keep:x)} } bgRender(); });
+  S.db.collection('qfeito').onSnapshot(sn=>{ const f={}; sn.docs.forEach(d=>{ f[d.id]=clean(d.data()); }); S.qf=f; bgRender(); });
+  S.db.collection('flash').onSnapshot(sn=>{ const f={}; sn.docs.forEach(d=>{ if(d.data().ok) f[d.id]=true; }); S.flash=f; bgRender(); });
+}
+const clean=o=>JSON.parse(JSON.stringify(o));
+const PESOS_V2={"a001":4,"a002":4,"a003":4,"a004":3,"a005":4,"a006":4,"a007":4,"a008":4,"a009":5,"a010":4,"a011":5,"a012":5,"a013":4,"a014":4,"a015":4,"a016":4,"a017":3,"a018":3,"a019":3,"a020":4,"a021":4,"a022":3,"a023":3,"a024":4,"a025":3,"a026":3,"a027":4,"a028":5,"a029":4,"a030":5,"a031":4,"a032":5,"a033":4,"a034":5,"a035":3,"a036":4,"a037":3,"a038":4,"a039":4,"a040":4,"a041":4,"a042":4,"a043":4,"a044":4,"a045":4,"a046":4,"a047":4,"a048":4,"a049":4,"a050":4,"a051":4,"a052":3,"a053":5,"a054":3,"a055":4,"a056":5,"a057":4,"a058":4,"a059":4,"a060":4,"a061":4,"a062":4,"a063":4,"a064":5,"a065":5,"a066":4,"a067":4,"a068":4,"a069":4,"a070":4,"a071":4,"a072":4,"a073":4,"a074":5,"a075":5,"a076":4,"a077":4,"a078":4,"a079":4,"a080":4,"a081":4,"a082":4,"a083":4,"a084":4,"a085":3,"a086":3,"a087":3,"a088":3,"a089":3,"a090":4,"a091":3,"a092":4,"a093":4,"a094":3,"a095":5,"a096":3,"a097":4,"a098":3,"a099":3,"a100":3,"a101":4,"a102":5,"a103":5,"a104":5,"a105":5,"a106":3,"a107":4,"a108":3,"a109":3,"a110":3,"a111":3,"a112":4,"a113":3,"a114":4,"a115":3,"a116":5,"a117":5,"a118":5,"a119":5,"a120":5,"a121":5,"a122":4,"a123":5,"a124":4,"a125":5,"a126":5,"a127":5,"a128":5,"a129":4,"a130":5,"a131":5,"a132":5,"a133":5,"a134":4,"a135":5,"a136":5,"a137":5,"a138":5,"a139":5,"a140":5,"a141":5,"a142":5,"a143":5,"a144":5,"a145":5,"a146":5,"a147":4,"a148":5,"a149":5,"a150":2,"a151":2,"a152":2,"a153":2,"a154":2,"a155":2,"a156":2,"a157":2,"a158":2,"a159":2,"a160":2,"a161":2,"a162":2,"a163":3,"a164":4,"a165":4,"a166":3,"a167":3,"a168":2,"a169":3,"a170":3,"a171":2,"a172":2,"a173":2,"a174":2,"a175":3,"a176":3,"a177":3,"a178":3,"a179":3,"a180":3,"a181":3,"a182":3,"a183":3,"a184":3,"a185":3,"a186":2,"a187":2,"a188":1,"a189":1,"a190":2,"a191":2,"a192":2,"a193":2,"a194":2,"a195":2,"a196":3,"a197":2,"n_so_conceitos":2,"a198":2,"a199":5,"a200":4,"a201":4,"a202":3,"a203":5,"a204":4,"a205":5,"a206":4,"a207":4,"a208":4,"a209":4,"a210":4,"a211":4,"a212":4,"a213":5,"a214":4,"a215":4,"a216":4,"a217":4,"a218":4,"a219":4,"a220":4,"a221":4,"a222":3,"a223":4,"a224":3,"a225":3,"a226":4,"a227":3,"a228":4,"a229":4,"a230":5,"a231":4,"a232":5,"a233":5,"a234":5,"a235":4,"a236":4,"a237":4,"a238":4,"a239":5,"a240":5,"a241":4,"a242":4,"a243":3,"a244":4,"a245":4,"a246":4,"a247":4,"a248":4,"a249":4,"a250":4,"a251":3,"a252":3,"a253":4,"a254":4,"a255":5,"a256":5,"a257":5,"a258":5,"a259":5,"a260":5,"a261":5,"a262":5,"a263":5,"a264":5,"a265":5,"a266":5,"a267":5,"a268":5,"a269":5,"a270":5,"a271":5,"a272":5,"a273":5,"a274":5,"a275":5,"a276":5,"a277":4,"a278":2,"a279":2,"a280":3,"a281":3,"a282":3,"a283":3,"a284":4,"a285":3,"a286":3,"a287":2,"a288":2,"a289":3,"a290":4,"a291":3,"a292":2,"nmvskfh0y":4,"nmvsp4gk1":3,"nmvtotxv5":4,"nmvu0xcp9":3};
+/* migração única (01/11/2026): pesos por assunto = peso da matéria na prova FCC (específicas valem o dobro) ± incidência do Passo/Bizu; fora do edital do TRT4 perde 1 */
+async function migratePesos(){if(S.cfg.pesosV2||S._mig)return;S._mig=true;let n=0;S.items=clean(S.items);
+  for(const it of S.items){const p=PESOS_V2[it.id];if(p&&it.peso!==p){it.peso=p;n++}}
+  if(n){recalc();if(!(await saveItems())){S._mig=false;return}}
+  S.cfg.pesosV2=1;try{await saveCfg()}catch(e){}recalc();render();if(n)toast(n+' pesos atualizados pela incidência na prova')}
+
+async function saveItems(){S.items=clean(S.items);try{await S.db.doc('app/assuntos').set({items:S.items});return true}catch(e){toast('Não foi possível salvar o assunto. Tente de novo.');return false}}
+function digitando(){const e=document.activeElement;return !!(e&&/^(INPUT|SELECT|TEXTAREA)$/.test(e.tagName)&&(e.closest('#app')||e.closest('#ov')))}
+function bgRender(){if(!S.ready)return; if(S.sel!=null||S.cm||S.cq||S.simCq||S.es||S.cicEdId||(S.simRun&&S.tab==='sim')){S.pend=true;return}
+  if(S.tab==='reg'&&digitando()){S.pendR=true;return} render()}
+document.addEventListener('focusout',()=>setTimeout(()=>{if(S.pendR&&!digitando()&&!S.es){S.pendR=false;render()}},400));
+const saveCfg=()=>S.db.doc('app/config').set(clean(S.cfg));
+function proxTxt(m,a,s){const r=M&&M.rows.find(x=>x.key===keyOf(m,a,s));if(!r||r.AS==null)return '';const n=r.AS-T();return n<=0?' · próxima revisão: hoje':' · próxima revisão em '+n+(n===1?' dia':' dias')+' ('+fd(r.AS)+')'}
+async function addSes(s){ const id='s'+Date.now().toString(36); S.ses.push({...s,_id:id}); recalc(); render(); await S.db.collection('sessoes').doc(id).set(clean(s)); }
+async function delSes(id){ S.ses=S.ses.filter(x=>x._id!==id); recalc(); render(); await S.db.collection('sessoes').doc(id).delete(); }
+
+/* ---------- navegação ---------- */
+const ICON={sim:'<path d="M9 5h10v14H9zM5 9v10h10M12 9h4M12 12h4"/>',cic:'<path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4h-4"/>',hoje:'<path d="M5 4h14v16H5zM8 9h8M8 13h8M8 17h5"/>',reg:'<path d="M12 5v14M5 12h14"/>',pan:'<path d="M5 20V10M12 20V4M19 20v-8"/>',ass:'<path d="M4 6h16M4 12h16M4 18h10"/>',mais:'<circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/>'};
+const TABS=[['hoje','Hoje'],['cic','Ciclo'],['sim','Simulados'],['reg','Registrar'],['pan','Painel'],['ass','Assuntos'],['mais','Mais']];
+function go(t){if(S.simRun&&t!=='sim')simFlush();S.tab=t;render();scrollTo(0,0)}
+function render(){
+  $('#nav').innerHTML=TABS.map(([k,l])=>`<button class="${S.tab===k?'on':''}" onclick="go('${k}')" ${S.tab===k?'aria-current="page"':''}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICON[k]}</svg>${l}</button>`).join('');
+  const a=$('#app');
+  if(S.err){a.innerHTML=`<div class="msg">${esc(S.err)}</div>`;return}
+  if(!S.ready){a.innerHTML='<div class="empty">Carregando…</div>';return}
+  const keepScroll=0;
+  a.innerHTML=({hoje:vHoje,cic:vCic,sim:vSim,reg:vReg,pan:vPan,ass:vAss,mais:vMais})[S.tab]();
+  if(S.tab==='reg')renderPv();
+  if(S.sel!=null) sheet();
+  else if(S.cm) cicSheet();
+  else if(S.cq) cicAskSheet();
+  else if(S.simCq) simCqSheet();
+  else if(S.es) sesEditSheet();
+  else if(S.cicEdId) cicEdSheet();
+  else $('#ov').innerHTML='';
+}
+
+/* ---------- Hoje ---------- */
+function card(r,opt={}){
+  const it=r.it;
+  return `<div class="card"><div class="row sp"><div class="tag">${esc(it.m)}</div>${badge(r)}</div>
+  <div class="ttl">${esc(it.a)}</div><div class="sub">${esc(it.s)}</div>
+  <div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Questões <b>${r.qTot}</b></span><span>Última <b>${r.U?fd(r.M):'—'}</b></span>${r.AT!=null&&r.AT<0?`<span style="color:var(--alta)"><b>${-r.AT}d atrasado</b></span>`:''}<span>Peso <b>${r.peso}</b></span></div>
+  ${it.obs?`<div class="sub" style="margin-top:6px">${esc(it.obs)}</div>`:''}
+  ${S.ciclo?`<div class="cic-hint">${opt.nextKey===r.key?'<b>É o assunto do próximo bloco do ciclo.</b> Concluindo o bloco com as questões, esta revisão já conta.':cicIsFora(r)?'No ciclo: faça no bloco de Manutenção TRT-MG':'No ciclo: faça no próximo bloco de '+esc(it.m)+' (toque em “Usar neste bloco” na aba Ciclo)'}</div>`:''}
+  <div class="row" style="margin-top:10px"><button class="btn p s" onclick="regFor(${r.idx})">Registrar revisão</button><button class="btn s" onclick="openSel(${r.idx})">Detalhes</button></div></div>`;
+}
+function vHoje(){
+  const t=T(), list=M.byDay.get(t)||[], lim=S.cfg.limite, done=M.doneToday;
+  const d=new Date(t*864e5);
+  let h=`<h1>Hoje</h1><div class="sub">${WD[d.getUTCDay()]}, ${fdi(iso(t))} · ${done} de ${lim} assuntos feitos</div>
+  <div class="bar" style="margin:12px 0 14px"><i style="width:${Math.min(100,done/lim*100)}%;background:var(--ok)"></i></div>`;
+  h+=cicHojeCard();
+  h+=`<div class="tiles"><div class="tile"><div class="n">${list.length}</div><div class="l">Para revisar</div></div><div class="tile"><div class="n" style="color:${P.kpi.atrasados?'var(--alta)':'inherit'}">${P.kpi.atrasados}</div><div class="l">Atrasados</div></div></div>`;
+  h+=`<h2>Revisar hoje</h2>`;
+  const nb=S.ciclo?cicUpcoming(1).out[0]:null, nextKey=nb&&nb.sg&&nb.sg.it?cicItemKey(nb.k,nb.sg.it):null;
+  h+=list.length?list.map(r=>card(r,{nextKey})).join(''):`<div class="empty">${done>=lim?'Meta do dia cumprida. 🎉':'Nada agendado para hoje.'}</div>`;
+  const dias=[...M.byDay.keys()].filter(k=>k>t&&k<=t+S.cfg.janela).sort((a,b)=>a-b);
+  if(dias.length){ h+=`<h2>Próximos dias</h2>`;
+    for(const k of dias){ const dd=new Date(k*864e5); h+=`<div class="card"><div class="tag">${WD[dd.getUTCDay()]} ${fd(k)} · ${M.byDay.get(k).length} assuntos</div>`+M.byDay.get(k).map(r=>`<div class="hist row sp" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="grow"><b>${esc(r.it.a)}</b><div class="sub">${esc(r.it.m)} · ${esc(r.it.s)}</div></div>${badge(r)}</div>`).join('')+`</div>`; } }
+  return h;
+}
+
+/* ---------- Registrar ---------- */
+function regFor(idx){const it=S.items[idx];S.reg={m:it.m,a:it.a,s:it.s};S.regModo='uma';regSave();go('reg')}
+const uniq=a=>[...new Set(a)];
+const cmpAbc=(x,y)=>String(x).localeCompare(String(y),'pt-BR',{sensitivity:'base',numeric:true});
+const rowAbc=(r1,r2)=>cmpAbc(r1.it.m,r2.it.m)||cmpAbc(r1.it.a,r2.it.a)||cmpAbc(r1.it.s,r2.it.s);
+const abc=a=>a.slice().sort((x,y)=>String(x).localeCompare(String(y),'pt-BR',{sensitivity:'base',numeric:true}));
+function regSave(){try{sessionStorage.setItem('rc_reg',JSON.stringify(S.reg))}catch(e){}}
+function regLoad(){try{const o=JSON.parse(sessionStorage.getItem('rc_reg')||'null');if(o&&typeof o==='object')S.reg=o}catch(e){}}
+function regSet(k,v){S.reg[k]=v;regSave()}
+function vReg(){
+  if(S.regModo==='cad') return vCad();
+  const R=S.reg, ms=abc(uniq(S.items.map(i=>i.m)));
+  const as=abc(uniq(S.items.filter(i=>i.m===R.m).map(i=>i.a))), ss=abc(S.items.filter(i=>i.m===R.m&&i.a===R.a).map(i=>i.s));
+  const opt=(l,v)=>l.map(x=>`<option ${x===v?'selected':''}>${esc(x)}</option>`).join('');
+  const td=T();
+  const v=k=>R[k]==null?'':esc(R[k]);
+  return `<h1>Registrar</h1><div class="sub">Lance uma sessão de questões</div>${regModoBar()}
+  <label>Matéria</label><select id="rm" onchange="S.reg={...S.reg,m:this.value,a:'',s:''};regSave();render()"><option value="">Selecione…</option>${opt(ms,R.m)}</select>
+  <label>Assunto</label><select id="ra" onchange="S.reg={...S.reg,a:this.value,s:''};regSave();render()"><option value="">Selecione…</option>${opt(as,R.a)}</select>
+  <label>Subassunto</label><select id="rs" onchange="regSet('s',this.value);renderPv()"><option value="">Selecione…</option>${opt(ss,R.s)}</select>
+  <div class="g2"><div><label>Questões feitas</label><input id="rq" type="number" inputmode="numeric" min="0" value="${v('q')}" oninput="regSet('q',this.value);renderPv()"></div><div><label>Acertos</label><input id="rac" type="number" inputmode="numeric" min="0" value="${v('ac')}" oninput="regSet('ac',this.value);renderPv()"></div></div>
+  <div class="g2"><div><label>Tipo</label><select id="rt" onchange="regSet('t',this.value)">${['Questões','Revisão','Teoria'].map(x=>`<option ${R.t===x?'selected':''}>${x}</option>`).join('')}</select></div><div><label>Data</label><input id="rd" type="date" value="${R.d||iso(td)}" onchange="regSet('d',this.value);renderPv()"></div></div>
+  <label>Motivo / observação</label><input id="ro" type="text" placeholder="opcional" value="${v('o')}" oninput="regSet('o',this.value)">
+  <div class="pv" id="pv"></div>
+  <button class="btn p" style="width:100%;margin-top:14px" onclick="saveReg()">Salvar sessão</button>
+  <h2>Histórico de sessões</h2>
+  <div class="row" style="gap:6px;margin-bottom:8px">${[['hoje','Hoje'],['7','7 dias'],['tudo','Tudo']].map(([k,l])=>`<button class="btn s ${S.hf===k?'p':''}" onclick="S.hf='${k}';S.hn=30;render()">${l}</button>`).join('')}</div>
+  <input id="hq" type="search" placeholder="Buscar no histórico…" value="${esc(S.hq||'')}" oninput="S.hq=this.value;S.hn=30;hrefresh()">
+  <div id="hl" style="margin-top:10px">${hlist()}</div>`;
+}
+function hlist(){
+  const td=T(), f=S.hf||'hoje', q=(S.hq||'').toLowerCase();
+  let l=S.ses.filter(s=>(f==='tudo'||(f==='7'?dn(s.d)>=td-6:dn(s.d)===td))&&(!q||(s.a+' '+s.s+' '+s.m).toLowerCase().includes(q)))
+    .sort((a,b)=>dn(b.d)-dn(a.d)||(b.n||0)-(a.n||0));
+  const tot=l.length, n=S.hn||30; l=l.slice(0,n);
+  if(!tot)return '<div class="empty">Nenhuma sessão.</div>';
+  let h=`<div class="sub" style="margin-bottom:6px">${tot} sessões</div>`,last='';
+  for(const s of l){ if(s.d!==last){last=s.d;h+=`<div class="tag" style="margin:12px 0 6px">${fdi(s.d)}</div>`}
+    h+=`<div class="card row sp"><div class="grow"><b>${esc(s.a)}</b><div class="sub">${esc(s.m)} · ${esc(s.s)}</div><div class="sub">${s.ac}/${s.q} · ${pc(s.q?s.ac/s.q:null,0)}${s.obs?' · '+esc(s.obs):''}</div></div><div class="row" style="gap:6px;flex-shrink:0"><button class="btn s" onclick="sesEdit('${s._id}')">Editar</button><button class="btn s d" onclick="delSes('${s._id}')">Excluir</button></div></div>`; }
+  if(tot>n) h+=`<button class="btn" style="width:100%" onclick="S.hn=(S.hn||30)+30;hrefresh()">Ver mais</button>`;
+  return h;
+}
+function hrefresh(){const e=$('#hl');if(e)e.innerHTML=hlist()}
+/* ---------- editar sessão do histórico ---------- */
+function sesEdit(id){S.es=id;render()}
+function sesEditSheet(){const s=S.ses.find(x=>x._id===S.es);if(!s){S.es=null;$('#ov').innerHTML='';return}
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)sesEditClose()"><div>
+   <div class="tag">Editar sessão</div><h2 style="margin:4px 0 0">${esc(s.a)}</h2><div class="sub">${esc(s.m)} · ${esc(s.s)}</div>
+   <div class="g2"><div><label>Questões feitas</label><input id="eq" type="number" inputmode="numeric" min="1" value="${+s.q||0}"></div><div><label>Acertos</label><input id="eac" type="number" inputmode="numeric" min="0" value="${+s.ac||0}"></div></div>
+   <div class="g2"><div><label>Data</label><input id="ed" type="date" value="${esc(s.d)}"></div><div><label>Tipo</label><select id="et">${['Questões','Revisão','Teoria','Simulado'].map(x=>`<option ${(s.tipo||'Questões')===x?'selected':''}>${x}</option>`).join('')}</select></div></div>
+   <label>Motivo / observação</label><input id="eo" type="text" value="${esc(s.obs||'')}">
+   <div class="sub" style="margin-top:8px">A próxima revisão do assunto é recalculada. Se esta sessão concluiu um bloco do ciclo, o bloco mantém os números originais.</div>
+   <div class="row" style="margin-top:16px;flex-wrap:wrap"><button class="btn p grow" onclick="sesEditSave()">Salvar alterações</button><button class="btn" onclick="sesEditClose()">Cancelar</button></div></div></div>`}
+function sesEditClose(){S.es=null;render()}
+async function sesEditSave(){const id=S.es,s=S.ses.find(x=>x._id===id);if(!s)return sesEditClose();
+  const q=+$('#eq').value||0,ac=+$('#eac').value||0,d=$('#ed').value;
+  if(!q||!d)return toast('Preencha questões e data');if(ac<0||ac>q)return toast('Acertos inválidos');
+  const {_id,...rest}=s;const nv={...rest,q,ac,d,tipo:$('#et').value,obs:$('#eo').value};
+  if(d!==s.d)nv.n=S.ses.filter(x=>x.d===d&&x._id!==id).length+1;
+  S.ses=S.ses.map(x=>x._id===id?{...nv,_id:id}:x);S.es=null;recalc();render();
+  try{await S.db.collection('sessoes').doc(id).set(clean(nv));toast('Sessão atualizada'+proxTxt(nv.m,nv.a,nv.s))}catch(e){toast('Não foi possível salvar a edição')}}
+/* ---------- modo caderno: vários assuntos da mesma matéria em uma tela ---------- */
+function regModoBar(){return `<div class="row" style="gap:6px;margin:10px 0 2px">${[['uma','Uma sessão'],['cad','Caderno (vários assuntos)']].map(([k,l])=>`<button class="btn s ${(S.regModo||'uma')===k?'p':''}" onclick="S.regModo='${k}';try{sessionStorage.setItem('rc_modo','${k}')}catch(e){};render()">${l}</button>`).join('')}</div>`}
+function cadLoad(){if(S.cad)return S.cad;let o=null;try{o=JSON.parse(localStorage.getItem('rc_caderno')||'null')}catch(e){}
+  S.cad=o&&typeof o==='object'&&o.cont?o:{m:'',d:iso(T()),cont:{},f:'',obs:''};return S.cad}
+function cadSave(){try{localStorage.setItem('rc_caderno',JSON.stringify(S.cad))}catch(e){}}
+function cadTot(){cadLoad();let q=0,a=0,n=0;const ks=new Set(S.items.map(x=>keyOf(x.m,x.a,x.s)));for(const k in S.cad.cont){const c=S.cad.cont[k];if(c.q>0&&ks.has(k)){q+=c.q;a+=c.ac;n++}}return {q,a,n}}
+function cadSort(l){return l.slice().sort((x,y)=>x.m.localeCompare(y.m,'pt')||x.a.localeCompare(y.a,'pt')||x.s.localeCompare(y.s,'pt'))}
+function cadItems(){const C=cadLoad();return cadSort(C.m==='*'?S.items:S.items.filter(i=>i.m===C.m))}
+function cadMarcados(){const C=cadLoad();return cadSort(S.items.filter(i=>(C.cont[keyOf(i.m,i.a,i.s)]||{}).q>0))}
+/* lista visível: matéria escolhida (filtrada pela busca) ou, em "todas", os já marcados + resultados da busca */
+function cadLista(){const C=cadLoad(),f=(C.f||'').toLowerCase().trim(),hit=i=>(i.m+' '+i.a+' '+i.s).toLowerCase().includes(f);
+  if(C.m!=='*')return cadItems().filter(i=>!f||hit(i));
+  const mk=cadMarcados(),ks=new Set(mk.map(i=>keyOf(i.m,i.a,i.s)));
+  const res=f.length>=2?cadItems().filter(i=>hit(i)&&!ks.has(keyOf(i.m,i.a,i.s))).slice(0,40):[];
+  return f?res.concat(mk.filter(hit)):mk}
+function cadListaHtml(){const C=cadLoad(),l=cadLista();
+  if(l.length)return l.map(cadRow).join('');
+  return '<div class="empty">'+(C.m==='*'&&(C.f||'').trim().length<2?'Digite ao menos 2 letras do assunto ou subassunto para encontrá-lo em qualquer matéria.':'Nenhum subassunto encontrado.')+'</div>'}
+function cadRow(it){const k=keyOf(it.m,it.a,it.s),c=S.cad.cont[k]||{q:0,ac:0},on=c.q>0;
+  return `<div class="card" id="cr-${cadId(k)}" style="padding:10px 12px;${on?'border-color:var(--acc)':''}"><div class="row sp" style="gap:8px;align-items:center">
+   <div class="grow" style="min-width:0"><div class="sub" style="font-size:12px">${S.cad.m==='*'?'<b>'+esc(it.m)+'</b> · ':''}${esc(it.a)}</div><b style="font-size:14px">${esc(it.s)}</b></div>
+   <div class="row" style="gap:6px;flex-shrink:0;align-items:center"><button class="btn s" title="Acertei" aria-label="Acertei" style="color:var(--ok);min-width:40px" onclick="cadBump('${cadId(k)}',1)">✓</button><button class="btn s" title="Errei" aria-label="Errei" style="color:var(--alta);min-width:40px" onclick="cadBump('${cadId(k)}',0)">✗</button></div></div>
+   <div class="row" style="gap:8px;margin-top:6px;align-items:center"><span class="sub" style="font-size:12px">Questões</span><input type="number" inputmode="numeric" min="0" value="${c.q||''}" style="width:64px;padding:6px 8px;margin:0" onchange="cadSet('${cadId(k)}','q',this.value)">
+   <span class="sub" style="font-size:12px">Acertos</span><input type="number" inputmode="numeric" min="0" value="${c.ac||''}" style="width:64px;padding:6px 8px;margin:0" onchange="cadSet('${cadId(k)}','ac',this.value)">
+   <span class="sub" id="cp-${cadId(k)}" style="font-size:12px;margin-left:auto">${on?pc(c.ac/c.q,0):''}</span></div></div>`}
+const CADK={};function cadId(k){for(const i in CADK)if(CADK[i]===k)return i;const i='k'+Object.keys(CADK).length;CADK[i]=k;return i}
+function cadBump(i,ok){const k=CADK[i],c=S.cad.cont[k]||(S.cad.cont[k]={q:0,ac:0});c.q++;if(ok)c.ac++;cadSave();cadPatch(i)}
+function cadSet(i,f,v){const k=CADK[i],c=S.cad.cont[k]||(S.cad.cont[k]={q:0,ac:0});c[f]=Math.max(0,Math.floor(+v||0));if(c.ac>c.q){c.ac=c.q;toast('Acertos ajustados ao número de questões')}cadSave();cadPatch(i)}
+function cadPatch(i){const k=CADK[i],it=S.items.find(x=>keyOf(x.m,x.a,x.s)===k),e=$('#cr-'+i);if(it&&e){const h=document.createElement('div');h.innerHTML=cadRow(it);e.replaceWith(h.firstElementChild)}
+  const tb=$('#cad-tot');if(tb)tb.innerHTML=cadTotHtml();const at=$('#cad-at');if(at)at.innerHTML=cadAtivosHtml()}
+function cadTotHtml(){const t=cadTot();return t.q?`<b>${t.q}</b> questões · <b>${t.a}</b> acertos (${pc(t.a/t.q,0)}) · ${t.n} ${t.n===1?'subassunto':'subassuntos'}`:'Toque em ✓ ou ✗ a cada questão resolvida, ou digite os números.'}
+const CAD_AB={'Direito do Trabalho':'D. Trabalho','Processo do Trabalho':'P. Trabalho','Direito Constitucional':'Constitucional','Direito Administrativo':'Administrativo','Direito Civil':'Civil','Processo Civil':'P. Civil','Língua Portuguesa':'Português','Raciocínio Lógico-Matemático':'RL','Direitos Humanos':'DH','Direito Previdenciário':'Previdenciário','Legislação TRT4/CNJ':'Legislação'};
+function cadAtivosHtml(){const C=S.cad,l=cadMarcados(),ms=uniq(l.map(i=>i.m)),mix=ms.length>1||C.m==='*'||(ms[0]&&ms[0]!==C.m);
+  return l.length?(mix?'<div class="sub" style="font-size:12px;margin-bottom:4px">Marcados até agora ('+ms.length+(ms.length===1?' matéria':' matérias')+'):</div>':'')+l.map(i=>{const c=C.cont[keyOf(i.m,i.a,i.s)];return `<span class="badge b-neu" style="margin:0 6px 6px 0;display:inline-block">${mix?esc(CAD_AB[i.m]||i.m)+': ':''}${(n=>esc(n.length>34?n.slice(0,32)+'…':n))(/^Todo o conteúdo/.test(i.s)?i.a:i.s)} ${c.ac}/${c.q}</span>`}).join(''):''}
+function vCad(){const C=cadLoad(),ms=abc(uniq(S.items.map(i=>i.m))),f=(C.f||'').toLowerCase();
+  
+  return `<h1>Registrar</h1><div class="sub">Caderno de questões com vários assuntos, de uma ou de várias matérias: vá marcando cada questão e salve tudo no fim. O rascunho fica guardado neste aparelho, mesmo se fechar o app.</div>${regModoBar()}
+  <div class="g2"><div><label>Matéria</label><select onchange="S.cad.m=this.value;S.cad.f='';cadSave();render()"><option value="">Selecione…</option><option value="*" ${C.m==='*'?'selected':''}>Todas as matérias (caderno misto)</option>${ms.map(x=>`<option ${x===C.m?'selected':''}>${esc(x)}</option>`).join('')}</select></div>
+  <div><label>Data</label><input type="date" value="${esc(C.d||iso(T()))}" onchange="S.cad.d=this.value;cadSave()"></div></div>
+  ${C.m?`<label>Buscar subassunto</label><input type="search" placeholder="${C.m==='*'?'Assunto ou subassunto, de qualquer matéria…':'Digite parte do nome…'}" value="${esc(C.f||'')}" oninput="S.cad.f=this.value;cadSave();cadFiltro()">
+  <div id="cad-at" style="margin-top:10px">${cadAtivosHtml()}</div>
+  <div id="cad-l" style="margin-top:6px;display:flex;flex-direction:column;gap:8px">${cadListaHtml()}</div>
+  <label>Observação (vai em todas as sessões)</label><input type="text" placeholder="ex.: caderno TEC nº 3" value="${esc(C.obs||'')}" oninput="S.cad.obs=this.value;cadSave()">
+  <div style="position:sticky;bottom:calc(64px + env(safe-area-inset-bottom));background:var(--bg);padding:10px 0 4px;margin-top:10px;border-top:1px solid var(--line)">
+   <div class="sub" id="cad-tot" style="margin-bottom:8px">${cadTotHtml()}</div>
+   <div class="row" style="gap:8px"><button class="btn p grow" onclick="cadSalvar()">Salvar caderno</button><button class="btn" onclick="cadDescartar()">Descartar</button></div></div>`
+  :'<div class="empty" style="margin-top:14px">Escolha a matéria do caderno, ou “Todas as matérias” para um caderno misto.'+(cadTot().q?' Você tem um rascunho com '+cadTot().q+' questões marcadas.':'')+'</div>'}`}
+function cadFiltro(){const e=$('#cad-l');if(e)e.innerHTML=cadListaHtml()}
+function cadDescartar(){if(!cadTot().q){S.cad={m:cadLoad().m,d:iso(T()),cont:{},f:'',obs:''};cadSave();return render()}
+  if(S.cadDel!==1){S.cadDel=1;setTimeout(()=>S.cadDel=0,4000);return toast('Toque em Descartar de novo para apagar o rascunho')}
+  S.cadDel=0;S.cad={m:S.cad.m,d:iso(T()),cont:{},f:'',obs:''};cadSave();render();toast('Rascunho descartado')}
+async function cadSalvar(){const C=cadLoad(),t=cadTot();if(!t.q)return toast('Nenhuma questão marcada');if(!C.d)return toast('Informe a data');
+  const l=cadMarcados().map(i=>({i,c:C.cont[keyOf(i.m,i.a,i.s)]}));
+  let n=S.ses.filter(s=>s.d===C.d).length, base=Date.now();const novos=l.map((x,j)=>({_id:'s'+(base+j).toString(36),d:C.d,m:x.i.m,a:x.i.a,s:x.i.s,q:x.c.q,ac:x.c.ac,tipo:'Questões',motivo:'',obs:C.obs?('Caderno · '+C.obs):'Caderno',n:++n}));
+  S.ses.push(...novos);recalc();
+  try{for(const s of novos){const {_id,...d}=s;await S.db.collection('sessoes').doc(_id).set(clean(d))}}catch(e){toast('Falha ao salvar algumas sessões');return render()}
+  /* ciclo: compara com o próximo bloco começando pela matéria do caderno com mais questões */
+  const pm={};for(const x of l){const o=pm[x.i.m]||(pm[x.i.m]={q:0,ac:0,l:[]});o.q+=x.c.q;o.ac+=x.c.ac;o.l.push(x)}
+  const mats=Object.keys(pm);let cq=null;
+  if(S.ciclo){for(const m of mats.slice().sort((a,c)=>pm[c].q-pm[a].q)){const g=pm[m],top=g.l.slice().sort((a,c)=>c.c.q-a.c.q)[0].i;cq=cicMatchSes({d:C.d,m,a:top.a,s:top.s,q:g.q,ac:g.ac,cadN:g.l.length});if(cq)break}}
+  S.cad={m:C.m,d:iso(T()),cont:{},f:'',obs:''};cadSave();
+  const msg=novos.length+(novos.length===1?' sessão salva':' sessões salvas')+(mats.length>1?' em '+mats.length+' matérias':'');
+  toast(msg);if(cq){S.cq=cq;go('cic')}else go('hoje')}
+function renderPv(){
+  const e=$('#pv'); if(!e)return; const R=S.reg; const q=+($('#rq')||{}).value||0, ac=+($('#rac')||{}).value||0, d=($('#rd')||{}).value;
+  if(!R.s||!q||!d){e.innerHTML='<span class="sub">Preencha subassunto e questões para ver a prévia.</span>';return}
+  if(ac>q){e.innerHTML='<span style="color:var(--alta)">Acertos maior que questões.</span>';return}
+  const k=keyOf(R.m,R.a,R.s), list=S.ses.filter(s=>keyOf(s.m,s.a,s.s)===k).concat([{d,q,ac,n:999}]).sort((a,b)=>dn(a.d)-dn(b.d)||(a.n||0)-(b.n||0));
+  const itR=S.items.find(i=>keyOf(i.m,i.a,i.s)===k), X0=itR?+itR.q0||0:0, L=ladder(list,S.cfg,itR&&itR.peso,itR?{q:X0>0?X0:(itR.p0!=null?S.cfg.minAmostra:0),p:X0>0?(+itR.a0||0)/X0:(itR.p0==null?null:+itR.p0)}:null), me=L.find(x=>x.n===999&&x.d===d)||L[L.length-1];
+  const p=ac/q, lbl=q<S.cfg.minAmostra?'amostra pequena (mantém o degrau e soma com as próximas sessões)':p>=S.cfg.minSubir?'boa — sobe um degrau':p<S.cfg.pctZera?'fraca — volta ao início':'fraca — desce dois degraus';
+  e.innerHTML=`<div class="big">${pc(p)}</div><div class="sub">${lbl}</div><div style="margin-top:6px">Próxima revisão: <b>${fd(me.next)}</b> (em ${me.interval} dias)</div>`;
+}
+async function saveReg(){
+  const R=S.reg,q=+$('#rq').value||0,ac=+$('#rac').value||0,d=$('#rd').value;
+  if(!R.m||!R.a||!R.s||!q||!d)return toast('Preencha matéria, assunto, subassunto e questões');
+  if(ac>q||ac<0)return toast('Acertos inválidos');
+  const n=S.ses.filter(s=>s.d===d).length+1;
+  await addSes({d,m:R.m,a:R.a,s:R.s,q,ac,tipo:$('#rt').value,motivo:'',obs:$('#ro').value,n});
+  const cq=S.ciclo?cicMatchSes({d,m:R.m,a:R.a,s:R.s,q,ac}):null;
+  S.reg={};regSave();
+  if(cq){S.cq=cq;go('cic')} else {toast('Sessão salva'+proxTxt(R.m,R.a,R.s));go('hoje')}
+}
+
+/* ---------- Painel ---------- */
+function vPan(){
+  const k=P.kpi, col=p=>p==null?'var(--neu)':p<S.cfg.altaPct?'var(--alta)':p<S.cfg.consPct?'var(--media)':'var(--ok)';
+  let h=`<h1>Painel</h1><div class="sub">${k.assuntos} assuntos em ${k.materias} matérias</div><div style="height:12px"></div>
+  <div class="tiles"><div class="tile big"><div class="l">Total de questões</div><div class="n">${P.tq.toLocaleString('pt-BR')}</div></div><div class="tile big"><div class="l">Total de acertos</div><div class="n">${P.ta.toLocaleString('pt-BR')}</div></div>
+  <div class="tile big"><div class="l">Total de erros</div><div class="n">${P.te.toLocaleString('pt-BR')}</div></div><div class="tile big"><div class="l">Taxa de acerto</div><div class="n" style="color:${col(P.pctGeral)}">${pc(P.pctGeral)}</div></div></div>
+  <h2>Questões de hoje</h2><div class="tiles t3"><div class="tile"><div class="n">${P.hojeQ.q.toLocaleString('pt-BR')}</div><div class="l">Questões</div></div><div class="tile"><div class="n">${P.hojeQ.a.toLocaleString('pt-BR')}</div><div class="l">Acertos</div></div><div class="tile"><div class="n" style="color:${col(P.hojeQ.pct)}">${pc(P.hojeQ.pct,0)}</div><div class="l">Acerto</div></div></div>
+  <div class="card" style="margin-top:8px"><div class="tag">Últimos 7 dias · ${P.sem7.reduce((t,x)=>t+x.q,0).toLocaleString('pt-BR')} questões</div><div style="display:flex;gap:6px;align-items:flex-end;height:86px;margin-top:8px">${(()=>{const mx=Math.max(1,...P.sem7.map(x=>x.q));return P.sem7.map(x=>`<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0"><div style="font-size:11px;font-weight:600">${x.q||''}</div><div style="width:100%;max-width:28px;height:${Math.round(x.q/mx*52)}px;min-height:${x.q?3:1}px;border-radius:4px 4px 0 0;background:${x.q?col(x.pct):'var(--line,#ccc)'}"></div><div style="font-size:11px;opacity:.7;margin-top:3px">${x.d===P.sem7[6].d?'hoje':WD[new Date(iso(x.d)+'T12:00').getDay()]}</div></div>`).join('')})()}</div></div>
+  <h2>Situação dos assuntos</h2><div class="tiles t3"><div class="tile"><div class="n" style="color:var(--alta)">${k.alta}</div><div class="l">Alta</div></div><div class="tile"><div class="n" style="color:var(--media)">${k.media}</div><div class="l">Média</div></div><div class="tile"><div class="n" style="color:var(--ok)">${k.cons}</div><div class="l">Consolidado</div></div></div>
+  <div class="sub" style="margin-top:6px">${k.peq} com amostra pequena · ${k.sem} sem dados · ${k.atrasados} atrasados</div>
+  <h2>Evolução (30 dias × 30 anteriores)</h2><div class="card row sp"><div><div class="l tag">Últimos 30</div><div class="ttl">${pc(P.p30)}</div></div><div><div class="tag">30 anteriores</div><div class="ttl">${pc(P.p60)}</div></div><div><div class="tag">Revisões</div><div class="sub"><b style="color:var(--ok)">▲${P.up}</b> <b style="color:var(--alta)">▼${P.down}</b> =${P.estavel}</div></div></div>
+  <h2>Por matéria</h2><div class="card"><table><tr><th>Matéria</th><th>Quest.</th><th>Acertos</th><th>%</th></tr>`;
+  for(const p of P.per) h+=`<tr><td>${esc(p.m)}<div class="bar" style="margin-top:5px"><i style="width:${(p.pct||0)*100}%;background:${col(p.pct)}"></i></div></td><td>${p.q}</td><td>${p.a}</td><td style="color:${col(p.pct)};font-weight:600">${pc(p.pct,0)}</td></tr>`;
+  h+=`<tr><td><b>Total</b></td><td><b>${P.tq}</b></td><td><b>${P.ta}</b></td><td><b>${pc(P.pctGeral,0)}</b></td></tr></table></div>
+  <h2>20 assuntos mais fracos</h2>`+P.fracos.map(r=>`<div class="card row sp" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="grow"><div class="tag">${esc(r.it.m)}</div><b>${esc(r.it.a)}</b><div class="sub">${esc(r.it.s)} · ${r.qTot} questões</div></div><div class="ttl" style="color:${col(r.pHist)}">${pc(r.pHist,0)}</div></div>`).join('');
+  return h;
+}
+
+/* ---------- Assuntos ---------- */
+function vAss(){
+  const ms=abc(uniq(S.items.map(i=>i.m))), q=S.q.toLowerCase();
+  let rs=M.rows.filter(r=>(!S.fm||r.it.m===S.fm)&&(!S.fp||(S.fp==='sem'?!r.pri:r.pri.startsWith(S.fp)))&&(!q||(r.it.a+' '+r.it.s+' '+r.it.m).toLowerCase().includes(q))).sort(rowAbc);
+  const tot=rs.length; rs=rs.slice(0,60);
+  return `<div class="row sp"><h1>Assuntos</h1><button class="btn s p" onclick="newItem()">+ Novo</button></div>
+  <input id="sq" type="search" placeholder="Buscar assunto…" value="${esc(S.q)}" oninput="S.q=this.value;fq()" style="margin-top:12px">
+  <div class="g2" style="margin-top:8px"><select onchange="S.fm=this.value;render()"><option value="">Todas as matérias</option>${ms.map(m=>`<option ${m===S.fm?'selected':''}>${esc(m)}</option>`).join('')}</select>
+  <select onchange="S.fp=this.value;render()">${[['','Toda prioridade'],['🔴','Alta'],['🟠','Média'],['🟢','Consolidado'],['⚪','Amostra pequena'],['sem','Sem dados']].map(([v,l])=>`<option value="${v}" ${v===S.fp?'selected':''}>${l}</option>`).join('')}</select></div>
+  <div class="sub" style="margin:10px 0">${tot} assuntos${tot>60?' (mostrando 60 — refine a busca)':''}</div><div id="al">${alist(rs)}</div>`;
+}
+function alist(rs){return rs.map(r=>`<div class="card" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="row sp"><div class="tag">${esc(r.it.m)}</div>${badge(r)}</div><div class="ttl">${esc(r.it.a)}</div><div class="sub">${esc(r.it.s)}</div><div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Quest. <b>${r.qTot}</b></span><span>Próx. <b>${fd(r.AS)}</b></span></div></div>`).join('')||'<div class="empty">Nada encontrado.</div>'}
+function fq(){const q=S.q.toLowerCase();let rs=M.rows.filter(r=>(!S.fm||r.it.m===S.fm)&&(!S.fp||(S.fp==='sem'?!r.pri:r.pri.startsWith(S.fp)))&&(!q||(r.it.a+' '+r.it.s+' '+r.it.m).toLowerCase().includes(q))).sort(rowAbc);$('#al').innerHTML=alist(rs.slice(0,60))}
+function openSel(i){S.sel=i;render()}
+function closeSel(){S.sel=null;render()}
+function sheet(){
+  if(S.sel==='new'){ $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)closeSel()"><div><h2 style="margin-top:0">Novo assunto</h2>
+   <label>Matéria</label><input id="nm" list="lm"><datalist id="lm">${uniq(S.items.map(i=>i.m)).map(m=>`<option value="${esc(m)}">`).join('')}</datalist>
+   <label>Assunto</label><input id="na"><label>Subassunto</label><input id="ns" value="Todo o conteúdo do assunto"><label>Peso (1–5)</label><input id="np" type="number" min="1" max="5" value="3">
+   <div class="row" style="margin-top:16px"><button class="btn p grow" onclick="addItem()">Adicionar</button><button class="btn" onclick="closeSel()">Cancelar</button></div></div></div>`; return; }
+  const r=M.rows[S.sel]; if(!r){S.sel=null;return} const it=r.it;
+  const hs=r.sess.slice().reverse().map(s=>`<div class="hist row sp"><div>${fdi(s.d)} · ${s.ac}/${s.q} (${pc(s.pct,0)})<div class="sub">${esc(s.tipo||'')} ${esc(s.obs||'')}</div></div><div class="sub" style="text-align:right">próx. ${fd(s.next)}<br><button class="btn s d" style="margin-top:4px" onclick="delSesSel('${s._id}')">Excluir</button></div></div>`).join('');
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)closeSel()"><div>
+  <div class="row sp"><div class="tag">${esc(it.m)}</div>${badge(r)}</div><h2 style="margin:4px 0 0">${esc(it.a)}</h2><div class="sub">${esc(it.s)}</div>
+  <div class="tiles t3" style="margin-top:12px"><div class="tile"><div class="n">${pc(r.pHist,0)}</div><div class="l">Acerto</div></div><div class="tile"><div class="n">${r.qTot}</div><div class="l">Questões</div></div><div class="tile"><div class="n">${fd(r.AS)}</div><div class="l">Próxima</div></div></div>
+  <div class="sub" style="margin-top:8px">Índice de prioridade: <b>${r.idxP==null?'—':r.idxP}</b></div>
+  <h2>Histórico</h2>${hs||'<div class="sub">Sem sessões registradas.</div>'}
+  <h2>Editar</h2><label>Matéria</label><input id="em" value="${esc(it.m)}"><label>Assunto</label><input id="ea2" value="${esc(it.a)}"><label>Subassunto</label><input id="es" value="${esc(it.s)}"><div class="g2"><div><label>Peso</label><input id="ep" type="number" min="1" max="5" value="${it.peso||3}"></div><div><label>Data de estudo</label><input id="ed" type="date" value="${it.d0||''}"></div>
+  <div><label>Questões anteriores</label><input id="eq" type="number" value="${it.q0||''}"></div><div><label>Acertos anteriores</label><input id="ea" type="number" value="${it.a0||''}"></div></div>
+  <label>Observação</label><textarea id="eo" rows="2">${esc(it.obs||'')}</textarea>
+  <div class="row" style="margin-top:14px;flex-wrap:wrap"><button class="btn p grow" onclick="saveItem(${S.sel})">Salvar</button><button class="btn" onclick="regFor(${S.sel});S.sel=null;render()">Registrar</button><button class="btn" onclick="closeSel()">Fechar</button></div>
+  <button class="btn d" style="width:100%;margin-top:10px" onclick="delItem(${S.sel})">Excluir assunto</button></div></div>`;
+}
+async function delSesSel(id){await delSes(id);toast('Sessão excluída')}
+async function delItem(i){const it=S.items[i];if(S.delArm!==i){S.delArm=i;return toast('Toque de novo em Excluir assunto para confirmar')}
+  S.delArm=null;const k=keyOf(it.m,it.a,it.s);const rm=S.ses.filter(s=>keyOf(s.m,s.a,s.s)===k);
+  S.items.splice(i,1);S.sel=null;recalc();render();await saveItems();for(const s of rm) await delSes(s._id);toast('Assunto excluído')}
+async function saveItem(i){const it=S.items[i];
+  const m=$('#em').value.trim(),a=$('#ea2').value.trim(),s=$('#es').value.trim();if(!m||!a||!s)return toast('Nomes não podem ficar vazios');
+  const ok=keyOf(it.m,it.a,it.s),nk=keyOf(m,a,s);
+  if(nk!==ok){ if(S.items.some((x,j)=>j!==i&&keyOf(x.m,x.a,x.s)===nk))return toast('Já existe esse assunto');
+    const mv=S.ses.filter(x=>keyOf(x.m,x.a,x.s)===ok);mv.forEach(x=>{x.m=m;x.a=a;x.s=s;const {_id,...d}=x;S.db.collection('sessoes').doc(_id).set(d)}); }
+  it.m=m;it.a=a;it.s=s;it.peso=+$('#ep').value||3;it.d0=$('#ed').value||undefined;it.q0=+$('#eq').value||undefined;it.a0=+$('#ea').value||undefined;it.obs=$('#eo').value||undefined;S.sel=null;recalc();render();if(await saveItems())toast('Salvo')}
+function newItem(){S.sel='new';render()}
+async function addItem(){const m=$('#nm').value.trim(),a=$('#na').value.trim(),s=$('#ns').value.trim();if(!m||!a||!s)return toast('Preencha matéria, assunto e subassunto');
+  if(S.items.some(x=>keyOf(x.m,x.a,x.s)===keyOf(m,a,s)))return toast('Esse subassunto já existe nesse assunto');
+  S.items.push({id:'n'+Date.now().toString(36),m,a,s,peso:+$('#np').value||3});S.sel=null;recalc();render();if(await saveItems())toast('Assunto adicionado')}
+
+/* ---------- Mais ---------- */
+const CF=[['limite','Assuntos por dia'],['minAmostra','Mínimo de questões p/ confiar'],['janela','Dias em "Próximos dias"'],['altaPct','Limite % alta (0–1)'],['consPct','Limite % consolidado (0–1)'],['minSubir','% mínimo p/ subir degrau (0–1)'],['pctZera','Abaixo deste % volta ao 1º degrau (0–1)'],['degExtra','Degrau extra (dias) p/ acerto alto e peso até 3'],['pctAlto','% de acerto alto (0–1)'],['pctMed','% de acerto médio (0–1)'],['fAcAlto','Multiplicador: acerto alto'],['fAcMed','Multiplicador: acerto médio'],['fAcBaixo','Multiplicador: acerto baixo (entre o mínimo e o médio)'],['fPeso5','Multiplicador: peso 5'],['fPeso4','Multiplicador: peso 4'],['fPeso3','Multiplicador: peso 3'],['fPeso12','Multiplicador: peso 1 e 2']];
+function vMais(){
+  const orph=M.orphan;
+  return `<h1>Mais</h1><div class="sub">Conta, parâmetros e exportação</div>
+  ${window.RC_CONTA?RC_CONTA():''}<h2>Parâmetros</h2><div class="card">${CF.map(([k,l])=>`<label>${l}</label><input type="number" step="any" value="${S.cfg[k]}" onchange="setCfg('${k}',this.value)">`).join('')}
+  <label>Escada de revisão (dias, separados por vírgula)</label><input value="${S.cfg.escada.join(',')}" onchange="setEsc(this.value)"><div class="sub" style="margin-top:8px">Intervalo = degrau × multiplicador do acerto × multiplicador do peso. Revisão boa sobe um degrau; ruim desce dois; abaixo do % de volta ao início, recomeça em 1 dia. Com menos questões que o mínimo, o degrau se mantém e as questões somam com as próximas sessões. O histórico do cadastro já define o degrau de partida.</div></div>
+  <h2>Exportar</h2><div class="card"><div class="sub">O app guarda seus dados próprios; não sincroniza sozinho com o Google Sheets. Exporte as sessões para colar no HISTÓRICO da planilha.</div>
+  <div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn" onclick="expCsv()">Baixar sessões (CSV)</button><button class="btn" onclick="expTsv()">Copiar sessões</button><button class="btn" onclick="expCad()">Copiar cadastro</button></div>
+  <div class="sub" style="margin-top:8px">Cadastro: colunas Matéria, Assunto, Subassunto, Peso, Questões, Acertos, % informado, Observação, Verificação (vazia), Data de estudo — a mesma ordem da aba CADASTRO.</div></div>
+  <h2>Backup completo</h2><div class="card"><div class="sub">Guarda tudo em um único arquivo: assuntos, sessões, parâmetros, ciclo, simulados feitos, questões feitas e flashcards. Restaurar num aparelho (ou no artefato do Claude) deixa os dados iguais aos do arquivo. Seus dados já ficam guardados no GitHub; o arquivo é uma cópia extra.</div>
+  <div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn p" onclick="expBackup()">Baixar backup</button><button class="btn" onclick="$('#bk').click()">Restaurar backup</button></div>
+  <input id="bk" type="file" accept=".json,application/json" style="display:none" onchange="impBackup(this)"><div class="sub" style="margin-top:8px">Restaurar substitui todos os dados atuais pelos do arquivo.</div></div>
+  ${orph.length?`<h2>Sessões sem assunto cadastrado (${orph.length})</h2>`+orph.map(s=>`<div class="card"><b>${esc(s.a)}</b><div class="sub">${esc(s.m)} · ${esc(s.s)} · ${fdi(s.d)}</div></div>`).join(''):''}`;
+}
+async function setCfg(k,v){S.cfg[k]=+v;recalc();render();await saveCfg()}
+async function setEsc(v){const a=v.split(',').map(x=>+x.trim()).filter(x=>x>0);if(!a.length)return toast('Escada inválida');S.cfg.escada=a;recalc();render();await saveCfg()}
+const rowsExp=()=>S.ses.slice().sort((a,b)=>dn(a.d)-dn(b.d)||(a.n||0)-(b.n||0)).map(s=>[fdi(s.d),s.m,s.a,s.s,s.q,s.ac,s.q?(s.ac/s.q).toFixed(3).replace('.',','):'',s.tipo||'',s.obs||'']);
+async function expCsv(){const dl=await claude.use('downloads').catch(()=>null);if(!dl)return toast('Download indisponível');
+  const csv=['Data;Matéria;Assunto;Subassunto;Questões;Acertos;%;Tipo;Obs'].concat(rowsExp().map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(';'))).join('\n');
+  try{await dl.save({filename:'sessoes_revisao.csv',data:'﻿'+csv});toast('Arquivo pronto')}catch(e){toast('Download cancelado')}}
+async function expCad(){const f=x=>x==null?'':String(x).replace(/[\t\r\n]+/g,' ');
+  const t=S.items.map(i=>[i.m,i.a,i.s,i.peso||'',i.q0==null?'':i.q0,i.a0==null?'':i.a0,i.p0==null?'':(i.p0*100).toFixed(1).replace('.',',')+'%',i.obs||'','',i.d0?fdi(i.d0):''].map(f).join('\t')).join('\n');
+  try{await navigator.clipboard.writeText(t);toast('Cadastro copiado — cole na aba CADASTRO')}catch(e){toast('Não foi possível copiar')}}
+async function expTsv(){const t=rowsExp().map(r=>r.join('\t')).join('\n');try{await navigator.clipboard.writeText(t);toast('Copiado — cole na planilha')}catch(e){toast('Não foi possível copiar')}}
+/* backup completo (v2): todas as coleções, com os mesmos ids; serve para levar os dados entre o app fora do Claude e o artefato */
+function bkDados(){const sem=o=>{const{_id,...r}=o;return r};
+  return {app:'revisao-concursos',versao:2,gerado:new Date().toISOString(),items:S.items,cfg:S.cfg,ses:S.ses.map(sem),
+    col:{sessoes:Object.fromEntries(S.ses.map(x=>[x._id,sem(x)])),ciclo:Object.fromEntries((S.cic||[]).map(x=>[x._id,sem(x)])),
+      sim_tent:Object.fromEntries((S.tents||[]).map(x=>[x._id,sem(x)])),qfeito:clean(S.qf||{}),
+      flash:Object.fromEntries(Object.keys(S.flash||{}).map(k=>[k,{ok:true}])),simulados:Object.fromEntries((S.simsDb||[]).map(x=>{const{id,...r}=x;return[id,r]}))},
+    ciclo:S.ciclo||null}}
+async function expBackup(){const dl=await claude.use('downloads').catch(()=>null);if(!dl)return toast('Download indisponível');
+  const nm='backup_revisao_'+iso(T())+'.json';
+  try{await dl.save({filename:nm,data:JSON.stringify(clean(bkDados()))});toast('Backup pronto')}catch(e){toast('Download cancelado')}}
+async function impBackup(inp){const f=inp.files[0];inp.value='';if(!f)return;
+  let d;try{d=JSON.parse(await f.text())}catch(e){return toast('Arquivo inválido')}
+  if(d.app!=='revisao-concursos'||!Array.isArray(d.items)||!Array.isArray(d.ses))return toast('Não é um backup deste app');
+  if(S.pend!==f.name+f.size){S.pend=f.name+f.size;return toast('Toque em Restaurar e escolha o arquivo de novo para confirmar')}
+  S.pend=null;toast('Restaurando…');
+  try{
+    S.items=d.items;S.cfg={...DEFAULT_CFG,...d.cfg};await saveItems();await saveCfg();
+    if(d.versao>=2&&d.col){
+      if(d.ciclo)await S.db.doc('app/ciclo').set(d.ciclo);
+      const atual={sessoes:S.ses.map(x=>x._id),ciclo:(S.cic||[]).map(x=>x._id),sim_tent:(S.tents||[]).map(x=>x._id),qfeito:Object.keys(S.qf||{}),flash:Object.keys(S.flash||{}),simulados:(S.simsDb||[]).map(x=>x.id)};
+      for(const c of Object.keys(atual)){const novo=d.col[c]||{};
+        for(const id of atual[c])if(!(id in novo))await S.db.collection(c).doc(id).delete();
+        for(const id of Object.keys(novo))await S.db.collection(c).doc(id).set(novo[id])}
+    }else{
+      for(const s of S.ses) await S.db.collection('sessoes').doc(s._id).delete();
+      let i=0;for(const s of d.ses){await S.db.collection('sessoes').doc('r'+Date.now().toString(36)+(i++)).set(s)}
+    }
+    toast('Backup restaurado')}catch(e){toast('Falha ao restaurar')}}
+/* ===== CICLO TRT4 (aba Ciclo) =====
+   Sequência de blocos de ~1h por fase; o próximo bloco é sempre o seguinte da sequência,
+   não importa o dia. Cada bloco concluído ou adiado ocupa uma posição. */
+const BIZU_K=new Set(['PT','DT','CON','ADM','CIV','PC','DH']);
+const SIMP_K=new Set(['ADM','CON','CIV','DT','PC','POR','RL','INF','DH']);
+function cicFase(t){const c=S.ciclo,d=iso(t);for(const f of c.fases){if((!f.ini||d>=f.ini)&&d<=f.fim)return f}return c.fases[c.fases.length-1]}
+function cicDocsF(f){return S.cic.filter(x=>x.f===f.n)}
+function cicConsumed(f){const s=new Set();for(const x of S.cic)if(x.f===f.n&&x.p!=null&&!x.fora)s.add(x.p);return s}
+function cicFirstFree(f){const c=cicConsumed(f);let p=0;while(c.has(p))p++;return p}
+function cicRowMap(){const m=new Map();if(M)for(const r of M.rows)m.set(r.key,r);return m}
+function cicFeito(pred){return S.cic.filter(x=>x.st==='feito'&&pred(x)).length}
+function cicResolve(k0,ord){
+  if(k0==='RLINF'){const n=S.cic.filter(x=>x.k0==='RLINF').length+ord;return n%2?'INF':'RL'}
+  if(k0==='GER'){const n=S.cic.filter(x=>x.k0==='GER').length+ord;return ['POR','RL','INF'][n%3]}
+  return k0}
+function cicMatsCiclo(){if(!S._cicMats||S._cicMatsN!==S.items.length){const s=new Set();for(const [k,l] of Object.entries(S.ciclo.filas)){if(k==='INB'&&iso(T())>'2027-01-10')continue;for(const x of l)s.add(cicLive(k,x).m)}S._cicMats=s;S._cicMatsN=S.items.length}return S._cicMats}
+/* nome atual da matéria k no cadastro (acompanha renomeações, ex.: Raciocínio Lógico -> Raciocínio Lógico-Matemático) */
+function cicMatAtual(k,m0){if(m0!==S.ciclo.nomes[k]&&m0!==undefined)return m0;for(const y of S.ciclo.filas[k]||[]){if(y.id){const z=S.items.find(i=>i.id===y.id);if(z)return z.m}}return m0||S.ciclo.nomes[k]}
+function cicIsFora(r){const F=S.ciclo.fora,it=r.it;if(F.materias.includes(it.m)||!cicMatsCiclo().has(it.m))return true;
+  if(F.assuntos.some(x=>it.a.includes(x)))return true;return F.subs.some(x=>it.s.includes(x))}
+function cicRecent(key,days){const t=T();return S.ses.some(s=>keyOf(s.m,s.a,s.s)===key&&dn(s.d)>=t-days)}
+function cicItemKey(k,it){return keyOf(it.m||S.ciclo.nomes[k],it.a,it.s)}
+/* item da fila -> nomes atuais do cadastro (vínculo por id do assunto; nomes só como reserva) */
+function cicLive(k,raw){if(!raw)return raw;let x=null;
+  if(raw.id) x=S.items.find(i=>i.id===raw.id);
+  if(!x&&raw.cid) x=S.items.find(i=>i.cic===raw.cid);
+  const m0=raw.novo?cicMatAtual(k,raw.m):(raw.m||S.ciclo.nomes[k]);
+  if(!x) x=S.items.find(i=>i.m===m0&&i.a===raw.a&&i.s===raw.s);
+  const o={...raw,m:m0}; if(x){o.m=x.m;o.a=x.a;o.s=x.s;o.novo=false;o.appId=x.id} return o}
+/* sugestão de assunto para a matéria k; ord = quantos blocos da mesma matéria vêm antes na fila */
+const CIC_FIXA=new Set(['LEG','ADMN','INB']); /* conteúdo novo: ordem fixa de leitura */
+function cicIncNum(k,raw){const s=raw.inc||'';let m=s.match(/([\d]+(?:,\d+)?)\s*%/);if(/<1%/.test(s))return 0.5;if(m)return parseFloat(m[1].replace(',','.'));
+  m=s.match(/(\d+)q/);if(m){S._qtot=S._qtot||{};if(!S._qtot[k]){const v=new Set();for(const x of S.ciclo.filas[k]||[]){const mm=(x.inc||'').match(/(\d+)q/);if(mm)v.add(+mm[1])}S._qtot[k]=[...v].reduce((a,b)=>a+b,0)||1}return +m[1]/S._qtot[k]*100}
+  if(/Edital/.test(s))return 10;return 3}
+const CIC_W={inc:0.55,weak:0.45,novo:0.6,gap:21,due:0.3};
+function cicLastMap(){const st=S.cic.length;if(S._lt&&S._lt.st===st)return S._lt.m;const m=new Map();
+  for(const x of S.cic)if(x.st==='feito'&&x.m){const key=keyOf(x.m,x.a,x.s),d=dn(x.d);if(!(m.get(key)>=d))m.set(key,d)}
+  S._lt={st,m};return m}
+/* prioridade dinâmica: (incidência + fraqueza atual) × tempo desde o último bloco do ciclo; assunto ainda sem bloco ganha bônus */
+function cicRank(k){const fila=S.ciclo.filas[k]||[],t=T(),rm=cicRowMap(),lt=cicLastMap(),seen=new Set(),out=[],W=CIC_W;
+  fila.forEach((raw,idx)=>{const it=cicLive(k,raw),key=cicItemKey(k,it);if(seen.has(key))return;seen.add(key);
+    const r=rm.get(key),inc=cicIncNum(k,raw),p=r&&r.pHist!=null?r.pHist:null,last=lt.has(key)?lt.get(key):null;
+    /* integra com a aba Hoje: sessão registrada fora do ciclo também conta como estudo recente; revisão vencida no app sobe na fila */
+    const appLast=r&&r.U?r.M:null, any=Math.max(last==null?-1e9:last,appLast==null?-1e9:appLast), age=any<-1e8?null:t-any;
+    const venc=!!(r&&r.ativo&&r.AS!=null&&r.AS<=t), atraso=venc?t-r.AS:0;
+    const base=W.inc*Math.min(inc,25)/25+W.weak*Math.min(1,(p==null?0.3:1-p)/0.4)+0.02*(fila.length-idx)/fila.length;
+    let sc=last==null?base+W.novo:base*Math.min(1,age/W.gap);
+    if(venc) sc+=W.due*(0.5+0.5*Math.min(1,atraso/14));
+    out.push({it,idx,key,sc,inc,p,age,last,appLast,venc,atraso,recent:age!=null&&age<4})});
+  out.sort((a,b)=>(a.recent-b.recent)||(b.sc-a.sc));return out}
+function cicWhy(x){const parts=[];if(x.it.inc)parts.push('incidência '+x.it.inc);parts.push(x.p==null?'acerto ainda não medido':'acerto '+pc(x.p,0));
+  parts.push(x.last==null?'ainda sem bloco no ciclo':(t=>t===0?'último bloco hoje':'último bloco há '+t+(t===1?' dia':' dias'))(T()-x.last));
+  if(x.venc) parts.push(x.atraso>0?'revisão vencida há '+x.atraso+(x.atraso===1?' dia':' dias'):'revisão vence hoje');
+  else if(x.appLast!=null&&(x.last==null||x.appLast>x.last)&&T()-x.appLast<7) parts.push('revisado na aba Hoje há '+(T()-x.appLast)+' d');
+  return parts.join(' · ')}
+/* sugestão de assunto para a matéria k; ord = quantos blocos da mesma matéria vêm antes na fila */
+function cicSuggest(k,ord,f){
+  const fila=S.ciclo.filas[k]; if(!fila||!fila.length) return null;
+  const alt=(S.cicAlt&&S.cicAlt[k+'|'+ord])||0;
+  if(CIC_FIXA.has(k)){const done=S.cic.filter(x=>x.k===k).length;const i=(done+ord+alt)%fila.length;return {it:cicLive(k,fila[i]),idx:i,k,why:'conteúdo novo, na ordem de leitura'}}
+  const R=cicRank(k); const x=R[(ord+alt)%R.length];
+  return {it:x.it,idx:x.idx,k,why:cicWhy(x)};
+}
+function cicSimInfo(k,it){const L=S.ciclo.simp&&S.ciclo.simp[k];if(!L||!it||it.sim==null||!L[it.sim])return null;const s=L[it.sim];
+  const fonte='sim:'+k+':'+it.sim, feito=S.cic.find(x=>x.fonte===fonte&&x.st==='feito');
+  return {fonte,lbl:s.lbl.startsWith('Simulado 4 do Passo')?s.lbl:s.lbl+' do Passo de '+(S.ciclo.passo[k]||''),cob:s.cob,feito}}
+/* questões do Passo Estratégico mapeadas por assunto (S.ciclo.qmap): resolver primeiro, completar no TEC */
+/* a marcação "já fiz" vale para a fonte+trecho, em qualquer assunto que a use */
+function cicQfId(f,q){let h=0;const t=f+'|'+q;for(let i=0;i<t.length;i++)h=(h*31+t.charCodeAt(i))|0;return ('q_'+t).replace(/[^A-Za-z0-9_-]+/g,'_').slice(0,90)+'_'+(h>>>0).toString(36)}
+function cicPassoHoje(it){const qm=cicQmap(it),td=iso(T());let q=0,ac=0,acOk=true,unk=false,n=0;
+  (qm||[]).forEach(x=>{const fe=(S.qf||{})[cicQfId(x.f,x.q)];if(!fe||fe.d!==td)return;n++;const nq=x.n||fe.nq;if(nq){q+=nq;if(fe.ac!=null)ac+=fe.ac;else acOk=false}else unk=true});
+  return {q,ac,acOk,unk,n}}
+function cicQmap(it){const m=S.ciclo&&S.ciclo.qmap;if(!m||!it)return null;return m[it.id]||m[it.cid]||null}
+async function cicQf(key,f,q,n){const id=cicQfId(f,q),on=!!(S.qf||{})[id];S.qf=S.qf||{};
+  if(on){delete S.qf[id];render();try{await S.db.collection('qfeito').doc(id).delete()}catch(e){toast('Não foi possível salvar')}}
+  else{const d={it:key,f,q,d:iso(T())};
+    const ea=document.getElementById('qa-'+id),eq=document.getElementById('qq-'+id);
+    const nq=n?+n:(eq&&eq.value!==''?Math.floor(+eq.value):null),ac=ea&&ea.value!==''?Math.floor(+ea.value):null;
+    if(nq!=null&&(isNaN(nq)||nq<0))return toast('Número de questões inválido');
+    if(ac!=null&&(isNaN(ac)||ac<0||(nq!=null&&ac>nq)))return toast('Acertos inválidos'+(nq!=null?' (máximo '+nq+')':''));
+    if(nq!=null)d.nq=nq;if(ac!=null)d.ac=ac;S.qf[id]=d;render();try{await S.db.collection('qfeito').doc(id).set(d)}catch(e){toast('Não foi possível salvar')}}}
+function cicFontesHtml(k,it){const qm=cicQmap(it);
+  if(qm&&qm.length){const key=it.id||it.cid,meta=k==='INB'?15:20;let rest=0;
+    let unk=false,hoje=0,hojeUnk=false;const td=iso(T());const rows=qm.map(x=>{const id=cicQfId(x.f,x.q),fe=(S.qf||{})[id];if(!fe){if(x.n)rest+=x.n;else unk=true}else if(fe.d===td){if(x.n||fe.nq)hoje+=(x.n||fe.nq);else hojeUnk=true}
+      const nq=x.n||(fe&&fe.nq),res=fe&&fe.ac!=null&&nq?` · ${fe.ac}/${nq}`:'';
+      const inp='padding:4px 6px;margin:0;font-size:13px;min-height:0;width:58px';
+      const campos=fe?'':(x.n?`<input id="qa-${id}" type="number" inputmode="numeric" min="0" max="${x.n}" placeholder="acertos" aria-label="Acertos de ${x.n}" style="${inp}" onclick="event.stopPropagation()"><span class="sub" style="font-size:12px">de ${x.n}</span>`
+        :`<input id="qq-${id}" type="number" inputmode="numeric" min="0" placeholder="questões" aria-label="Questões feitas" style="${inp};width:70px" onclick="event.stopPropagation()"><input id="qa-${id}" type="number" inputmode="numeric" min="0" placeholder="acertos" aria-label="Acertos" style="${inp}" onclick="event.stopPropagation()">`);
+      return `<div class="row" style="gap:8px;align-items:flex-start;justify-content:space-between"><div style="${fe?'opacity:.55;text-decoration:line-through':''}">• <b>${esc(x.f)}</b>: ${x.s?esc(x.q):`${x.n===1?'questão':'questões'} ${esc(x.q)} <span class="sub">(${x.n})</span>`}</div>
+       <div class="row" style="gap:5px;flex-shrink:0;align-items:center;flex-wrap:wrap;justify-content:flex-end">${campos}<button class="btn s ${fe?'':'p'}" style="padding:3px 9px;font-size:12px" title="${fe?'Toque para desmarcar':''}" onclick="event.stopPropagation();cicQf('${esc(key)}',decodeURIComponent('${encodeURIComponent(x.f)}'),decodeURIComponent('${encodeURIComponent(x.q)}'),${x.n||0})">${fe?'Feito '+fdi(fe.d).slice(0,5)+res:'Já fiz'}</button></div></div>`}).join('');
+    /* o que foi marcado HOJE conta para este bloco: o TEC só completa o que falta */
+    const filt=`filtro ${k==='INB'?'FGV':'FCC'}, nível superior`;
+    if(hoje||hojeUnk){const falta=Math.max(0,meta-hoje);
+      const tecH=hojeUnk?`<div>• Complete no <b>TEC Concursos</b> (${filt}) até cerca de ${meta} questões no total, contando as do Passo que você fez hoje.</div>`
+        :falta===0?`<div class="sub">Com as ${hoje} questões do Passo de hoje, o bloco está completo. Se sobrar tempo, faça mais no TEC.</div>`
+        :`<div>• Você fez hoje ${hoje} ${hoje===1?'questão':'questões'} do Passo${(ph=>ph.acOk&&ph.q?` (${ph.ac} ${ph.ac===1?'acerto':'acertos'})`:'')(cicPassoHoje(it))}. Faltam <b>${falta}</b> para fechar o bloco: complete no <b>TEC Concursos</b> (${filt})${rest&&rest<falta?` ou use as ${rest} do Passo que ainda faltam e mais ${falta-rest} do TEC`:rest>=falta?` ou com questões do Passo que ainda faltam`:''}.</div>`;
+      return `<div class="cic-fontes"><div class="tag">Questões · Passo Estratégico primeiro</div>${rows}${tecH}</div>`}
+    const tec=unk?`<div>• Depois, complete no <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior) até cerca de ${meta} questões no total.</div>`:rest>=meta?`<div class="sub">As questões do Passo já fecham o bloco. Se sobrar tempo, complete no TEC.</div>`
+      :rest>0?`<div>• Depois, complete no <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior) até cerca de ${meta} questões no total: faltam umas ${meta-rest}.</div>`
+      :`<div>• Você já fez as questões do Passo deste assunto: use o <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior), ${k==='INB'?'15 a 20':'20 a 25'} questões.</div>`;
+    return `<div class="cic-fontes"><div class="tag">Questões · Passo Estratégico primeiro</div>${rows}${tec}</div>`}
+  const si=cicSimInfo(k,it);
+  return `<div class="cic-fontes"><div class="tag">Questões</div><div>• <b>TEC Concursos</b>: filtro ${k==='INB'?'FGV':'FCC'}, nível superior, ${k==='INB'?'15 a 20':'20 a 25'} questões do assunto</div>${si?`<div>• ou <b>${esc(si.lbl)}</b> <span class="sub">(${esc(si.cob)})</span>${si.feito?` <span class="badge b-ok">feito em ${fdi(si.feito.d)}</span>`:''}</div>`:''}</div>`}
+function cicModo(k,it,f){
+  if(k==='INB') return it&&it.tipo==='q'?'Questões FGV de leitura técnica, cronometradas':'Resumo/lei seca + questões FGV · não leia a teoria completa';
+  if(f.n===4) return BIZU_K.has(k)?'Bizu Estratégico: leitura rápida + 10 questões':'Revisão leve: resumo + 10 questões';
+  if(it&&it.novo&&it.tipo==='lei'&&k!=='LEGR') return 'Conteúdo novo: leitura da norma + questões';
+  if(f.n===3&&BIZU_K.has(k)) return 'Bizu do tópico + questões · cada erro vira flashcard';
+  if(it&&it.tipo==='lei') return 'Lei seca (~25 min) + questões · cada erro vira flashcard';
+  return 'Questões · cada erro vira flashcard';
+}
+function cicReveList(){const t=T(),by=new Map();
+  for(const s of S.ses){if(dn(s.d)<t-21||!s.q)continue;const k=keyOf(s.m,s.a,s.s);const g=by.get(k)||{q:0,ac:0};g.q+=+s.q;g.ac+=+s.ac;by.set(k,g)}
+  let rows=M.rows.filter(r=>!cicIsFora(r)&&by.has(r.key)).map(r=>({r,p:by.get(r.key).ac/by.get(r.key).q})).filter(x=>x.p<0.75).sort((a,b)=>a.p-b.p).map(x=>x.r);
+  if(rows.length<3) rows=rows.concat(M.rows.filter(r=>!cicIsFora(r)&&r.idxP!=null&&!rows.includes(r)).sort((a,b)=>(b.idxP||0)-(a.idxP||0)).slice(0,6-rows.length));
+  return rows.slice(0,6)}
+function cicManutList(){
+  const rows=M.rows.filter(r=>cicIsFora(r)&&r.AS!=null);
+  rows.sort((a,b)=>(a.AS-b.AS)||((b.idxP||0)-(a.idxP||0)));
+  return rows.slice(0,6);
+}
+/* monta os n próximos blocos da sequência */
+function cicUpcoming(n){
+  const t=T(),f=cicFase(t),cons=cicConsumed(f),out=[],cnt={},cntK0={};
+  let p=0; while(cons.has(p))p++; const pos=p;
+  for(let guard=0;out.length<n&&guard<n*6;guard++,p++){
+    if(cons.has(p)) continue;
+    const k0=f.seq[p%f.seq.length]; const o0=cntK0[k0]||0; cntK0[k0]=o0+1;
+    const k=cicResolve(k0,o0); const ord=cnt[k]||0; cnt[k]=ord+1;
+    const b={f:f.n,p,k0,k,nome:S.ciclo.nomes[k]||k};
+    if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho'}
+    else if(k==='MANUT'){b.modo='Revisões vencidas no app de assuntos fora do edital do TRT4 (pensando no TRT-MG)';b.manut='manut'}
+    else if(k==='REVE'){b.modo='Questões dos assuntos com pior acerto nas últimas 3 semanas (inclui o que você registrou na correção dos simulados)';b.manut='reve'}
+    else if(k==='SIM'){const n=S.cic.filter(x=>x.k==='SIM').length+ord+1;b.tema='Simulado completo nº '+n;b.modo='Faça o próximo simulado inédito da aba Simulados (60 objetivas + estudo de caso, 4h). Ao entregar, o app oferece concluir este bloco. Conta 3 blocos.';b.peso=3}
+    else if(k==='CORR'){b.modo='Corrija o simulado, registre os erros por assunto no app e crie flashcards'}
+    else if(k==='SUM'){b.modo='Súmulas e OJs do TST mais cobradas (processo e direito material) + teses do STF'}
+    else if(k==='ERR'){b.modo='Releia só o que você errou ou grifou. Nada de conteúdo novo.'}
+    else {let sg=cicSuggest(k,ord,f); if(!out.length&&S.cicPick&&S.cicPick.k===k){const r=M.rows[S.cicPick.idx];if(r)sg={it:{m:r.it.m,a:r.it.a,s:r.it.s},idx:-1,k,app:true}} b.sg=sg; b.modo=sg&&sg.simp?'Simulado do Passo com tempo cronometrado · corrija e registre os erros':cicModo(k,sg&&sg.it,f)}
+    out.push(b);
+  }
+  return {f,pos,out};
+}
+function cicWeek(){const t=T(),wd=(new Date(t*DAY).getUTCDay()+6)%7,ini=t-wd;
+  return S.cic.filter(x=>x.st==='feito'&&dn(x.d)>=ini&&dn(x.d)<=t).reduce((s,x)=>s+(x.k==='SIM'?3:1),0)}
+function cicItemHtml(b,rm){
+  if(b.tema) return `<div class="ttl">${esc(b.tema)}</div>`;
+  if(b.manut){const l=b.manut==='reve'?cicReveList():cicManutList(); return l.length?`<div class="sub" style="margin-top:4px">Sugestões:</div>`+l.slice(0,3).map(r=>`<div class="sub">• <b>${esc(r.it.a)}</b> · ${esc(r.it.m)} ${r.AT!=null&&r.AT<0?`<span style="color:var(--alta)">(${-r.AT}d atrasado)</span>`:''}</div>`).join(''):'<div class="sub">Nada vencido fora do edital. Use o bloco para flashcards ou para o assunto fora do edital mais fraco.</div>'}
+  const sg=b.sg; if(!sg) return '';
+  if(sg.simp) return `<div class="ttl">${esc(sg.lbl)}</div>`;
+  const it=sg.it, r=rm.get(cicItemKey(b.k,it));
+  const sub=it.s&&it.s!=='Todo o conteúdo do assunto'?it.s:'';
+  return `<div class="ttl">${esc(it.a)}</div>${sub?`<div class="sub">${esc(sub)}</div>`:''}
+  <div class="meta">${it.inc?`<span>Incidência <b>${esc(it.inc)}</b></span>`:''}${r?`<span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Questões <b>${r.qTot}</b></span><span>Próx. revisão <b>${fd(r.AS)}</b></span>`:`<span style="color:var(--media)"><b>Ainda não está no app</b></span>`}</div>
+  ${it.nota?`<div class="sub" style="margin-top:4px">${esc(it.nota)}</div>`:''}${sg.why?`<div class="sub" style="margin-top:4px"><b>Por que agora:</b> ${esc(sg.why)}</div>`:''}`;
+}
+function vCic(){
+  if(!S.ciclo) return `<h1>Ciclo</h1><div class="msg">O ciclo do TRT4 ainda não foi carregado. Abra o app logado para ver o ciclo.</div>`;
+  const t=T(),U=cicUpcoming(6),f=U.f,rm=cicRowMap(),b=U.out[0];
+  const dias=dn(S.ciclo.prova)-t, wk=cicWeek(), meta=S.ciclo.meta, volta=Math.floor(U.pos/f.seq.length)+1, inV=U.pos%f.seq.length;
+  let h=`<div class="row sp"><h1>Ciclo TRT4</h1><span class="badge b-neu">${dias>0?dias+' dias para a prova':'Dia da prova'}</span></div>
+  <div class="sub">Fase ${f.rot||f.n}: ${esc(f.nome)} · ${f.ini?fdi(f.ini)+' a ':'até '}${fdi(f.fim)}</div>
+  <div class="tiles" style="margin-top:12px"><div class="tile"><div class="l">Blocos nesta semana</div><div class="n">${wk}<span class="sub"> / ${meta}</span></div><div class="bar" style="margin-top:6px"><i style="width:${Math.min(100,wk/meta*100)}%;background:var(--acc)"></i></div></div>
+  <div class="tile"><div class="l">Volta ${volta}</div><div class="n">${inV}<span class="sub"> / ${f.seq.length}</span></div><div class="bar" style="margin-top:6px"><i style="width:${inV/f.seq.length*100}%;background:var(--ok)"></i></div></div></div>`;
+  h+=cicFlash();
+  h+=`<h2>Próximo bloco</h2><div class="card cic-next"><div class="row sp"><div class="tag">${esc(b.nome)}</div><span class="badge b-neu">${b.peso?'~3h':'~1h'}</span></div>
+   ${cicItemHtml(b,rm)}<div class="cic-modo">${esc(b.modo)}</div>${b.sg&&b.sg.it&&!b.manut?cicFontesHtml(b.k,b.sg.it):''}${cicVencHtml(b)}${b.k==='DISC'?dcBtnHtml(b):''}
+   <div class="row" style="margin-top:12px;flex-wrap:wrap"><button class="btn p" onclick="cicOpen(0)">Concluir bloco</button>${b.sg&&!b.sg.simp?`<button class="btn s" onclick="cicTrocar('${b.k}')">Outro assunto</button>`:''}<button class="btn s" onclick="cicAdiar()">Adiar</button></div></div>`;
+  if(b.k==='DISC'&&S.dcOpen)h+=dcHtml(b);
+  const ad=S.cic.filter(x=>x.st==='adiado').sort((a,b)=>a.t-b.t);
+  if(ad.length){h+=`<h2>Adiados (${ad.length})</h2>`+ad.map(x=>`<div class="card row sp"><div class="grow"><div class="tag">${esc(S.ciclo.nomes[x.k]||x.k)}</div><b>${esc(x.lbl||'')}</b><div class="sub">adiado em ${fdi(x.d)}</div></div><div class="row" style="gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">${x.f===cicFase(T()).n?`<button class="btn s" onclick="cicVoltar('${x._id}')">Voltar ao ciclo</button>`:''}<button class="btn s p" onclick="cicOpenAd('${x._id}')">Fazer</button></div></div>`).join('')}
+  h+=`<h2>Em seguida</h2><div class="card">`+U.out.slice(1).map(x=>{let l=x.tema||(x.sg?(x.sg.simp?x.sg.lbl:x.sg.it.a):'')||x.modo;return `<div class="hist row sp"><div class="grow"><b>${esc(x.nome)}</b><div class="sub">${esc(l)}</div></div></div>`}).join('')+`</div>`;
+  h+=`<h2>Volta atual</h2><div class="cic-seq">`+f.seq.map((k,i)=>`<span class="cic-chip ${cicConsumed(f).has(U.pos-inV+i)?'ok':i===inV?'cur':''}" title="${esc(S.ciclo.nomes[k]||k)}">${esc(CIC_ABBR[k]||k)}</span>`).join('')+`</div>
+   <div class="sub" style="margin-top:6px">${esc(f.txt)}</div>`;
+  h+=cicDiscHtml();
+  const hist=S.cic.filter(x=>x.st==='feito').sort((a,b)=>b.t-a.t).slice(0,12);
+  h+=`<h2>Últimos blocos</h2>`+(hist.length?hist.map(x=>`<div class="card row sp"><div class="grow"><div class="tag">${esc(S.ciclo.nomes[x.k]||x.k)} · ${fdi(x.d)}</div><b>${esc(x.lbl||'')}</b>${x.q?`<div class="sub">${x.ac}/${x.q} · ${pc(x.ac/x.q,0)}${x.fonte&&x.fonte.startsWith('sim:')?' · '+esc((S.ciclo.simp[x.fonte.split(':')[1]]||[])[+x.fonte.split(':')[2]]?.lbl||'Simulado do Passo'):x.fonte==='tec'?' · TEC':x.fonte==='passo+tec'?' · Passo + TEC':''}</div>`:''}${x.nota!=null?`<div class="sub">Nota ${String(x.nota).replace('.',',')}</div>`:''}</div><div class="row" style="gap:6px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">${x.st==='feito'&&x.k!=='DISC'?`<button class="btn s" onclick="cicEd('${x._id}')">Editar</button>`:''}<button class="btn s d" onclick="cicDel('${x._id}')">Desfazer</button></div></div>`).join(''):'<div class="empty">Nenhum bloco concluído ainda. Comece pelo próximo bloco acima.</div>');
+  h+=`<h2>Composição da fase</h2><div class="card"><table><tr><th>Matéria</th><th>Blocos na sequência</th></tr>`+Object.entries(f.seq.reduce((m,k)=>(m[k]=(m[k]||0)+(k==='SIM'?3:1),m),{})).map(([k,n])=>`<tr><td>${esc(S.ciclo.nomes[k]||k)}</td><td>${n}</td></tr>`).join('')+`</table><div class="sub" style="margin-top:8px">${esc(S.ciclo.fontes)}</div></div>`;
+  return h;
+}
+const CIC_ABBR={PT:'PT',DT:'DT',PC:'PC',CIV:'Civ',CON:'Con',ADM:'Adm',ADMN:'Adm+',INB:'INB',REVE:'Erros',LEG:'Leg',LEGR:'Leg',DH:'DH',POR:'Por',RLINF:'RL/Inf',DISC:'Disc',MANUT:'MG',SIM:'Sim',CORR:'Corr',SUM:'Súm',ERR:'Erros',GER:'Ger'};
+function cicFlash(){const t=T();let dots='';for(let i=6;i>=0;i--){const d=iso(t-i),ok=S.flash&&S.flash[d];dots+=`<span class="cic-dot ${ok?'ok':''}" title="${fdi(d)}"></span>`}
+  const ok=S.flash&&S.flash[iso(t)];
+  return `<div class="card row sp" style="margin-top:10px"><div><b>Flashcards (30 min)</b><div class="row" style="gap:4px;margin-top:4px">${dots}</div></div><button class="btn s ${ok?'':'p'}" onclick="cicFlashToggle()">${ok?'Feito hoje ✓':'Marcar hoje'}</button></div>`}
+async function cicFlashToggle(){const d=iso(T()),ok=S.flash[d];S.flash[d]=!ok;render();try{if(ok)await S.db.collection('flash').doc(d).delete();else await S.db.collection('flash').doc(d).set({ok:true})}catch(e){toast('Não foi possível salvar')}}
+function cicDiscHtml(){const l=S.cic.filter(x=>x.k==='DISC'&&x.st==='feito'&&x.nota!=null).sort((a,b)=>(dn(a.d)-dn(b.d))||(a.t-b.t));
+  const btn=`<button class="btn p s" onclick="cicDiscOpen()">Registrar estudo de caso</button>`;
+  if(!l.length) return `<div class="row sp" style="margin:22px 0 10px"><h2 style="margin:0">Discursiva</h2>${btn}</div><div class="card"><div class="sub">Registre aqui a nota de qualquer estudo de caso, a qualquer momento: os 8 que você já fez (marque “feito antes do ciclo”) e os novos. Um estudo de caso novo conta como o próximo bloco de Discursiva da sequência.</div></div>`;
+  const med=l.reduce((s,x)=>s+(+x.nota),0)/l.length, last=l.slice(-3), mL=last.reduce((s,x)=>s+(+x.nota),0)/last.length;
+  return `<div class="row sp" style="margin:22px 0 10px"><h2 style="margin:0">Discursiva</h2>${btn}</div><div class="tiles t3"><div class="tile"><div class="n">${l.length}</div><div class="l">Registradas</div></div><div class="tile"><div class="n">${med.toFixed(1).replace('.',',')}</div><div class="l">Média</div></div><div class="tile"><div class="n" style="color:${mL>=6?'var(--ok)':'var(--alta)'}">${mL.toFixed(1).replace('.',',')}</div><div class="l">Últimas 3</div></div></div>
+  <div class="card cic-bars">`+l.slice(-12).map(x=>`<div class="cic-bar" title="${esc(x.lbl)}"><i style="height:${Math.max(4,x.nota*10)}%;background:${x.nota>=6?'var(--ok)':'var(--alta)'}"></i><span>${String(x.nota).replace('.',',')}</span></div>`).join('')+`</div><div class="sub">Mínimo para habilitar: 6,0 (4,8 nas vagas reservadas).</div>`}
+function cicDiscOpen(){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length;S.cm={b:{k:'DISC',k0:'DISC',nome:'Discursiva',tema:S.ciclo.disc[nd%S.ciclo.disc.length],free:true},snap:{lbl:''}};render()}
+function cicMatName(b){return (b.sg&&b.sg.it&&b.sg.it.m)||S.ciclo.nomes[b.k]}
+function cicVenc(b){if(!b.sg||b.sg.simp||!M)return [];const m=cicMatName(b),t=T(),cur=b.sg.it?keyOf(b.sg.it.m||m,b.sg.it.a,b.sg.it.s):'';
+  const pl=r=>r.plan==null?1e9:r.plan;
+  return M.rows.filter(r=>r.it.m===m&&r.ativo&&r.AS!=null&&r.AS<=t&&!cicIsFora(r)&&r.key!==cur).sort((a,b)=>(pl(a)-pl(b))||((b.idxP||0)-(a.idxP||0))).slice(0,3)}
+function cicVencHtml(b){const l=cicVenc(b);if(!l.length)return '';
+  return `<div class="cic-venc"><div class="tag">Revisões vencidas desta matéria no app</div>`+l.map(r=>`<div class="row sp hist"><div class="grow"><b>${esc(r.it.a)}</b><div class="sub">${esc(r.it.s)} · ${r.AT<0?(-r.AT)+'d atrasada':'vence hoje'} · acerto ${pc(r.pHist,0)}</div></div><button class="btn s" onclick="cicPick('${b.k}',${r.idx})">Usar neste bloco</button></div>`).join('')+`</div>`}
+function cicPick(k,idx){S.cicPick={k,idx};render();scrollTo(0,0)}
+function cicTrocar(k){S.cicPick=null;S.cicAlt=S.cicAlt||{};S.cicAlt[k+'|0']=(S.cicAlt[k+'|0']||0)+1;render()}
+/* ---- concluir / adiar ---- */
+function cicSnap(b){const o={f:b.f,p:b.p,k0:b.k0,k:b.k,lbl:b.tema||(b.sg?(b.sg.simp?b.sg.lbl:b.sg.it.a+(b.sg.it.s&&b.sg.it.s!=='Todo o conteúdo do assunto'?' · '+b.sg.it.s:'')):b.nome)};
+  if(b.sg&&b.sg.simp)o.tipo='simpasso'; if(b.sg&&b.sg.it){o.m=b.sg.it.m||S.ciclo.nomes[b.k];o.a=b.sg.it.a;o.s=b.sg.it.s;o.qi=b.sg.idx} return o}
+function cicOpen(i){const U=cicUpcoming(1);S.cm={b:U.out[0],snap:cicSnap(U.out[0])};render()}
+/* desfaz o adiamento: o bloco volta a ser o próximo da sequência (a posição dele fica livre de novo) */
+async function cicVoltar(id){const x=S.cic.find(y=>y._id===id);if(!x)return;
+  if(S.cicVolt!==id){S.cicVolt=id;setTimeout(()=>{if(S.cicVolt===id)S.cicVolt=null},4000);return toast('Toque em Voltar ao ciclo de novo para confirmar')}
+  S.cicVolt=null;S.cic=S.cic.filter(y=>y._id!==id);S.cicPick=null;render();
+  try{await S.db.collection('ciclo').doc(id).delete();toast('O bloco voltou: ele é o próximo do ciclo')}catch(e){toast('Não foi possível desfazer o adiamento')}}
+function cicOpenAd(id){const x=S.cic.find(y=>y._id===id);if(!x)return;const b={f:x.f,k0:x.k0,k:x.k,nome:S.ciclo.nomes[x.k]||x.k,tema:x.k==='DISC'?x.lbl:null,manut:x.k==='MANUT'?'manut':x.k==='REVE'?'reve':false};
+  if(x.a){const fila=S.ciclo.filas[x.k]||[];const it=fila[x.qi]?{...cicLive(x.k,fila[x.qi]),...(x.a?{a:x.a,s:x.s,m:x.m}:{})}:{a:x.a,s:x.s,m:x.m};b.sg={it,idx:x.qi,k:x.k}}
+  if(x.tipo==='simpasso')b.sg={simp:true,lbl:x.lbl,k:x.k};
+  S.cm={b,snap:{...x},adId:id};render()}
+async function cicAdiar(){const U=cicUpcoming(1),b=U.out[0];const id='c'+Date.now().toString(36);const d={...cicSnap(b),st:'adiado',d:iso(T()),t:Date.now()};
+  S.cicPick=null;S.cic.push({...d,_id:id});render();try{await S.db.collection('ciclo').doc(id).set(d);toast('Bloco adiado: ele fica na lista de adiados')}catch(e){toast('Não foi possível salvar')}}
+async function cicDel(id){if(S.cicDelArm!==id){S.cicDelArm=id;setTimeout(()=>{if(S.cicDelArm===id)S.cicDelArm=null},5000);return toast('Desfazer APAGA o bloco do ciclo. Para corrigir questões ou acertos, use Editar. Toque de novo em Desfazer para confirmar')}S.cicDelArm=null;
+  const x=S.cic.find(y=>y._id===id);
+  /* o bloco desfeito volta com o MESMO assunto (sem isso, o assunto recém-estudado iria para o fim da fila e o ciclo sugeriria outro) */
+  if(x&&x.a&&x.k){const idx=M.rows.findIndex(r=>r.it.m===x.m&&r.it.a===x.a&&r.it.s===x.s);S.cicPick=idx>=0?{k:x.k,idx}:null}
+  S.cic=S.cic.filter(y=>y._id!==id);render();try{await S.db.collection('ciclo').doc(id).delete();toast('Bloco desfeito: ele volta como próximo, com o mesmo assunto. A sessão continua no histórico; se for refazer o registro, exclua-a lá para não contar em dobro.')}catch(e){toast('Não foi possível desfazer')}}
+function cicSesDo(x){return S.ses.filter(s=>s.d===x.d&&s.m===x.m&&s.a===x.a&&s.s===x.s&&/^Ciclo/.test(s.obs||'')).sort((a,b)=>(b.n||0)-(a.n||0))[0]||null}
+function cicEd(id){S.cicEdId=id;render()}
+function cicEdSheet(){const x=S.cic.find(y=>y._id===S.cicEdId);if(!x){S.cicEdId=null;$('#ov').innerHTML='';return}const se=cicSesDo(x);
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)cicEdClose()"><div><div class="tag">Editar bloco · ${esc(S.ciclo.nomes[x.k]||x.k)} · ${fdi(x.d)}</div><h2 style="margin:4px 0 0">${esc(x.lbl||'')}</h2>
+   <div class="g2"><div><label for="ce-q">Questões</label><input id="ce-q" type="number" inputmode="numeric" min="0" value="${x.q!=null?x.q:''}"></div><div><label for="ce-ac">Acertos</label><input id="ce-ac" type="number" inputmode="numeric" min="0" value="${x.ac!=null?x.ac:''}"></div></div>
+   <div class="sub" style="margin-top:8px">${se?'A sessão deste bloco no histórico também é corrigida, e a próxima revisão do assunto é recalculada.':'Não achei a sessão deste bloco no histórico: só o bloco será corrigido.'} O assunto e a posição no ciclo não mudam.</div>
+   <div class="row" style="margin-top:16px;flex-wrap:wrap"><button class="btn p grow" onclick="cicEdSave()">Salvar</button><button class="btn" onclick="cicEdClose()">Cancelar</button></div></div></div>`}
+function cicEdClose(){S.cicEdId=null;render()}
+async function cicEdSave(){const x=S.cic.find(y=>y._id===S.cicEdId);if(!x)return cicEdClose();const q=Math.floor(+$('#ce-q').value||0),ac=Math.floor(+$('#ce-ac').value||0);
+  if(ac<0||ac>q)return toast('Acertos inválidos');const se=cicSesDo(x);
+  const {_id,...d}=x;d.q=q;d.ac=ac;Object.assign(x,{q,ac});
+  if(se){se.q=q;se.ac=ac}S.cicEdId=null;recalc();render();
+  try{await S.db.collection('ciclo').doc(_id).set(clean(d));if(se){const {_id:sid,...sd}=se;await S.db.collection('sessoes').doc(sid).set(clean(sd))}toast('Bloco corrigido'+(se?proxTxt(se.m,se.a,se.s):''))}catch(e){toast('Não foi possível salvar')}}
+function cicSomaTec(){const b=S.cm&&S.cm.b;if(!b||!b.sg||!b.sg.it)return;const ph=cicPassoHoje(b.sg.it),tq=+($('#cm-tq').value||0),ta=+($('#cm-tac').value||0);
+  $('#cm-q').value=ph.q+tq;if(ph.acOk)$('#cm-ac').value=ph.ac+ta}
+function cicClose(){S.cm=null;render()}
+/* sessão registrada pela aba Registrar: oferece contar como bloco do ciclo */
+function cicBlockMatches(b,s){
+  if(!b) return false; const r=M.rows.find(x=>x.key===keyOf(s.m,s.a,s.s));
+  if(b.manut==='manut') return !!r&&cicIsFora(r);
+  if(b.manut==='reve') return !!r&&!cicIsFora(r);
+  if(b.sg&&b.sg.it) return cicMatName(b)===s.m&&!(r&&cicIsFora(r));
+  return false}
+function cicMatchSes(s){
+  const b=cicUpcoming(1).out[0]; if(cicBlockMatches(b,s)) return {s,b,snap:cicSnap(b)};
+  const ad=S.cic.filter(x=>x.st==='adiado').sort((a,c)=>a.t-c.t).find(x=>x.m?x.m===s.m:false);
+  if(ad) return {s,b:{k:ad.k,nome:S.ciclo.nomes[ad.k]||ad.k},snap:{...ad},adId:ad._id};
+  return null}
+function cicAskSheet(){const {s,b,adId}=S.cq;const L=(S.ciclo.simp&&S.ciclo.simp[b.k])||[];
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)cicAskNo()"><div>
+   <div class="tag">Ciclo TRT4</div><h2 style="margin:4px 0 0">Sessão salva. Contar como bloco do ciclo?</h2>
+   <div class="sub" style="margin-top:6px">${s.cadN?`O caderno de <b>${esc(s.m)}</b> (${s.cadN} subassuntos, ${s.ac}/${s.q})`:`A sessão de <b>${esc(s.a)}</b> (${s.ac}/${s.q})`} é da mesma matéria do ${adId?'bloco adiado':'próximo bloco'}: <b>${esc(b.nome)}</b>. Se contar, o bloco é concluído e o ciclo avança.</div>
+   ${L.length?`<label for="cq-fonte">De onde vieram as questões</label><select id="cq-fonte"><option value="tec">TEC Concursos</option>${L.map((x,i)=>`<option value="sim:${b.k}:${i}">${esc(x.lbl)} do Passo</option>`).join('')}<option value="outra">Outra fonte</option></select>`:''}
+   <div class="row" style="margin-top:16px;flex-wrap:wrap"><button class="btn p grow" onclick="cicAskYes()">Contar como bloco</button><button class="btn" onclick="cicAskNo()">Não, só registrar</button></div></div></div>`}
+function cicAskNo(){S.cq=null;render()}
+async function cicAskYes(){const {s,b,snap,adId}=S.cq;S.cq=null;
+  const d={...snap,st:'feito',d:s.d,t:Date.now(),m:s.m,a:s.a,s:s.s,q:s.q,ac:s.ac,lbl:s.cadN?('Caderno: '+s.a+' e mais '+(s.cadN-1)):s.a+(s.s&&s.s!=='Todo o conteúdo do assunto'?' · '+s.s:'')};if(s.cadN===1)d.lbl=s.a+(s.s&&s.s!=='Todo o conteúdo do assunto'?' · '+s.s:'');delete d._id;
+  const fe=$('#cq-fonte');d.fonte=fe?fe.value:'tec';
+  const fila=S.ciclo.filas[d.k]||[];const qi=fila.findIndex(x=>{const l=cicLive(d.k,x);return l.a===s.a&&l.s===s.s&&l.m===s.m});if(qi>=0)d.qi=qi;
+  try{if(adId){S.cic=S.cic.map(x=>x._id===adId?{...d,_id:adId}:x);render();await S.db.collection('ciclo').doc(adId).set(d)}
+    else{const id='c'+Date.now().toString(36);S.cic.push({...d,_id:id});render();await S.db.collection('ciclo').doc(id).set(d)}
+    S.cicAlt={};S.cicPick=null;if(d.k==='DISC'){S.dcOpen=false;if(S.dcG){Object.keys(S.dcG).forEach(k=>{if(k===d.lbl||k==='livre:'+d.lbl)delete S.dcG[k]});dcSave()}}toast('Bloco do ciclo concluído')}catch(e){toast('Não foi possível salvar o bloco')}
+  render()}
+/* ===== estudos de caso do bloco Discursiva (simulados/casos.json) ===== */
+async function dcLoad(){try{if(window.RC_PRIV){const j=await RC_PRIV('src/privado/casos.json');if(j){S.casos=j;bgRender()}return}const r=await fetch('simulados/casos.json',{cache:'no-store'});if(!r.ok)return;S.casos=await r.json();bgRender()}catch(e){}}
+function dcFind(b){const C=S.casos;if(!C||!C.casos)return null;const tema=b.tema||'';
+  if(/^Tema livre/i.test(tema)){const l=S.cic.filter(x=>x.k==='DISC'&&x.st==='feito'&&x.nota!=null&&C.casos.some(c=>c.tema===x.lbl)).sort((a,b)=>a.nota-b.nota||(dn(a.d)-dn(b.d)));
+    if(!l.length)return null;const w=l[0];return {c:C.casos.find(c=>c.tema===w.lbl),key:'livre:'+w.lbl,refazer:w}}
+  const c=C.casos.find(c=>c.tema===tema);return c?{c,key:tema}:null}
+function dcState(key){if(!S.dcG){try{S.dcG=JSON.parse(localStorage.getItem('rc_dc')||'{}')}catch(e){S.dcG={}}}if(!S.dcG[key])S.dcG[key]={c:[],n:{},corr:false};return S.dcG[key]}
+function dcSave(){try{localStorage.setItem('rc_dc',JSON.stringify(S.dcG||{}))}catch(e){}}
+function dcBtnHtml(b){const f=dcFind(b);if(!f){if(/^Tema livre/i.test(b.tema||''))return `<div class="sub" style="margin-top:8px">Ainda não há estudo de caso com nota registrada para refazer.</div>`;return S.casos?'':`<div class="sub" style="margin-top:8px">Carregando o estudo de caso…</div>`}
+  return `<div class="sub" style="margin-top:8px">${f.refazer?`Refazer o caso com a pior nota (${nf(f.refazer.nota,1)} em ${fdi(f.refazer.d)}): <b>${esc(f.c.titulo)}</b>`:`Estudo de caso pronto: <b>${esc(f.c.titulo)}</b>`}</div>
+   <div style="margin-top:8px"><button class="btn s" onclick="dcToggle()">${S.dcOpen?'Fechar estudo de caso':'Abrir estudo de caso'}</button></div>`}
+function dcToggle(){S.dcOpen=!S.dcOpen;render();if(S.dcOpen)setTimeout(()=>{const e=$('#dc-caso');if(e)e.scrollIntoView({behavior:'smooth',block:'start'})},50)}
+function dcHtml(b){const f=dcFind(b);if(!f)return '';const C=S.casos,d=f.c,G=dcState(f.key),LN=d.linhas||30,fx=x=>nf(x,1);
+  let h=`<h2 id="dc-caso">Estudo de caso</h2><div class="card"><div class="ttl">${esc(d.titulo)}</div><div class="sim-enun">${esc(d.enun)}</div>
+   <div class="sub" style="margin-top:8px">Escreva no papel, entre 20 e ${LN} linhas, em até 40 minutos. Depois abra a correção e use 20 minutos para conferir com a grade.</div>
+   ${C.dicas?`<details style="margin-top:8px"><summary class="sub" style="cursor:pointer"><b>Como a FCC espera a resposta</b></summary><ul class="sub" style="margin:6px 0 0 18px;padding:0">${C.dicas.map(x=>`<li style="margin:3px 0">${esc(x)}</li>`).join('')}</ul></details>`:''}
+   ${G.corr?'':`<div style="margin-top:12px"><button class="btn p" onclick="dcCorr()">Terminei de escrever: corrigir</button></div>`}</div>`;
+  if(!G.corr)return h;
+  const ck=id=>G.c.includes(id)?'checked':'';
+  const item=(id,x,neg)=>`<label style="display:flex;gap:10px;align-items:flex-start;margin:8px 0;font-weight:400;color:var(--ink);font-size:14px;line-height:1.4;cursor:pointer"><input type="checkbox" data-g="${id}" data-p="${x.p}" ${ck(id)} onchange="dcCalc()" style="width:20px;height:20px;margin:1px 0 0;flex-shrink:0"><span>${esc(x.t)} <b style="color:${neg?'var(--alta)':'var(--mut)'};white-space:nowrap">${neg?'−':''}${fx(Math.abs(x.p))}</b></span></label>`;
+  h+=`<div class="card" id="dc-grade"><div class="tag">Grade de correção</div><div class="sub" style="margin-top:4px">Releia o seu texto e marque cada elemento que você realmente escreveu e fundamentou. A nota é calculada sozinha.</div>`;
+  d.grade.forEach((g,gi)=>{h+=`<div style="margin-top:12px"><b>${esc(g.q)}</b> <span class="sub">(${fx(g.itens.reduce((a,x)=>a+x.p,0))})</span>${g.itens.map((x,ii)=>item(gi+'.'+ii,x)).join('')}</div>`});
+  const E=C.expr||[];
+  h+=`<div style="margin-top:12px"><b>Estrutura e expressão</b> <span class="sub">(${fx(E.reduce((a,x)=>a+(x.niveis?Math.max(...x.niveis.map(n=>n[1])):x.p),0))})</span>`+E.map((x,k)=>x.niveis
+     ?`<div style="margin:8px 0"><div style="font-size:14px;margin-bottom:4px">${esc(x.t)}</div><select data-n="e${k}" onchange="dcCalc()">${x.niveis.map(n=>`<option value="${n[1]}" ${String(G.n['e'+k])===String(n[1])?'selected':''}>${esc(n[0])} (${fx(n[1])})</option>`).join('')}</select></div>`
+     :item('e'+k,x)).join('')+`</div>`;
+  if(C.desc&&C.desc.length)h+=`<div style="margin-top:12px"><b>Descontos</b>${C.desc.map((x,k)=>item('d'+k,x,true)).join('')}</div>`;
+  h+=`<div class="sub" id="dc-gt" style="margin-top:12px;font-size:15px"></div>
+   <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600">Ver resposta-modelo</summary><div class="sim-com" style="margin-top:8px;white-space:normal">${esc(d.modelo||'').split(/\n\s*\n/).map(p=>`<p style="margin:0 0 10px;text-indent:1.5em">${p}</p>`).join('')}</div></details>
+   <div class="sub" style="margin-top:10px">${esc(C.criterios||'')}</div>
+   <div class="row" style="margin-top:12px;flex-wrap:wrap"><button class="btn p" onclick="dcConcluir()">Concluir bloco com esta nota</button><button class="btn s" onclick="dcRecomecar()">Recomeçar a correção</button></div></div>`;
+  setTimeout(()=>dcCalc(true),0);
+  return h}
+function dcCur(){const U=cicUpcoming(1),b=U.out[0];return b&&b.k==='DISC'?dcFind(b):null}
+function dcCorr(){const f=dcCur();if(!f)return;dcState(f.key).corr=true;dcSave();render();setTimeout(()=>{const e=$('#dc-grade');if(e)e.scrollIntoView({behavior:'smooth',block:'start'})},50)}
+function dcRecomecar(){const f=dcCur();if(!f)return;S.dcG[f.key]={c:[],n:{},corr:true};dcSave();render()}
+function dcCalc(inicial){const box=$('#dc-grade');if(!box)return;const f=dcCur();if(!f)return;const G=dcState(f.key);
+  let cont=0,ex=0,de=0;G.c=[];
+  box.querySelectorAll('input[data-g]').forEach(e=>{if(!e.checked)return;G.c.push(e.dataset.g);const p=+e.dataset.p,id=e.dataset.g;if(id[0]==='d')de+=p;else if(id[0]==='e')ex+=p;else cont+=p});
+  box.querySelectorAll('select[data-n]').forEach(e=>{G.n[e.dataset.n]=+e.value;ex+=+e.value});
+  const nota=Math.max(0,Math.min(10,Math.round((cont+ex+de)*10)/10));G.nota=nota;if(!inicial)dcSave();
+  const gt=$('#dc-gt');if(gt)gt.innerHTML=`Conteúdo <b>${nf(cont,1)}</b>/8 · Estrutura e expressão <b>${nf(ex,1)}</b>/2${de?` · Descontos <b style="color:var(--alta)">${nf(de,1)}</b>`:''} · <b style="font-size:17px;color:${nota>=6?'var(--ok)':'var(--alta)'}">Nota ${nf(nota,1)}</b> ${nota>=6?'(habilitaria)':'(abaixo do mínimo de 6,0)'}`}
+function dcConcluir(){const f=dcCur();if(!f)return;const G=dcState(f.key);dcCalc();const nota=G.nota||0;
+  cicOpen(0);setTimeout(()=>{const n=$('#cm-nota');if(n)n.value=String(nota).replace('.',',');const t=$('#cm-tema');if(t&&f.refazer)t.value=f.c.tema},30)}
+function cicSheet(){
+  const {b,snap}=S.cm, rm=cicRowMap(); let body='';
+  if(b.k==='DISC'){
+    body=`<label for="cm-tema">Tema do estudo de caso</label><input id="cm-tema" value="${esc(b.tema||snap.lbl||'')}">
+    <label for="cm-nota">Nota (0 a 10)</label><input id="cm-nota" type="text" inputmode="decimal" placeholder="ex.: 7,5" autocomplete="off">
+    ${b.free?`<label for="cm-dt">Data</label><input id="cm-dt" type="date" value="${iso(T())}">
+    <label class="row" style="gap:8px;color:var(--ink);font-size:14px;font-weight:500;margin-top:14px"><input id="cm-antes" type="checkbox" style="width:auto;min-height:0"> Feito antes do ciclo (só registrar a nota)</label>`:''}`;
+  } else if(b.k==='SIM'||(b.sg&&b.sg.simp)){
+    body=`<div class="sub">${esc(snap.lbl)}</div><div class="g2"><div><label for="cm-q">Questões</label><input id="cm-q" type="number" inputmode="numeric" min="0"></div><div><label for="cm-ac">Acertos</label><input id="cm-ac" type="number" inputmode="numeric" min="0"></div></div>
+    <div class="sub" style="margin-top:8px">Os erros você registra por assunto na aba Registrar (ou no bloco de correção).</div>`;
+  } else if(b.manut||b.sg||b.k==='SUM'||b.k==='ERR'||b.k==='CORR'){
+    let opts=[];
+    if(b.manut) opts=(b.manut==='reve'?cicReveList():cicManutList()).map(r=>({m:r.it.m,a:r.it.a,s:r.it.s}));
+    else if(b.sg&&b.sg.it){const fila=S.ciclo.filas[b.k]||[];const v=cicVenc(b).map(r=>({m:r.it.m,a:r.it.a,s:r.it.s}));const cur=b.sg.it, sib=M.rows.filter(r=>r.it.m===cur.m&&r.it.a===cur.a&&r.it.s!==cur.s).map(r=>({m:r.it.m,a:r.it.a,s:r.it.s}));
+      const live=fila.map(x=>cicLive(b.k,x));const same=(x,y)=>x.m===y.m&&x.a===y.a&&x.s===y.s;const all=[cur,...sib,...v,...live];
+      opts=all.filter((x,i)=>all.findIndex(y=>same(x,y))===i).map(x=>({m:x.m||S.ciclo.nomes[b.k],a:x.a,s:x.s,novo:x.novo,peso:x.peso,cid:x.cid}))}
+    else if(b.k==='SUM') opts=M.rows.filter(r=>/Jurisprudência/.test(r.it.a)&&/Trabalho|Trabalhista/.test(r.it.a+r.it.m)).map(r=>({m:r.it.m,a:r.it.a,s:r.it.s}));
+    S.cmOpts=opts;
+    body=opts.length?`<label for="cm-it">Assunto trabalhado</label><select id="cm-it" onchange="cicSelChange()">${opts.map((o,i)=>`<option value="${i}">${esc(o.a+(o.s&&o.s!=='Todo o conteúdo do assunto'?' · '+o.s:''))}</option>`).join('')}<option value="-1">Nenhum / só leitura</option></select>`:'';
+    if(b.sg&&b.sg.it&&!b.manut&&cicQmap(b.sg.it)){body+=`<div class="sub" style="margin-top:8px">O ciclo sabe quais questões do Passo você já fez pelos botões <b>Já fiz</b> do bloco, então não é preciso informar a fonte aqui.</div>`}
+    else if(b.sg&&b.sg.it&&!b.manut){const L=(S.ciclo.simp&&S.ciclo.simp[b.k])||[];const si=cicSimInfo(b.k,b.sg.it);
+      body+=`<label for="cm-fonte">De onde vieram as questões</label><select id="cm-fonte"><option value="tec">TEC Concursos</option>${L.map((x,i)=>`<option value="sim:${b.k}:${i}">${esc(x.lbl)} do Passo${si&&si.fonte==='sim:'+b.k+':'+i?' (indicado)':''}</option>`).join('')}<option value="outra">Outra fonte</option></select>`;
+      if(si) body+=`<div class="sub" style="margin-top:4px">Se fez o simulado do Passo, escolha a opção marcada como “indicado”. Assim o ciclo sabe que ele já foi feito.</div>`}
+    const ph=b.sg&&b.sg.it?cicPassoHoje(b.sg.it):{q:0};
+    body+=`<div id="cm-new"></div>${ph.q?`<div class="card" style="margin:10px 0 0;padding:10px 12px;background:var(--soft)"><div class="sub">Questões do Passo marcadas hoje neste assunto: <b>${ph.q}</b>${ph.acOk?`, com <b>${ph.ac}</b> acertos`:' (sem os acertos de todas)'}${ph.unk?' (há seção sem número de questões)':''}. Lance abaixo só o que fez <b>no TEC</b>: o total é somado sozinho.</div>
+      <div class="g2"><div><label for="cm-tq">Questões no TEC</label><input id="cm-tq" type="number" inputmode="numeric" min="0" placeholder="0" oninput="cicSomaTec()"></div><div><label for="cm-tac">Acertos no TEC</label><input id="cm-tac" type="number" inputmode="numeric" min="0" placeholder="0" oninput="cicSomaTec()"></div></div></div>`:''}<div class="g2"><div><label for="cm-q">${ph.q?'Total de questões':'Questões feitas'}</label><input id="cm-q" type="number" inputmode="numeric" min="0" placeholder="0 se foi só leitura" value="${ph.q||''}"></div><div><label for="cm-ac">${ph.q?'Total de acertos':'Acertos'}</label><input id="cm-ac" type="number" inputmode="numeric" min="0" value="${ph.q&&ph.acOk?ph.ac:''}"></div></div>
+    <label for="cm-obs">Observação</label><input id="cm-obs" type="text" placeholder="opcional">
+    <div class="sub" style="margin-top:8px">Com questões preenchidas, a sessão também entra no app de revisão (aba Registrar) e reprograma a próxima revisão do assunto.</div>`;
+  }
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)cicClose()"><div>
+   <div class="tag">${esc(b.nome)}</div><h2 style="margin:4px 0 0">Concluir bloco</h2>${body}
+   <div class="row" style="margin-top:16px"><button class="btn p grow" onclick="cicSave()">Salvar</button><button class="btn" onclick="cicClose()">Cancelar</button></div></div></div>`;
+  cicSelChange();
+}
+function cicSelChange(){const e=$('#cm-new');if(!e)return;const sel=$('#cm-it');const o=sel&&+sel.value>=0?S.cmOpts[+sel.value]:null;
+  if(o&&!M.rows.some(r=>r.key===keyOf(o.m,o.a,o.s))) e.innerHTML=`<label class="row" style="gap:8px;color:var(--ink);font-size:14px;font-weight:500"><input id="cm-cad" type="checkbox" checked style="width:auto;min-height:0"> Cadastrar “${esc(o.a)}” no app de revisão</label>`;
+  else e.innerHTML=''}
+async function cicSave(){
+  const {b,snap,adId}=S.cm; const today=iso(T()); const d={...snap,st:'feito',d:today,t:Date.now()}; delete d._id;
+  let ses=null, cad=null;
+  if(b.k==='DISC'){const n=parseFloat(String($('#cm-nota').value).replace(',','.'));if(isNaN(n)||n<0||n>10)return toast('Informe a nota de 0 a 10');d.nota=Math.round(n*10)/10;d.lbl=$('#cm-tema').value.trim()||d.lbl;
+    if(b.free){const dt=$('#cm-dt')&&$('#cm-dt').value;if(dt)d.d=dt;const f=cicFase(T());d.f=f.n;d.k0='DISC';d.k='DISC';
+      if($('#cm-antes')&&$('#cm-antes').checked){d.fora=true;delete d.p}
+      else{const c=cicConsumed(f);let p=cicFirstFree(f),g=0;while(g<f.seq.length*3&&(c.has(p)||f.seq[p%f.seq.length]!=='DISC')){p++;g++}
+        if(f.seq[p%f.seq.length]==='DISC'&&!c.has(p))d.p=p;else{d.fora=true;delete d.p}}}}
+  else {const qe=$('#cm-q'),ae=$('#cm-ac');const q=qe?+qe.value||0:0,ac=ae?+ae.value||0:0;if(ac>q)return toast('Acertos maior que questões');if(q){d.q=q;d.ac=ac}
+    const sel=$('#cm-it');
+    if(sel){const i=+sel.value;if(i>=0){const o=S.cmOpts[i];d.m=o.m;d.a=o.a;d.s=o.s;d.lbl=o.a+(o.s&&o.s!=='Todo o conteúdo do assunto'?' · '+o.s:'');
+      const fila=S.ciclo.filas[b.k]||[];const qi=fila.findIndex(x=>{const l=cicLive(b.k,x);return l.a===o.a&&l.s===o.s&&l.m===o.m});if(qi>=0)d.qi=qi;
+      const exists=M.rows.some(r=>r.key===keyOf(o.m,o.a,o.s)); const cb=$('#cm-cad');
+      if(!exists&&cb&&cb.checked){cad={id:'n'+Date.now().toString(36),m:o.m,a:o.a,s:o.s,peso:(o.m==='Legislação TRT4/CNJ'?3:o.peso||3),d0:today};if(o.cid)cad.cic=o.cid;}
+      if(q&&(exists||cad)) ses={d:today,m:o.m,a:o.a,s:o.s,q,ac,tipo:'Questões',motivo:'',obs:('Ciclo TRT4'+($('#cm-obs')&&$('#cm-obs').value?' · '+$('#cm-obs').value:'')),n:S.ses.filter(s=>s.d===today).length+1};
+    } else {d.lbl=b.nome+' (sem assunto)'}}
+    if($('#cm-obs')&&$('#cm-obs').value)d.obs=$('#cm-obs').value;
+    if(!$('#cm-fonte')&&b.sg&&b.sg.it&&cicQmap(b.sg.it)){d.fonte=cicPassoHoje(b.sg.it).n?'passo+tec':'tec'}
+    if($('#cm-fonte')){d.fonte=$('#cm-fonte').value;if(ses&&d.fonte.startsWith('sim:')){const [,kk,ii]=d.fonte.split(':');const sl=S.ciclo.simp[kk][+ii];ses.obs+=' · '+sl.lbl}}}
+  S.cm=null;
+  try{
+    if(adId){S.cic=S.cic.map(x=>x._id===adId?{...d,_id:adId}:x);render();await S.db.collection('ciclo').doc(adId).set(d)}
+    else{const id='c'+Date.now().toString(36);S.cic.push({...d,_id:id});render();await S.db.collection('ciclo').doc(id).set(d)}
+    if(cad){S.items.push(cad);recalc();await saveItems()}
+    if(ses) await addSes(ses);
+    S.cicAlt={};S.cicPick=null;toast(ses?'Bloco concluído e revisão registrada'+proxTxt(ses.m,ses.a,ses.s):cad?'Bloco concluído e assunto cadastrado':'Bloco concluído');
+  }catch(e){toast('Não foi possível salvar: tente de novo')}
+  render();
+}
+function cicHojeCard(){if(!S.ciclo)return '';const U=cicUpcoming(1),b=U.out[0];const l=b.tema||(b.sg?(b.sg.simp?b.sg.lbl:b.sg.it.a):'')||b.modo;
+  return `<div class="card cic-next" style="margin-top:12px;cursor:pointer" onclick="go('cic')"><div class="tag">Próximo bloco do ciclo · ${esc(b.nome)}</div><div class="ttl">${esc(l)}</div><div class="sub">${cicWeek()} de ${S.ciclo.meta} blocos nesta semana · toque para abrir o ciclo</div>${(()=>{if(!b.sg||!b.sg.it||!M)return '';const r=M.rows.find(x=>x.key===cicItemKey(b.k,b.sg.it));return r&&r.ativo&&r.AS!=null&&r.AS<=T()?'<div class="sub" style="margin-top:4px;color:var(--ok)"><b>Também é uma revisão vencida da aba Hoje:</b> concluindo o bloco com as questões, ela já fica registrada.</div>':''})()}</div>`}
+
+/* ===== SIMULADOS INÉDITOS (aba Simulados) =====
+   simulados/{id}: questões, textos, estudo de caso (escritos pelo Claude)
+   sim_tent/{id}: uma tentativa: respostas, tempo, resultado, nota da discursiva */
+const SL='ABCDE';
+/* simulados publicados como arquivos do próprio app (simulados/index.json) + eventuais do banco */
+function simMerge(){const m=new Map();for(const x of (S.simsFile||[]))m.set(x.id,x);for(const x of (S.simsDb||[]))m.set(x.id,x);return [...m.values()]}
+async function simLoadFiles(){try{const r=await fetch('simulados/index.json',{cache:'no-store'});if(!r.ok)return;const ix=await r.json();const out=[];
+  for(const f of ix.arquivos||[]){try{const q=await fetch('simulados/'+f,{cache:'no-store'});if(q.ok)out.push(await q.json())}catch(e){}}
+  S.simsFile=out;S.sims=simMerge();bgRender()}catch(e){}}
+function simById(id){return S.sims.find(x=>x.id===id)}
+function simTents(sid){return S.tents.filter(t=>t.sim===sid).sort((a,b)=>a.ini-b.ini)}
+function simFmtT(sec){sec=Math.max(0,Math.round(sec));const h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return h+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
+function simLinkItem(l){if(!l)return null;let x=null;if(l.id)x=S.items.find(i=>i.id===l.id);if(!x&&l.cid)x=S.items.find(i=>i.cic===l.cid);
+  if(!x)x=S.items.find(i=>i.m===l.m&&i.a===l.a&&i.s===l.s);if(!x&&l.m){const m2=S.ciclo&&S.ciclo.filas?null:null}return x}
+function simLinkName(l){const x=simLinkItem(l);const o=x||l;return o.a+(o.s&&o.s!=='Todo o conteúdo do assunto'?' · '+o.s:'')}
+/* resultado de uma tentativa */
+function simCalc(sim,t){const r={G:[0,0],E:[0,0],mat:{},tot:0,ac:0,br:0};
+  for(const q of sim.questoes){const a=t.resp&&t.resp[q.n];const ok=a===q.gab;r[q.area][1]++;if(ok)r[q.area][0]++;if(!a)r.br++;
+    const m=r.mat[q.mat]||(r.mat[q.mat]={q:0,ac:0,area:q.area});m.q++;if(ok)m.ac++;r.tot++;if(ok)r.ac++}
+  r.nG=r.G[1]?r.G[0]/r.G[1]*10:0;r.nE=r.E[1]?r.E[0]/r.E[1]*10:0;r.nota=(r.nG+2*r.nE)/3;return r}
+function nf(x,d=2){return x.toFixed(d).replace('.',',')}
+/* ---------- lista ---------- */
+function vSim(){
+  if(S.simRun){const t=S.tents.find(x=>x._id===S.simRun.tid),sim=t&&simById(t.sim);if(t&&sim)return t.fim?vSimRes(sim,t):vSimRun(sim,t);S.simRun=null}
+  let h=`<h1>Simulados</h1><div class="sub">Inéditos no estilo FCC, montados para o TRT4 (AJAJ). O resultado entra nas suas sessões, por assunto.</div>`;
+  if(!S.sims.length) return h+`<div class="msg">Nenhum simulado disponível ainda. Quando o Claude gravar um simulado, ele aparece aqui.</div>`;
+  for(const sim of S.sims.slice().sort((a,b)=>a.n-b.n)){
+    const ts=simTents(sim.id),fin=ts.filter(t=>t.fim),and=ts.find(t=>!t.fim),last=fin[fin.length-1];
+    const nG=sim.questoes.filter(q=>q.area==='G').length;
+    let st='<span class="badge b-neu">não iniciado</span>',res='';
+    if(and){const nr=Object.keys(and.resp||{}).length;st=`<span class="badge b-media">em andamento · ${nr}/${sim.questoes.length}</span>`}
+    else if(last){const r=simCalc(sim,last);st=`<span class="badge ${r.nota>=6?'b-ok':'b-alta'}">nota ${nf(r.nota)}</span>`;
+      res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}</div>`}
+    h+=`<div class="card"><div class="row sp"><div class="tag">Simulado nº ${sim.n} · ${esc(sim.criado?fdi(sim.criado):'')}</div>${st}</div>
+     <div class="ttl">${esc(sim.titulo)}</div><div class="sub">${sim.questoes.length} objetivas (${nG} gerais + ${sim.questoes.length-nG} específicas)${sim.disc?' + 1 estudo de caso':''} · ${Math.round((sim.duracao_min||240)/60)}h</div>${res}
+     <div class="row" style="margin-top:10px;flex-wrap:wrap">${and?`<button class="btn p s" onclick="simOpen('${and._id}')">Continuar</button>`:`<button class="btn p s" onclick="simStart('${sim.id}')">${fin.length?'Refazer':'Começar'}</button>`}${last?`<button class="btn s" onclick="simOpen('${last._id}')">Ver correção</button>`:''}</div></div>`}
+  h+=`<div class="sub" style="margin-top:10px">Como funciona: faça as objetivas com o cronômetro correndo e escreva o estudo de caso no papel. Ao entregar, o app corrige, mostra os comentários e registra cada assunto nas suas sessões. Depois, você mesmo dá a nota do estudo de caso usando o espelho.</div>`;
+  return h}
+async function simStart(sid){const id='t'+Date.now().toString(36);const t={sim:sid,ini:Date.now(),gasto:0,resp:{},marc:{},atual:1};
+  S.tents.push({...t,_id:id});S.simRun={tid:id,t0:Date.now()};render();try{await S.db.collection('sim_tent').doc(id).set(t)}catch(e){toast('Não foi possível iniciar: tente de novo')}}
+function simOpen(tid){S.simRun={tid,t0:Date.now(),filtro:'todas'};render();scrollTo(0,0)}
+function simExit(){simFlush();S.simRun=null;render()}
+/* ---------- fazendo a prova ---------- */
+function vSimRun(sim,t){const n=t.atual||1,q=sim.questoes.find(x=>x.n===n),tot=sim.questoes.length;
+  const nr=Object.keys(t.resp||{}).length,el=(t.gasto||0)+(Date.now()-S.simRun.t0)/1000,lim=(sim.duracao_min||240)*60;
+  let h=`<div class="sim-bar"><div class="row sp"><div><b>${esc(sim.titulo)}</b><div class="sub">${nr} de ${tot} respondidas</div></div>
+   <div style="text-align:right"><div id="sim-timer" class="sim-timer">${simFmtT(el)}</div><div class="sub">de ${simFmtT(lim)}</div></div></div>
+   <div class="bar" style="margin-top:6px"><i style="width:${nr/tot*100}%;background:var(--acc)"></i></div></div>`;
+  if(n==='disc'){h+=simDiscHtml(sim,t,false)}
+  else{const tx=q.texto&&sim.textos?sim.textos.find(x=>x.id===q.texto):null;
+   h+=`<div class="card"><div class="row sp"><div class="tag">Questão ${q.n} · ${q.area==='G'?'Conhecimentos Gerais':'Conhecimentos Específicos'} · ${esc(q.mat)}</div><button class="btn s ${t.marc&&t.marc[q.n]?'p':''}" onclick="simMarc(${q.n})">${t.marc&&t.marc[q.n]?'Em dúvida ✓':'Fiquei em dúvida'}</button></div>
+    ${tx?`<details class="sim-tx" ${S.simTx?'open':''} ontoggle="S.simTx=this.open"><summary>Texto: ${esc(tx.titulo)}</summary><div class="sim-corpo">${esc(tx.corpo)}</div></details>`:''}
+    <div class="sim-enun">${esc(q.enun)}</div>
+    <div class="sim-alts">${q.alts.map((a,i)=>`<button class="sim-alt ${t.resp[q.n]===SL[i]?'on':''} ${((t.risc||{})[q.n]||[]).includes(SL[i])?'risc':''}" onclick="simTap(${q.n},'${SL[i]}')"><span class="sim-l">${SL[i]}</span><span>${esc(a)}</span></button>`).join('')}</div><div class="sub" style="margin-top:8px">Toque uma vez para marcar a resposta. Toque duas vezes para riscar a alternativa que você considera errada.</div></div>`}
+  h+=`<div class="row" style="gap:8px;margin:10px 0"><button class="btn grow" onclick="simGo(-1)" ${n===1?'disabled':''}>← Anterior</button><button class="btn grow" onclick="simGo(1)">${n==='disc'?'Fim':n===tot?(sim.disc?'Estudo de caso →':'Fim'):'Próxima →'}</button></div>`;
+  h+=`<div class="sim-grid">`+sim.questoes.map(x=>`<button class="sim-n ${t.resp[x.n]?'ok':''} ${t.marc&&t.marc[x.n]?'mk':''} ${x.n===n?'cur':''}" onclick="simGoTo(${x.n})">${x.n}</button>`).join('')+(sim.disc?`<button class="sim-n ${n==='disc'?'cur':''}" style="grid-column:span 2" onclick="simGoTo('disc')">Caso</button>`:'')+`</div>
+   <div class="sub" style="margin-top:6px">Azul: respondida · borda laranja: fiquei em dúvida (o comentário aparece na correção, mesmo se acertar)</div>
+   <div class="row" style="margin-top:14px;flex-wrap:wrap;gap:8px"><button class="btn p grow" onclick="simEntregar()">${S.simArm?'Toque de novo para entregar':'Entregar e corrigir'}</button><button class="btn" onclick="simExit()">Pausar e sair</button></div>
+   ${tot-nr?`<div class="sub" style="margin-top:6px">${tot-nr} questões em branco. Na FCC não há desconto por erro: vale chutar.</div>`:''}`;
+  return h}
+function simCur(){const t=S.tents.find(x=>x._id===S.simRun.tid);return [t,simById(t.sim)]}
+/* toque simples marca a resposta; toque duplo risca a alternativa (como no TEC) */
+let simTapT=null,simTapK=null,simTapAt=0;
+function simTap(n,l){const k=n+'|'+l,now=Date.now();
+  if(simTapK===k&&now-simTapAt<320){clearTimeout(simTapT);simTapK=null;simRisc(n,l);return}
+  clearTimeout(simTapT);simTapK=k;simTapAt=now;simTapT=setTimeout(()=>{simTapK=null;simResp(n,l)},260)}
+function simRisc(n,l){const [t]=simCur();const R={...(t.risc||{})},a=new Set(R[n]||[]);
+  if(a.has(l))a.delete(l);else{a.add(l);if(t.resp[n]===l){t.resp={...t.resp};delete t.resp[n]}}
+  if(a.size)R[n]=[...a];else delete R[n];t.risc=R;S.simArm=false;render();simSave()}
+function simResp(n,l){const [t0]=simCur();if(((t0.risc||{})[n]||[]).includes(l)){const R={...t0.risc};R[n]=R[n].filter(x=>x!==l);if(!R[n].length)delete R[n];t0.risc=R}
+const [t]=simCur();t.resp={...t.resp};if(t.resp[n]===l)delete t.resp[n];else t.resp[n]=l;S.simArm=false;render();simSave()}
+function simMarc(n){const [t]=simCur();t.marc={...(t.marc||{})};if(t.marc[n])delete t.marc[n];else t.marc[n]=1;render();simSave()}
+function simGoTo(n){const [t]=simCur();t.atual=n;S.simArm=false;render();scrollTo(0,0);simSave()}
+function simGo(d){const [t,sim]=simCur();const tot=sim.questoes.length;let n=t.atual||1;
+  if(n==='disc'){if(d<0)n=tot;else return}else{n+=d;if(n>tot)n=sim.disc?'disc':tot;if(n<1)n=1}simGoTo(n)}
+let simSaveT=null;
+function simSave(){clearTimeout(simSaveT);simSaveT=setTimeout(simFlush,700)}
+async function simFlush(){clearTimeout(simSaveT);if(!S.simRun)return;const t=S.tents.find(x=>x._id===S.simRun.tid);if(!t||t.fim)return;
+  const now=Date.now();t.gasto=(t.gasto||0)+(now-S.simRun.t0)/1000;S.simRun.t0=now;const {_id,...d}=t;
+  try{await S.db.collection('sim_tent').doc(_id).set(clean(d))}catch(e){toast('Não foi possível salvar a resposta')}}
+setInterval(()=>{const e=document.getElementById('sim-timer');if(!e||!S.simRun)return;const t=S.tents.find(x=>x._id===S.simRun.tid);if(!t||t.fim)return;
+  const el=(t.gasto||0)+(Date.now()-S.simRun.t0)/1000;e.textContent=simFmtT(el);const sim=simById(t.sim);if(sim&&el>(sim.duracao_min||240)*60)e.style.color='var(--alta)'},1000);
+async function simEntregar(){if(!S.simArm){S.simArm=true;render();return}S.simArm=false;
+  const [t,sim]=simCur();const now=Date.now();t.gasto=(t.gasto||0)+(now-S.simRun.t0)/1000;S.simRun.t0=now;t.fim=now;
+  const r=simCalc(sim,t);t.res={ac:r.ac,tot:r.tot,G:r.G,E:r.E,nota:Math.round(r.nota*100)/100};
+  /* registra por assunto nas sessões do app */
+  const today=iso(T()),grp=new Map();
+  for(const q of sim.questoes){const k=JSON.stringify(q.link);const g=grp.get(k)||{link:q.link,q:0,ac:0};g.q++;if(t.resp[q.n]===q.gab)g.ac++;grp.set(k,g)}
+  let nSes=0,nCad=0;const cads=[];
+  for(const g of grp.values()){let x=simLinkItem(g.link);
+    if(!x){x={id:'n'+Date.now().toString(36)+(nCad++),m:g.link.m,a:g.link.a,s:g.link.s,peso:3,d0:today};if(g.link.cid)x.cic=g.link.cid;S.items.push(x);cads.push(x)}
+    g.item=x}
+  t.reg=true;const {_id,...d}=t;
+  try{if(cads.length){recalc();await saveItems()}
+    await S.db.collection('sim_tent').doc(_id).set(clean(d));
+    let n0=S.ses.filter(s=>s.d===today).length;
+    for(const g of grp.values()){await addSes({d:today,m:g.item.m,a:g.item.a,s:g.item.s,q:g.q,ac:g.ac,tipo:'Simulado',motivo:'',obs:sim.titulo,n:++n0});nSes++}
+    toast(nSes+' assuntos registrados nas suas sessões'+(cads.length?' ('+cads.length+' cadastrados)':''))}catch(e){toast('A correção foi salva, mas houve falha ao registrar as sessões')}
+  S.simRun.filtro='erradas';
+  /* bloco SIM do ciclo */
+  if(S.ciclo){const U=cicUpcoming(1),b=U.out[0];const ad=S.cic.find(x=>x.st==='adiado'&&x.k==='SIM');
+    if(b.k==='SIM'||ad) S.simCq={sim:sim.id,res:t.res,b:b.k==='SIM'?b:null,adId:b.k==='SIM'?null:ad._id}}
+  render();scrollTo(0,0)}
+/* ---------- correção ---------- */
+function vSimRes(sim,t){const r=simCalc(sim,t),f=S.simRun.filtro||'todas';
+  const col=x=>x>=6?'var(--ok)':'var(--alta)';
+  let h=`<div class="row sp"><h1 style="font-size:22px">${esc(sim.titulo)}</h1><button class="btn s" onclick="simExit()">Voltar</button></div>
+   <div class="sub">Entregue em ${new Date(t.fim).toLocaleDateString('pt-BR')} · tempo ${simFmtT(t.gasto||0)}</div>
+   <div class="tiles t3" style="margin-top:12px"><div class="tile"><div class="l">Nota objetiva</div><div class="n" style="color:${col(r.nota)}">${nf(r.nota)}</div></div>
+   <div class="tile"><div class="l">Gerais (peso 1)</div><div class="n">${r.G[0]}/${r.G[1]}</div><div class="sub">${nf(r.nG)}</div></div>
+   <div class="tile"><div class="l">Específicos (peso 2)</div><div class="n">${r.E[0]}/${r.E[1]}</div><div class="sub">${nf(r.nE)}</div></div></div>
+   <div class="sub" style="margin-top:6px">Como no edital: nota = (Gerais × 1 + Específicos × 2) ÷ 3, de 0 a 10. Habilita com 6,00 (4,80 nas vagas reservadas). ${r.nota>=6?'<b style="color:var(--ok)">Você estaria habilitado.</b>':'<b style="color:var(--alta)">Abaixo do mínimo de 6,00.</b>'}</div>`;
+  if(t.reg) h+=`<div class="msg" style="margin-top:10px">O resultado já foi registrado por assunto nas suas sessões (aba Registrar → Histórico). Os assuntos com erro entram na revisão do app e no bloco "Revisão dos erros dos simulados" da fase 3.</div>`;
+  h+=`<h2>Por matéria</h2><div class="card"><table><tr><th>Matéria</th><th>Acertos</th><th>%</th></tr>`+Object.entries(r.mat).sort((a,b)=>(a[1].area<b[1].area?-1:a[1].area>b[1].area?1:0)||(a[1].ac/a[1].q-b[1].ac/b[1].q)).map(([m,x])=>`<tr><td>${esc(m)}<div class="sub">${x.area==='G'?'Gerais':'Específicos'}</div></td><td>${x.ac}/${x.q}</td><td style="font-weight:600;color:${x.ac/x.q>=.7?'var(--ok)':x.ac/x.q>=.5?'var(--media)':'var(--alta)'}">${pc(x.ac/x.q,0)}</td></tr>`).join('')+`</table></div>`;
+  if(sim.disc) h+=simDiscHtml(sim,t,true);
+  const nd=sim.questoes.filter(q=>t.marc&&t.marc[q.n]).length,ndOk=sim.questoes.filter(q=>t.marc&&t.marc[q.n]&&t.resp[q.n]===q.gab).length;
+  h+=`<h2>Questões comentadas</h2>${nd?`<div class="sub" style="margin-bottom:8px">Você ficou em dúvida em <b>${nd}</b> ${nd===1?'questão':'questões'} e acertou <b>${ndOk}</b>.</div>`:''}<div class="row" style="gap:6px;margin-bottom:8px;flex-wrap:wrap">${[['erradas','Erradas, em branco e dúvidas'],['marcadas','Só as dúvidas'+(nd?' ('+nd+')':'')],['todas','Todas']].map(([k,l])=>`<button class="btn s ${f===k?'p':''}" onclick="S.simRun.filtro='${k}';render()">${l}</button>`).join('')}</div>`;
+  const qs=sim.questoes.filter(q=>f==='todas'||(f==='erradas'&&(t.resp[q.n]!==q.gab||(t.marc&&t.marc[q.n])))||(f==='marcadas'&&t.marc&&t.marc[q.n]));
+  if(!qs.length) h+=`<div class="empty">${f==='erradas'?'Nenhum erro. Gabaritou!':'Nada aqui.'}</div>`;
+  for(const q of qs){const a=t.resp[q.n],ok=a===q.gab;
+    h+=`<div class="card"><div class="row sp"><div class="tag">Questão ${q.n} · ${esc(q.mat)}</div><span>${t.marc&&t.marc[q.n]?'<span class="badge b-media">dúvida</span> ':''}<span class="badge ${ok?'b-ok':a?'b-alta':'b-neu'}">${ok?'acertou':a?'errou':'em branco'}</span></span></div>
+     <div class="sim-enun">${esc(q.enun)}</div><div class="sim-alts">${q.alts.map((x,i)=>{const L=SL[i];const c=L===q.gab?'gab':L===a?'err':'';return `<div class="sim-alt ro ${c}"><span class="sim-l">${L}</span><span>${esc(x)}</span></div>`}).join('')}</div>
+     <div class="sim-com"><b>Gabarito ${q.gab}.</b> ${esc(q.com)}</div>
+     <div class="sub" style="margin-top:6px">Assunto no app: ${esc(simLinkName(q.link))}${q.conferir?' · <span class="badge b-media">confira no texto oficial</span>':''}</div>
+     <div style="margin-top:10px"><button class="btn s" onclick="simFc(${q.n})">${S.simFcN===q.n?'Fechar flashcard':'Criar flashcard'}</button></div>
+     ${S.simFcN===q.n?`<div style="margin-top:10px"><label for="fc-f">Frente</label><textarea id="fc-f" rows="4" style="width:100%">${esc(q.fc?q.fc.f:q.enun)}</textarea>
+       <div style="margin:6px 0 10px"><button class="btn s" onclick="simFcCopy('fc-f')">Copiar frente</button></div>
+       <label for="fc-v">Verso</label><textarea id="fc-v" rows="8" style="width:100%">${esc(q.fc?q.fc.v:q.alts[SL.indexOf(q.gab)]+'\n\n'+q.com)}</textarea>
+       <div style="margin-top:6px"><button class="btn s" onclick="simFcCopy('fc-v')">Copiar verso</button></div>
+       <div class="sub" style="margin-top:8px">O cartão traz a regra que resolvia a questão, e não o enunciado. Ajuste o texto se quiser, copie cada lado e cole no seu aplicativo de flashcards.</div></div>`:''}</div>`}
+  return h}
+function simFc(n){S.simFcN=S.simFcN===n?null:n;render()}
+async function simFcCopy(id){const e=$('#'+id);if(!e)return;let ok=false;
+  try{await navigator.clipboard.writeText(e.value);ok=true}catch(x){try{e.focus();e.select();ok=document.execCommand('copy')}catch(y){}}
+  toast(ok?'Copiado':'Não foi possível copiar: selecione o texto e copie manualmente')}
+function simDiscHtml(sim,t,corr){const d=sim.disc,LN=d.linhas||30;
+  let h=`<h2>Estudo de caso</h2><div class="card"><div class="ttl">${esc(d.titulo)}</div><div class="sim-enun">${esc(d.enun)}</div>
+   <div class="sub" style="margin-top:8px">Escreva a resposta no papel, entre 20 e ${LN} linhas, como na prova. A grade de correção e a resposta-modelo aparecem depois da entrega.</div>
+   ${d.dicas?`<details style="margin-top:8px"><summary class="sub" style="cursor:pointer"><b>Como a FCC espera a resposta</b></summary><ul class="sub" style="margin:6px 0 0 18px;padding:0">${d.dicas.map(x=>`<li style="margin:3px 0">${esc(x)}</li>`).join('')}</ul></details>`:''}</div>`;
+  if(!corr) return h;
+  if(!d.grade){
+    h+=`<div class="card"><div class="tag">Espelho de correção</div>`+d.espelho.map(x=>`<div class="sim-com" style="margin-top:8px">${esc(x)}</div>`).join('')+`<div class="sub" style="margin-top:8px">${esc(d.criterios)}</div>
+     <label for="sim-dn">Sua nota no estudo de caso (0 a 10)</label><div class="row" style="gap:8px"><input id="sim-dn" type="text" inputmode="decimal" placeholder="ex.: 7,5" value="${t.discNota!=null?String(t.discNota).replace('.',','):''}"><button class="btn p" onclick="simDiscSave()">Salvar nota</button></div>
+     <div class="sub" style="margin-top:6px">A nota também entra no histórico de Discursiva do ciclo.</div></div>`;
+    return h}
+  const G=simGradeState(t),ck=id=>G.c.includes(id)?'checked':'',f=x=>nf(x,1);
+  const item=(id,x,neg)=>`<label style="display:flex;gap:10px;align-items:flex-start;margin:8px 0;font-weight:400;color:var(--ink);font-size:14px;line-height:1.4;cursor:pointer"><input type="checkbox" data-g="${id}" data-p="${x.p}" ${ck(id)} onchange="simGradeCalc()" style="width:20px;height:20px;margin:1px 0 0;flex-shrink:0"><span>${esc(x.t)} <b style="color:${neg?'var(--alta)':'var(--mut)'};white-space:nowrap">${neg?'−':''}${f(Math.abs(x.p))}</b></span></label>`;
+  h+=`<div class="card" id="sim-grade"><div class="tag">Grade de correção</div><div class="sub" style="margin-top:4px">Releia o seu texto e marque cada elemento que você realmente escreveu e fundamentou. A nota é calculada sozinha.</div>`;
+  d.grade.forEach((g,gi)=>{h+=`<div style="margin-top:12px"><b>${esc(g.q)}</b> <span class="sub">(${f(g.itens.reduce((a,x)=>a+x.p,0))})</span>${g.itens.map((x,ii)=>item(gi+'.'+ii,x)).join('')}</div>`});
+  h+=`<div style="margin-top:12px"><b>Estrutura e expressão</b> <span class="sub">(${f((d.expr||[]).reduce((a,x)=>a+(x.niveis?Math.max(...x.niveis.map(n=>n[1])):x.p),0))})</span>`+(d.expr||[]).map((x,k)=>x.niveis
+     ?`<div style="margin:8px 0"><div style="font-size:14px;margin-bottom:4px">${esc(x.t)}</div><select data-n="e${k}" onchange="simGradeCalc()">${x.niveis.map((n,ni)=>`<option value="${n[1]}" ${String(G.n['e'+k])===String(n[1])?'selected':''}>${esc(n[0])} (${f(n[1])})</option>`).join('')}</select></div>`
+     :item('e'+k,x)).join('')+`</div>`;
+  if(d.desc&&d.desc.length)h+=`<div style="margin-top:12px"><b>Descontos</b>${d.desc.map((x,k)=>item('d'+k,x,true)).join('')}</div>`;
+  h+=`<div class="sub" id="sim-gt" style="margin-top:12px;font-size:15px"></div>
+   <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600">Ver resposta-modelo</summary><div class="sim-com" style="margin-top:8px;white-space:normal">${esc(d.modelo||'').split(/\n\s*\n/).map(p=>`<p style="margin:0 0 10px;text-indent:1.5em">${p}</p>`).join('')}</div></details>
+   <div class="sub" style="margin-top:10px">${esc(d.criterios||'')}</div>
+   <label for="sim-dn">Sua nota no estudo de caso (0 a 10)</label><div class="row" style="gap:8px"><input id="sim-dn" type="text" inputmode="decimal" placeholder="calculada pela grade" value="${t.discNota!=null?String(t.discNota).replace('.',','):''}"><button class="btn p" onclick="simDiscSave()">Salvar nota</button></div>
+   <div class="sub" style="margin-top:6px">Dá para ajustar a nota à mão antes de salvar. Ela também entra no histórico de Discursiva do ciclo.</div></div>`;
+  setTimeout(()=>simGradeCalc(true),0);
+  return h}
+/* estado da grade: o que foi marcado fica guardado na tentativa (e em memória até salvar) */
+function simGradeState(t){S.discG=S.discG||{};const k=t._id||'x';if(!S.discG[k]||(t.discGrade&&!S.discG[k].c.length&&!Object.keys(S.discG[k].n||{}).length))S.discG[k]=t.discGrade?JSON.parse(JSON.stringify(t.discGrade)):{c:[],n:{}};const g=S.discG[k];g.c=g.c||[];g.n=g.n||{};return g}
+function simGradeCalc(inicial){const box=$('#sim-grade');if(!box)return;const [t,sim]=simCur();if(!t||!sim||!sim.disc.grade)return;const G=simGradeState(t);
+  let cont=0,ex=0,de=0;G.c=[];
+  box.querySelectorAll('input[data-g]').forEach(e=>{if(!e.checked)return;G.c.push(e.dataset.g);const p=+e.dataset.p,id=e.dataset.g;if(id[0]==='d')de+=p;else if(id[0]==='e')ex+=p;else cont+=p});
+  box.querySelectorAll('select[data-n]').forEach(e=>{G.n[e.dataset.n]=+e.value;ex+=+e.value});
+  const nota=Math.max(0,Math.min(10,Math.round((cont+ex+de)*10)/10));
+  const gt=$('#sim-gt');if(gt)gt.innerHTML=`Conteúdo <b>${nf(cont,1)}</b>/8 · Estrutura e expressão <b>${nf(ex,1)}</b>/2${de?` · Descontos <b style="color:var(--alta)">${nf(de,1)}</b>`:''} · <b style="font-size:17px;color:${nota>=6?'var(--ok)':'var(--alta)'}">Nota ${nf(nota,1)}</b> ${nota>=6?'(habilitaria)':'(abaixo do mínimo de 6,0)'}`;
+  const dn=$('#sim-dn');if(dn&&(!inicial||t.discNota==null))dn.value=(G.c.length||Object.keys(G.n).length)?String(nota).replace('.',','):'';}
+async function simDiscSave(){const [t,sim]=simCur();const n=parseFloat(String($('#sim-dn').value).replace(',','.'));if(isNaN(n)||n<0||n>10)return toast('Informe a nota de 0 a 10');
+  t.discNota=Math.round(n*10)/10;if(sim.disc.grade){const G=simGradeState(t);t.discGrade={c:G.c.slice(),n:{...G.n}}}const {_id,...d}=t;
+  try{await S.db.collection('sim_tent').doc(_id).set(clean(d));
+    if(S.ciclo){const f=cicFase(T());const ex=S.cic.find(x=>x.simTent===_id&&x.k==='DISC');
+      const doc={f:f.n,k0:'DISC',k:'DISC',st:'feito',d:iso(T()),t:Date.now(),lbl:'Estudo de caso do '+sim.titulo,nota:t.discNota,fora:true,simTent:_id};
+      const id=ex?ex._id:'c'+Date.now().toString(36);await S.db.collection('ciclo').doc(id).set(doc)}
+    toast('Nota do estudo de caso salva')}catch(e){toast('Não foi possível salvar a nota')}render()}
+/* oferta: contar como bloco Simulado do ciclo */
+function simCqSheet(){const c=S.simCq,sim=simById(c.sim);
+  $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)simCqNo()"><div><div class="tag">Ciclo TRT4</div><h2 style="margin:4px 0 0">Contar como o bloco de simulado do ciclo?</h2>
+   <div class="sub" style="margin-top:6px">${c.adId?'Há um bloco de Simulado adiado':'O próximo bloco do ciclo é o Simulado completo'}. Se contar, ele é concluído com ${c.res.ac}/${c.res.tot} acertos (nota ${nf(c.res.nota)}) e o ciclo avança para a correção.</div>
+   <div class="row" style="margin-top:16px;flex-wrap:wrap"><button class="btn p grow" onclick="simCqYes()">Contar como bloco</button><button class="btn" onclick="simCqNo()">Não</button></div></div></div>`}
+function simCqNo(){S.simCq=null;render()}
+async function simCqYes(){const c=S.simCq,sim=simById(c.sim);S.simCq=null;
+  const base=c.adId?{...S.cic.find(x=>x._id===c.adId)}:cicSnap(c.b);delete base._id;
+  const d={...base,st:'feito',d:iso(T()),t:Date.now(),lbl:sim.titulo,q:c.res.tot,ac:c.res.ac,fonte:'inedito:'+sim.id};
+  try{const id=c.adId||('c'+Date.now().toString(36));if(!c.adId)S.cic.push({...d,_id:id});else S.cic=S.cic.map(x=>x._id===id?{...d,_id:id}:x);
+    await S.db.collection('ciclo').doc(id).set(clean(d));toast('Bloco de simulado concluído no ciclo')}catch(e){toast('Não foi possível concluir o bloco')}render()}
+
+RC_BOOT(function(){render();init();});
+</script>
+</body></html>
