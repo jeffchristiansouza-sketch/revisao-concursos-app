@@ -35,8 +35,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "Depreende-se corretamente do texto que o autor",
    "alts": [
@@ -61,8 +61,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "No trecho \"é porque esquece quase tudo que consegue dar relevo ao pouco que conserva\", estabelece-se entre esquecimento e lembrança relação de",
    "alts": [
@@ -88,7 +88,7 @@
     "id": "a215",
     "m": "Língua Portuguesa",
     "a": "Semântica",
-    "s": "Todo o conteúdo do assunto"
+    "s": "Sinônimos e Antônimos + Homônimos e Parônimos + Polissemia + Significação de Vocábulo e Expressões + Ordenação de Parágrafos + Outras Questões de Semântica"
    },
    "enun": "Considerado o contexto, o sentido de um segmento do texto está adequadamente traduzido em:",
    "alts": [
@@ -113,8 +113,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "O argumento central do texto é o de que",
    "alts": [
@@ -140,7 +140,7 @@
     "id": "a199",
     "m": "Língua Portuguesa",
     "a": "Coerência e Coesão",
-    "s": "Anáfora, Catáfora, Uso dos Conectores - Pronomes Relativos, Conjunções, etc."
+    "s": "Coerência. Coesão (Anáfora, Catáfora, Uso dos Conectores - Pronomes Relativos, Conjunções, etc)"
    },
    "enun": "No trecho \"a punição, embora satisfaça o desejo de reparação, pouco ensina a quem não errou ainda\", o segmento destacado pode ser substituído, sem prejuízo do sentido e da correção gramatical, por:",
    "alts": [
@@ -165,8 +165,8 @@
    "link": {
     "id": "a205",
     "m": "Língua Portuguesa",
-    "a": "Reescrita de Frases. Substituição de Palavras ou Trechos de Texto",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Reescrita e Clareza",
+    "s": "Reescrita de Frases. Substituição de Palavras ou Trechos de Texto. + Clareza e Correção + Tipos de Discurso (Direto, Indireto e Indireto Livre)"
    },
    "enun": "Considere o período: \"Desde que passou a investigar acidentes para compreender suas causas, e não para apontar culpados, o setor tornou-se um dos mais seguros que há.\" Está correta e preserva o sentido original a seguinte redação:",
    "alts": [
@@ -191,8 +191,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "Infere-se corretamente do texto que as sínteses",
    "alts": [
@@ -218,7 +218,7 @@
     "id": "a219",
     "m": "Língua Portuguesa",
     "a": "Pontuação",
-    "s": "Ponto, Vírgula, Travessão, Aspas, Parênteses, etc"
+    "s": "Pontuação (Ponto, Vírgula, Travessão, Aspas, Parênteses, etc)"
    },
    "enun": "Quanto à pontuação do texto, é correto afirmar:",
    "alts": [
@@ -243,8 +243,8 @@
    "link": {
     "id": "a201",
     "m": "Língua Portuguesa",
-    "a": "Concordância e Paralelismo",
-    "s": "Verbal, Nominal e Paralelismo"
+    "a": "Concordância",
+    "s": "Concordância (Verbal e Nominal) + Paralelismo"
    },
    "enun": "As normas de concordância estão plenamente respeitadas em:",
    "alts": [
@@ -268,8 +268,8 @@
    "link": {
     "id": "a214",
     "m": "Língua Portuguesa",
-    "a": "Regência",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Regência e Crase",
+    "s": "Regência Nominal e Verbal (Casos Gerais)"
    },
    "enun": "Atende às normas de regência e ao emprego do sinal indicativo de crase a frase:",
    "alts": [
@@ -293,8 +293,8 @@
    "link": {
     "id": "a277",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Frações, Razão e Proporção",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Frações e Proporcionalidade",
+    "s": "Números Racionais"
    },
    "enun": "Uma gratificação de R$ 9.300,00 será dividida entre três servidores em partes inversamente proporcionais ao número de faltas que tiveram no ano: 2, 3 e 5. O servidor que teve 3 faltas receberá",
    "alts": [
@@ -318,8 +318,8 @@
    "link": {
     "id": "a286",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Porcentagem",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Frações e Proporcionalidade",
+    "s": "Porcentagem"
    },
    "enun": "O número de processos baixados por uma vara aumentou 20% em 2025, em relação a 2024, e diminuiu 25% em 2026, em relação a 2025. Em relação a 2024, o número de processos baixados em 2026 foi",
    "alts": [
@@ -343,8 +343,8 @@
    "link": {
     "id": "a290",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Regra de Três",
-    "s": "Regra de Três Simples e Composta"
+    "a": "Frações e Proporcionalidade",
+    "s": "Regra de Três"
    },
    "enun": "Seis servidores, trabalhando 8 horas por dia, digitalizam 4.800 páginas em 5 dias. Mantido o mesmo ritmo individual, quatro servidores, trabalhando 6 horas por dia, digitalizarão 7.200 páginas em",
    "alts": [
@@ -369,7 +369,7 @@
     "id": "a280",
     "m": "Raciocínio Lógico-Matemático",
     "a": "Lógica de Argumentação",
-    "s": "Argumentos, validade, falácias e inferências"
+    "s": "Argumentos - Métodos Decorrentes da Tabela Verdade + Argumentos Indutivos, Argumentos por Abdução. + Falácias + Raciocínio Crítico + Outras Questões de Lógica de Argumentação"
    },
    "enun": "Considere verdadeiras as afirmações: \"Todos os analistas da seção são assíduos.\" \"Nenhuma pessoa assídua recebe advertência por faltas.\" \"Marcos recebeu advertência por faltas.\" A partir delas, conclui-se corretamente que",
    "alts": [
@@ -393,8 +393,8 @@
    "link": {
     "id": "a289",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Problemas de lógica e associação de informações",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Associação de Informações e Outros Exercícios de Lógica",
+    "s": "Associação de Informações + Exercícios de \"Verdade/Mentira\" + Questões Envolvendo Parentesco e Árvores Genealógicas + Problemas Envolvendo Balança de Pratos + Problemas Envolvendo Palitos + Sudoku e Jogos Similares + Outros Exercícios de Lógica"
    },
    "enun": "Ana, Bruno e Carla trabalham, cada um, em um setor diferente: Protocolo, Distribuição e Arquivo. Sabe-se que: Ana não trabalha no Arquivo; Bruno não trabalha no Arquivo; e quem trabalha na Distribuição é mais novo que Bruno. É correto concluir que",
    "alts": [
@@ -566,10 +566,10 @@
    "area": "G",
    "mat": "Direitos Humanos",
    "link": {
-    "id": "a164",
+    "id": "a165",
     "m": "Direitos Humanos",
-    "a": "Fundamentos e aplicação dos Direitos Humanos",
-    "s": "Direitos Humanos na Constituição e execução de decisões internacionais"
+    "a": "Fundamentos dos Direitos Humanos",
+    "s": "Incorporação dos Tratados Internacionais de DH ao Direito Brasileiro. Posição Hierárquica. + A Execução de Decisões de Tribunais Internacionais de DH no Brasil + Direitos Humanos na Constituição Federal + Jurisprudência dos Tribunais Superiores sobre Incorporação dos Tratados Internacionais de DHU"
    },
    "enun": "Nas hipóteses de grave violação de direitos humanos, a Constituição Federal prevê o incidente de deslocamento de competência para a Justiça Federal, que",
    "alts": [
@@ -591,10 +591,10 @@
    "area": "G",
    "mat": "Direitos Humanos",
    "link": {
-    "id": "a185",
+    "id": "a176",
     "m": "Direitos Humanos",
-    "a": "Tratados e sistemas internacionais de proteção",
-    "s": "Sistemas regionais de proteção"
+    "a": "Sistema Internacional de Proteção",
+    "s": "Sistema Internacional de Proteção dos Direitos Humanos + Convenção Americana sobre Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Sistema Interamericano de Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Convenção Americana sobre Direitos Humanos (CADH-OAS)"
    },
    "enun": "No Sistema Interamericano de Direitos Humanos, nos termos da Convenção Americana, têm direito de submeter um caso à decisão da Corte Interamericana",
    "alts": [
@@ -616,10 +616,10 @@
    "area": "G",
    "mat": "Direitos Humanos",
    "link": {
-    "id": "a178",
+    "id": "a180",
     "m": "Direitos Humanos",
-    "a": "Principais convenções internacionais de Direitos Humanos",
-    "s": "Convenções da OIT e direitos sociais"
+    "a": "Principais Convenções Internacionais de Direitos Humanos",
+    "s": "Convenção de Haia sobre os Aspectos Civis do Sequestro Internacional de Crianças + Convenção do Estatuto dos Refugiados + Convenção sobre a Cobrança Internacional de Alimentos para Crianças e Outros Membros da Família + Convenções da OIT sobre Direitos Humanos + Convenção sobre a Proteção e Promoção da Diversidade das Expressões Culturais + Agenda 2030 - Desenvolvimento Sustentável + Nova Agenda Urbana (NAU)"
    },
    "enun": "A Declaração da OIT sobre os Princípios e Direitos Fundamentais no Trabalho, de 1998, foi alterada em 2022 para incluir, entre os princípios e direitos fundamentais,",
    "alts": [
@@ -643,8 +643,8 @@
    "link": {
     "id": "a177",
     "m": "Direitos Humanos",
-    "a": "Principais convenções internacionais de Direitos Humanos",
-    "s": "Convenções contra discriminação e violência"
+    "a": "Principais Convenções Internacionais de Direitos Humanos",
+    "s": "Convenção Internacional Sobre Eliminação de Todas as Formas de Discriminação Racial + Convenção sobre Eliminação de Todas as Formas de Discriminação Contra a Mulher + Convenção Interamericana para Prevenir, Punir e Erradicar a Violência Contra a Mulher + Convenção Interamericana contra o Racismo e Discriminação Racial + Convenção Contra a Tortura e Tratamentos Degradantes + Convenção Interamericana para Prevenir e Punir a Tortura + Convenção para a Prevenção e Repressão do Crime de Genocídio + Convenção Interamericana sobre o Desaparecimento Forçado de Pessoas (Decreto nº 8.766/2016 + Convenção para Proteção Contra Desaparecimento Forçado"
    },
    "enun": "Nos termos da Convenção Internacional sobre a Eliminação de Todas as Formas de Discriminação Racial, as medidas especiais tomadas com o objetivo exclusivo de assegurar o progresso adequado de certos grupos raciais ou étnicos",
    "alts": [
@@ -694,7 +694,7 @@
     "id": "a197",
     "m": "Informática",
     "a": "Sistemas Operacionais",
-    "s": "Windows"
+    "s": "Windows 10 + Windows 11"
    },
    "enun": "No Windows 10 e no Windows 11, em suas configurações padrão, a combinação de teclas Windows + V",
    "alts": [
@@ -719,7 +719,7 @@
     "id": "a192",
     "m": "Informática",
     "a": "Internet",
-    "s": "Internet, navegação, pesquisa e localização"
+    "s": "Mozilla Firefox + Google Chrome + Microsoft Edge + Questões Mescladas de Navegadores + Sites de Busca (Google, Bing, Yahoo, etc.)"
    },
    "enun": "Sobre a navegação anônima (janela privativa) nos navegadores Google Chrome, Microsoft Edge e Mozilla Firefox, é correto afirmar que ela",
    "alts": [
@@ -744,7 +744,7 @@
     "id": "a198",
     "m": "Informática",
     "a": "Suítes de Escritório",
-    "s": "Word, Excel, Power Point e ferramentas correlatas"
+    "s": "Word 2024 e Word 365 + Word 2021 e Word 365 + Word 2019 e Word 365 + Word 2016 e Word 365 + Word 2013 e Word 365 + Questões Mescladas de Microsoft Office + Questões Mescladas de Suítes de Escritório"
    },
    "enun": "Em uma planilha do Microsoft Excel, a célula C3 contém a fórmula =$A1*B$2. Se essa célula for copiada e colada na célula D5, a fórmula resultante será",
    "alts": [
@@ -769,7 +769,7 @@
     "id": "a190",
     "m": "Informática",
     "a": "Internet",
-    "s": "Computação em nuvem e demais serviços de Internet"
+    "s": "Conceitos de Internet + Intranet e Extranet + Conceitos e Tipos de Computação em Nuvem (Cloud Computing) + Nuvens Microsoft (OneDrive e Azure) + Dropbox + Serviços de Mapas e Localização (Google Maps, Waze, etc.) + Demais Serviços de Internet + Questões Mescladas de Internet"
    },
    "enun": "A equipe de desenvolvimento de um tribunal contratou um ambiente em nuvem no qual o provedor administra os servidores, o sistema operacional, o banco de dados e o servidor de aplicação, cabendo à equipe apenas implantar e gerir o código dos sistemas que ela própria desenvolve. Esse modelo de serviço é classificado como",
    "alts": [
@@ -794,7 +794,7 @@
     "id": "a117",
     "m": "Direito do Trabalho",
     "a": "Contrato de Trabalho",
-    "s": "Alteração, Suspensão e Interrupção"
+    "s": "Suspensão e Interrupção (Contrato de Trabalho) + Alteração (Contrato de Trabalho)"
    },
    "enun": "Considere as seguintes ausências de empregados ao serviço:\nI. Três dias consecutivos, em virtude de casamento.\nII. Dois dias consecutivos, em razão do falecimento de irmão.\nIII. Um dia no ano, para acompanhar filho de oito anos de idade em consulta médica.\nIV. Um dia, em doze meses de trabalho, para doação voluntária de sangue devidamente comprovada.\nNos termos da CLT, o empregado pode deixar de comparecer ao serviço, sem prejuízo do salário, nas hipóteses descritas em",
    "alts": [
@@ -819,7 +819,7 @@
     "id": "a120",
     "m": "Direito do Trabalho",
     "a": "Contrato de Trabalho",
-    "s": "Modalidades de Contrato de Trabalho"
+    "s": "Modalidades de Contrato de Trabalho + Teletrabalho"
    },
    "enun": "Joana foi contratada por contrato de experiência de 30 dias, prorrogado por mais 30 dias e, em seguida, prorrogado novamente por mais 20 dias. Nos termos da CLT e da jurisprudência do TST, o contrato",
    "alts": [
@@ -843,8 +843,8 @@
    "link": {
     "id": "a119",
     "m": "Direito do Trabalho",
-    "a": "Contrato de Trabalho",
-    "s": "Extinção do Contrato de Trabalho"
+    "a": "Extinção do Contrato de Trabalho",
+    "s": "Formas de Ruptura do Contrato de Trabalho + Justa Causa + Aviso Prévio"
    },
    "enun": "Rui foi admitido em 1º/3/2018 e dispensado sem justa causa em 20/7/2025, com aviso prévio indenizado. Nos termos da Lei nº 12.506/2011, o aviso prévio de Rui será de",
    "alts": [
@@ -869,7 +869,7 @@
     "id": "a126",
     "m": "Direito do Trabalho",
     "a": "Direito Coletivo do Trabalho",
-    "s": "Negociação coletiva e instrumentos normativos"
+    "s": "Negociação Coletiva (Convenções) + Jurisprudência dos Tribunais Superiores sobre Direito Coletivo do Trabalho"
    },
    "enun": "Sobre a convenção e o acordo coletivo de trabalho, nos termos da CLT com a redação dada pela Lei nº 13.467/2017, é correto afirmar:",
    "alts": [
@@ -894,7 +894,7 @@
     "id": "a133",
     "m": "Direito do Trabalho",
     "a": "Duração do Trabalho",
-    "s": "Trabalho noturno e turnos de revezamento"
+    "s": "Intervalos (Trabalho) + Repouso Semanal Remunerado + Trabalho Noturno + Turnos Ininterruptos de revezamento"
    },
    "enun": "Um vigia de empresa urbana cumpre jornada das 22 horas às 7 horas, com intervalo. Nos termos da CLT e da jurisprudência do TST,",
    "alts": [
@@ -916,10 +916,10 @@
    "area": "E",
    "mat": "Direito do Trabalho",
    "link": {
-    "id": "a148",
+    "id": "a120",
     "m": "Direito do Trabalho",
-    "a": "Teletrabalho",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Contrato de Trabalho",
+    "s": "Modalidades de Contrato de Trabalho + Teletrabalho"
    },
    "enun": "Sobre o teletrabalho, nos termos da CLT com a redação dada pela Lei nº 14.442/2022, é correto afirmar:",
    "alts": [
@@ -941,10 +941,10 @@
    "area": "E",
    "mat": "Direito do Trabalho",
    "link": {
-    "id": "a123",
+    "id": "a142",
     "m": "Direito do Trabalho",
-    "a": "Dano Extrapatrimonial (Material, Moral, Assédio)",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Responsabilidade Trabalhista",
+    "s": "Responsabilidade Trabalhista + Jurisprudência dos Tribunais Superiores sobre Responsabilidade Trabalhista + Dano Extrapatrimonial (Material, Moral, Assédio) + Jurisprudência dos Tribunais Superiores sobre Dano Extrapatrimonial (Material, Moral, Assédio)"
    },
    "enun": "Quanto à reparação por danos extrapatrimoniais decorrentes da relação de trabalho (arts. 223-A a 223-G da CLT), considerado o entendimento do Supremo Tribunal Federal, é correto afirmar:",
    "alts": [
@@ -1143,8 +1143,8 @@
    "link": {
     "id": "a102",
     "m": "Direito Constitucional",
-    "a": "Dos Direitos e Garantias Fundamentais (arts. 5º a 17 da CF/1988)",
-    "s": "Direitos sociais"
+    "a": "Dos Direitos e Garantias Fundamentais",
+    "s": "Dos Direitos Sociais + Jurisprudência dos Tribunais Superiores sobre Direitos Sociais e dos Trabalhadores"
    },
    "enun": "Entre os direitos dos trabalhadores urbanos e rurais previstos no art. 7º da Constituição Federal, inclui-se a",
    "alts": [
@@ -1168,8 +1168,8 @@
    "link": {
     "id": "a105",
     "m": "Direito Constitucional",
-    "a": "Dos Direitos e Garantias Fundamentais (arts. 5º a 17 da CF/1988)",
-    "s": "Teoria geral e direitos individuais/coletivos"
+    "a": "Dos Direitos e Garantias Fundamentais",
+    "s": "Características (Direitos Fundamentais) + Gerações de Direitos Fundamentais + Dos Direitos e Deveres Individuais e Coletivos + Jurisprudência dos Tribunais Superiores sobre Direitos e Deveres Individuais e Coletivos"
    },
    "enun": "Nos termos do art. 5º da Constituição Federal, a casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo",
    "alts": [
@@ -1194,7 +1194,7 @@
     "id": "a081",
     "m": "Direito Constitucional",
     "a": "Controle de Constitucionalidade",
-    "s": "Formas de Controle e Controle Difuso"
+    "s": "Ações de Controle Concentrado de Constitucionalidade"
    },
    "enun": "No julgamento de recurso ordinário, uma Turma de Tribunal Regional do Trabalho entende que determinada lei federal, ainda não examinada pelo Supremo Tribunal Federal nem pelo próprio Tribunal, é inconstitucional. Nos termos da Constituição Federal, do CPC e da Súmula Vinculante nº 10,",
    "alts": [
@@ -1218,8 +1218,8 @@
    "link": {
     "id": "a097",
     "m": "Direito Constitucional",
-    "a": "Da Organização dos Poderes (arts. 44 a 135 da CF/1988)",
-    "s": "Processo legislativo e espécies normativas"
+    "a": "Da Organização dos Poderes",
+    "s": "Processo Legislativo + Jurisprudência dos Tribunais Superiores sobre Processo Legislativo"
    },
    "enun": "Sobre as medidas provisórias, nos termos da Constituição Federal, é correto afirmar:",
    "alts": [
@@ -1243,8 +1243,8 @@
    "link": {
     "id": "a030",
     "m": "Direito Administrativo",
-    "a": "Licitações e Contratos Administrativos (Lei nº 14.133/2021)",
-    "s": "Procedimento licitatório, fases e modalidades"
+    "a": "Licitações e Contratos Administrativos",
+    "s": "Modalidades de Licitação + Critérios de Julgamento"
    },
    "enun": "De acordo com a Lei nº 14.133/2021, é correto afirmar:",
    "alts": [
@@ -1294,7 +1294,7 @@
     "id": "a032",
     "m": "Direito Administrativo",
     "a": "Organização Administrativa",
-    "s": "Administração Direta/Indireta, Desconcentração e Descentralização"
+    "s": "Administração Direta (Órgãos Públicos) + Desconcentração e Descentralização + Tópicos Mesclados de Organização Administrativa da União"
    },
    "enun": "Sobre a organização administrativa, é correto afirmar:",
    "alts": [
@@ -1318,8 +1318,8 @@
    "link": {
     "id": "a009",
     "m": "Direito Administrativo",
-    "a": "Agentes Públicos (Lei nº 8.112/1990)",
-    "s": "Deveres, direito de petição e regime disciplinar"
+    "a": "Agentes Públicos",
+    "s": "Do Regime Disciplinar + Do Processo Administrativo Disciplinar + Jurisprudência dos Tribunais Superiores sobre Processo Administrativo Disciplinar"
    },
    "enun": "Nos termos da Lei nº 8.112/1990, quanto às penalidades disciplinares,",
    "alts": [
@@ -1343,8 +1343,8 @@
    "link": {
     "id": "a065",
     "m": "Direito Civil",
-    "a": "Do Direito das Obrigações (arts. 233 a 420)",
-    "s": "Modalidades e transmissão das obrigações"
+    "a": "Do Direito das Obrigações",
+    "s": "Princípios Gerais das Obrigações (Conceito e Fontes) + Das Modalidades das Obrigações + Da Transmissão das Obrigações"
    },
    "enun": "Sobre as obrigações solidárias e indivisíveis, nos termos do Código Civil, é correto afirmar:",
    "alts": [
@@ -1368,8 +1368,8 @@
    "link": {
     "id": "a064",
     "m": "Direito Civil",
-    "a": "Do Direito das Obrigações (arts. 233 a 420)",
-    "s": "Adimplemento, pagamento e extinção"
+    "a": "Do Direito das Obrigações",
+    "s": "Do Adimplemento e Extinção das Obrigações + Do Inadimplemento das Obrigações + Jurisprudência dos Tribunais Superiores sobre Obrigações"
    },
    "enun": "Lúcia pagou, de boa-fé, o aluguel a Renato, que se apresentava publicamente como administrador do imóvel e procurador do locador, embora não tivesse poderes para receber. Nos termos do Código Civil, esse pagamento",
    "alts": [
@@ -1393,8 +1393,8 @@
    "link": {
     "id": "a053",
     "m": "Direito Civil",
-    "a": "Das Pessoas (arts. 1º a 78)",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Das Pessoas",
+    "s": "Das Pessoas Jurídicas + Jurisprudência dos Tribunais Superiores sobre Pessoas Jurídicas"
    },
    "enun": "Sobre a capacidade civil, nos termos do Código Civil com as alterações da Lei nº 13.146/2015, é correto afirmar:",
    "alts": [
@@ -1418,8 +1418,8 @@
    "link": {
     "id": "a051",
     "m": "Direito Civil",
-    "a": "Da Responsabilidade Civil (arts. 927 a 954)",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Da Responsabilidade Civil",
+    "s": "Da Responsabilidade Civil + Jurisprudência dos Tribunais Superiores sobre Responsabilidade Civil"
    },
    "enun": "Nos termos do Código Civil, quanto à responsabilidade civil por fato de terceiro,",
    "alts": [
@@ -1443,8 +1443,8 @@
    "link": {
     "id": "a232",
     "m": "Processo Civil",
-    "a": "Do Processo de Execução (arts. 771 a 925)",
-    "s": "Defesa, suspensão e extinção da execução"
+    "a": "Do Processo de Execução",
+    "s": "Dos Embargos à Execução + Da Suspensão e da Extinção do Processo de Execução"
    },
    "enun": "Na execução por título extrajudicial, nos termos do Código de Processo Civil, os embargos à execução",
    "alts": [
@@ -1468,8 +1468,8 @@
    "link": {
     "id": "a230",
     "m": "Processo Civil",
-    "a": "Do Processo de Conhecimento e do Cumprimento da Sentença (arts. 318 a 770)",
-    "s": "Do Procedimento Comum (arts. 318 a 512)"
+    "a": "Do Procedimento Comum",
+    "s": "Da Sentença e Da Coisa Julgada + Da Liquidação de Sentença"
    },
    "enun": "Sobre a audiência de conciliação ou de mediação no procedimento comum (art. 334 do CPC), é correto afirmar:",
    "alts": [
@@ -1493,8 +1493,8 @@
    "link": {
     "id": "a226",
     "m": "Processo Civil",
-    "a": "Da Tutela Provisória (arts. 294 a 311)",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Da Tutela Provisória",
+    "s": "Da Tutela Provisória + Jurisprudência dos Tribunais Superiores sobre Tutela Provisória"
    },
    "enun": "Concedida a tutela antecipada requerida em caráter antecedente, o réu não interpôs o respectivo recurso. Nos termos do Código de Processo Civil,",
    "alts": [
@@ -1518,8 +1518,8 @@
    "link": {
     "id": "a237",
     "m": "Processo Civil",
-    "a": "Dos Atos Processuais (arts. 188 a 293)",
-    "s": "Prazos, tempo e lugar dos atos processuais"
+    "a": "Dos Atos Processuais",
+    "s": "Do Tempo e Do Lugar dos Atos Processuais + Dos Prazos"
    },
    "enun": "Sobre os prazos processuais, nos termos do Código de Processo Civil, é correto afirmar:",
    "alts": [

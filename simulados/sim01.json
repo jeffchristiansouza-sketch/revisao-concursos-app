@@ -15,8 +15,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "Depreende-se corretamente do texto que o autor",
    "alts": [
@@ -41,8 +41,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "No contexto, a expressão \"vigilância difusa\" (2º parágrafo) refere-se a",
    "alts": [
@@ -67,8 +67,8 @@
    "link": {
     "id": "a203",
     "m": "Língua Portuguesa",
-    "a": "Interpretação de Texto",
-    "s": "Compreensão, Tipologia e Gêneros Textuais"
+    "a": "Interpretação de Textos",
+    "s": "Interpretação de Textos (Compreensão) + Tipologia e Gênero Textual"
    },
    "enun": "A frase final do texto — \"um relógio que nunca para não marca o tempo: apenas o consome\" — funciona, na argumentação, como",
    "alts": [
@@ -94,7 +94,7 @@
     "id": "a199",
     "m": "Língua Portuguesa",
     "a": "Coerência e Coesão",
-    "s": "Anáfora, Catáfora, Uso dos Conectores - Pronomes Relativos, Conjunções, etc."
+    "s": "Coerência. Coesão (Anáfora, Catáfora, Uso dos Conectores - Pronomes Relativos, Conjunções, etc)"
    },
    "enun": "No trecho \"Quem pode trabalhar de casa economiza horas de deslocamento, organiza melhor a rotina e, não raro, produz mais\", a expressão \"não raro\" pode ser substituída, sem prejuízo do sentido, por",
    "alts": [
@@ -119,8 +119,8 @@
    "link": {
     "id": "a207",
     "m": "Língua Portuguesa",
-    "a": "Partícula \"Se\",  Vocábulo \"Como\", Vocábulo \"Que\"",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Partícula \"Se\", Vocábulos \"Como\" e \"Que\"",
+    "s": "Partícula \"Se\" + Vocábulo \"Como\" + Vocábulo \"Que\""
    },
    "enun": "Considere as frases:\nI. \"Hoje essa fronteira tornou-se porosa\".\nII. \"Não se trata de condenar a tecnologia\".\nIII. \"a liberdade prometida converte-se em vigilância difusa\".\nO pronome \"se\" integra o verbo, sem função de objeto nem de índice de indeterminação, em",
    "alts": [
@@ -145,8 +145,8 @@
    "link": {
     "id": "a201",
     "m": "Língua Portuguesa",
-    "a": "Concordância e Paralelismo",
-    "s": "Verbal, Nominal e Paralelismo"
+    "a": "Concordância",
+    "s": "Concordância (Verbal e Nominal) + Paralelismo"
    },
    "enun": "Está correta a concordância verbal em:",
    "alts": [
@@ -171,8 +171,8 @@
    "link": {
     "id": "a214",
     "m": "Língua Portuguesa",
-    "a": "Regência",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Regência e Crase",
+    "s": "Regência Nominal e Verbal (Casos Gerais)"
    },
    "enun": "O sinal indicativo de crase está empregado corretamente em:",
    "alts": [
@@ -197,8 +197,8 @@
    "link": {
     "id": "a205",
     "m": "Língua Portuguesa",
-    "a": "Reescrita de Frases. Substituição de Palavras ou Trechos de Texto",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Reescrita e Clareza",
+    "s": "Reescrita de Frases. Substituição de Palavras ou Trechos de Texto. + Clareza e Correção + Tipos de Discurso (Direto, Indireto e Indireto Livre)"
    },
    "enun": "Mantendo-se a correção e o sentido, o trecho \"Mudar essa percepção exige mais do que leis; exige que as organizações reconheçam que o descanso...\" admite a seguinte reescrita:",
    "alts": [
@@ -224,7 +224,7 @@
     "id": "a211",
     "m": "Língua Portuguesa",
     "a": "Morfologia",
-    "s": "Verbos"
+    "s": "Verbo + Vozes (Voz Passiva e Voz Ativa)"
    },
    "enun": "No trecho \"Afinal, um relógio que nunca para não marca o tempo\", as formas verbais estão no presente do indicativo com valor de",
    "alts": [
@@ -250,7 +250,7 @@
     "id": "a218",
     "m": "Língua Portuguesa",
     "a": "Sintaxe",
-    "s": "Orações Coordenadas, Subordinadas e Reduzidas"
+    "s": "Orações Coordenadas + Orações Subordinadas Substantivas + Orações Subordinadas Adjetivas + Orações Subordinadas Adverbiais + Orações Reduzidas + Questões Mescladas de Sintaxe"
    },
    "enun": "No período \"Talvez a pergunta mais importante não seja quantas horas trabalhamos\", a oração \"quantas horas trabalhamos\" classifica-se como subordinada substantiva",
    "alts": [
@@ -275,8 +275,8 @@
    "link": {
     "id": "a284",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Operações Básicas; Potenciação e Radiciação e Problemas",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Operações com Números",
+    "s": "Números Naturais: Introdução, Representação, Propriedades + Adição, Subtração, Multiplicação e Divisão de Números Naturais + Números Inteiros (Propriedades, Operações, Módulo, etc) + Números Reais (Propriedades e Operações; Intervalos) + Expressões Aritméticas + Radiciação e Potenciação"
    },
    "enun": "Uma Vara do Trabalho recebeu 1.260 processos em um semestre. No 1º bimestre, recebeu 2/7 do total; no 2º bimestre, 3/5 do que restou; e o restante chegou no 3º bimestre. O número de processos recebidos no 3º bimestre foi",
    "alts": [
@@ -300,8 +300,8 @@
    "link": {
     "id": "a277",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Frações, Razão e Proporção",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Frações e Proporcionalidade",
+    "s": "Números Racionais"
    },
    "enun": "Um prêmio de R$ 27.000,00 será dividido entre três servidores em partes diretamente proporcionais ao número de processos que cada um finalizou: 40, 50 e 60. O servidor que finalizou mais processos receberá",
    "alts": [
@@ -325,8 +325,8 @@
    "link": {
     "id": "a286",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Porcentagem",
-    "s": "Todo o conteúdo do assunto"
+    "a": "Frações e Proporcionalidade",
+    "s": "Porcentagem"
    },
    "enun": "O preço de um equipamento sofreu aumento de 20% em março e, em abril, desconto de 20% sobre o novo preço. Em relação ao preço original, o preço final é",
    "alts": [
@@ -350,8 +350,8 @@
    "link": {
     "id": "a290",
     "m": "Raciocínio Lógico-Matemático",
-    "a": "Regra de Três",
-    "s": "Regra de Três Simples e Composta"
+    "a": "Frações e Proporcionalidade",
+    "s": "Regra de Três"
    },
    "enun": "Quatro servidores, trabalhando 6 horas por dia, digitalizam 1.200 páginas em 5 dias. Mantido o mesmo ritmo, seis servidores, trabalhando 5 horas por dia, digitalizarão 1.800 páginas em",
    "alts": [
@@ -401,7 +401,7 @@
     "id": "a282",
     "m": "Raciocínio Lógico-Matemático",
     "a": "Lógica de Proposições",
-    "s": "Equivalências, negações e classificação lógica"
+    "s": "Equivalências Lógicas (Inclui Negação de Proposições Compostas)"
    },
    "enun": "Uma negação lógica da proposição \"Se o processo foi distribuído, então o juiz despachou\" é:",
    "alts": [
@@ -550,8 +550,8 @@
    "link": {
     "id": "a165",
     "m": "Direitos Humanos",
-    "a": "Fundamentos e aplicação dos Direitos Humanos",
-    "s": "Tratados: interpretação, hierarquia, vigência e efeitos"
+    "a": "Fundamentos dos Direitos Humanos",
+    "s": "Incorporação dos Tratados Internacionais de DH ao Direito Brasileiro. Posição Hierárquica. + A Execução de Decisões de Tribunais Internacionais de DH no Brasil + Direitos Humanos na Constituição Federal + Jurisprudência dos Tribunais Superiores sobre Incorporação dos Tratados Internacionais de DHU"
    },
    "enun": "Sobre a hierarquia dos tratados internacionais de direitos humanos no ordenamento brasileiro, é correto afirmar:",
    "alts": [
@@ -575,8 +575,8 @@
    "link": {
     "id": "a176",
     "m": "Direitos Humanos",
-    "a": "Principais convenções internacionais de Direitos Humanos",
-    "s": "Convenção Americana e sistema interamericano"
+    "a": "Sistema Internacional de Proteção",
+    "s": "Sistema Internacional de Proteção dos Direitos Humanos + Convenção Americana sobre Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Sistema Interamericano de Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Convenção Americana sobre Direitos Humanos (CADH-OAS)"
    },
    "enun": "De acordo com a Convenção Americana sobre Direitos Humanos (Pacto de São José da Costa Rica), têm direito de submeter um caso à decisão da Corte Interamericana de Direitos Humanos",
    "alts": [
@@ -600,8 +600,8 @@
    "link": {
     "id": "a163",
     "m": "Direitos Humanos",
-    "a": "Fundamentos e aplicação dos Direitos Humanos",
-    "s": "Conceitos, fontes, princípios e titulares"
+    "a": "Fundamentos dos Direitos Humanos",
+    "s": "Conceitos, Histórico e Gerações dos Direitos Humanos + Fontes, Classificação e Princípios dos Direitos Humanos Internacionais + Normas de Interpretação e Aplicabilidade dos Direitos Humanos Internacionais + Titulares e Obrigados dos Direitos Humanos. Obrigações Positivas e Negativas + Vigência e Eficácia das Normas do Direito Internacional de Direitos Humanos. Reservas e Denúncias + Outros Tópicos sobre Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Outros Assuntos de Direitos Humanos"
    },
    "enun": "A característica dos direitos humanos segundo a qual eles formam um conjunto incindível, não sendo possível garantir os direitos civis e políticos sem assegurar também os econômicos, sociais e culturais, denomina-se",
    "alts": [
@@ -625,8 +625,8 @@
    "link": {
     "id": "a179",
     "m": "Direitos Humanos",
-    "a": "Principais convenções internacionais de Direitos Humanos",
-    "s": "Convenções sobre deficiência e acessibilidade"
+    "a": "Principais Convenções Internacionais de Direitos Humanos",
+    "s": "Convenção sobre os Direitos das Pessoas com Deficiência + Convenção Interamericana para a Eliminação de Todas as Formas de Discriminação contra as Pessoas Portadoras de Deficiência"
    },
    "enun": "A Convenção sobre os Direitos das Pessoas com Deficiência, incorporada ao ordenamento brasileiro com equivalência de emenda constitucional, considera pessoas com deficiência aquelas que têm impedimentos",
    "alts": [
@@ -650,8 +650,8 @@
    "link": {
     "id": "a183",
     "m": "Direitos Humanos",
-    "a": "Tratados e sistemas internacionais de proteção",
-    "s": "Carta Internacional dos Direitos Humanos"
+    "a": "Sistema Internacional de Proteção",
+    "s": "Carta Internacional dos Direitos Humanos + Declaração e Programa de Ação de Viena - Conferência Mundial sobre Direitos Humanos + Declaração do Milênio das Nações Unidas"
    },
    "enun": "A Declaração Universal dos Direitos Humanos, de 1948,",
    "alts": [
@@ -676,7 +676,7 @@
     "id": "a195",
     "m": "Informática",
     "a": "Segurança da Informação",
-    "s": "Ameaças, criptografia e proteção de dados"
+    "s": "Ameaças (Vírus, Worms, Trojans, Malware, etc.) + Criptografia, Assinatura e Certificado Digital + Malware (Vírus, Worms, Trojans, etc.) + Engenharia Social e Phishing"
    },
    "enun": "Um servidor recebeu e-mail aparentemente enviado pelo setor de TI do Tribunal, solicitando que clicasse em um link e informasse login e senha para \"atualizar o cadastro\". Trata-se de tentativa de",
    "alts": [
@@ -701,7 +701,7 @@
     "id": "a198",
     "m": "Informática",
     "a": "Suítes de Escritório",
-    "s": "Word, Excel, Power Point e ferramentas correlatas"
+    "s": "Word 2024 e Word 365 + Word 2021 e Word 365 + Word 2019 e Word 365 + Word 2016 e Word 365 + Word 2013 e Word 365 + Questões Mescladas de Microsoft Office + Questões Mescladas de Suítes de Escritório"
    },
    "enun": "Em uma planilha do Microsoft Excel (Microsoft 365, em português), as células A2:A100 contêm o nome do servidor responsável e B2:B100 o número de processos de cada registro. Para somar os processos apenas do servidor \"Ana\", utiliza-se a fórmula",
    "alts": [
@@ -751,7 +751,7 @@
     "id": "a196",
     "m": "Informática",
     "a": "Segurança da Informação",
-    "s": "Princípios, controles, recursos e backup"
+    "s": "Conceitos e Princípios de Segurança da Informação + Recursos (Segurança da Informação) + Backup + Senhas (Gerenciamento, Política, etc.) + Autenticação Multifator (MFA)"
    },
    "enun": "Sobre cópias de segurança (backup), é correto afirmar:",
    "alts": [
@@ -776,7 +776,7 @@
     "id": "a132",
     "m": "Direito do Trabalho",
     "a": "Duração do Trabalho",
-    "s": "Jornada, horas extras e trabalho em tempo parcial"
+    "s": "Jornada de Trabalho + Horas Suplementares + Contrato a tempo parcial"
    },
    "enun": "Marta trabalha em empresa localizada em local de difícil acesso, não servido por transporte público, e utiliza a condução fornecida pelo empregador, gastando 50 minutos em cada trajeto. Nos termos da CLT, com a redação dada pela Lei nº 13.467/2017, o tempo de deslocamento",
    "alts": [
@@ -801,7 +801,7 @@
     "id": "a142",
     "m": "Direito do Trabalho",
     "a": "Responsabilidade Trabalhista",
-    "s": "Todo o conteúdo do assunto"
+    "s": "Responsabilidade Trabalhista + Jurisprudência dos Tribunais Superiores sobre Responsabilidade Trabalhista + Dano Extrapatrimonial (Material, Moral, Assédio) + Jurisprudência dos Tribunais Superiores sobre Dano Extrapatrimonial (Material, Moral, Assédio)"
    },
    "enun": "As empresas Alfa Ltda. e Beta Ltda. têm os mesmos sócios, mas atuam em ramos distintos, com administração e clientes independentes. Um ex-empregado da Alfa pretende responsabilizar a Beta pelos créditos trabalhistas. Nos termos da CLT,",
    "alts": [
@@ -826,7 +826,7 @@
     "id": "a131",
     "m": "Direito do Trabalho",
     "a": "Duração do Trabalho",
-    "s": "Intervalos, repouso semanal e férias"
+    "s": "Férias (Trabalho) + Jurisprudência dos Tribunais Superiores sobre Duração do Trabalho"
    },
    "enun": "Sobre o fracionamento das férias, nos termos da CLT, é correto afirmar que, desde que haja concordância do empregado, as férias poderão ser usufruídas em até",
    "alts": [
@@ -851,7 +851,7 @@
     "id": "a139",
     "m": "Direito do Trabalho",
     "a": "Remuneração",
-    "s": "Adicionais e gratificações"
+    "s": "Adicionais de Insalubridade, Periculosidade, Penosidade e Transferência + Adicional Noturno"
    },
    "enun": "Pedro trabalha exposto, de forma permanente, a inflamáveis e, ao mesmo tempo, a agente insalubre em grau médio, conforme laudo pericial. Nos termos da CLT,",
    "alts": [
@@ -875,8 +875,8 @@
    "link": {
     "id": "a119",
     "m": "Direito do Trabalho",
-    "a": "Contrato de Trabalho",
-    "s": "Extinção do Contrato de Trabalho"
+    "a": "Extinção do Contrato de Trabalho",
+    "s": "Formas de Ruptura do Contrato de Trabalho + Justa Causa + Aviso Prévio"
    },
    "enun": "Empregado e empregador decidem, de comum acordo, extinguir o contrato de trabalho, nos termos do art. 484-A da CLT. Nessa hipótese, o empregado",
    "alts": [
@@ -901,7 +901,7 @@
     "id": "a141",
     "m": "Direito do Trabalho",
     "a": "Remuneração",
-    "s": "Salário, remuneração e seus componentes"
+    "s": "Salário e Remuneração + Salário Utilidade ou Salário in Natura + Gorjetas e Demais Componentes + Gratificação Natalina"
    },
    "enun": "De acordo com o art. 461 da CLT, com a redação dada pela Lei nº 13.467/2017, para que haja direito à equiparação salarial, é necessário, entre outros requisitos, que",
    "alts": [
@@ -926,7 +926,7 @@
     "id": "a149",
     "m": "Direito do Trabalho",
     "a": "Tutelas Especiais (Trabalho)",
-    "s": "Todo o conteúdo do assunto"
+    "s": "Tutelas Especiais (Trabalho) + Jurisprudência dos Tribunais Superiores sobre Tutelas Especiais Trabalhistas"
    },
    "enun": "Joana foi dispensada sem justa causa e, dias depois, descobriu que já estava grávida na data da dispensa. O empregador não sabia da gravidez. Considerando a Constituição, o ADCT e a jurisprudência do TST e do STF, Joana",
    "alts": [
@@ -1125,8 +1125,8 @@
    "link": {
     "id": "a095",
     "m": "Direito Constitucional",
-    "a": "Da Organização dos Poderes (arts. 44 a 135 da CF/1988)",
-    "s": "Poder Judiciário e garantias institucionais"
+    "a": "Da Organização dos Poderes",
+    "s": "Do Poder Judiciário + Jurisprudência dos Tribunais Superiores sobre Disposições Gerais do Poder Judiciário + Jurisprudência dos Tribunais Superiores sobre Órgãos do Poder Judiciário"
    },
    "enun": "Nos termos da Constituição Federal, os Tribunais Regionais do Trabalho compõem-se de, no mínimo,",
    "alts": [
@@ -1150,8 +1150,8 @@
    "link": {
     "id": "a092",
     "m": "Direito Constitucional",
-    "a": "Da Organização dos Poderes (arts. 44 a 135 da CF/1988)",
-    "s": "Ministério Público e funções essenciais à Justiça"
+    "a": "Da Organização dos Poderes",
+    "s": "Funções Essenciais à Justiça + Questões Mescladas de Organização dos Poderes + Jurisprudência dos Tribunais Superiores sobre Funções Essenciais à Justiça"
    },
    "enun": "Sobre o Ministério Público da União, nos termos da Constituição Federal,",
    "alts": [
@@ -1175,8 +1175,8 @@
    "link": {
     "id": "a103",
     "m": "Direito Constitucional",
-    "a": "Dos Direitos e Garantias Fundamentais (arts. 5º a 17 da CF/1988)",
-    "s": "Nacionalidade"
+    "a": "Dos Direitos e Garantias Fundamentais",
+    "s": "Da Nacionalidade + Jurisprudência dos Tribunais Superiores sobre Nacionalidade"
    },
    "enun": "Segundo a Constituição Federal, são privativos de brasileiro nato os cargos de",
    "alts": [
@@ -1200,8 +1200,8 @@
    "link": {
     "id": "a104",
     "m": "Direito Constitucional",
-    "a": "Dos Direitos e Garantias Fundamentais (arts. 5º a 17 da CF/1988)",
-    "s": "Remédios constitucionais"
+    "a": "Dos Direitos e Garantias Fundamentais",
+    "s": "Remédios Constitucionais + Jurisprudência dos Tribunais Superiores sobre Remédios Constitucionais"
    },
    "enun": "Conceder-se-á mandado de injunção",
    "alts": [
@@ -1225,8 +1225,8 @@
    "link": {
     "id": "a027",
     "m": "Direito Administrativo",
-    "a": "Licitações e Contratos Administrativos (Lei nº 14.133/2021)",
-    "s": "Contratos administrativos"
+    "a": "Licitações e Contratos Administrativos",
+    "s": "Conceitos e Características dos Contratos Administrativos. Formalização dos Contratos + Garantias + Alocação de Riscos + Prerrogativas da Administração + Duração dos Contratos"
    },
    "enun": "Nos termos da Lei nº 14.133/2021, nas alterações unilaterais quantitativas, o contratado será obrigado a aceitar, nas mesmas condições contratuais, acréscimos ou supressões de até",
    "alts": [
@@ -1251,7 +1251,7 @@
     "id": "a038",
     "m": "Direito Administrativo",
     "a": "Processo Administrativo",
-    "s": "Anulação, extinção, recursos e revisão"
+    "s": "Da Desistência e Outros Casos de Extinção do Processo + Da Anulação, Revogação e Convalidação + Do Recurso Administrativo e da Revisão + Das Disposições Finais + Tópicos Mesclados da Lei nº 9.784/1999 + Jurisprudência dos Tribunais Superiores sobre Processo Administrativo"
    },
    "enun": "Nos termos da Lei nº 9.784/1999, o direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários",
    "alts": [
@@ -1275,8 +1275,8 @@
    "link": {
     "id": "a011",
     "m": "Direito Administrativo",
-    "a": "Agentes Públicos (Lei nº 8.112/1990)",
-    "s": "Provimento, vacância, remoção e redistribuição"
+    "a": "Agentes Públicos",
+    "s": "Formas de Provimento + Vacância + Remoção, Redistribuição e Substituição"
    },
    "enun": "Nos termos da Lei nº 8.112/1990, o retorno do servidor estável ao cargo anteriormente ocupado, decorrente de inabilitação em estágio probatório relativo a outro cargo ou da reintegração do anterior ocupante, denomina-se",
    "alts": [
@@ -1301,7 +1301,7 @@
     "id": "a049",
     "m": "Direito Administrativo",
     "a": "Serviços Públicos",
-    "s": "Convênios, PPPs, consórcios e parcerias"
+    "s": "Convênios Administrativos + Lei nº 11.079/2004 - Parceria Público-Privada (PPP) + Lei nº 11.107/2005 - Normas Gerais de Contratação de Consórcios Públicos"
    },
    "enun": "De acordo com a Lei nº 11.079/2004, é vedada a celebração de contrato de parceria público-privada",
    "alts": [
@@ -1325,8 +1325,8 @@
    "link": {
     "id": "a075",
     "m": "Direito Civil",
-    "a": "Dos Contratos em Geral (arts. 421 a 480)",
-    "s": "Princípios e classificação dos contratos"
+    "a": "Dos Contratos em Geral",
+    "s": "Princípios Contratuais no Código Civil + Classificação dos Contratos + Preliminares e da Formação dos Contratos + Estipulação em Favor de Terceiro + Da Promessa de Fato de Terceiro + Dos Contratos Aleatórios + Contrato Preliminar + Do Contrato com Pessoa a Declarar"
    },
    "enun": "Ana comprou de Bruno um veículo usado e, 20 dias depois da entrega, descobriu defeito oculto no motor, preexistente à venda, que tornava o bem impróprio ao uso. Nos termos do Código Civil, Ana",
    "alts": [
@@ -1350,8 +1350,8 @@
    "link": {
     "id": "a061",
     "m": "Direito Civil",
-    "a": "Do Direito das Coisas (arts. 1.196 a 1.510)",
-    "s": "Posse e seus efeitos"
+    "a": "Do Direito das Coisas",
+    "s": "Princípios Gerais do Direito das Coisas + Da Posse"
    },
    "enun": "Nos termos do Código Civil, é justa a posse que",
    "alts": [
@@ -1375,8 +1375,8 @@
    "link": {
     "id": "a077",
     "m": "Direito Civil",
-    "a": "Dos Fatos Jurídicos (arts. 104 a 232)",
-    "s": "Prescrição e Decadência (arts. 189 a 211)"
+    "a": "Dos Fatos Jurídicos",
+    "s": "Prescrição e Decadência"
    },
    "enun": "Nos termos do Código Civil, NÃO corre a prescrição",
    "alts": [
@@ -1400,8 +1400,8 @@
    "link": {
     "id": "a076",
     "m": "Direito Civil",
-    "a": "Dos Fatos Jurídicos (arts. 104 a 232)",
-    "s": "Negócio Jurídico (arts. 104 a 184)"
+    "a": "Dos Fatos Jurídicos",
+    "s": "Defeitos ou Vícios do Negócio Jurídico + Invalidade do Negócio Jurídico"
    },
    "enun": "Pressionado por premente necessidade financeira, Carlos vendeu seu imóvel por valor manifestamente inferior ao de mercado. Nos termos do Código Civil, configura-se",
    "alts": [
@@ -1425,8 +1425,8 @@
    "link": {
     "id": "a239",
     "m": "Processo Civil",
-    "a": "Dos Processos nos Tribunais e dos Meios de Impugnação das Decisões Judiciais (arts. 926 a 1.044)",
-    "s": "Dos Recursos (arts. 994 a 1.044)"
+    "a": "Dos Processos nos Tribunais e dos Meios de Impugnação",
+    "s": "Disposições Gerais - Recursos + Da Apelação + Do Agravo de Instrumento + Do Agravo Interno"
    },
    "enun": "Nos termos do Código de Processo Civil, excetuados os embargos de declaração, o prazo para interpor os recursos e para responder-lhes é de",
    "alts": [
@@ -1450,8 +1450,8 @@
    "link": {
     "id": "a240",
     "m": "Processo Civil",
-    "a": "Dos Sujeitos do Processo (arts. 70 a 187)",
-    "s": "Litisconsórcio e Intervenção de terceiros"
+    "a": "Dos Sujeitos do Processo",
+    "s": "Do Litisconsórcio + Da Intervenção de Terceiros"
    },
    "enun": "Demandado pelo credor, o fiador pretende trazer ao processo o devedor principal, para que este também responda pela dívida. Nos termos do CPC, a modalidade de intervenção de terceiros adequada é",
    "alts": [
@@ -1475,8 +1475,8 @@
    "link": {
     "id": "a235",
     "m": "Processo Civil",
-    "a": "Dos Atos Processuais (arts. 188 a 293)",
-    "s": "Comunicação dos atos processuais"
+    "a": "Dos Atos Processuais",
+    "s": "Da Comunicação dos Atos Processuais"
    },
    "enun": "Nos termos do CPC, a citação válida, ainda quando ordenada por juízo incompetente,",
    "alts": [
@@ -1500,8 +1500,8 @@
    "link": {
     "id": "a238",
     "m": "Processo Civil",
-    "a": "Dos Processos nos Tribunais e dos Meios de Impugnação das Decisões Judiciais (arts. 926 a 1.044)",
-    "s": "Da Ordem dos Processos e dos Processos de Competência Originária dos Tribunais (arts. 926 a 993)"
+    "a": "Dos Processos nos Tribunais e dos Meios de Impugnação",
+    "s": "Da Ordem dos Processos e dos Processos de Competência Originária dos Tribunais + Jurisprudência sobre Ordem dos Processos e Processos de Competência Originária dos Tribunais"
    },
    "enun": "Sobre o incidente de resolução de demandas repetitivas (IRDR), nos termos do CPC, é correto afirmar:",
    "alts": [
