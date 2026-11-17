@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='17/11/2026 · d5d8107';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='17/11/2026 · 98ffcef';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -676,7 +676,7 @@ function card(r,opt={}){
   <div class="ttl">${esc(it.a)}</div><div class="sub">${esc(it.s)}</div>
   <div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Questões <b>${r.qTot}</b></span><span>Última <b>${r.U?fd(r.M):'—'}</b></span>${r.AT!=null&&r.AT<0?`<span style="color:var(--alta)"><b>${-r.AT}d atrasado</b></span>`:''}<span>Peso <b>${r.peso}</b></span></div>
   ${it.obs?`<div class="sub" style="margin-top:6px">${esc(it.obs)}</div>`:''}
-  ${S.ciclo?`<div class="cic-hint">${opt.nextKey===r.key?'<b>É o assunto do próximo bloco do ciclo.</b> Concluindo o bloco com as questões, esta revisão já conta.':cicIsFora(r)?'No ciclo: faça no bloco de Manutenção TRT-MG':'No ciclo: faça no próximo bloco de '+esc(it.m)+' (toque em “Usar neste bloco” na aba Ciclo)'}</div>`:''}
+  ${S.ciclo?`<div class="cic-hint">${opt.nextKey===r.key?'<b>É o assunto do próximo bloco do ciclo.</b> Concluindo o bloco com as questões, esta revisão já conta.':cicIsFora(r)?(cicNaINB(it)?'No ciclo: faça no próximo bloco da INB':'No ciclo: faça no bloco de Manutenção (fora do edital)'):'No ciclo: faça no próximo bloco de '+esc(it.m)+' (toque em “Usar neste bloco” na aba Ciclo)'}</div>`:''}
   <div class="row" style="margin-top:10px"><button class="btn p s" onclick="regFor(${r.idx})">Registrar revisão</button><button class="btn s" onclick="openSel(${r.idx})">Detalhes</button></div></div>`;
 }
 function vHoje(){
@@ -868,7 +868,7 @@ function vAss(){
   <select onchange="S.fp=this.value;render()">${[['','Toda prioridade'],['🔴','Alta'],['🟠','Média'],['🟢','Consolidado'],['⚪','Amostra pequena'],['sem','Sem dados']].map(([v,l])=>`<option value="${v}" ${v===S.fp?'selected':''}>${l}</option>`).join('')}</select></div>
   <div class="sub" style="margin:10px 0">${tot} assuntos${tot>60?' (mostrando 60 — refine a busca)':''}</div><div id="al">${alist(rs)}</div>`;
 }
-const foraTag=it=>it.fora||(S.ciclo&&S.ciclo.fora&&S.ciclo.fora.materias.includes(it.m))?' · fora do edital TRT4':'';
+const foraTag=it=>it.fora||(S.ciclo&&S.ciclo.fora&&S.ciclo.fora.materias.includes(it.m))?' · fora do edital TRT':'';
 function alist(rs){return rs.map(r=>`<div class="card" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="row sp"><div class="tag">${esc(r.it.m+foraTag(r.it))}</div>${badge(r)}</div><div class="ttl">${esc(r.it.a)}</div><div class="sub">${esc(r.it.s)}</div><div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Quest. <b>${r.qTot}</b></span><span>Próx. <b>${fd(r.AS)}</b></span></div></div>`).join('')||'<div class="empty">Nada encontrado.</div>'}
 function fq(){const q=S.q.toLowerCase();let rs=M.rows.filter(r=>(!S.fm||r.it.m===S.fm)&&(!S.fp||(S.fp==='sem'?!r.pri:r.pri.startsWith(S.fp)))&&(!q||(r.it.a+' '+r.it.s+' '+r.it.m).toLowerCase().includes(q))).sort(rowAbc);$('#al').innerHTML=alist(rs.slice(0,60))}
 function openSel(i){S.sel=i;render()}
@@ -887,7 +887,7 @@ function sheet(){
   <h2>Histórico</h2>${hs||'<div class="sub">Sem sessões registradas.</div>'}
   <h2>Editar</h2><label>Matéria</label><input id="em" value="${esc(it.m)}"><label>Assunto</label><input id="ea2" value="${esc(it.a)}"><label>Subassunto</label><input id="es" value="${esc(it.s)}"><div class="g2"><div><label>Peso</label><input id="ep" type="number" min="1" max="5" value="${it.peso||3}"></div><div><label>Data de estudo</label><input id="ed" type="date" value="${it.d0||''}"></div>
   <div><label>Questões anteriores</label><input id="eq" type="number" value="${it.q0||''}"></div><div><label>Acertos anteriores</label><input id="ea" type="number" value="${it.a0||''}"></div></div>
-  <label style="display:flex;gap:8px;align-items:center;margin-top:10px;font-weight:500"><input id="ef" type="checkbox" style="width:auto" ${it.fora?'checked':''}> Fora do edital do TRT4 (fica cadastrado, mas não entra no ciclo)</label>
+  <label style="display:flex;gap:8px;align-items:center;margin-top:10px;font-weight:500"><input id="ef" type="checkbox" style="width:auto" ${it.fora?'checked':''}> Fora do edital do TRT (fica cadastrado, mas não entra no ciclo do TRT)</label>
   <label>Observação</label><textarea id="eo" rows="2">${esc(it.obs||'')}</textarea>
   <div class="row" style="margin-top:14px;flex-wrap:wrap"><button class="btn p grow" onclick="saveItem(${S.sel})">Salvar</button><button class="btn" onclick="regFor(${S.sel});S.sel=null;render()">Registrar</button><button class="btn" onclick="closeSel()">Fechar</button></div>
   <button class="btn d" style="width:100%;margin-top:10px" onclick="delItem(${S.sel})">Excluir assunto</button></div></div>`;
@@ -990,7 +990,8 @@ function cicLive(k,raw){if(!raw)return raw;let x=null;
   if(!x) x=S.items.find(i=>i.m===m0&&i.a===raw.a&&i.s===raw.s);
   const o={...raw,m:m0}; if(x){o.m=x.m;o.a=x.a;o.s=x.s;o.novo=false;o.appId=x.id} return o}
 /* sugestão de assunto para a matéria k; ord = quantos blocos da mesma matéria vêm antes na fila */
-const CIC_FIXA=new Set(['LEG','ADMN','INB']); /* conteúdo novo: ordem fixa de leitura */
+const CIC_FIXA=new Set(['LEG','ADMN']); /* conteúdo novo: ordem fixa de leitura (INB segue a prioridade dinâmica: incidência + pontos fracos) */
+function cicNaINB(it){return iso(T())<='2027-01-10'&&(S.ciclo.filas.INB||[]).some(x=>x.id===it.id)}
 function cicIncNum(k,raw){const s=raw.inc||'';let m=s.match(/([\d]+(?:,\d+)?)\s*%/);if(/<1%/.test(s))return 0.5;if(m)return parseFloat(m[1].replace(',','.'));
   m=s.match(/(\d+)q/);if(m){S._qtot=S._qtot||{};if(!S._qtot[k]){const v=new Set();for(const x of S.ciclo.filas[k]||[]){const mm=(x.inc||'').match(/(\d+)q/);if(mm)v.add(+mm[1])}S._qtot[k]=[...v].reduce((a,b)=>a+b,0)||1}return +m[1]/S._qtot[k]*100}
   if(/Edital/.test(s))return 10;return 3}
@@ -1091,7 +1092,7 @@ function cicUpcoming(n){
     const k=cicResolve(k0,o0); const ord=cnt[k]||0; cnt[k]=ord+1;
     const b={f:f.n,p,k0,k,nome:S.ciclo.nomes[k]||k};
     if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho'}
-    else if(k==='MANUT'){b.modo='Revisões vencidas no app de assuntos fora do edital do TRT4 (pensando no TRT-MG)';b.manut='manut'}
+    else if(k==='MANUT'){b.modo='Revisões vencidas no app de assuntos fora do edital do TRT (pensando no próximo TRT)';b.manut='manut'}
     else if(k==='REVE'){b.modo='Questões dos assuntos com pior acerto nas últimas 3 semanas (inclui o que você registrou na correção dos simulados)';b.manut='reve'}
     else if(k==='SIM'){const n=S.cic.filter(x=>x.k==='SIM').length+ord+1;b.tema='Simulado completo nº '+n;b.modo='Faça o próximo simulado inédito da aba Simulados (60 objetivas + estudo de caso, 4h). Ao entregar, o app oferece concluir este bloco. Conta 3 blocos.';b.peso=3}
     else if(k==='CORR'){b.modo='Corrija o simulado, registre os erros por assunto no app e crie flashcards'}
