@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='17/11/2026 · 533505e';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='17/11/2026 · d5d8107';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -868,7 +868,8 @@ function vAss(){
   <select onchange="S.fp=this.value;render()">${[['','Toda prioridade'],['🔴','Alta'],['🟠','Média'],['🟢','Consolidado'],['⚪','Amostra pequena'],['sem','Sem dados']].map(([v,l])=>`<option value="${v}" ${v===S.fp?'selected':''}>${l}</option>`).join('')}</select></div>
   <div class="sub" style="margin:10px 0">${tot} assuntos${tot>60?' (mostrando 60 — refine a busca)':''}</div><div id="al">${alist(rs)}</div>`;
 }
-function alist(rs){return rs.map(r=>`<div class="card" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="row sp"><div class="tag">${esc(r.it.m)}</div>${badge(r)}</div><div class="ttl">${esc(r.it.a)}</div><div class="sub">${esc(r.it.s)}</div><div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Quest. <b>${r.qTot}</b></span><span>Próx. <b>${fd(r.AS)}</b></span></div></div>`).join('')||'<div class="empty">Nada encontrado.</div>'}
+const foraTag=it=>it.fora||(S.ciclo&&S.ciclo.fora&&S.ciclo.fora.materias.includes(it.m))?' · fora do edital TRT4':'';
+function alist(rs){return rs.map(r=>`<div class="card" onclick="openSel(${r.idx})" style="cursor:pointer"><div class="row sp"><div class="tag">${esc(r.it.m+foraTag(r.it))}</div>${badge(r)}</div><div class="ttl">${esc(r.it.a)}</div><div class="sub">${esc(r.it.s)}</div><div class="meta"><span>Acerto <b>${pc(r.pHist,0)}</b></span><span>Quest. <b>${r.qTot}</b></span><span>Próx. <b>${fd(r.AS)}</b></span></div></div>`).join('')||'<div class="empty">Nada encontrado.</div>'}
 function fq(){const q=S.q.toLowerCase();let rs=M.rows.filter(r=>(!S.fm||r.it.m===S.fm)&&(!S.fp||(S.fp==='sem'?!r.pri:r.pri.startsWith(S.fp)))&&(!q||(r.it.a+' '+r.it.s+' '+r.it.m).toLowerCase().includes(q))).sort(rowAbc);$('#al').innerHTML=alist(rs.slice(0,60))}
 function openSel(i){S.sel=i;render()}
 function closeSel(){S.sel=null;render()}
@@ -880,12 +881,13 @@ function sheet(){
   const r=M.rows[S.sel]; if(!r){S.sel=null;return} const it=r.it;
   const hs=r.sess.slice().reverse().map(s=>`<div class="hist row sp"><div>${fdi(s.d)} · ${s.ac}/${s.q} (${pc(s.pct,0)})<div class="sub">${esc(s.tipo||'')} ${esc(s.obs||'')}</div></div><div class="sub" style="text-align:right">próx. ${fd(s.next)}<br><button class="btn s d" style="margin-top:4px" onclick="delSesSel('${s._id}')">Excluir</button></div></div>`).join('');
   $('#ov').innerHTML=`<div class="sheet" onclick="if(event.target===this)closeSel()"><div>
-  <div class="row sp"><div class="tag">${esc(it.m)}</div>${badge(r)}</div><h2 style="margin:4px 0 0">${esc(it.a)}</h2><div class="sub">${esc(it.s)}</div>
+  <div class="row sp"><div class="tag">${esc(it.m+foraTag(it))}</div>${badge(r)}</div><h2 style="margin:4px 0 0">${esc(it.a)}</h2><div class="sub">${esc(it.s)}</div>
   <div class="tiles t3" style="margin-top:12px"><div class="tile"><div class="n">${pc(r.pHist,0)}</div><div class="l">Acerto</div></div><div class="tile"><div class="n">${r.qTot}</div><div class="l">Questões</div></div><div class="tile"><div class="n">${fd(r.AS)}</div><div class="l">Próxima</div></div></div>
   <div class="sub" style="margin-top:8px">Índice de prioridade: <b>${r.idxP==null?'—':r.idxP}</b></div>
   <h2>Histórico</h2>${hs||'<div class="sub">Sem sessões registradas.</div>'}
   <h2>Editar</h2><label>Matéria</label><input id="em" value="${esc(it.m)}"><label>Assunto</label><input id="ea2" value="${esc(it.a)}"><label>Subassunto</label><input id="es" value="${esc(it.s)}"><div class="g2"><div><label>Peso</label><input id="ep" type="number" min="1" max="5" value="${it.peso||3}"></div><div><label>Data de estudo</label><input id="ed" type="date" value="${it.d0||''}"></div>
   <div><label>Questões anteriores</label><input id="eq" type="number" value="${it.q0||''}"></div><div><label>Acertos anteriores</label><input id="ea" type="number" value="${it.a0||''}"></div></div>
+  <label style="display:flex;gap:8px;align-items:center;margin-top:10px;font-weight:500"><input id="ef" type="checkbox" style="width:auto" ${it.fora?'checked':''}> Fora do edital do TRT4 (fica cadastrado, mas não entra no ciclo)</label>
   <label>Observação</label><textarea id="eo" rows="2">${esc(it.obs||'')}</textarea>
   <div class="row" style="margin-top:14px;flex-wrap:wrap"><button class="btn p grow" onclick="saveItem(${S.sel})">Salvar</button><button class="btn" onclick="regFor(${S.sel});S.sel=null;render()">Registrar</button><button class="btn" onclick="closeSel()">Fechar</button></div>
   <button class="btn d" style="width:100%;margin-top:10px" onclick="delItem(${S.sel})">Excluir assunto</button></div></div>`;
@@ -899,7 +901,7 @@ async function saveItem(i){const it=S.items[i];
   const ok=keyOf(it.m,it.a,it.s),nk=keyOf(m,a,s);
   if(nk!==ok){ if(S.items.some((x,j)=>j!==i&&keyOf(x.m,x.a,x.s)===nk))return toast('Já existe esse assunto');
     const mv=S.ses.filter(x=>keyOf(x.m,x.a,x.s)===ok);mv.forEach(x=>{x.m=m;x.a=a;x.s=s;const {_id,...d}=x;S.db.collection('sessoes').doc(_id).set(d)}); }
-  it.m=m;it.a=a;it.s=s;it.peso=+$('#ep').value||3;it.d0=$('#ed').value||undefined;it.q0=+$('#eq').value||undefined;it.a0=+$('#ea').value||undefined;it.obs=$('#eo').value||undefined;S.sel=null;recalc();render();if(await saveItems())toast('Salvo')}
+  it.m=m;it.a=a;it.s=s;it.peso=+$('#ep').value||3;it.d0=$('#ed').value||undefined;it.q0=+$('#eq').value||undefined;it.a0=+$('#ea').value||undefined;it.obs=$('#eo').value||undefined;it.fora=($('#ef')&&$('#ef').checked)||undefined;S.sel=null;recalc();render();if(await saveItems())toast('Salvo')}
 function newItem(){S.sel='new';render()}
 async function addItem(){const m=$('#nm').value.trim(),a=$('#na').value.trim(),s=$('#ns').value.trim();if(!m||!a||!s)return toast('Preencha matéria, assunto e subassunto');
   if(S.items.some(x=>keyOf(x.m,x.a,x.s)===keyOf(m,a,s)))return toast('Esse subassunto já existe nesse assunto');
@@ -976,7 +978,7 @@ function cicResolve(k0,ord){
 function cicMatsCiclo(){if(!S._cicMats||S._cicMatsN!==S.items.length){const s=new Set();for(const [k,l] of Object.entries(S.ciclo.filas)){if(k==='INB'&&iso(T())>'2027-01-10')continue;for(const x of l)s.add(cicLive(k,x).m)}S._cicMats=s;S._cicMatsN=S.items.length}return S._cicMats}
 /* nome atual da matéria k no cadastro (acompanha renomeações, ex.: Raciocínio Lógico -> Raciocínio Lógico-Matemático) */
 function cicMatAtual(k,m0){if(m0!==S.ciclo.nomes[k]&&m0!==undefined)return m0;for(const y of S.ciclo.filas[k]||[]){if(y.id){const z=S.items.find(i=>i.id===y.id);if(z)return z.m}}return m0||S.ciclo.nomes[k]}
-function cicIsFora(r){const F=S.ciclo.fora,it=r.it;if(F.materias.includes(it.m)||!cicMatsCiclo().has(it.m))return true;
+function cicIsFora(r){const F=S.ciclo.fora,it=r.it;if(it.fora)return true;if(F.materias.includes(it.m)||!cicMatsCiclo().has(it.m))return true;
   if(F.assuntos.some(x=>it.a.includes(x)))return true;return F.subs.some(x=>it.s.includes(x))}
 function cicRecent(key,days){const t=T();return S.ses.some(s=>keyOf(s.m,s.a,s.s)===key&&dn(s.d)>=t-days)}
 function cicItemKey(k,it){return keyOf(it.m||S.ciclo.nomes[k],it.a,it.s)}
