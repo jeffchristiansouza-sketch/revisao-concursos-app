@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='16/11/2026 · 835e976';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='17/11/2026 · 88e3093';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1060,7 +1060,7 @@ function cicFontesHtml(k,it){const qm=cicQmap(it);
       :`<div>• Você já fez as questões do Passo deste assunto: use o <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior), ${k==='INB'?'15 a 20':'20 a 25'} questões.</div>`;
     return `<div class="cic-fontes"><div class="tag">Questões · Passo Estratégico primeiro</div>${rows}${tec}</div>`}
   const si=cicSimInfo(k,it);
-  return `<div class="cic-fontes"><div class="tag">Questões</div><div>• <b>TEC Concursos</b>: filtro ${k==='INB'?'FGV':'FCC'}, nível superior, ${k==='INB'?'15 a 20':'20 a 25'} questões do assunto</div>${si?`<div>• ou <b>${esc(si.lbl)}</b> <span class="sub">(${esc(si.cob)})</span>${si.feito?` <span class="badge b-ok">feito em ${fdi(si.feito.d)}</span>`:''}</div>`:''}</div>`}
+  return `<div class="cic-fontes"><div class="tag">Questões</div><div>• <b>TEC Concursos</b>: filtro ${k==='INB'?'FGV':'FCC'}, nível superior, ${k==='INB'?'15 a 20':'20 a 25'} questões do assunto</div>${si?`<div>• ou o <b>${esc(si.lbl)}</b> inteiro <span class="sub">(todas as questões, em sequência: o simulado não é dividido por assunto e cobre ${esc(si.cob)})</span>${si.feito?` <span class="badge b-ok">feito em ${fdi(si.feito.d)}</span>`:''}</div>`:''}</div>`}
 function cicModo(k,it,f){
   if(k==='INB') return it&&it.tipo==='q'?'Questões FGV de leitura técnica, cronometradas':'Resumo/lei seca + questões FGV · não leia a teoria completa';
   if(f.n===4) return BIZU_K.has(k)?'Bizu Estratégico: leitura rápida + 10 questões':'Revisão leve: resumo + 10 questões';
