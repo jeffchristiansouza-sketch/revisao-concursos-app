@@ -969,7 +969,7 @@
     "id": "a263",
     "m": "Processo do Trabalho",
     "a": "Fundamentos e organização",
-    "s": "Jurisdição e Competência da Justiça do Trabalho (114/CF; 674 a 680 e 803 a 812/CLT; 16 a 69/NCPC) + Jurisprudência dos Tribunais Superiores sobre Jurisdição e Competência da Justiça do Trabalho"
+    "s": "Jurisdição e Competência da Justiça do Trabalho + Jurisprudência dos Tribunais Superiores sobre Jurisdição e Competência da Justiça do Trabalho"
    },
    "enun": "Nos termos do art. 114 da Constituição Federal e da jurisprudência do STF, compete à Justiça do Trabalho processar e julgar",
    "alts": [
@@ -994,7 +994,7 @@
     "id": "a260",
     "m": "Processo do Trabalho",
     "a": "Fase de conhecimento",
-    "s": "Petição Inicial Trabalhista (arts. 837 a 842 da CLT; arts. 319 a 332 do NCPC) + Resposta Trabalhista (Contestação, Exceções e Reconvenção - arts. 799 a 802 CLT e 335 a 346 NCPC)) + Sentença e Coisa Julgada no Processo do Trabalho (arts. 831 a 836 da CLT; arts. 485 a 508 do NCPC)"
+    "s": "Petição Inicial Trabalhista + Resposta Trabalhista (Contestação, Exceções e Reconvenção) + Sentença e Coisa Julgada no Processo do Trabalho"
    },
    "enun": "Em reclamação trabalhista pelo procedimento ordinário, a reclamada apresentou contestação pelo sistema eletrônico dois dias antes da audiência. Aberta a audiência, e antes da primeira proposta de conciliação, o reclamante manifestou a intenção de desistir da ação. Nos termos da CLT,",
    "alts": [
@@ -1019,7 +1019,7 @@
     "id": "a259",
     "m": "Processo do Trabalho",
     "a": "Fase de conhecimento",
-    "s": "Audiência Trabalhista (arts. 813 a 817, 843 a 852 da CLT; arts. 358 a 368 do NCPC) + Homologação de Acordo Extrajudicial (arts. 855-B a 855-E da CLT)"
+    "s": "Audiência Trabalhista + Homologação de Acordo Extrajudicial"
    },
    "enun": "No processo de jurisdição voluntária para homologação de acordo extrajudicial, previsto nos arts. 855-B a 855-E da CLT,",
    "alts": [
@@ -1044,7 +1044,7 @@
     "id": "a266",
     "m": "Processo do Trabalho",
     "a": "Liquidação e execução",
-    "s": "Liquidação de Sentença Trabalhista (art. 879 da CLT; arts. 509 a 512 do NCPC) + Execução em Geral (arts. 876 a 878 da CLT; arts. 771 a 796 do NCPC) + Execução contra Devedor Solvente (arts. 880 a 883 da CLT; arts. 797 a 823 do NCPC) + Demais Tipos de Execução (arts. 890 a 892 da CLT; arts. 538 a 538 do NCPC)"
+    "s": "Liquidação de Sentença Trabalhista + Execução em Geral + Execução contra Devedor Solvente + Demais Tipos de Execução"
    },
    "enun": "Elaborada a conta de liquidação e tornada líquida, nos termos do art. 879 da CLT,",
    "alts": [
@@ -1094,7 +1094,7 @@
     "id": "a269",
     "m": "Processo do Trabalho",
     "a": "Procedimentos especiais",
-    "s": "Ação Rescisória Trabalhista (art. 836 da CLT; arts. 966 a 975 do NCPC) + Mandado de Segurança Trabalhista (Lei 12.016/09) + Ação Civil Pública no Processo do Trabalho (lei 7.347/85)"
+    "s": "Ação Rescisória Trabalhista + Mandado de Segurança Trabalhista + Ação Civil Pública no Processo do Trabalho"
    },
    "enun": "Na Justiça do Trabalho, a ação rescisória",
    "alts": [
@@ -1119,7 +1119,7 @@
     "id": "a270",
     "m": "Processo do Trabalho",
     "a": "Procedimentos especiais",
-    "s": "Inquérito para Apuração de Falta Grave (arts. 492, 543, 821 e 853 a 855 da CLT) + Do Incidente de Desconsideração da Personalidade Jurídica (art. 855-A da CLT) + Consignação em Pagamento Trabalhista (arts. 539 a 549 do NCPC) + Tópicos Mesclados sobre Procedimentos Especiais Trabalhistas + Jurisprudência dos Tribunais Superiores sobre Procedimentos Especiais Trabalhistas"
+    "s": "Inquérito para Apuração de Falta Grave + Do Incidente de Desconsideração da Personalidade Jurídica + Consignação em Pagamento Trabalhista + Tópicos Mesclados sobre Procedimentos Especiais Trabalhistas + Jurisprudência dos Tribunais Superiores sobre Procedimentos Especiais Trabalhistas"
    },
    "enun": "Quanto ao incidente de desconsideração da personalidade jurídica no processo do trabalho, nos termos do art. 855-A da CLT,",
    "alts": [

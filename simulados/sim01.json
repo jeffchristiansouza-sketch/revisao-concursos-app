@@ -951,7 +951,7 @@
     "id": "a273",
     "m": "Processo do Trabalho",
     "a": "Recursos",
-    "s": "Recursos em Espécie no Processo do Trabalho (arts. 893 a 902 da CLT, arts. 1009 a 1043 do NCPC)"
+    "s": "Recursos em Espécie no Processo do Trabalho"
    },
    "enun": "Sobre o depósito recursal no processo do trabalho, nos termos da CLT, é correto afirmar:",
    "alts": [
@@ -976,7 +976,7 @@
     "id": "a273",
     "m": "Processo do Trabalho",
     "a": "Recursos",
-    "s": "Recursos em Espécie no Processo do Trabalho (arts. 893 a 902 da CLT, arts. 1009 a 1043 do NCPC)"
+    "s": "Recursos em Espécie no Processo do Trabalho"
    },
    "enun": "Contra a decisão do juiz do trabalho que nega seguimento ao recurso ordinário interposto pela parte, por considerá-lo intempestivo, é cabível",
    "alts": [
@@ -1001,7 +1001,7 @@
     "id": "a258",
     "m": "Processo do Trabalho",
     "a": "Sumaríssimo e coletivo",
-    "s": "Procedimentos Sumário e Sumaríssimo no Processo do Trabalho (852-A a 852-I CLT; Lei nº 5.584/1970) + Jurisprudência dos Tribunais Superiores sobre Procedimentos Sumário/Sumaríssimo no Proc. do Trabalho"
+    "s": "Procedimentos Sumário e Sumaríssimo no Processo do Trabalho + Jurisprudência dos Tribunais Superiores sobre Procedimentos Sumário/Sumaríssimo no Proc. do Trabalho"
    },
    "enun": "Sobre o procedimento sumaríssimo, nos termos da CLT, é correto afirmar:",
    "alts": [
@@ -1051,7 +1051,7 @@
     "id": "a257",
     "m": "Processo do Trabalho",
     "a": "Atos e sujeitos do processo",
-    "s": "Partes e Procuradores no Processo do Trabalho (arts. 791 a 793-D da CLT) + Custas Processuais Trabalhistas (arts. 789 a 790-B da CLT)"
+    "s": "Partes e Procuradores no Processo do Trabalho + Custas Processuais Trabalhistas"
    },
    "enun": "Sobre os honorários advocatícios de sucumbência no processo do trabalho, considerando a CLT e o julgamento da ADI 5766 pelo STF, é correto afirmar:",
    "alts": [
@@ -1076,7 +1076,7 @@
     "id": "a259",
     "m": "Processo do Trabalho",
     "a": "Fase de conhecimento",
-    "s": "Audiência Trabalhista (arts. 813 a 817, 843 a 852 da CLT; arts. 358 a 368 do NCPC) + Homologação de Acordo Extrajudicial (arts. 855-B a 855-E da CLT)"
+    "s": "Audiência Trabalhista + Homologação de Acordo Extrajudicial"
    },
    "enun": "Na audiência inaugural, o reclamado não compareceu, mas seu advogado estava presente, com contestação e documentos. Nos termos da CLT,",
    "alts": [
@@ -1101,7 +1101,7 @@
     "id": "a265",
     "m": "Processo do Trabalho",
     "a": "Liquidação e execução",
-    "s": "Execução contra a Fazenda Pública (arts. 534, 535 e 910 do NCPC; lei 6830/80) + Defesas na Execução (art. 884 da CLT; arts. 914 a 920 do NCPC) + Trâmites Finais da Execução e Expropriação de Bens (arts. 885 a 889-A; arts. 831 a 903 do NCPC) + Jurisprudência dos Tribunais Superiores sobre Execução Trabalhista"
+    "s": "Execução contra a Fazenda Pública + Defesas na Execução + Trâmites Finais da Execução e Expropriação de Bens + Jurisprudência dos Tribunais Superiores sobre Execução Trabalhista"
    },
    "enun": "Garantida a execução ou penhorados os bens, o executado, nos termos da CLT, terá",
    "alts": [
