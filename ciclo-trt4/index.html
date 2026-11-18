@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='18/11/2026 · 8f26203';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
+<script>window.RC_VER='18/11/2026 · c0896a2';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1064,7 +1064,7 @@ async function cicQf(key,f,q,n){const id=cicQfId(f,q),on=!!(S.qf||{})[id];S.qf=S
     if(ac!=null&&(isNaN(ac)||ac<0||(nq!=null&&ac>nq)))return toast('Acertos inválidos'+(nq!=null?' (máximo '+nq+')':''));
     if(nq!=null)d.nq=nq;if(ac!=null)d.ac=ac;S.qf[id]=d;render();try{await S.db.collection('qfeito').doc(id).set(d)}catch(e){toast('Não foi possível salvar')}}}
 function cicFontesHtml(k,it){const qm=cicQmap(it);
-  if(qm&&qm.length){const key=it.id||it.cid,meta=k==='INB'?15:20;let rest=0;
+  if(qm&&qm.length){const AU=qm.every(x=>/^Estratégia ·/.test(x.f)),DP=AU?'da aula':'do Passo';const key=it.id||it.cid,meta=k==='INB'?15:20;let rest=0;
     let unk=false,hoje=0,hojeUnk=false;const td=iso(T());const rows=qm.map(x=>{const id=cicQfId(x.f,x.q),fe=(S.qf||{})[id];if(!fe){if(x.n)rest+=x.n;else unk=true}else if(fe.d===td){if(x.n||fe.nq)hoje+=(x.n||fe.nq);else hojeUnk=true}
       const nq=x.n||(fe&&fe.nq),res=fe&&fe.ac!=null&&nq?` · ${fe.ac}/${nq}`:'';
       const inp='padding:4px 6px;margin:0;font-size:13px;min-height:0;width:58px';
@@ -1075,14 +1075,14 @@ function cicFontesHtml(k,it){const qm=cicQmap(it);
     /* o que foi marcado HOJE conta para este bloco: o TEC só completa o que falta */
     const filt=`filtro ${k==='INB'?'FGV':'FCC'}, nível superior`;
     if(hoje||hojeUnk){const falta=Math.max(0,meta-hoje);
-      const tecH=hojeUnk?`<div>• Complete no <b>TEC Concursos</b> (${filt}) até cerca de ${meta} questões no total, contando as do Passo que você fez hoje.</div>`
-        :falta===0?`<div class="sub">Com as ${hoje} questões do Passo de hoje, o bloco está completo. Se sobrar tempo, faça mais no TEC.</div>`
-        :`<div>• Você fez hoje ${hoje} ${hoje===1?'questão':'questões'} do Passo${(ph=>ph.acOk&&ph.q?` (${ph.ac} ${ph.ac===1?'acerto':'acertos'})`:'')(cicPassoHoje(it))}. Faltam <b>${falta}</b> para fechar o bloco: complete no <b>TEC Concursos</b> (${filt})${rest&&rest<falta?` ou use as ${rest} do Passo que ainda faltam e mais ${falta-rest} do TEC`:rest>=falta?` ou com questões do Passo que ainda faltam`:''}.</div>`;
-      return `<div class="cic-fontes"><div class="tag">Questões · Passo Estratégico primeiro</div>${rows}${tecH}</div>`}
-    const tec=unk?`<div>• Depois, complete no <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior) até cerca de ${meta} questões no total.</div>`:rest>=meta?`<div class="sub">As questões do Passo já fecham o bloco. Se sobrar tempo, complete no TEC.</div>`
+      const tecH=hojeUnk?`<div>• Complete no <b>TEC Concursos</b> (${filt}) até cerca de ${meta} questões no total, contando as ${DP.slice(3)} que você fez hoje.</div>`
+        :falta===0?`<div class="sub">Com as ${hoje} questões ${DP} de hoje, o bloco está completo. Se sobrar tempo, faça mais no TEC.</div>`
+        :`<div>• Você fez hoje ${hoje} ${hoje===1?'questão':'questões'} ${DP}${(ph=>ph.acOk&&ph.q?` (${ph.ac} ${ph.ac===1?'acerto':'acertos'})`:'')(cicPassoHoje(it))}. Faltam <b>${falta}</b> para fechar o bloco: complete no <b>TEC Concursos</b> (${filt})${rest&&rest<falta?` ou use as ${rest} ${DP} que ainda faltam e mais ${falta-rest} do TEC`:rest>=falta?` ou com questões ${DP} que ainda faltam`:''}.</div>`;
+      return `<div class="cic-fontes"><div class="tag">Questões · ${AU?'aula do Estratégia':'Passo Estratégico'} primeiro</div>${rows}${tecH}</div>`}
+    const tec=unk?`<div>• Depois, complete no <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior) até cerca de ${meta} questões no total.</div>`:rest>=meta?`<div class="sub">As questões ${DP} já fecham o bloco. Se sobrar tempo, complete no TEC.</div>`
       :rest>0?`<div>• Depois, complete no <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior) até cerca de ${meta} questões no total: faltam umas ${meta-rest}.</div>`
-      :`<div>• Você já fez as questões do Passo deste assunto: use o <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior), ${k==='INB'?'15 a 20':'20 a 25'} questões.</div>`;
-    return `<div class="cic-fontes"><div class="tag">Questões · Passo Estratégico primeiro</div>${rows}${tec}</div>`}
+      :`<div>• Você já fez as questões ${DP} deste assunto: use o <b>TEC Concursos</b> (filtro ${k==='INB'?'FGV':'FCC'}, nível superior), ${k==='INB'?'15 a 20':'20 a 25'} questões.</div>`;
+    return `<div class="cic-fontes"><div class="tag">Questões · ${AU?'aula do Estratégia':'Passo Estratégico'} primeiro</div>${rows}${tec}</div>`}
   const si=cicSimInfo(k,it);
   return `<div class="cic-fontes"><div class="tag">Questões</div><div>• <b>TEC Concursos</b>: filtro ${k==='INB'?'FGV':'FCC'}, nível superior, ${k==='INB'?'15 a 20':'20 a 25'} questões do assunto</div>${si?`<div>• ou o <b>${esc(si.lbl)}</b> inteiro <span class="sub">(todas as questões, em sequência: o simulado não é dividido por assunto e cobre ${esc(si.cob)})</span>${si.feito?` <span class="badge b-ok">feito em ${fdi(si.feito.d)}</span>`:''}</div>`:''}</div>`}
 function cicModo(k,it,f){
