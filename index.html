@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='17/11/2026 · 98ffcef';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='18/11/2026 · 8f26203';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -97,7 +97,9 @@ nav button{font-size:10px;padding:6px 0}
 (function () {
   'use strict';
   var FB_VER = '10.12.2';
-  var CONN_KEY = 'rc_conn_v1', LOCAL_KEY = 'rc_localdb_v1';
+  /* edição para outra pessoa (window.RC_ED): só neste aparelho, chaves próprias no navegador e plano inicial carregado de um arquivo */
+  var ED = window.RC_ED || null, PRE = ED ? ED.pref : '';
+  var CONN_KEY = PRE + 'rc_conn_v1', LOCAL_KEY = PRE + 'rc_localdb_v1';
   var LS = {
     get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set: function (k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } },
@@ -388,7 +390,25 @@ nav button{font-size:10px;padding:6px 0}
   }
   function closeScreen() { var el = document.getElementById('rc-setup'); if (el) el.remove(); }
 
+  function showSetupEd(start) {
+    var el = screen('<h1>' + esc(ED.nome) + '</h1><p>Revisão espaçada, ciclo de estudos e simulados para o TRT4 (Analista Judiciário, Área Judiciária, FCC).</p>' +
+      '<div class="c"><h2>Começar com o plano pronto</h2><p>Escolha o <b>arquivo inicial</b> que você recebeu (termina em .json). Ele traz os assuntos e o plano do ciclo, sem nenhum histórico.</p>' +
+      '<input type="file" id="rc-kit" accept=".json,application/json"><div class="err" id="rc-e2"></div></div>' +
+      '<div class="c"><h2>Começar vazio</h2><p>Você cadastra os assuntos um a um. O ciclo só funciona com o arquivo inicial.</p><button id="rc-local">Começar vazio</button></div>' +
+      '<p>Os dados ficam só no navegador deste aparelho. De vez em quando, baixe um backup em Mais › Backup completo.</p>');
+    el.querySelector('#rc-kit').onchange = function (ev) {
+      var f = ev.target.files[0], E = el.querySelector('#rc-e2'); if (!f) return;
+      f.text().then(function (t) {
+        var k; try { k = JSON.parse(t); } catch (e) { E.textContent = 'Esse arquivo não é o arquivo inicial.'; return; }
+        if (!k || k.app !== 'revisao-concursos-kit' || !k.docs) { E.textContent = 'Esse arquivo não é o arquivo inicial.'; return; }
+        if (!LS.set(LOCAL_KEY, JSON.stringify({ docs: k.docs }))) { E.textContent = 'O navegador não deixou guardar os dados.'; return; }
+        setConn({ modo: 'local' }); boot(start);
+      });
+    };
+    el.querySelector('#rc-local').onclick = function () { setConn({ modo: 'local' }); boot(start); };
+  }
   function showSetup(start, msg) {
+    if (ED) return showSetupEd(start);
     var el = screen(
       '<h1>Revisão Concursos</h1><p>Para abrir seus dados neste aparelho, cole a <b>chave do GitHub</b> ou o <b>código de conexão</b> copiado do outro aparelho (aba Mais › Conta).</p>' +
       '<div class="c"><h2>Sincronizar celular e computador</h2>' +
@@ -438,7 +458,7 @@ nav button{font-size:10px;padding:6px 0}
 
   /* conteúdo que não pode ficar público (estudos de caso de curso pago): lido do repositório privado com a chave;
      guarda uma cópia no aparelho para funcionar offline */
-  window.RC_PRIV = function (path) {
+  if (!ED) window.RC_PRIV = function (path) {
     var key = 'rc_priv_' + path, c = RC.conn;
     var cache = function () { try { return JSON.parse(LS.get(key) || 'null'); } catch (e) { return null; } };
     if (!c || RC.modo !== 'gh') return Promise.resolve(cache());
@@ -459,6 +479,7 @@ nav button{font-size:10px;padding:6px 0}
     return 'Tudo sincronizado' + (s.at ? ' às ' + hora(s.at) : '') + '.' + (s.msg ? ' ' + esc(s.msg) + '.' : '');
   };
   window.RC_CONTA = function () {
+    if (RC.modo === 'local' && ED) return '<h2>Conta</h2><div class="card"><div class="sub">Os dados ficam <b>só neste aparelho</b>. Para não perder nada (troca de celular, limpeza do navegador), baixe o backup completo abaixo de vez em quando e guarde o arquivo. Versão do app: ' + esc(window.RC_VER || '') + '</div></div>';
     if (RC.modo === 'local') return '<h2>Conta</h2><div class="card"><div class="sub">Modo: <b>só neste aparelho</b>. Os dados não sincronizam.</div>' +
       '<div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn" onclick="RC_TROCAR()">Conectar ao GitHub</button></div></div>';
     if (RC.modo === 'gh') return '<h2>Conta</h2><div class="card"><div class="sub">Dados guardados no seu repositório privado <b>' + esc(RC.conn.owner + '/' + RC.conn.repo) + '</b>.</div>' +
@@ -1117,7 +1138,7 @@ function cicItemHtml(b,rm){
   ${it.nota?`<div class="sub" style="margin-top:4px">${esc(it.nota)}</div>`:''}${sg.why?`<div class="sub" style="margin-top:4px"><b>Por que agora:</b> ${esc(sg.why)}</div>`:''}`;
 }
 function vCic(){
-  if(!S.ciclo) return `<h1>Ciclo</h1><div class="msg">O ciclo do TRT4 ainda não foi carregado. Abra o app logado para ver o ciclo.</div>`;
+  if(!S.ciclo) return `<h1>Ciclo</h1><div class="msg">O plano do ciclo ainda não foi carregado neste aparelho.</div>`;
   const t=T(),U=cicUpcoming(6),f=U.f,rm=cicRowMap(),b=U.out[0];
   const dias=dn(S.ciclo.prova)-t, wk=cicWeek(), meta=S.ciclo.meta, volta=Math.floor(U.pos/f.seq.length)+1, inV=U.pos%f.seq.length;
   let h=`<div class="row sp"><h1>Ciclo TRT4</h1><span class="badge b-neu">${dias>0?dias+' dias para a prova':'Dia da prova'}</span></div>

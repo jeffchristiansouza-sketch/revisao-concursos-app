@@ -1,11 +1,12 @@
 /* Service worker: guarda o app para abrir sem internet. A versão é carimbada pelo build.py a cada publicação. */
-const V = 'rc-98ffcef';
+const V = 'rc-8f26203';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'simulados/index.json'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
   const u = new URL(e.request.url);
   if (e.request.method !== 'GET') return;
+  if ('/ciclo-trt4/' && u.pathname.indexOf('/ciclo-trt4/') >= 0) return; /* outra edição do app, com o próprio service worker */
   const sameOrigin = u.origin === location.origin;
   /* GitHub (dados) sempre pela rede; o próprio app guarda a cópia local */
   const cacheable = sameOrigin || u.hostname === 'fonts.googleapis.com' || u.hostname === 'fonts.gstatic.com';
