@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='18/11/2026 · c0896a2';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='20/11/2026 · 4be74a9';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1028,9 +1028,11 @@ function cicRank(k){const fila=S.ciclo.filas[k]||[],t=T(),rm=cicRowMap(),lt=cicL
     const appLast=r&&r.U?r.M:null, any=Math.max(last==null?-1e9:last,appLast==null?-1e9:appLast), age=any<-1e8?null:t-any;
     const venc=!!(r&&r.ativo&&r.AS!=null&&r.AS<=t), atraso=venc?t-r.AS:0;
     const base=W.inc*Math.min(inc,25)/25+W.weak*Math.min(1,(p==null?0.3:1-p)/0.4)+0.02*(fila.length-idx)/fila.length;
-    let sc=last==null?base+W.novo:base*Math.min(1,age/W.gap);
+    /* conteúdo novo = nunca estudado (nem no ciclo nem fora dele); o que já foi estudado no app entra como revisão */
+    const nov=last==null&&appLast==null&&p==null;
+    let sc=nov?base+W.novo:(age==null?base:base*Math.min(1,age/W.gap));
     if(venc) sc+=W.due*(0.5+0.5*Math.min(1,atraso/14));
-    out.push({it,idx,key,sc,inc,p,age,last,appLast,venc,atraso,recent:age!=null&&age<4})});
+    out.push({it,idx,key,sc,inc,p,age,last,appLast,venc,atraso,nov,recent:age!=null&&age<4})});
   out.sort((a,b)=>(a.recent-b.recent)||(b.sc-a.sc));return out}
 function cicWhy(x){const parts=[];if(x.it.inc)parts.push('incidência '+x.it.inc);parts.push(x.p==null?'acerto ainda não medido':'acerto '+pc(x.p,0));
   parts.push(x.last==null?'ainda sem bloco no ciclo':(t=>t===0?'último bloco hoje':'último bloco há '+t+(t===1?' dia':' dias'))(T()-x.last));
@@ -1041,7 +1043,10 @@ function cicWhy(x){const parts=[];if(x.it.inc)parts.push('incidência '+x.it.inc
 function cicSuggest(k,ord,f){
   const fila=S.ciclo.filas[k]; if(!fila||!fila.length) return null;
   const alt=(S.cicAlt&&S.cicAlt[k+'|'+ord])||0;
-  if(CIC_FIXA.has(k)){const done=S.cic.filter(x=>x.k===k).length;const i=(done+ord+alt)%fila.length;return {it:cicLive(k,fila[i]),idx:i,k,why:'conteúdo novo, na ordem de leitura'}}
+  if(CIC_FIXA.has(k)){const done=S.cic.filter(x=>x.k===k).length,lt=cicLastMap();let i=(done+ord+alt)%fila.length;
+    /* pula o que já foi lido em outro bloco (ex.: a mesma lei estudada no bloco da INB) */
+    for(let j=0;j<fila.length;j++){const q=(i+j)%fila.length,L=cicLive(k,fila[q]);if(!lt.has(cicItemKey(k,L))){i=q;break}}
+    return {it:cicLive(k,fila[i]),idx:i,k,why:'conteúdo novo, na ordem de leitura'}}
   const R=cicRank(k); const x=R[(ord+alt)%R.length];
   return {it:x.it,idx:x.idx,k,why:cicWhy(x)};
 }
