@@ -1,0 +1,349 @@
+{
+ "v": 1,
+ "titulo": "Dispositivos-chave para o estudo de caso",
+ "cartoes": [
+  {
+   "id": "pt01",
+   "m": "Processo do Trabalho",
+   "p": "Recurso contra acórdão de TRT em recurso ordinário: qual é e quando cabe?",
+   "d": "Art. 896 da CLT — recurso de revista",
+   "r": "Cabe contra acórdão de TRT em recurso ordinário, por divergência jurisprudencial (alíneas a e b) ou violação literal de lei federal ou da Constituição (alínea c). Prazo de 8 dias. Exige transcendência (art. 896-A), prequestionamento (Súmula 297 do TST) e transcrição do trecho do acórdão que mostra a violação (§ 1º-A)."
+  },
+  {
+   "id": "pt02",
+   "m": "Processo do Trabalho",
+   "p": "Filtro de relevância do recurso de revista",
+   "d": "Art. 896-A da CLT — transcendência",
+   "r": "O TST examina antes se a causa oferece transcendência econômica, política, social ou jurídica."
+  },
+  {
+   "id": "pt03",
+   "m": "Processo do Trabalho",
+   "p": "Recurso contra decisão do juiz na execução",
+   "d": "Art. 897, a, da CLT — agravo de petição",
+   "r": "Prazo de 8 dias. Só é recebido se o agravante delimitar, justificadamente, as matérias e os valores impugnados (§ 1º)."
+  },
+  {
+   "id": "pt04",
+   "m": "Processo do Trabalho",
+   "p": "Recurso contra decisão que nega seguimento a outro recurso",
+   "d": "Art. 897, b, da CLT — agravo de instrumento",
+   "r": "Prazo de 8 dias, contra o despacho que denega a interposição de recurso."
+  },
+  {
+   "id": "pt05",
+   "m": "Processo do Trabalho",
+   "p": "Recurso contra sentença da Vara do Trabalho",
+   "d": "Art. 895 da CLT — recurso ordinário",
+   "r": "Cabe contra decisões definitivas ou terminativas das Varas e dos TRTs em processos de sua competência originária. Prazo de 8 dias."
+  },
+  {
+   "id": "pt06",
+   "m": "Processo do Trabalho",
+   "p": "Embargos de declaração no processo do trabalho",
+   "d": "Art. 897-A da CLT",
+   "r": "Prazo de 5 dias. Cabem por omissão, contradição ou manifesto equívoco no exame dos pressupostos extrínsecos do recurso. Efeito modificativo exige vista à parte contrária (§ 2º). Interrompem o prazo de outros recursos, salvo se intempestivos, com representação irregular ou sem assinatura (§ 3º)."
+  },
+  {
+   "id": "pt07",
+   "m": "Processo do Trabalho",
+   "p": "Depósito recursal: reduções e isenções",
+   "d": "Art. 899 da CLT, §§ 9º a 11",
+   "r": "Pela metade para entidades sem fins lucrativos, empregador doméstico, MEI, ME e EPP (§ 9º). Isentos os beneficiários da justiça gratuita, as entidades filantrópicas e as empresas em recuperação judicial (§ 10). Pode ser substituído por fiança bancária ou seguro garantia judicial (§ 11)."
+  },
+  {
+   "id": "pt08",
+   "m": "Processo do Trabalho",
+   "p": "Honorários de sucumbência na Justiça do Trabalho",
+   "d": "Art. 791-A da CLT",
+   "r": "De 5% a 15% sobre a liquidação, o proveito econômico ou o valor da causa (caput). Critérios: zelo, lugar, natureza e importância da causa, trabalho e tempo (§ 2º). Sucumbência recíproca, vedada a compensação (§ 3º). Beneficiário da gratuidade: cobrança suspensa por 2 anos e extinta se não provada a melhora; o STF (ADI 5766) proibiu usar créditos obtidos em juízo para pagá-los (§ 4º)."
+  },
+  {
+   "id": "pt09",
+   "m": "Processo do Trabalho",
+   "p": "Quem tem direito à justiça gratuita na JT",
+   "d": "Art. 790, §§ 3º e 4º, da CLT",
+   "r": "Quem recebe até 40% do teto do RGPS (§ 3º) ou comprova insuficiência de recursos (§ 4º). Para o TST (recursos repetitivos, 2024), a declaração de hipossuficiência basta como prova, salvo prova em contrário."
+  },
+  {
+   "id": "pt10",
+   "m": "Processo do Trabalho",
+   "p": "Ônus da prova no processo do trabalho",
+   "d": "Art. 818 da CLT",
+   "r": "Ao reclamante cabe o fato constitutivo do direito; ao reclamado, o fato impeditivo, modificativo ou extintivo. O juiz pode distribuir o ônus de forma diversa, em decisão fundamentada e antes da instrução (§ 1º)."
+  },
+  {
+   "id": "pt11",
+   "m": "Processo do Trabalho",
+   "p": "Ausência das partes à audiência",
+   "d": "Art. 844 da CLT",
+   "r": "Ausência do reclamante: arquivamento, com custas mesmo se beneficiário da gratuidade, salvo motivo legalmente justificável provado em 15 dias (§ 2º). Ausência do reclamado: revelia e confissão quanto à matéria de fato; presente o advogado, são aceitos a contestação e os documentos (§ 5º)."
+  },
+  {
+   "id": "pt12",
+   "m": "Processo do Trabalho",
+   "p": "Preposto do empregador",
+   "d": "Art. 843, §§ 1º e 3º, da CLT",
+   "r": "O empregador pode ser substituído por preposto que conheça os fatos, cujas declarações o obrigam (§ 1º). O preposto não precisa ser empregado (§ 3º)."
+  },
+  {
+   "id": "pt13",
+   "m": "Processo do Trabalho",
+   "p": "Rito sumaríssimo: cabimento e regras",
+   "d": "Arts. 852-A, 852-B e 852-H da CLT",
+   "r": "Causas de até 40 salários mínimos, exceto contra a Administração direta, autárquica e fundacional (852-A). Pedido certo, determinado e com valor; sem citação por edital; apreciação em até 15 dias (852-B). Até 2 testemunhas por parte (852-H, § 2º)."
+  },
+  {
+   "id": "pt14",
+   "m": "Processo do Trabalho",
+   "p": "Número de testemunhas no rito ordinário",
+   "d": "Art. 821 da CLT",
+   "r": "Até 3 por parte; no inquérito para apuração de falta grave, até 6."
+  },
+  {
+   "id": "pt15",
+   "m": "Processo do Trabalho",
+   "p": "Requisitos da petição inicial trabalhista",
+   "d": "Art. 840, §§ 1º e 3º, da CLT",
+   "r": "Pedido certo, determinado e com indicação de valor (§ 1º). Sem isso, o pedido é extinto sem resolução do mérito (§ 3º)."
+  },
+  {
+   "id": "pt16",
+   "m": "Processo do Trabalho",
+   "p": "Prescrição trabalhista e prescrição intercorrente",
+   "d": "CF, art. 7º, XXIX; arts. 11 e 11-A da CLT",
+   "r": "5 anos para trás, até o limite de 2 anos após o fim do contrato. A reclamação, ainda que arquivada, interrompe a prescrição só quanto aos pedidos idênticos (art. 11, § 3º). Intercorrente: 2 anos na execução, declarável de ofício (art. 11-A)."
+  },
+  {
+   "id": "pt17",
+   "m": "Processo do Trabalho",
+   "p": "Execução de ofício pelo juiz",
+   "d": "Art. 878 da CLT",
+   "r": "Após a Reforma, o juiz só promove a execução de ofício quando as partes não estiverem representadas por advogado."
+  },
+  {
+   "id": "pt18",
+   "m": "Processo do Trabalho",
+   "p": "Impugnação aos cálculos de liquidação",
+   "d": "Art. 879, § 2º, da CLT",
+   "r": "Prazo comum de 8 dias para impugnação fundamentada, com indicação dos itens e valores, sob pena de preclusão."
+  },
+  {
+   "id": "pt19",
+   "m": "Processo do Trabalho",
+   "p": "Embargos à execução",
+   "d": "Art. 884 da CLT",
+   "r": "5 dias após garantida a execução ou penhorados os bens. A exigência de garantia não se aplica às entidades filantrópicas (§ 6º)."
+  },
+  {
+   "id": "pt20",
+   "m": "Processo do Trabalho",
+   "p": "Desconsideração da personalidade jurídica na JT",
+   "d": "Art. 855-A da CLT (IDPJ)",
+   "r": "Aplica-se o CPC (arts. 133 a 137). Suspende o processo. Na fase de conhecimento, a decisão não é recorrível de imediato; na execução, cabe agravo de petição, sem garantia do juízo."
+  },
+  {
+   "id": "pt21",
+   "m": "Processo do Trabalho",
+   "p": "Competência da Justiça do Trabalho",
+   "d": "CF, art. 114",
+   "r": "Relação de trabalho, greve, representação sindical, mandado de segurança e habeas corpus em matéria de sua jurisdição, dano moral decorrente da relação de trabalho, penalidades da fiscalização do trabalho e execução de ofício das contribuições previdenciárias das sentenças que proferir."
+  },
+  {
+   "id": "pt22",
+   "m": "Processo do Trabalho",
+   "p": "Nulidades no processo do trabalho",
+   "d": "Arts. 794 a 796 da CLT",
+   "r": "Só há nulidade se houver manifesto prejuízo (794). Deve ser arguida na primeira vez em que a parte falar nos autos (795). Não se declara se puder ser suprida, nem a pedido de quem lhe deu causa (796)."
+  },
+  {
+   "id": "pt23",
+   "m": "Processo do Trabalho",
+   "p": "Homologação de acordo extrajudicial",
+   "d": "Arts. 855-B a 855-E da CLT",
+   "r": "Petição conjunta, com advogados distintos para cada parte (855-B). O juiz analisa em 15 dias (855-D). A petição suspende a prescrição dos direitos nela especificados (855-E)."
+  },
+  {
+   "id": "dt01",
+   "m": "Direito do Trabalho",
+   "p": "Rescisão indireta (falta grave do empregador)",
+   "d": "Art. 483 da CLT",
+   "r": "Serviços superiores às forças ou alheios ao contrato, rigor excessivo, perigo manifesto, descumprimento das obrigações do contrato, ofensa à honra, ofensa física e redução do trabalho por peça. Nas hipóteses de descumprimento (d) e redução (g), o empregado pode permanecer no serviço enquanto litiga (§ 3º)."
+  },
+  {
+   "id": "dt02",
+   "m": "Direito do Trabalho",
+   "p": "Justa causa do empregado",
+   "d": "Art. 482 da CLT",
+   "r": "Rol de faltas graves: improbidade, incontinência de conduta, desídia, embriaguez habitual ou em serviço, violação de segredo, indisciplina, insubordinação, abandono de emprego, perda da habilitação profissional por dolo, entre outras."
+  },
+  {
+   "id": "dt03",
+   "m": "Direito do Trabalho",
+   "p": "Alteração do contrato e reversão do cargo de confiança",
+   "d": "Art. 468 da CLT",
+   "r": "Só por mútuo consentimento e sem prejuízo ao empregado (caput). A reversão ao cargo efetivo não é alteração ilícita (§ 1º) e não dá direito à incorporação da gratificação, qualquer que seja o tempo na função (§ 2º)."
+  },
+  {
+   "id": "dt04",
+   "m": "Direito do Trabalho",
+   "p": "Transferência do empregado",
+   "d": "Art. 469 da CLT",
+   "r": "Depende de anuência, salvo cargos de confiança e contratos com cláusula de transferência, havendo real necessidade (§ 1º). Na transferência provisória, adicional de no mínimo 25% (§ 3º)."
+  },
+  {
+   "id": "dt05",
+   "m": "Direito do Trabalho",
+   "p": "Equiparação salarial",
+   "d": "Art. 461 da CLT",
+   "r": "Mesma função, trabalho de igual valor, mesmo empregador e mesmo estabelecimento; diferença de tempo de serviço de até 4 anos no empregador e de até 2 anos na função. Quadro de carreira afasta a equiparação (§ 2º)."
+  },
+  {
+   "id": "dt06",
+   "m": "Direito do Trabalho",
+   "p": "Banco de horas e compensação de jornada",
+   "d": "Art. 59 da CLT",
+   "r": "Hora extra com adicional mínimo de 50%. Banco de horas anual por negociação coletiva (§ 2º); semestral por acordo individual escrito (§ 5º); compensação no mesmo mês por acordo individual, até tácito (§ 6º)."
+  },
+  {
+   "id": "dt07",
+   "m": "Direito do Trabalho",
+   "p": "Intervalos intrajornada e interjornada",
+   "d": "Arts. 66 e 71 da CLT",
+   "r": "11 horas entre duas jornadas (66). Intrajornada de 1 a 2 horas para jornada acima de 6h e de 15 minutos entre 4h e 6h (71). Supressão: paga-se só o período suprimido, com 50%, de natureza indenizatória (71, § 4º)."
+  },
+  {
+   "id": "dt08",
+   "m": "Direito do Trabalho",
+   "p": "Trabalho noturno urbano",
+   "d": "Art. 73 da CLT",
+   "r": "Das 22h às 5h, adicional de 20% sobre a hora diurna e hora reduzida de 52 minutos e 30 segundos."
+  },
+  {
+   "id": "dt09",
+   "m": "Direito do Trabalho",
+   "p": "Adicionais de insalubridade e periculosidade",
+   "d": "Arts. 189, 192 e 193 da CLT",
+   "r": "Insalubridade: 40%, 20% ou 10% (graus máximo, médio e mínimo). Periculosidade: 30% sobre o salário básico (193, § 1º), inclusive para trabalhador em motocicleta (§ 4º). Não se acumulam: o empregado escolhe (193, § 2º)."
+  },
+  {
+   "id": "dt10",
+   "m": "Direito do Trabalho",
+   "p": "Aviso prévio",
+   "d": "CF, art. 7º, XXI; Lei 12.506/2011; arts. 487 e 488 da CLT",
+   "r": "Mínimo de 30 dias, mais 3 por ano de serviço, até 90 dias. Na dispensa pelo empregador, redução de 2 horas diárias ou de 7 dias corridos (art. 488)."
+  },
+  {
+   "id": "dt11",
+   "m": "Direito do Trabalho",
+   "p": "Extinção do contrato por acordo",
+   "d": "Art. 484-A da CLT",
+   "r": "Metade do aviso prévio indenizado e metade da multa do FGTS (20%); demais verbas integrais. Saque de até 80% do FGTS e sem seguro-desemprego."
+  },
+  {
+   "id": "dt12",
+   "m": "Direito do Trabalho",
+   "p": "Negociado sobre o legislado",
+   "d": "Arts. 611-A e 611-B da CLT; STF, Tema 1.046",
+   "r": "A norma coletiva prevalece sobre a lei nos temas do 611-A (jornada, banco de horas, intervalo de no mínimo 30 minutos etc.) e não pode suprimir os direitos do 611-B. O STF validou acordos que limitam direitos, salvo os absolutamente indisponíveis."
+  },
+  {
+   "id": "dt13",
+   "m": "Direito do Trabalho",
+   "p": "Terceirização",
+   "d": "Lei 6.019/1974, arts. 4º-A e 5º-A; Súmula 331 do TST; STF, ADPF 324 e Tema 246",
+   "r": "Lícita em qualquer atividade, inclusive a principal. A contratante responde subsidiariamente (art. 5º-A, § 5º). A Administração Pública só responde se comprovada culpa na fiscalização do contrato, sem transferência automática."
+  },
+  {
+   "id": "dt14",
+   "m": "Direito do Trabalho",
+   "p": "Grupo econômico",
+   "d": "Art. 2º, §§ 2º e 3º, da CLT",
+   "r": "Empresas do grupo respondem solidariamente. A simples identidade de sócios não basta: é preciso interesse integrado, efetiva comunhão de interesses e atuação conjunta."
+  },
+  {
+   "id": "dt15",
+   "m": "Direito do Trabalho",
+   "p": "Sucessão de empregadores",
+   "d": "Arts. 10, 448 e 448-A da CLT",
+   "r": "A mudança na propriedade ou estrutura da empresa não afeta os contratos. O sucessor responde pelas obrigações; a sucedida responde solidariamente se houver fraude."
+  },
+  {
+   "id": "dt16",
+   "m": "Direito do Trabalho",
+   "p": "Estabilidades provisórias",
+   "d": "ADCT, art. 10, II, b; Lei 8.213/1991, art. 118; CF, art. 8º, VIII",
+   "r": "Gestante: da confirmação da gravidez até 5 meses após o parto, mesmo que o empregador não saiba (Súmula 244). Acidentado: 12 meses após o fim do auxílio por incapacidade acidentário (Súmula 378). Dirigente sindical: do registro da candidatura até 1 ano após o mandato, salvo falta grave apurada em inquérito."
+  },
+  {
+   "id": "dt17",
+   "m": "Direito do Trabalho",
+   "p": "Férias: fracionamento, dobro e abono",
+   "d": "Arts. 134, § 1º, 137 e 143 da CLT",
+   "r": "Com concordância do empregado, até 3 períodos: um de no mínimo 14 dias e os demais de no mínimo 5 (134, § 1º). Concedidas fora do prazo: pagas em dobro (137). Abono: venda de 1/3 (143)."
+  },
+  {
+   "id": "dt18",
+   "m": "Direito do Trabalho",
+   "p": "Greve",
+   "d": "Lei 7.783/1989",
+   "r": "Aviso prévio ao empregador de 48 horas (art. 3º) e de 72 horas nos serviços essenciais (art. 13), com atendimento das necessidades inadiáveis da comunidade."
+  },
+  {
+   "id": "con01",
+   "m": "Constitucional",
+   "p": "Responsabilidade civil do Estado",
+   "d": "CF, art. 37, § 6º; STF, Tema 940",
+   "r": "Objetiva (risco administrativo), com direito de regresso contra o agente que agiu com dolo ou culpa. A vítima deve acionar o Estado ou a prestadora, não o agente diretamente."
+  },
+  {
+   "id": "con02",
+   "m": "Constitucional",
+   "p": "Declaração de inconstitucionalidade pelos tribunais",
+   "d": "CF, art. 97; Súmula Vinculante 10",
+   "r": "Só pela maioria absoluta do tribunal ou do órgão especial (reserva de plenário). Afastar a lei sem declarar a inconstitucionalidade também viola a regra."
+  },
+  {
+   "id": "con03",
+   "m": "Constitucional",
+   "p": "Dever de fundamentação das decisões",
+   "d": "CF, art. 93, IX; CPC, art. 489, § 1º",
+   "r": "Decisões sem fundamentação são nulas. O CPC lista o que não é fundamentação, como não enfrentar argumentos capazes de, em tese, infirmar a conclusão."
+  },
+  {
+   "id": "adm01",
+   "m": "Administrativo",
+   "p": "Estabilidade e perda do cargo do servidor",
+   "d": "CF, art. 41",
+   "r": "Estável após 3 anos de efetivo exercício e avaliação especial de desempenho. Perde o cargo por sentença transitada em julgado, processo administrativo com ampla defesa ou avaliação periódica insatisfatória."
+  },
+  {
+   "id": "adm02",
+   "m": "Administrativo",
+   "p": "Penalidades e prazo do PAD na Lei 8.112",
+   "d": "Arts. 127 e 152 da Lei 8.112/1990",
+   "r": "Advertência, suspensão, demissão, cassação de aposentadoria ou disponibilidade, destituição de cargo em comissão e de função comissionada (127). O PAD deve terminar em 60 dias, prorrogáveis por igual prazo (152)."
+  },
+  {
+   "id": "adm03",
+   "m": "Administrativo",
+   "p": "Sanções nas licitações e contratos",
+   "d": "Art. 156 da Lei 14.133/2021",
+   "r": "Advertência, multa, impedimento de licitar e contratar (até 3 anos) e declaração de inidoneidade (de 3 a 6 anos). Só a multa pode ser aplicada junto com as demais (§ 7º)."
+  },
+  {
+   "id": "pc01",
+   "m": "Processo Civil",
+   "p": "Fraude à execução e fraude contra credores",
+   "d": "CPC, art. 792; CC, arts. 158 a 165",
+   "r": "Fraude à execução: alienação quando já há ação capaz de levar à insolvência; reconhecida no próprio processo e ineficaz perante o credor (Súmula 375 do STJ: exige registro da penhora ou má-fé do terceiro). Fraude contra credores: anulável por ação pauliana."
+  },
+  {
+   "id": "pc02",
+   "m": "Processo Civil",
+   "p": "Tutelas de urgência e de evidência",
+   "d": "CPC, arts. 300 e 311",
+   "r": "Urgência: probabilidade do direito e perigo de dano ou risco ao resultado útil do processo; não se concede a antecipada se houver perigo de irreversibilidade. Evidência: dispensa o perigo de dano, nas hipóteses do art. 311."
+  }
+ ]
+}

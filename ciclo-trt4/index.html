@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='20/11/2026 · 12dda1c';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
+<script>window.RC_VER='20/11/2026 · 7f22265';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -163,7 +163,7 @@ nav button{font-size:10px;padding:6px 0}
      t = hora da última alteração; x = apagado. Na junção vence o t maior, documento a documento.
      O aparelho guarda uma cópia em localStorage e trabalha sempre nela; a rede só sincroniza. */
   var GH = window.RC_GH || { owner: '', repo: '', branch: 'dados', dir: 'dados' };
-  var BUCKETS = ['app', 'sessoes', 'ciclo', 'sim_tent', 'simulados', 'qfeito', 'flash'];
+  var BUCKETS = ['app', 'sessoes', 'ciclo', 'sim_tent', 'simulados', 'qfeito', 'flash', 'cartoes'];
   var SLOW = { sim_tent: 90000 };           /* intervalo mínimo entre envios; o simulado grava a cada resposta */
   var MIN_GAP = 8000, DEBOUNCE = 1500, POLL = 90000, TOMB_DIAS = 90;
   var GKEY = 'rc_g1_', GMETA = 'rc_g1_meta';
@@ -647,6 +647,8 @@ async function init(){
   S.db.collection('simulados').onSnapshot(sn=>{ const dbs=sn.docs.map(d=>({...clean(d.data()),id:d.id})); S.simsDb=dbs; S.sims=simMerge(); bgRender(); });
   simLoadFiles();
   dcLoad();
+  dspLoad();
+  S.db.collection('cartoes').onSnapshot(sn=>{ const f={}; sn.docs.forEach(d=>{ f[d.id]=clean(d.data()); }); S.cart=f; bgRender(); });
   S.db.collection('sim_tent').onSnapshot(sn=>{ const keep=S.simRun&&S.tents.find(x=>x._id===S.simRun.tid); S.tents=sn.docs.map(d=>({...clean(d.data()),_id:d.id})); if(keep){const db=S.tents.find(x=>x._id===keep._id); if(!db) S.tents.push(keep); else if(keep.fim||!db.fim){ /* nota do estudo de caso gravada fora deste aparelho (correção feita na conversa) */ if(keep.fim&&db.discNota!=null&&(keep.discNota!==db.discNota||JSON.stringify(keep.discGrade||null)!==JSON.stringify(db.discGrade||null))){keep.discNota=db.discNota;keep.discGrade=db.discGrade;if(S.discG)delete S.discG[keep._id]} S.tents=S.tents.map(x=>x._id===keep._id?keep:x)} } bgRender(); });
   S.db.collection('qfeito').onSnapshot(sn=>{ const f={}; sn.docs.forEach(d=>{ f[d.id]=clean(d.data()); }); S.qf=f; bgRender(); });
   S.db.collection('flash').onSnapshot(sn=>{ const f={}; sn.docs.forEach(d=>{ if(d.data().ok) f[d.id]=true; }); S.flash=f; bgRender(); });
@@ -661,7 +663,7 @@ async function migratePesos(){if(S.cfg.pesosV2||S._mig)return;S._mig=true;let n=
 
 async function saveItems(){S.items=clean(S.items);try{await S.db.doc('app/assuntos').set({items:S.items});return true}catch(e){toast('Não foi possível salvar o assunto. Tente de novo.');return false}}
 function digitando(){const e=document.activeElement;return !!(e&&/^(INPUT|SELECT|TEXTAREA)$/.test(e.tagName)&&(e.closest('#app')||e.closest('#ov')))}
-function bgRender(){if(!S.ready)return; if(S.sel!=null||S.cm||S.cq||S.simCq||S.es||S.cicEdId||(S.simRun&&S.tab==='sim')){S.pend=true;return}
+function bgRender(){if(!S.ready)return; if(S.sel!=null||S.cm||S.cq||S.simCq||S.es||S.cicEdId||S.dsp||(S.simRun&&S.tab==='sim')){S.pend=true;return}
   if(S.tab==='reg'&&digitando()){S.pendR=true;return} render()}
 document.addEventListener('focusout',()=>setTimeout(()=>{if(S.pendR&&!digitando()&&!S.es){S.pendR=false;render()}},400));
 const saveCfg=()=>S.db.doc('app/config').set(clean(S.cfg));
@@ -687,6 +689,7 @@ function render(){
   else if(S.simCq) simCqSheet();
   else if(S.es) sesEditSheet();
   else if(S.cicEdId) cicEdSheet();
+  else if(S.dsp) dspRender();
   else $('#ov').innerHTML='';
 }
 
@@ -957,7 +960,7 @@ async function expTsv(){const t=rowsExp().map(r=>r.join('\t')).join('\n');try{aw
 function bkDados(){const sem=o=>{const{_id,...r}=o;return r};
   return {app:'revisao-concursos',versao:2,gerado:new Date().toISOString(),items:S.items,cfg:S.cfg,ses:S.ses.map(sem),
     col:{sessoes:Object.fromEntries(S.ses.map(x=>[x._id,sem(x)])),ciclo:Object.fromEntries((S.cic||[]).map(x=>[x._id,sem(x)])),
-      sim_tent:Object.fromEntries((S.tents||[]).map(x=>[x._id,sem(x)])),qfeito:clean(S.qf||{}),
+      sim_tent:Object.fromEntries((S.tents||[]).map(x=>[x._id,sem(x)])),qfeito:clean(S.qf||{}),cartoes:clean(S.cart||{}),
       flash:Object.fromEntries(Object.keys(S.flash||{}).map(k=>[k,{ok:true}])),simulados:Object.fromEntries((S.simsDb||[]).map(x=>{const{id,...r}=x;return[id,r]}))},
     ciclo:S.ciclo||null}}
 async function expBackup(){const dl=await claude.use('downloads').catch(()=>null);if(!dl)return toast('Download indisponível');
@@ -972,7 +975,7 @@ async function impBackup(inp){const f=inp.files[0];inp.value='';if(!f)return;
     S.items=d.items;S.cfg={...DEFAULT_CFG,...d.cfg};await saveItems();await saveCfg();
     if(d.versao>=2&&d.col){
       if(d.ciclo)await S.db.doc('app/ciclo').set(d.ciclo);
-      const atual={sessoes:S.ses.map(x=>x._id),ciclo:(S.cic||[]).map(x=>x._id),sim_tent:(S.tents||[]).map(x=>x._id),qfeito:Object.keys(S.qf||{}),flash:Object.keys(S.flash||{}),simulados:(S.simsDb||[]).map(x=>x.id)};
+      const atual={sessoes:S.ses.map(x=>x._id),ciclo:(S.cic||[]).map(x=>x._id),sim_tent:(S.tents||[]).map(x=>x._id),qfeito:Object.keys(S.qf||{}),cartoes:Object.keys(S.cart||{}),flash:Object.keys(S.flash||{}),simulados:(S.simsDb||[]).map(x=>x.id)};
       for(const c of Object.keys(atual)){const novo=d.col[c]||{};
         for(const id of atual[c])if(!(id in novo))await S.db.collection(c).doc(id).delete();
         for(const id of Object.keys(novo))await S.db.collection(c).doc(id).set(novo[id])}
@@ -1117,7 +1120,7 @@ function cicUpcoming(n){
     const k0=f.seq[p%f.seq.length]; const o0=cntK0[k0]||0; cntK0[k0]=o0+1;
     const k=cicResolve(k0,o0); const ord=cnt[k]||0; cnt[k]=ord+1;
     const b={f:f.n,p,k0,k,nome:S.ciclo.nomes[k]||k};
-    if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho'}
+    if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho. Antes, 5 min nos Dispositivos-chave (logo abaixo dos Flashcards)'}
     else if(k==='MANUT'){b.modo='Revisões vencidas no app de assuntos fora do edital do TRT (pensando no próximo TRT)';b.manut='manut'}
     else if(k==='REVE'){b.modo='Questões dos assuntos com pior acerto nas últimas 3 semanas (inclui o que você registrou na correção dos simulados)';b.manut='reve'}
     else if(k==='SIM'){const n=S.cic.filter(x=>x.k==='SIM').length+ord+1;b.tema='Simulado completo nº '+n;b.modo='Faça o próximo simulado inédito da aba Simulados (60 objetivas + estudo de caso, 4h). Ao entregar, o app oferece concluir este bloco. Conta 3 blocos.';b.peso=3}
@@ -1151,6 +1154,7 @@ function vCic(){
   <div class="tiles" style="margin-top:12px"><div class="tile"><div class="l">Blocos nesta semana</div><div class="n">${wk}<span class="sub"> / ${meta}</span></div><div class="bar" style="margin-top:6px"><i style="width:${Math.min(100,wk/meta*100)}%;background:var(--acc)"></i></div></div>
   <div class="tile"><div class="l">Volta ${volta}</div><div class="n">${inV}<span class="sub"> / ${f.seq.length}</span></div><div class="bar" style="margin-top:6px"><i style="width:${inV/f.seq.length*100}%;background:var(--ok)"></i></div></div></div>`;
   h+=cicFlash();
+  h+=dspCard();
   h+=`<h2>Próximo bloco</h2><div class="card cic-next"><div class="row sp"><div class="tag">${esc(b.nome)}</div><span class="badge b-neu">${b.peso?'~3h':'~1h'}</span></div>
    ${cicItemHtml(b,rm)}<div class="cic-modo">${esc(b.modo)}</div>${b.sg&&b.sg.it&&!b.manut?cicFontesHtml(b.k,b.sg.it):''}${cicVencHtml(b)}${b.k==='DISC'?dcBtnHtml(b):''}
    <div class="row" style="margin-top:12px;flex-wrap:wrap"><button class="btn p" onclick="cicOpen(0)">Concluir bloco</button>${b.sg&&!b.sg.simp?`<button class="btn s" onclick="cicTrocar('${b.k}')">Outro assunto</button>`:''}<button class="btn s" onclick="cicAdiar()">Adiar</button></div></div>`;
@@ -1171,6 +1175,28 @@ function cicFlash(){const t=T();let dots='';for(let i=6;i>=0;i--){const d=iso(t-
   const ok=S.flash&&S.flash[iso(t)];
   return `<div class="card row sp" style="margin-top:10px"><div><b>Flashcards (30 min)</b><div class="row" style="gap:4px;margin-top:4px">${dots}</div></div><button class="btn s ${ok?'':'p'}" onclick="cicFlashToggle()">${ok?'Feito hoje ✓':'Marcar hoje'}</button></div>`}
 async function cicFlashToggle(){const d=iso(T()),ok=S.flash[d];S.flash[d]=!ok;render();try{if(ok)await S.db.collection('flash').doc(d).delete();else await S.db.collection('flash').doc(d).set({ok:true})}catch(e){toast('Não foi possível salvar')}}
+/* dispositivos-chave: flashcards de artigos para o estudo de caso (caixas de Leitner: 1, 2, 4, 8, 16 e 30 dias; até 8 cartões novos por dia) */
+const DSP_INT=[1,2,4,8,16,30],DSP_NOVOS=8;
+async function dspLoad(){try{const r=await fetch('simulados/disp.json',{cache:'no-store'});if(r.ok){S.disp=(await r.json()).cartoes||[];bgRender()}}catch(e){}}
+function dspFila(){const td=iso(T()),c=S.cart||{},L=S.disp||[];const venc=L.filter(x=>c[x.id]&&c[x.id].prox<=td);
+  const novosHoje=Object.values(c).filter(v=>v.ini===td).length;return venc.concat(L.filter(x=>!c[x.id]).slice(0,Math.max(0,DSP_NOVOS-novosHoje)))}
+function dspCard(){const L=S.disp||[];if(!L.length)return '';const f=dspFila(),vist=Object.keys(S.cart||{}).filter(k=>L.some(x=>x.id===k)).length;
+  return `<div class="card row sp" style="margin-top:10px"><div><b>Dispositivos-chave</b><div class="sub">${f.length?f.length+(f.length===1?' cartão':' cartões')+' para hoje':'Nada para hoje ✓'} · ${vist} de ${L.length} já vistos</div></div><button class="btn s ${f.length?'p':''}" onclick="dspOpen()">${f.length?'Revisar':'Treinar livre'}</button></div>`}
+function dspOpen(){const f=dspFila();S.dsp={q:f.length?f.map(x=>x.id):(S.disp||[]).map(x=>x.id).sort(()=>Math.random()-.5).slice(0,10),i:0,ver:false,ok:0,n:0,livre:!f.length};render()}
+function dspRender(){const D=S.dsp,el=$('#ov');if(!D){el.innerHTML='';return}
+  if(D.i>=D.q.length){el.innerHTML=`<div class="sheet" onclick="if(event.target===this)dspClose()"><div><h2 style="margin-top:0">Dispositivos-chave</h2><p>Você lembrou ${D.ok} de ${D.n}.${D.livre?' (treino livre: não muda a programação)':' Os que você errou voltam amanhã; os que lembrou, em intervalos cada vez maiores.'}</p><button class="btn p" onclick="dspClose()">Fechar</button></div></div>`;return}
+  const x=(S.disp||[]).find(y=>y.id===D.q[D.i]);if(!x){D.i++;return dspRender()}
+  el.innerHTML=`<div class="sheet" onclick="if(event.target===this)dspClose()"><div><div class="row sp"><div class="tag">${esc(x.m)} · ${D.i+1} de ${D.q.length}</div><button class="btn s" onclick="dspClose()">Fechar</button></div>
+   <h2 style="margin:12px 0">${esc(x.p)}</h2>
+   ${D.ver?`<div class="card"><b>${esc(x.d)}</b><div class="sub" style="margin-top:6px;line-height:1.55">${esc(x.r)}</div></div>
+    <div class="row" style="margin-top:12px"><button class="btn grow" onclick="dspResp(false)">Errei</button><button class="btn p grow" onclick="dspResp(true)">Lembrei</button></div>`
+   :`<div class="sub">Qual é o dispositivo? Tente lembrar o número e a regra antes de ver a resposta.</div><button class="btn p" style="margin-top:12px" onclick="S.dsp.ver=true;dspRender()">Ver resposta</button>`}</div></div>`}
+async function dspResp(ok){const D=S.dsp,id=D.q[D.i],td=iso(T());D.n++;if(ok)D.ok++;D.i++;D.ver=false;
+  if(D.livre){dspRender();return}
+  const c=S.cart=S.cart||{},o=c[id]||{cx:0,ini:td},cx=ok?Math.min((c[id]?o.cx:0)+1,DSP_INT.length-1):0;
+  const n={...o,cx,ult:td,prox:iso(T()+(ok?DSP_INT[cx]:1)),ac:(o.ac||0)+(ok?1:0),er:(o.er||0)+(ok?0:1)};c[id]=n;dspRender();
+  try{await S.db.collection('cartoes').doc(id).set(n)}catch(e){toast('Não foi possível salvar')}}
+function dspClose(){S.dsp=null;render()}
 function cicDiscHtml(){const l=S.cic.filter(x=>x.k==='DISC'&&x.st==='feito'&&x.nota!=null).sort((a,b)=>(dn(a.d)-dn(b.d))||(a.t-b.t));
   const btn=`<button class="btn p s" onclick="cicDiscOpen()">Registrar estudo de caso</button>`;
   if(!l.length) return `<div class="row sp" style="margin:22px 0 10px"><h2 style="margin:0">Discursiva</h2>${btn}</div><div class="card"><div class="sub">Registre aqui a nota de qualquer estudo de caso, a qualquer momento: os 8 que você já fez (marque “feito antes do ciclo”) e os novos. Um estudo de caso novo conta como o próximo bloco de Discursiva da sequência.</div></div>`;
