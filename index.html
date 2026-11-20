@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='20/11/2026 · 4be74a9';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='20/11/2026 · 12dda1c';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1124,7 +1124,7 @@ function cicUpcoming(n){
     else if(k==='CORR'){b.modo='Corrija o simulado, registre os erros por assunto no app e crie flashcards'}
     else if(k==='SUM'){b.modo='Súmulas e OJs do TST mais cobradas (processo e direito material) + teses do STF'}
     else if(k==='ERR'){b.modo='Releia só o que você errou ou grifou. Nada de conteúdo novo.'}
-    else {let sg=cicSuggest(k,ord,f); if(!out.length&&S.cicPick&&S.cicPick.k===k){const r=M.rows[S.cicPick.idx];if(r)sg={it:{m:r.it.m,a:r.it.a,s:r.it.s},idx:-1,k,app:true}} b.sg=sg; b.modo=sg&&sg.simp?'Simulado do Passo com tempo cronometrado · corrija e registre os erros':cicModo(k,sg&&sg.it,f)}
+    else {let sg=cicSuggest(k,ord,f); const pk=cicPickGet();if(!out.length&&pk&&pk.k===k){const r=M.rows.find(r=>r.it.m===pk.m&&r.it.a===pk.a&&r.it.s===pk.s);if(r)sg={it:{m:r.it.m,a:r.it.a,s:r.it.s},idx:-1,k,app:true}} b.sg=sg; b.modo=sg&&sg.simp?'Simulado do Passo com tempo cronometrado · corrija e registre os erros':cicModo(k,sg&&sg.it,f)}
     out.push(b);
   }
   return {f,pos,out};
@@ -1201,10 +1201,12 @@ function cicOpenAd(id){const x=S.cic.find(y=>y._id===id);if(!x)return;const b={f
   S.cm={b,snap:{...x},adId:id};render()}
 async function cicAdiar(){const U=cicUpcoming(1),b=U.out[0];const id='c'+Date.now().toString(36);const d={...cicSnap(b),st:'adiado',d:iso(T()),t:Date.now()};
   S.cicPick=null;S.cic.push({...d,_id:id});render();try{await S.db.collection('ciclo').doc(id).set(d);toast('Bloco adiado: ele fica na lista de adiados')}catch(e){toast('Não foi possível salvar')}}
+/* bloco desfeito volta com o mesmo assunto, mesmo depois de fechar e abrir o app (vale até o fim do dia) */
+function cicPickGet(){if(S.cicPick===undefined){try{S.cicPick=JSON.parse(localStorage.getItem('rc_cicpick'))}catch(e){S.cicPick=null}}const p=S.cicPick;return p&&p.d===iso(T())&&p.m?p:null}
 async function cicDel(id){if(S.cicDelArm!==id){S.cicDelArm=id;setTimeout(()=>{if(S.cicDelArm===id)S.cicDelArm=null},5000);return toast('Desfazer APAGA o bloco do ciclo. Para corrigir questões ou acertos, use Editar. Toque de novo em Desfazer para confirmar')}S.cicDelArm=null;
   const x=S.cic.find(y=>y._id===id);
   /* o bloco desfeito volta com o MESMO assunto (sem isso, o assunto recém-estudado iria para o fim da fila e o ciclo sugeriria outro) */
-  if(x&&x.a&&x.k){const idx=M.rows.findIndex(r=>r.it.m===x.m&&r.it.a===x.a&&r.it.s===x.s);S.cicPick=idx>=0?{k:x.k,idx}:null}
+  if(x&&x.a&&x.k){S.cicPick={k:x.k,m:x.m,a:x.a,s:x.s,d:iso(T())};try{localStorage.setItem('rc_cicpick',JSON.stringify(S.cicPick))}catch(e){}}
   S.cic=S.cic.filter(y=>y._id!==id);render();try{await S.db.collection('ciclo').doc(id).delete();toast('Bloco desfeito: ele volta como próximo, com o mesmo assunto. A sessão continua no histórico; se for refazer o registro, exclua-a lá para não contar em dobro.')}catch(e){toast('Não foi possível desfazer')}}
 function cicSesDo(x){return S.ses.filter(s=>s.d===x.d&&s.m===x.m&&s.a===x.a&&s.s===x.s&&/^Ciclo/.test(s.obs||'')).sort((a,b)=>(b.n||0)-(a.n||0))[0]||null}
 function cicEd(id){S.cicEdId=id;render()}
@@ -1355,7 +1357,7 @@ async function cicSave(){
     else{const id='c'+Date.now().toString(36);S.cic.push({...d,_id:id});render();await S.db.collection('ciclo').doc(id).set(d)}
     if(cad){S.items.push(cad);recalc();await saveItems()}
     if(ses) await addSes(ses);
-    S.cicAlt={};S.cicPick=null;toast(ses?'Bloco concluído e revisão registrada'+proxTxt(ses.m,ses.a,ses.s):cad?'Bloco concluído e assunto cadastrado':'Bloco concluído');
+    S.cicAlt={};S.cicPick=null;try{localStorage.removeItem('rc_cicpick')}catch(e){}toast(ses?'Bloco concluído e revisão registrada'+proxTxt(ses.m,ses.a,ses.s):cad?'Bloco concluído e assunto cadastrado':'Bloco concluído');
   }catch(e){toast('Não foi possível salvar: tente de novo')}
   render();
 }
