@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 828d186';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='21/11/2026 · d32138a';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1133,7 +1133,8 @@ function cicUpcoming(n){
   return {f,pos,out};
 }
 function cicWeek(){const t=T(),wd=(new Date(t*DAY).getUTCDay()+6)%7,ini=t-wd;
-  return S.cic.filter(x=>x.st==='feito'&&dn(x.d)>=ini&&dn(x.d)<=t).reduce((s,x)=>s+(x.k==='SIM'?3:1),0)}
+  /* o estudo de caso de simulado (simTent) é só histórico: o simulado já conta como bloco SIM */
+  return S.cic.filter(x=>x.st==='feito'&&!x.simTent&&dn(x.d)>=ini&&dn(x.d)<=t).reduce((s,x)=>s+(x.k==='SIM'?3:1),0)}
 function cicItemHtml(b,rm){
   if(b.tema) return `<div class="ttl">${esc(b.tema)}</div>`;
   if(b.manut){const l=b.manut==='reve'?cicReveList():cicManutList(); return l.length?`<div class="sub" style="margin-top:4px">Sugestões:</div>`+l.slice(0,3).map(r=>`<div class="sub">• <b>${esc(r.it.a)}</b> · ${esc(r.it.m)} ${r.AT!=null&&r.AT<0?`<span style="color:var(--alta)">(${-r.AT}d atrasado)</span>`:''}</div>`).join(''):'<div class="sub">Nada vencido fora do edital. Use o bloco para flashcards ou para o assunto fora do edital mais fraco.</div>'}
