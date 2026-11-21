@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · b75bb8a';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
+<script>window.RC_VER='21/11/2026 · 828d186';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1520,9 +1520,9 @@ function vSimRes(sim,t){if(!simTemGab(sim)){if(!simTemPre(sim))return vSimPend(s
   h+=`<h2>Por matéria</h2><div class="card"><table><tr><th>Matéria</th><th>Acertos</th><th>%</th></tr>`+Object.entries(r.mat).sort((a,b)=>(a[1].area<b[1].area?-1:a[1].area>b[1].area?1:0)||(a[1].ac/a[1].q-b[1].ac/b[1].q)).map(([m,x])=>`<tr><td>${esc(m)}<div class="sub">${x.area==='G'?'Gerais':'Específicos'}</div></td><td>${x.ac}/${x.q}</td><td style="font-weight:600;color:${x.ac/x.q>=.7?'var(--ok)':x.ac/x.q>=.5?'var(--media)':'var(--alta)'}">${pc(x.ac/x.q,0)}</td></tr>`).join('')+`</table></div>`;
   if(sim.disc) h+=simDiscHtml(sim,t,true);
   const nd=sim.questoes.filter(q=>t.marc&&t.marc[q.n]).length,ndOk=sim.questoes.filter(q=>t.marc&&t.marc[q.n]&&t.resp[q.n]===q.gab).length;
-  h+=`<h2>Questões comentadas</h2>${nd?`<div class="sub" style="margin-bottom:8px">Você ficou em dúvida em <b>${nd}</b> ${nd===1?'questão':'questões'} e acertou <b>${ndOk}</b>.</div>`:''}<div class="row" style="gap:6px;margin-bottom:8px;flex-wrap:wrap">${[['erradas','Erradas, em branco e dúvidas'],['marcadas','Só as dúvidas'+(nd?' ('+nd+')':'')],['todas','Todas']].map(([k,l])=>`<button class="btn s ${f===k?'p':''}" onclick="S.simRun.filtro='${k}';render()">${l}</button>`).join('')}</div>`;
-  const qs=sim.questoes.filter(q=>f==='todas'||(f==='erradas'&&(t.resp[q.n]!==q.gab||(t.marc&&t.marc[q.n])))||(f==='marcadas'&&t.marc&&t.marc[q.n]));
-  if(!qs.length) h+=`<div class="empty">${f==='erradas'?'Nenhum erro. Gabaritou!':'Nada aqui.'}</div>`;
+  h+=`<h2>Questões comentadas</h2>${nd?`<div class="sub" style="margin-bottom:8px">Você ficou em dúvida em <b>${nd}</b> ${nd===1?'questão':'questões'} e acertou <b>${ndOk}</b>.</div>`:''}<div class="row" style="gap:6px;margin-bottom:8px;flex-wrap:wrap">${[['erradas','Só as erradas ('+sim.questoes.filter(q=>t.resp[q.n]!==q.gab).length+')'],['marcadas','Só as dúvidas ('+nd+')'],['todas','Todas ('+sim.questoes.length+')']].map(([k,l])=>`<button class="btn s ${f===k?'p':''}" onclick="S.simRun.filtro='${k}';render()">${l}</button>`).join('')}</div>`;
+  const qs=sim.questoes.filter(q=>f==='todas'||(f==='erradas'&&t.resp[q.n]!==q.gab)||(f==='marcadas'&&t.marc&&t.marc[q.n]));
+  if(!qs.length) h+=`<div class="empty">${f==='erradas'?'Nenhum erro. Gabaritou!':f==='marcadas'?'Você não marcou nenhuma dúvida.':'Nada aqui.'}</div>`;
   for(const q of qs){const a=t.resp[q.n],ok=a===q.gab;
     h+=`<div class="card"><div class="row sp"><div class="tag">Questão ${q.n} · ${esc(q.mat)}</div><span>${t.marc&&t.marc[q.n]?'<span class="badge b-media">dúvida</span> ':''}<span class="badge ${ok?'b-ok':a?'b-alta':'b-neu'}">${ok?'acertou':a?'errou':'em branco'}</span></span></div>
      <div class="sim-enun">${esc(q.enun)}</div><div class="sim-alts">${q.alts.map((x,i)=>{const L=SL[i];const c=L===q.gab?'gab':L===a?'err':'';return `<div class="sim-alt ro ${c}"><span class="sim-l">${L}</span><span>${esc(x)}</span></div>`}).join('')}</div>
