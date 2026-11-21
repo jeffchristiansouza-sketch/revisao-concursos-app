@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 1d6ec96';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
+<script>window.RC_VER='21/11/2026 · 58a835c';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1175,11 +1175,13 @@ function cicFlash(){const t=T();let dots='';for(let i=6;i>=0;i--){const d=iso(t-
   const ok=S.flash&&S.flash[iso(t)];
   return `<div class="card row sp" style="margin-top:10px"><div><b>Flashcards (30 min)</b><div class="row" style="gap:4px;margin-top:4px">${dots}</div></div><button class="btn s ${ok?'':'p'}" onclick="cicFlashToggle()">${ok?'Feito hoje ✓':'Marcar hoje'}</button></div>`}
 async function cicFlashToggle(){const d=iso(T()),ok=S.flash[d];S.flash[d]=!ok;render();try{if(ok)await S.db.collection('flash').doc(d).delete();else await S.db.collection('flash').doc(d).set({ok:true})}catch(e){toast('Não foi possível salvar')}}
-/* dispositivos-chave: flashcards de artigos para o estudo de caso (caixas de Leitner: 1, 2, 4, 8, 16 e 30 dias; até 8 cartões novos por dia) */
-const DSP_INT=[1,2,4,8,16,30],DSP_NOVOS=8;
+/* dispositivos-chave: flashcards de artigos para o estudo de caso (caixas de Leitner: 1, 2, 4, 8, 16 e 30 dias; no máximo 5 cartões por dia, somando revisões e novos) */
+const DSP_INT=[1,2,4,8,16,30],DSP_NOVOS=5,DSP_DIA=5;
 async function dspLoad(){try{const r=await fetch('simulados/disp.json',{cache:'no-store'});if(r.ok){S.disp=(await r.json()).cartoes||[];bgRender()}}catch(e){}}
-function dspFila(){const td=iso(T()),c=S.cart||{},L=S.disp||[];const venc=L.filter(x=>c[x.id]&&c[x.id].prox<=td);
-  const novosHoje=Object.values(c).filter(v=>v.ini===td).length;return venc.concat(L.filter(x=>!c[x.id]).slice(0,Math.max(0,DSP_NOVOS-novosHoje)))}
+/* no máximo DSP_DIA cartões por dia (revisões atrasadas não se acumulam: entram as mais antigas primeiro) */
+function dspFila(){const td=iso(T()),c=S.cart||{},L=S.disp||[];const venc=L.filter(x=>c[x.id]&&c[x.id].prox<=td).sort((x,y)=>c[x.id].prox<c[y.id].prox?-1:1);
+  const novosHoje=Object.values(c).filter(v=>v.ini===td).length,feitosHoje=Object.values(c).filter(v=>v.ult===td).length;
+  return venc.concat(L.filter(x=>!c[x.id]).slice(0,Math.max(0,DSP_NOVOS-novosHoje))).slice(0,Math.max(0,DSP_DIA-feitosHoje))}
 function dspCard(){const L=S.disp||[];if(!L.length)return '';const f=dspFila(),vist=Object.keys(S.cart||{}).filter(k=>L.some(x=>x.id===k)).length;
   return `<div class="card row sp" style="margin-top:10px"><div><b>Dispositivos-chave</b><div class="sub">${f.length?f.length+(f.length===1?' cartão':' cartões')+' para hoje':'Nada para hoje ✓'} · ${vist} de ${L.length} já vistos</div></div><button class="btn s ${f.length?'p':''}" onclick="dspOpen()">${f.length?'Revisar':'Treinar livre'}</button></div>`}
 function dspOpen(){const f=dspFila();S.dsp={q:f.length?f.map(x=>x.id):(S.disp||[]).map(x=>x.id).sort(()=>Math.random()-.5).slice(0,10),i:0,ver:false,ok:0,n:0,livre:!f.length};render()}
@@ -1431,7 +1433,7 @@ function vSim(){
       res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     h+=`<div class="card"><div class="row sp"><div class="tag">${esc(sim.rotulo||'Simulado nº '+sim.n)} · ${esc(sim.criado?fdi(sim.criado):'')}</div>${st}</div>
      <div class="ttl">${esc(sim.titulo)}</div><div class="sub">${sim.questoes.length} objetivas (${nG} gerais + ${sim.questoes.length-nG} específicas)${sim.disc?' + 1 estudo de caso':''} · ${Math.round((sim.duracao_min||240)/60)}h</div>${res}${gp?`<div class="msg" style="margin-top:8px">O gabarito oficial ainda não saiu. Você já pode fazer a prova: as respostas ficam guardadas${simTemPre(sim)?'; ao entregar, você vê a correção pelo gabarito preliminar do Claude, e o resultado só vai para as sessões quando o gabarito oficial for gravado':' e a correção aparece assim que o gabarito for gravado'}.</div>`:''}${sim.nota&&sim.rotulo?`<div class="sub" style="margin-top:6px">${esc(sim.nota)}</div>`:''}
-     <div class="row" style="margin-top:10px;flex-wrap:wrap">${and?`<button class="btn p s" onclick="simOpen('${and._id}')">Continuar</button>`:`<button class="btn p s" onclick="simStart('${sim.id}')">${fin.length?'Refazer':'Começar'}</button>`}${last?`<button class="btn s" onclick="simOpen('${last._id}')">${gp?'Ver respostas':'Ver correção'}</button>`:''}</div></div>`}
+     <div class="row" style="margin-top:10px;flex-wrap:wrap">${and?`<button class="btn p s" onclick="simOpen('${and._id}')">Continuar</button>`:`<button class="btn p s" onclick="simStart('${sim.id}')">${fin.length?'Refazer':'Começar'}</button>`}${last?`<button class="btn s" onclick="simOpen('${last._id}')">${gp&&!simTemPre(sim)?'Ver respostas':'Ver correção'}</button>`:''}</div></div>`}
   h+=`<div class="sub" style="margin-top:10px">Como funciona: faça as objetivas com o cronômetro correndo e escreva o estudo de caso no papel. Ao entregar, o app corrige, mostra os comentários e registra cada assunto nas suas sessões. Depois, você mesmo dá a nota do estudo de caso usando o espelho.</div>`;
   return h}
 async function simStart(sid){const id='t'+Date.now().toString(36);const t={sim:sid,ini:Date.now(),gasto:0,resp:{},marc:{},atual:1};
