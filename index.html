@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 065f9fb';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='21/11/2026 · 1d6ec96';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1411,6 +1411,9 @@ function simCalc(sim,t){const r={G:[0,0],E:[0,0],mat:{},tot:0,ac:0,br:0};
     const m=r.mat[q.mat]||(r.mat[q.mat]={q:0,ac:0,area:q.area});m.q++;if(ok)m.ac++;r.tot++;if(ok)r.ac++}
   r.nG=r.G[1]?r.G[0]/r.G[1]*10:0;r.nE=r.E[1]?r.E[0]/r.E[1]*10:0;r.nota=(r.nG+2*r.nE)/3;return r}
 function simTemGab(sim){return sim.questoes.every(q=>q.gab)}
+function simTemPre(sim){return sim.questoes.every(q=>q.gabPre)}
+/* cópia do simulado usando o gabarito preliminar do Claude (só para mostrar; não vai para as sessões) */
+function simPreSim(sim){return {...sim,_pre:true,questoes:sim.questoes.map(q=>({...q,gab:q.gabPre,com:q.comPre||''}))}}
 function nf(x,d=2){return x.toFixed(d).replace('.',',')}
 /* ---------- lista ---------- */
 function vSim(){
@@ -1422,11 +1425,12 @@ function vSim(){
     const nG=sim.questoes.filter(q=>q.area==='G').length;
     let st='<span class="badge b-neu">não iniciado</span>',res='';
     if(and){const nr=Object.keys(and.resp||{}).length;st=`<span class="badge b-media">em andamento · ${nr}/${sim.questoes.length}</span>`}
+    else if(last&&gp&&simTemPre(sim)){const r=simCalc(simPreSim(sim),last);st=`<span class="badge b-media">nota preliminar ${nf(r.nota)}</span>`;res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     else if(last&&gp){st='<span class="badge b-media">entregue · aguardando gabarito</span>';res=`<div class="meta">${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     else if(last){const r=simCalc(sim,last);st=`<span class="badge ${r.nota>=6?'b-ok':'b-alta'}">nota ${nf(r.nota)}</span>`;
       res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     h+=`<div class="card"><div class="row sp"><div class="tag">${esc(sim.rotulo||'Simulado nº '+sim.n)} · ${esc(sim.criado?fdi(sim.criado):'')}</div>${st}</div>
-     <div class="ttl">${esc(sim.titulo)}</div><div class="sub">${sim.questoes.length} objetivas (${nG} gerais + ${sim.questoes.length-nG} específicas)${sim.disc?' + 1 estudo de caso':''} · ${Math.round((sim.duracao_min||240)/60)}h</div>${res}${gp?`<div class="msg" style="margin-top:8px">O gabarito oficial ainda não saiu. Você já pode fazer a prova: as respostas ficam guardadas e a correção aparece assim que o gabarito for gravado.</div>`:''}${sim.nota&&sim.rotulo?`<div class="sub" style="margin-top:6px">${esc(sim.nota)}</div>`:''}
+     <div class="ttl">${esc(sim.titulo)}</div><div class="sub">${sim.questoes.length} objetivas (${nG} gerais + ${sim.questoes.length-nG} específicas)${sim.disc?' + 1 estudo de caso':''} · ${Math.round((sim.duracao_min||240)/60)}h</div>${res}${gp?`<div class="msg" style="margin-top:8px">O gabarito oficial ainda não saiu. Você já pode fazer a prova: as respostas ficam guardadas${simTemPre(sim)?'; ao entregar, você vê a correção pelo gabarito preliminar do Claude, e o resultado só vai para as sessões quando o gabarito oficial for gravado':' e a correção aparece assim que o gabarito for gravado'}.</div>`:''}${sim.nota&&sim.rotulo?`<div class="sub" style="margin-top:6px">${esc(sim.nota)}</div>`:''}
      <div class="row" style="margin-top:10px;flex-wrap:wrap">${and?`<button class="btn p s" onclick="simOpen('${and._id}')">Continuar</button>`:`<button class="btn p s" onclick="simStart('${sim.id}')">${fin.length?'Refazer':'Começar'}</button>`}${last?`<button class="btn s" onclick="simOpen('${last._id}')">${gp?'Ver respostas':'Ver correção'}</button>`:''}</div></div>`}
   h+=`<div class="sub" style="margin-top:10px">Como funciona: faça as objetivas com o cronômetro correndo e escreva o estudo de caso no papel. Ao entregar, o app corrige, mostra os comentários e registra cada assunto nas suas sessões. Depois, você mesmo dá a nota do estudo de caso usando o espelho.</div>`;
   return h}
@@ -1476,7 +1480,7 @@ setInterval(()=>{const e=document.getElementById('sim-timer');if(!e||!S.simRun)r
   const el=(t.gasto||0)+(Date.now()-S.simRun.t0)/1000;e.textContent=simFmtT(el);const sim=simById(t.sim);if(sim&&el>(sim.duracao_min||240)*60)e.style.color='var(--alta)'},1000);
 async function simEntregar(){if(!S.simArm){S.simArm=true;render();return}S.simArm=false;
   const [t,sim]=simCur();const now=Date.now();t.gasto=(t.gasto||0)+(now-S.simRun.t0)/1000;S.simRun.t0=now;t.fim=now;
-  if(!simTemGab(sim)){const {_id,...d}=t;try{await S.db.collection('sim_tent').doc(_id).set(clean(d));toast('Respostas guardadas. A correção sai quando o gabarito chegar.')}catch(e){toast('Não foi possível salvar: tente de novo')}render();scrollTo(0,0);return}
+  if(!simTemGab(sim)){const {_id,...d}=t;try{await S.db.collection('sim_tent').doc(_id).set(clean(d));toast(simTemPre(sim)?'Respostas guardadas. Correção pelo gabarito preliminar do Claude.':'Respostas guardadas. A correção sai quando o gabarito chegar.')}catch(e){toast('Não foi possível salvar: tente de novo')}render();scrollTo(0,0);return}
   await simRegistrar(t,sim)}
 /* corrige e registra por assunto (na entrega ou, nos simulados com gabarito pendente, quando ele chega) */
 async function simRegistrar(t,sim){
@@ -1500,7 +1504,7 @@ async function simRegistrar(t,sim){
     if(b.k==='SIM'||ad) S.simCq={sim:sim.id,res:t.res,b:b.k==='SIM'?b:null,adId:b.k==='SIM'?null:ad._id}}
   render();scrollTo(0,0)}
 /* ---------- correção ---------- */
-function vSimRes(sim,t){if(!simTemGab(sim))return vSimPend(sim,t);const r=simCalc(sim,t),f=S.simRun.filtro||'todas';
+function vSimRes(sim,t){if(!simTemGab(sim)){if(!simTemPre(sim))return vSimPend(sim,t);sim=simPreSim(sim)}const r=simCalc(sim,t),f=S.simRun.filtro||'todas';
   const col=x=>x>=6?'var(--ok)':'var(--alta)';
   let h=`<div class="row sp"><h1 style="font-size:22px">${esc(sim.titulo)}</h1><button class="btn s" onclick="simExit()">Voltar</button></div>
    <div class="sub">Entregue em ${new Date(t.fim).toLocaleDateString('pt-BR')} · tempo ${simFmtT(t.gasto||0)}</div>
@@ -1508,7 +1512,8 @@ function vSimRes(sim,t){if(!simTemGab(sim))return vSimPend(sim,t);const r=simCal
    <div class="tile"><div class="l">Gerais (peso 1)</div><div class="n">${r.G[0]}/${r.G[1]}</div><div class="sub">${nf(r.nG)}</div></div>
    <div class="tile"><div class="l">Específicos (peso 2)</div><div class="n">${r.E[0]}/${r.E[1]}</div><div class="sub">${nf(r.nE)}</div></div></div>
    <div class="sub" style="margin-top:6px">Como no edital: nota = (Gerais × 1 + Específicos × 2) ÷ 3, de 0 a 10. Habilita com 6,00 (4,80 nas vagas reservadas). ${r.nota>=6?'<b style="color:var(--ok)">Você estaria habilitado.</b>':'<b style="color:var(--alta)">Abaixo do mínimo de 6,00.</b>'}</div>`;
-  if(!t.reg) h+=`<div class="msg" style="margin-top:10px">O gabarito chegou depois da sua entrega. Toque abaixo para lançar o resultado por assunto nas suas sessões.<div style="margin-top:8px"><button class="btn p s" onclick="simRegAgora()">Registrar o resultado nas sessões</button></div></div>`;
+  if(sim._pre) h+=`<div class="msg" style="margin-top:10px"><b>Gabarito preliminar, feito pelo Claude.</b> Pode ter erros: confira com o gabarito oficial. As notas acima são provisórias e o resultado só vai para as suas sessões quando o gabarito oficial for gravado.</div>`;
+  else if(!t.reg) h+=`<div class="msg" style="margin-top:10px">O gabarito chegou depois da sua entrega. Toque abaixo para lançar o resultado por assunto nas suas sessões.<div style="margin-top:8px"><button class="btn p s" onclick="simRegAgora()">Registrar o resultado nas sessões</button></div></div>`;
   if(t.reg) h+=`<div class="msg" style="margin-top:10px">O resultado já foi registrado por assunto nas suas sessões (aba Registrar → Histórico). Os assuntos com erro entram na revisão do app e no bloco "Revisão dos erros dos simulados" da fase 3.</div>`;
   h+=`<h2>Por matéria</h2><div class="card"><table><tr><th>Matéria</th><th>Acertos</th><th>%</th></tr>`+Object.entries(r.mat).sort((a,b)=>(a[1].area<b[1].area?-1:a[1].area>b[1].area?1:0)||(a[1].ac/a[1].q-b[1].ac/b[1].q)).map(([m,x])=>`<tr><td>${esc(m)}<div class="sub">${x.area==='G'?'Gerais':'Específicos'}</div></td><td>${x.ac}/${x.q}</td><td style="font-weight:600;color:${x.ac/x.q>=.7?'var(--ok)':x.ac/x.q>=.5?'var(--media)':'var(--alta)'}">${pc(x.ac/x.q,0)}</td></tr>`).join('')+`</table></div>`;
   if(sim.disc) h+=simDiscHtml(sim,t,true);
@@ -1519,7 +1524,7 @@ function vSimRes(sim,t){if(!simTemGab(sim))return vSimPend(sim,t);const r=simCal
   for(const q of qs){const a=t.resp[q.n],ok=a===q.gab;
     h+=`<div class="card"><div class="row sp"><div class="tag">Questão ${q.n} · ${esc(q.mat)}</div><span>${t.marc&&t.marc[q.n]?'<span class="badge b-media">dúvida</span> ':''}<span class="badge ${ok?'b-ok':a?'b-alta':'b-neu'}">${ok?'acertou':a?'errou':'em branco'}</span></span></div>
      <div class="sim-enun">${esc(q.enun)}</div><div class="sim-alts">${q.alts.map((x,i)=>{const L=SL[i];const c=L===q.gab?'gab':L===a?'err':'';return `<div class="sim-alt ro ${c}"><span class="sim-l">${L}</span><span>${esc(x)}</span></div>`}).join('')}</div>
-     <div class="sim-com"><b>Gabarito ${q.gab}.</b> ${esc(q.com||'')}</div>
+     <div class="sim-com"><b>Gabarito ${sim._pre?'preliminar ':''}${q.gab}.</b> ${esc(q.com||'')}</div>
      <div class="sub" style="margin-top:6px">Assunto no app: ${esc(simLinkName(q.link))}${q.conferir?' · <span class="badge b-media">confira no texto oficial</span>':''}</div>
      <div style="margin-top:10px"><button class="btn s" onclick="simFc(${q.n})">${S.simFcN===q.n?'Fechar flashcard':'Criar flashcard'}</button></div>
      ${S.simFcN===q.n?`<div style="margin-top:10px"><label for="fc-f">Frente</label><textarea id="fc-f" rows="4" style="width:100%">${esc(q.fc?q.fc.f:q.enun)}</textarea>
