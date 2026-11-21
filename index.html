@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · d32138a';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='21/11/2026 · 0c4bbf2';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1120,7 +1120,7 @@ function cicUpcoming(n){
     const k0=f.seq[p%f.seq.length]; const o0=cntK0[k0]||0; cntK0[k0]=o0+1;
     const k=cicResolve(k0,o0); const ord=cnt[k]||0; cnt[k]=ord+1;
     const b={f:f.n,p,k0,k,nome:S.ciclo.nomes[k]||k};
-    if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho. Antes, 5 min nos Dispositivos-chave (logo abaixo dos Flashcards)'}
+    if(k==='DISC'){const nd=S.cic.filter(x=>x.k==='DISC'&&!x.simTent).length+ord;b.tema=S.ciclo.disc[nd%S.ciclo.disc.length];b.modo='Estudo de caso: 40 min escrevendo + 20 min corrigindo com o espelho. Antes, 5 min no baralho Discursiva TRT do Anki'}
     else if(k==='MANUT'){b.modo='Revisões vencidas no app de assuntos fora do edital do TRT (pensando no próximo TRT)';b.manut='manut'}
     else if(k==='REVE'){b.modo='Questões dos assuntos com pior acerto nas últimas 3 semanas (inclui o que você registrou na correção dos simulados)';b.manut='reve'}
     else if(k==='SIM'){const n=S.cic.filter(x=>x.k==='SIM').length+ord+1;b.tema='Simulado completo nº '+n;b.modo='Faça o próximo simulado inédito da aba Simulados (60 objetivas + estudo de caso, 4h). Ao entregar, o app oferece concluir este bloco. Conta 3 blocos.';b.peso=3}
@@ -1155,7 +1155,7 @@ function vCic(){
   <div class="tiles" style="margin-top:12px"><div class="tile"><div class="l">Blocos nesta semana</div><div class="n">${wk}<span class="sub"> / ${meta}</span></div><div class="bar" style="margin-top:6px"><i style="width:${Math.min(100,wk/meta*100)}%;background:var(--acc)"></i></div></div>
   <div class="tile"><div class="l">Volta ${volta}</div><div class="n">${inV}<span class="sub"> / ${f.seq.length}</span></div><div class="bar" style="margin-top:6px"><i style="width:${inV/f.seq.length*100}%;background:var(--ok)"></i></div></div></div>`;
   h+=cicFlash();
-  h+=dspCard();
+  /* Dispositivos-chave: desligado em 21/11/2026 (os cartões foram para o Anki, baralho Discursiva TRT) */
   h+=`<h2>Próximo bloco</h2><div class="card cic-next"><div class="row sp"><div class="tag">${esc(b.nome)}</div><span class="badge b-neu">${b.peso?'~3h':'~1h'}</span></div>
    ${cicItemHtml(b,rm)}<div class="cic-modo">${esc(b.modo)}</div>${b.sg&&b.sg.it&&!b.manut?cicFontesHtml(b.k,b.sg.it):''}${cicVencHtml(b)}${b.k==='DISC'?dcBtnHtml(b):''}
    <div class="row" style="margin-top:12px;flex-wrap:wrap"><button class="btn p" onclick="cicOpen(0)">Concluir bloco</button>${b.sg&&!b.sg.simp?`<button class="btn s" onclick="cicTrocar('${b.k}')">Outro assunto</button>`:''}<button class="btn s" onclick="cicAdiar()">Adiar</button></div></div>`;
@@ -1586,7 +1586,10 @@ async function simDiscSave(){const [t,sim]=simCur();const n=parseFloat(String($(
   t.discNota=Math.round(n*10)/10;if(sim.disc.grade){const G=simGradeState(t);t.discGrade={c:G.c.slice(),n:{...G.n}}}const {_id,...d}=t;
   try{await S.db.collection('sim_tent').doc(_id).set(clean(d));
     if(S.ciclo){const f=cicFase(T());const ex=S.cic.find(x=>x.simTent===_id&&x.k==='DISC');
-      const doc={f:f.n,k0:'DISC',k:'DISC',st:'feito',d:iso(T()),t:Date.now(),lbl:'Estudo de caso do '+sim.titulo,nota:t.discNota,fora:true,simTent:_id};
+      /* data = dia em que o simulado foi feito (ou a já registrada); salvar ou mudar a nota não muda a data */
+      const dia=ex&&ex.d?ex.d:iso(t.fim?Math.floor((t.fim-new Date(t.fim).getTimezoneOffset()*6e4)/DAY):T());
+      const fn=ex&&ex.f!=null?ex.f:cicFase(dn(dia)).n;
+      const doc={f:fn,k0:'DISC',k:'DISC',st:'feito',d:dia,t:Date.now(),lbl:'Estudo de caso do '+sim.titulo,nota:t.discNota,fora:true,simTent:_id};
       const id=ex?ex._id:'c'+Date.now().toString(36);await S.db.collection('ciclo').doc(id).set(doc)}
     toast('Nota do estudo de caso salva')}catch(e){toast('Não foi possível salvar a nota')}render()}
 /* oferta: contar como bloco Simulado do ciclo */
