@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 105acd9';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='21/11/2026 · b75bb8a';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1175,8 +1175,8 @@ function cicFlash(){const t=T();let dots='';for(let i=6;i>=0;i--){const d=iso(t-
   const ok=S.flash&&S.flash[iso(t)];
   return `<div class="card row sp" style="margin-top:10px"><div><b>Flashcards (30 min)</b><div class="row" style="gap:4px;margin-top:4px">${dots}</div></div><button class="btn s ${ok?'':'p'}" onclick="cicFlashToggle()">${ok?'Feito hoje ✓':'Marcar hoje'}</button></div>`}
 async function cicFlashToggle(){const d=iso(T()),ok=S.flash[d];S.flash[d]=!ok;render();try{if(ok)await S.db.collection('flash').doc(d).delete();else await S.db.collection('flash').doc(d).set({ok:true})}catch(e){toast('Não foi possível salvar')}}
-/* dispositivos-chave: flashcards de artigos para o estudo de caso (caixas de Leitner: 1, 2, 4, 8, 16 e 30 dias; no máximo 5 cartões por dia, somando revisões e novos) */
-const DSP_INT=[1,2,4,8,16,30],DSP_NOVOS=5,DSP_DIA=5;
+/* dispositivos-chave: flashcards de artigos para o estudo de caso (caixas de Leitner: 1, 2, 4, 8, 16 e 30 dias; no máximo 10 cartões por dia, somando revisões e novos) */
+const DSP_INT=[1,2,4,8,16,30],DSP_NOVOS=10,DSP_DIA=10;
 async function dspLoad(){try{const r=await fetch('simulados/disp.json',{cache:'no-store'});if(r.ok){S.disp=(await r.json()).cartoes||[];bgRender()}}catch(e){}}
 /* no máximo DSP_DIA cartões por dia (revisões atrasadas não se acumulam: entram as mais antigas primeiro) */
 function dspFila(){const td=iso(T()),c=S.cart||{},L=S.disp||[];const venc=L.filter(x=>c[x.id]&&c[x.id].prox<=td).sort((x,y)=>c[x.id].prox<c[y.id].prox?-1:1);
@@ -1192,7 +1192,7 @@ function dspRender(){const D=S.dsp,el=$('#ov');if(!D){el.innerHTML='';return}
    <h2 style="margin:12px 0">${esc(x.p)}</h2>
    ${D.ver?`<div class="card"><b>${esc(x.d)}</b><div class="sub" style="margin-top:6px;line-height:1.55">${esc(x.r)}</div></div>
     <div class="row" style="margin-top:12px"><button class="btn grow" onclick="dspResp(false)">Errei</button><button class="btn p grow" onclick="dspResp(true)">Lembrei</button></div>`
-   :`<div class="sub">Qual é o dispositivo? Tente lembrar o número e a regra antes de ver a resposta.</div><button class="btn p" style="margin-top:12px" onclick="S.dsp.ver=true;dspRender()">Ver resposta</button>`}</div></div>`}
+   :`<div class="sub">Responda de cabeça, como escreveria na prova (não precisa do número do artigo), e só depois confira.</div><button class="btn p" style="margin-top:12px" onclick="S.dsp.ver=true;dspRender()">Ver resposta</button>`}</div></div>`}
 async function dspResp(ok){const D=S.dsp,id=D.q[D.i],td=iso(T());D.n++;if(ok)D.ok++;D.i++;D.ver=false;
   if(D.livre){dspRender();return}
   const c=S.cart=S.cart||{},o=c[id]||{cx:0,ini:td},cx=ok?Math.min((c[id]?o.cx:0)+1,DSP_INT.length-1):0;

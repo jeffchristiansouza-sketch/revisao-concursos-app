@@ -1,384 +1,1476 @@
 {
- "v": 1,
+ "v": 2,
  "titulo": "Dispositivos-chave para o estudo de caso",
  "cartoes": [
   {
-   "id": "dt19",
+   "id": "dex1",
    "m": "Direito do Trabalho",
-   "p": "Dano extrapatrimonial na CLT: o que é, quem responde e como se fixa o valor",
-   "d": "Arts. 223-A a 223-G da CLT; STF, ADIs 6.050, 6.069 e 6.082",
-   "r": "Ofensa à esfera moral ou existencial da pessoa (art. 223-B): honra, imagem, intimidade, liberdade de ação, autoestima, saúde, lazer e integridade física (art. 223-C). Respondem todos os que colaboraram para a ofensa, na proporção da ação ou omissão (art. 223-E). O valor segue os critérios do art. 223-G (natureza do bem, intensidade do sofrimento, reiteração, publicidade, esforço para minimizar, situação econômica das partes etc.) e os parâmetros do § 1º: ofensa leve até 3, média até 5, grave até 20 e gravíssima até 50 vezes o último salário do ofendido. O STF decidiu que esses limites são ORIENTATIVOS: o juiz pode ultrapassá-los, com fundamentação, razoabilidade e proporcionalidade."
+   "p": "Gerente obriga quem vende menos a usar um adereço humilhante diante de clientes, semana após semana, e posta a foto no grupo da equipe. Como qualificar a conduta?",
+   "r": "Assédio moral vertical descendente: exposição vexatória reiterada, que vai além da cobrança de metas (o poder diretivo só é regular sem excesso nem humilhação).",
+   "d": "CLT, arts. 223-B e 223-C"
   },
   {
-   "id": "dt20",
+   "id": "dex2",
    "m": "Direito do Trabalho",
-   "p": "Assédio moral no trabalho: como identificar e por que a empresa responde",
-   "d": "Arts. 223-B, 223-C e 223-E da CLT; arts. 932, III, e 933 do CC",
-   "r": "Assédio moral: condutas abusivas, REITERADAS, que humilham ou expõem o empregado (por exemplo, \"prêmio\" vexatório para quem não bate a meta, exposição diante de colegas, clientes ou em grupo de mensagens). A cobrança de metas é lícita; a exposição vexatória excede o poder diretivo. A empresa responde OBJETIVAMENTE pelo ato do gerente, seu preposto (arts. 932, III, e 933 do CC): o código de conduta descumprido e a \"culpa só do gerente\" não a eximem, e a omissão do RH reforça a responsabilidade. O gerente também responde, na proporção da sua conduta (art. 223-E da CLT). Na discursiva, dê o NOME (assédio moral) e ligue-o aos fatos do caso."
+   "p": "Quais bens da pessoa física a CLT protege contra o dano extrapatrimonial?",
+   "r": "Honra, imagem, intimidade, liberdade de ação, autoestima, sexualidade, saúde, lazer e integridade física.",
+   "d": "CLT, art. 223-C"
   },
   {
-   "id": "dt21",
+   "id": "dex3",
    "m": "Direito do Trabalho",
-   "p": "Danos materiais junto com o dano moral: pode cumular? Como classificar cada parcela?",
-   "d": "Súmula 37 do STJ; art. 223-F da CLT; arts. 949 e 950 do CC",
-   "r": "Pode: danos materiais e morais do mesmo fato são cumuláveis (Súmula 37 do STJ; art. 223-F, caput), e a sentença deve discriminar o valor de cada uma (art. 223-F, § 1º). Despesas com tratamento, remédios e terapia = DANOS EMERGENTES (o que a vítima perdeu). O que ela deixou de ganhar no afastamento = LUCROS CESSANTES (art. 949 do CC; se houver redução da capacidade de trabalho, pensão do art. 950). As parcelas materiais NÃO reduzem a indenização extrapatrimonial (art. 223-F, § 2º)."
+   "p": "A empresa alega que o gerente descumpriu o código de conduta. Ela se livra da indenização?",
+   "r": "Não. Responde objetivamente pelo ato do preposto e, se ignorou as reclamações, também pela própria omissão.",
+   "d": "CC, arts. 932, III, e 933; CLT, art. 223-E"
   },
   {
-   "id": "dt22",
+   "id": "dex4",
    "m": "Direito do Trabalho",
-   "p": "Benefício do INSS pode ser descontado da indenização paga pelo empregador?",
-   "d": "Art. 7º, XXVIII, da CF; art. 121 da Lei 8.213/1991",
-   "r": "Não. O benefício previdenciário tem natureza e fonte diferentes (seguro social, custeado por contribuições) e não exclui a responsabilidade civil do empregador: o art. 7º, XXVIII, da CF garante o seguro contra acidentes de trabalho \"sem excluir a indenização a que este está obrigado, quando incorrer em dolo ou culpa\", e o art. 121 da Lei 8.213 diz o mesmo. O TST não admite compensar o benefício com a pensão ou os lucros cessantes. Na discursiva, explique o MOTIVO (natureza previdenciária), e não só que \"não se desconta\"."
+   "p": "O gerente que praticou o assédio também responde, ou só a empresa?",
+   "r": "Também responde: todos os que colaboraram para a ofensa respondem, na proporção da ação ou omissão.",
+   "d": "CLT, art. 223-E"
   },
   {
-   "id": "dt23",
+   "id": "dex5",
    "m": "Direito do Trabalho",
-   "p": "Doença ocupacional: o que é e que efeitos trabalhistas gera",
-   "d": "Arts. 19, 20 e 118 da Lei 8.213/1991; Súmula 378 do TST",
-   "r": "Doença profissional ou do trabalho, produzida ou desencadeada pelo trabalho (inclusive transtornos psíquicos ligados ao assédio), equipara-se a acidente de trabalho (art. 20). O nexo causal costuma ser provado por perícia. Afastamento acima de 15 dias com auxílio acidentário gera estabilidade de 12 meses após a alta (art. 118); a Súmula 378, II, dispensa o auxílio se a doença ocupacional for constatada depois da dispensa e tiver relação com o contrato. Os primeiros 15 dias são pagos pela empresa (interrupção); depois, o contrato fica suspenso."
+   "p": "Quais as faixas de indenização do dano extrapatrimonial na CLT?",
+   "r": "Leve até 3, média até 5, grave até 20 e gravíssima até 50 vezes o último salário contratual do ofendido.",
+   "d": "CLT, art. 223-G, § 1º"
   },
   {
-   "id": "pt01",
-   "m": "Processo do Trabalho",
-   "p": "Recurso contra acórdão de TRT em recurso ordinário: qual é e quando cabe?",
-   "d": "Art. 896 da CLT — recurso de revista",
-   "r": "Cabe contra acórdão de TRT em recurso ordinário, por divergência jurisprudencial (alíneas a e b) ou violação literal de lei federal ou da Constituição (alínea c). Prazo de 8 dias. Exige transcendência (art. 896-A), prequestionamento (Súmula 297 do TST) e transcrição do trecho do acórdão que mostra a violação (§ 1º-A)."
-  },
-  {
-   "id": "pt02",
-   "m": "Processo do Trabalho",
-   "p": "Filtro de relevância do recurso de revista",
-   "d": "Art. 896-A da CLT — transcendência",
-   "r": "O TST examina antes se a causa oferece transcendência econômica, política, social ou jurídica."
-  },
-  {
-   "id": "pt03",
-   "m": "Processo do Trabalho",
-   "p": "Recurso contra decisão do juiz na execução",
-   "d": "Art. 897, a, da CLT — agravo de petição",
-   "r": "Prazo de 8 dias. Só é recebido se o agravante delimitar, justificadamente, as matérias e os valores impugnados (§ 1º)."
-  },
-  {
-   "id": "pt04",
-   "m": "Processo do Trabalho",
-   "p": "Recurso contra decisão que nega seguimento a outro recurso",
-   "d": "Art. 897, b, da CLT — agravo de instrumento",
-   "r": "Prazo de 8 dias, contra o despacho que denega a interposição de recurso."
-  },
-  {
-   "id": "pt05",
-   "m": "Processo do Trabalho",
-   "p": "Recurso contra sentença da Vara do Trabalho",
-   "d": "Art. 895 da CLT — recurso ordinário",
-   "r": "Cabe contra decisões definitivas ou terminativas das Varas e dos TRTs em processos de sua competência originária. Prazo de 8 dias."
-  },
-  {
-   "id": "pt06",
-   "m": "Processo do Trabalho",
-   "p": "Embargos de declaração no processo do trabalho",
-   "d": "Art. 897-A da CLT",
-   "r": "Prazo de 5 dias. Cabem por omissão, contradição ou manifesto equívoco no exame dos pressupostos extrínsecos do recurso. Efeito modificativo exige vista à parte contrária (§ 2º). Interrompem o prazo de outros recursos, salvo se intempestivos, com representação irregular ou sem assinatura (§ 3º)."
-  },
-  {
-   "id": "pt07",
-   "m": "Processo do Trabalho",
-   "p": "Depósito recursal: reduções e isenções",
-   "d": "Art. 899 da CLT, §§ 9º a 11",
-   "r": "Pela metade para entidades sem fins lucrativos, empregador doméstico, MEI, ME e EPP (§ 9º). Isentos os beneficiários da justiça gratuita, as entidades filantrópicas e as empresas em recuperação judicial (§ 10). Pode ser substituído por fiança bancária ou seguro garantia judicial (§ 11)."
-  },
-  {
-   "id": "pt08",
-   "m": "Processo do Trabalho",
-   "p": "Honorários de sucumbência na Justiça do Trabalho",
-   "d": "Art. 791-A da CLT",
-   "r": "De 5% a 15% sobre a liquidação, o proveito econômico ou o valor da causa (caput). Critérios: zelo, lugar, natureza e importância da causa, trabalho e tempo (§ 2º). Sucumbência recíproca, vedada a compensação (§ 3º). Beneficiário da gratuidade: cobrança suspensa por 2 anos e extinta se não provada a melhora; o STF (ADI 5766) proibiu usar créditos obtidos em juízo para pagá-los (§ 4º)."
-  },
-  {
-   "id": "pt09",
-   "m": "Processo do Trabalho",
-   "p": "Quem tem direito à justiça gratuita na JT",
-   "d": "Art. 790, §§ 3º e 4º, da CLT",
-   "r": "Quem recebe até 40% do teto do RGPS (§ 3º) ou comprova insuficiência de recursos (§ 4º). Para o TST (recursos repetitivos, 2024), a declaração de hipossuficiência basta como prova, salvo prova em contrário."
-  },
-  {
-   "id": "pt10",
-   "m": "Processo do Trabalho",
-   "p": "Ônus da prova no processo do trabalho",
-   "d": "Art. 818 da CLT",
-   "r": "Ao reclamante cabe o fato constitutivo do direito; ao reclamado, o fato impeditivo, modificativo ou extintivo. O juiz pode distribuir o ônus de forma diversa, em decisão fundamentada e antes da instrução (§ 1º)."
-  },
-  {
-   "id": "pt11",
-   "m": "Processo do Trabalho",
-   "p": "Ausência das partes à audiência",
-   "d": "Art. 844 da CLT",
-   "r": "Ausência do reclamante: arquivamento, com custas mesmo se beneficiário da gratuidade, salvo motivo legalmente justificável provado em 15 dias (§ 2º). Ausência do reclamado: revelia e confissão quanto à matéria de fato; presente o advogado, são aceitos a contestação e os documentos (§ 5º)."
-  },
-  {
-   "id": "pt12",
-   "m": "Processo do Trabalho",
-   "p": "Preposto do empregador",
-   "d": "Art. 843, §§ 1º e 3º, da CLT",
-   "r": "O empregador pode ser substituído por preposto que conheça os fatos, cujas declarações o obrigam (§ 1º). O preposto não precisa ser empregado (§ 3º)."
-  },
-  {
-   "id": "pt13",
-   "m": "Processo do Trabalho",
-   "p": "Rito sumaríssimo: cabimento e regras",
-   "d": "Arts. 852-A, 852-B e 852-H da CLT",
-   "r": "Causas de até 40 salários mínimos, exceto contra a Administração direta, autárquica e fundacional (852-A). Pedido certo, determinado e com valor; sem citação por edital; apreciação em até 15 dias (852-B). Até 2 testemunhas por parte (852-H, § 2º)."
-  },
-  {
-   "id": "pt14",
-   "m": "Processo do Trabalho",
-   "p": "Número de testemunhas no rito ordinário",
-   "d": "Art. 821 da CLT",
-   "r": "Até 3 por parte; no inquérito para apuração de falta grave, até 6."
-  },
-  {
-   "id": "pt15",
-   "m": "Processo do Trabalho",
-   "p": "Requisitos da petição inicial trabalhista",
-   "d": "Art. 840, §§ 1º e 3º, da CLT",
-   "r": "Pedido certo, determinado e com indicação de valor (§ 1º). Sem isso, o pedido é extinto sem resolução do mérito (§ 3º)."
-  },
-  {
-   "id": "pt16",
-   "m": "Processo do Trabalho",
-   "p": "Prescrição trabalhista e prescrição intercorrente",
-   "d": "CF, art. 7º, XXIX; arts. 11 e 11-A da CLT",
-   "r": "5 anos para trás, até o limite de 2 anos após o fim do contrato. A reclamação, ainda que arquivada, interrompe a prescrição só quanto aos pedidos idênticos (art. 11, § 3º). Intercorrente: 2 anos na execução, declarável de ofício (art. 11-A)."
-  },
-  {
-   "id": "pt17",
-   "m": "Processo do Trabalho",
-   "p": "Execução de ofício pelo juiz",
-   "d": "Art. 878 da CLT",
-   "r": "Após a Reforma, o juiz só promove a execução de ofício quando as partes não estiverem representadas por advogado."
-  },
-  {
-   "id": "pt18",
-   "m": "Processo do Trabalho",
-   "p": "Impugnação aos cálculos de liquidação",
-   "d": "Art. 879, § 2º, da CLT",
-   "r": "Prazo comum de 8 dias para impugnação fundamentada, com indicação dos itens e valores, sob pena de preclusão."
-  },
-  {
-   "id": "pt19",
-   "m": "Processo do Trabalho",
-   "p": "Embargos à execução",
-   "d": "Art. 884 da CLT",
-   "r": "5 dias após garantida a execução ou penhorados os bens. A exigência de garantia não se aplica às entidades filantrópicas (§ 6º)."
-  },
-  {
-   "id": "pt20",
-   "m": "Processo do Trabalho",
-   "p": "Desconsideração da personalidade jurídica na JT",
-   "d": "Art. 855-A da CLT (IDPJ)",
-   "r": "Aplica-se o CPC (arts. 133 a 137). Suspende o processo. Na fase de conhecimento, a decisão não é recorrível de imediato; na execução, cabe agravo de petição, sem garantia do juízo."
-  },
-  {
-   "id": "pt21",
-   "m": "Processo do Trabalho",
-   "p": "Competência da Justiça do Trabalho",
-   "d": "CF, art. 114",
-   "r": "Relação de trabalho, greve, representação sindical, mandado de segurança e habeas corpus em matéria de sua jurisdição, dano moral decorrente da relação de trabalho, penalidades da fiscalização do trabalho e execução de ofício das contribuições previdenciárias das sentenças que proferir."
-  },
-  {
-   "id": "pt22",
-   "m": "Processo do Trabalho",
-   "p": "Nulidades no processo do trabalho",
-   "d": "Arts. 794 a 796 da CLT",
-   "r": "Só há nulidade se houver manifesto prejuízo (794). Deve ser arguida na primeira vez em que a parte falar nos autos (795). Não se declara se puder ser suprida, nem a pedido de quem lhe deu causa (796)."
-  },
-  {
-   "id": "pt23",
-   "m": "Processo do Trabalho",
-   "p": "Homologação de acordo extrajudicial",
-   "d": "Arts. 855-B a 855-E da CLT",
-   "r": "Petição conjunta, com advogados distintos para cada parte (855-B). O juiz analisa em 15 dias (855-D). A petição suspende a prescrição dos direitos nela especificados (855-E)."
-  },
-  {
-   "id": "dt01",
+   "id": "dex6",
    "m": "Direito do Trabalho",
-   "p": "Rescisão indireta (falta grave do empregador)",
-   "d": "Art. 483 da CLT",
-   "r": "Serviços superiores às forças ou alheios ao contrato, rigor excessivo, perigo manifesto, descumprimento das obrigações do contrato, ofensa à honra, ofensa física e redução do trabalho por peça. Nas hipóteses de descumprimento (d) e redução (g), o empregado pode permanecer no serviço enquanto litiga (§ 3º)."
+   "p": "A empresa diz que a indenização não pode passar do teto de 50 salários. Procede?",
+   "r": "Não. O STF decidiu que as faixas só orientam a fundamentação: o juiz pode superá-las com razoabilidade, proporcionalidade e igualdade.",
+   "d": "STF, ADIs 6.050, 6.069 e 6.082"
   },
   {
-   "id": "dt02",
+   "id": "dex7",
    "m": "Direito do Trabalho",
-   "p": "Justa causa do empregado",
-   "d": "Art. 482 da CLT",
-   "r": "Rol de faltas graves: improbidade, incontinência de conduta, desídia, embriaguez habitual ou em serviço, violação de segredo, indisciplina, insubordinação, abandono de emprego, perda da habilitação profissional por dolo, entre outras."
+   "p": "Como mostrar, na discursiva, que a ofensa foi grave e não média?",
+   "r": "Aplicando os critérios da CLT aos fatos: duração da exposição, publicidade (colegas, clientes, grupo), silêncio da empresa e afastamento por doença.",
+   "d": "CLT, art. 223-G, caput"
   },
   {
-   "id": "dt03",
+   "id": "dex8",
    "m": "Direito do Trabalho",
-   "p": "Alteração do contrato e reversão do cargo de confiança",
-   "d": "Art. 468 da CLT",
-   "r": "Só por mútuo consentimento e sem prejuízo ao empregado (caput). A reversão ao cargo efetivo não é alteração ilícita (§ 1º) e não dá direito à incorporação da gratificação, qualquer que seja o tempo na função (§ 2º)."
+   "p": "O juiz fica obrigado a conceder o valor do dano moral pedido na inicial?",
+   "r": "Não. Ele arbitra o valor de forma fundamentada e proporcional, sem ter de conceder o que foi pedido.",
+   "d": "CLT, art. 223-G"
   },
   {
-   "id": "dt04",
+   "id": "dex9",
    "m": "Direito do Trabalho",
-   "p": "Transferência do empregado",
-   "d": "Art. 469 da CLT",
-   "r": "Depende de anuência, salvo cargos de confiança e contratos com cláusula de transferência, havendo real necessidade (§ 1º). Na transferência provisória, adicional de no mínimo 25% (§ 3º)."
+   "p": "Gastos com psicoterapia e remédios após assédio: que tipo de dano material são?",
+   "r": "Danos emergentes (o que a vítima efetivamente perdeu).",
+   "d": "CC, art. 949"
   },
   {
-   "id": "dt05",
+   "id": "dex10",
    "m": "Direito do Trabalho",
-   "p": "Equiparação salarial",
-   "d": "Art. 461 da CLT",
-   "r": "Mesma função, trabalho de igual valor, mesmo empregador e mesmo estabelecimento; diferença de tempo de serviço de até 4 anos no empregador e de até 2 anos na função. Quadro de carreira afasta a equiparação (§ 2º)."
+   "p": "Salários que a empregada deixou de ganhar no afastamento por doença ocupacional: que dano material são?",
+   "r": "Lucros cessantes (o que ela deixou de ganhar).",
+   "d": "CC, arts. 949 e 950"
   },
   {
-   "id": "dt06",
+   "id": "dex11",
    "m": "Direito do Trabalho",
-   "p": "Banco de horas e compensação de jornada",
-   "d": "Art. 59 da CLT",
-   "r": "Hora extra com adicional mínimo de 50%. Banco de horas anual por negociação coletiva (§ 2º); semestral por acordo individual escrito (§ 5º); compensação no mesmo mês por acordo individual, até tácito (§ 6º)."
+   "p": "Pode cumular dano moral e danos materiais do mesmo fato? O que a sentença deve fazer?",
+   "r": "Pode cumular, e a sentença deve discriminar o valor de cada indenização.",
+   "d": "CLT, art. 223-F, caput e § 1º; Súmula 37 do STJ"
   },
   {
-   "id": "dt07",
+   "id": "dex12",
    "m": "Direito do Trabalho",
-   "p": "Intervalos intrajornada e interjornada",
-   "d": "Arts. 66 e 71 da CLT",
-   "r": "11 horas entre duas jornadas (66). Intrajornada de 1 a 2 horas para jornada acima de 6h e de 15 minutos entre 4h e 6h (71). Supressão: paga-se só o período suprimido, com 50%, de natureza indenizatória (71, § 4º)."
+   "p": "A empresa pede que os danos materiais reduzam a indenização pelo sofrimento. Procede?",
+   "r": "Não. A reparação das perdas materiais não interfere na avaliação dos danos extrapatrimoniais.",
+   "d": "CLT, art. 223-F, § 2º"
   },
   {
-   "id": "dt08",
+   "id": "dex13",
    "m": "Direito do Trabalho",
-   "p": "Trabalho noturno urbano",
-   "d": "Art. 73 da CLT",
-   "r": "Das 22h às 5h, adicional de 20% sobre a hora diurna e hora reduzida de 52 minutos e 30 segundos."
+   "p": "A empresa quer abater dos lucros cessantes o benefício pago pelo INSS. Procede?",
+   "r": "Não. Benefício previdenciário e reparação civil têm naturezas distintas e não se excluem (TST).",
+   "d": "CF, art. 7º, XXVIII; Lei 8.213, art. 121"
   },
   {
-   "id": "dt09",
+   "id": "dex14",
    "m": "Direito do Trabalho",
-   "p": "Adicionais de insalubridade e periculosidade",
-   "d": "Arts. 189, 192 e 193 da CLT",
-   "r": "Insalubridade: 40%, 20% ou 10% (graus máximo, médio e mínimo). Periculosidade: 30% sobre o salário básico (193, § 1º), inclusive para trabalhador em motocicleta (§ 4º). Não se acumulam: o empregado escolhe (193, § 2º)."
+   "p": "Doença psíquica desencadeada pelo trabalho, com nexo reconhecido pela perícia: como se enquadra?",
+   "r": "Doença ocupacional, equiparada a acidente de trabalho.",
+   "d": "Lei 8.213, art. 20"
   },
   {
-   "id": "dt10",
+   "id": "ge1",
    "m": "Direito do Trabalho",
-   "p": "Aviso prévio",
-   "d": "CF, art. 7º, XXI; Lei 12.506/2011; arts. 487 e 488 da CLT",
-   "r": "Mínimo de 30 dias, mais 3 por ano de serviço, até 90 dias. Na dispensa pelo empregador, redução de 2 horas diárias ou de 7 dias corridos (art. 488)."
+   "p": "Duas empresas com os mesmos sócios: só isso caracteriza grupo econômico?",
+   "r": "Não. A mera identidade de sócios não basta; exige interesse integrado, comunhão de interesses e atuação conjunta.",
+   "d": "CLT, art. 2º, § 3º"
   },
   {
-   "id": "dt11",
+   "id": "ge2",
    "m": "Direito do Trabalho",
-   "p": "Extinção do contrato por acordo",
-   "d": "Art. 484-A da CLT",
-   "r": "Metade do aviso prévio indenizado e metade da multa do FGTS (20%); demais verbas integrais. Saque de até 80% do FGTS e sem seguro-desemprego."
+   "p": "Empresas do mesmo grupo econômico respondem como pelas dívidas trabalhistas de uma delas?",
+   "r": "Solidariamente, ainda que não tenham sido a empregadora formal.",
+   "d": "CLT, art. 2º, § 2º"
   },
   {
-   "id": "dt12",
+   "id": "ge3",
    "m": "Direito do Trabalho",
-   "p": "Negociado sobre o legislado",
-   "d": "Arts. 611-A e 611-B da CLT; STF, Tema 1.046",
-   "r": "A norma coletiva prevalece sobre a lei nos temas do 611-A (jornada, banco de horas, intervalo de no mínimo 30 minutos etc.) e não pode suprimir os direitos do 611-B. O STF validou acordos que limitam direitos, salvo os absolutamente indisponíveis."
+   "p": "Empresas dividem galpão, frota e escala de motoristas. Que elementos do grupo econômico aparecem?",
+   "r": "Interesse integrado e atuação conjunta (grupo por coordenação), que vão além da identidade de sócios.",
+   "d": "CLT, art. 2º, §§ 2º e 3º"
   },
   {
-   "id": "dt13",
+   "id": "jor1",
    "m": "Direito do Trabalho",
-   "p": "Terceirização",
-   "d": "Lei 6.019/1974, arts. 4º-A e 5º-A; Súmula 331 do TST; STF, ADPF 324 e Tema 246",
-   "r": "Lícita em qualquer atividade, inclusive a principal. A contratante responde subsidiariamente (art. 5º-A, § 5º). A Administração Pública só responde se comprovada culpa na fiscalização do contrato, sem transferência automática."
+   "p": "Horas extras habituais refletem em quê?",
+   "r": "Repouso semanal, férias + 1/3, 13º, aviso prévio e FGTS + 40%.",
+   "d": "Súmulas 172, 45 e 63 do TST; CLT, arts. 142, § 5º, e 487, § 5º"
   },
   {
-   "id": "dt14",
+   "id": "jor2",
    "m": "Direito do Trabalho",
-   "p": "Grupo econômico",
-   "d": "Art. 2º, §§ 2º e 3º, da CLT",
-   "r": "Empresas do grupo respondem solidariamente. A simples identidade de sócios não basta: é preciso interesse integrado, efetiva comunhão de interesses e atuação conjunta."
+   "p": "Intervalo de 1h foi reduzido a 30 min, sem norma coletiva. O que é devido após a Reforma?",
+   "r": "Só o período suprimido (30 min), com acréscimo de 50%, de natureza indenizatória, sem reflexos.",
+   "d": "CLT, art. 71, § 4º"
   },
   {
-   "id": "dt15",
+   "id": "jor3",
    "m": "Direito do Trabalho",
-   "p": "Sucessão de empregadores",
-   "d": "Arts. 10, 448 e 448-A da CLT",
-   "r": "A mudança na propriedade ou estrutura da empresa não afeta os contratos. O sucessor responde pelas obrigações; a sucedida responde solidariamente se houver fraude."
+   "p": "Empresa com mais de 20 empregados apresenta cartões de ponto com horários sempre idênticos. Consequência?",
+   "r": "Cartões \"britânicos\" são inválidos como prova: o ônus passa ao empregador e prevalece a jornada da inicial se ele não provar o contrário.",
+   "d": "Súmula 338, III, do TST; CLT, art. 74, § 2º"
   },
   {
-   "id": "dt16",
+   "id": "pre1",
+   "m": "Processo do Trabalho",
+   "p": "Prescrição quinquenal: os 5 anos se contam de quando?",
+   "r": "Do ajuizamento da ação, para trás.",
+   "d": "Súmula 308, I, do TST; CF, art. 7º, XXIX"
+  },
+  {
+   "id": "pre2",
+   "m": "Processo do Trabalho",
+   "p": "Prescrição bienal: de quando se contam os 2 anos se o aviso prévio foi indenizado?",
+   "r": "Do término do contrato com a projeção do aviso prévio.",
+   "d": "OJ 83 da SDI-1; CLT, art. 11"
+  },
+  {
+   "id": "ges1",
    "m": "Direito do Trabalho",
-   "p": "Estabilidades provisórias",
-   "d": "ADCT, art. 10, II, b; Lei 8.213/1991, art. 118; CF, art. 8º, VIII",
-   "r": "Gestante: da confirmação da gravidez até 5 meses após o parto, mesmo que o empregador não saiba (Súmula 244). Acidentado: 12 meses após o fim do auxílio por incapacidade acidentário (Súmula 378). Dirigente sindical: do registro da candidatura até 1 ano após o mandato, salvo falta grave apurada em inquérito."
+   "p": "Até quando vai a estabilidade da gestante?",
+   "r": "Da confirmação da gravidez até 5 meses após o parto.",
+   "d": "ADCT, art. 10, II, \"b\""
   },
   {
-   "id": "dt17",
+   "id": "ges2",
    "m": "Direito do Trabalho",
-   "p": "Férias: fracionamento, dobro e abono",
-   "d": "Arts. 134, § 1º, 137 e 143 da CLT",
-   "r": "Com concordância do empregado, até 3 períodos: um de no mínimo 14 dias e os demais de no mínimo 5 (134, § 1º). Concedidas fora do prazo: pagas em dobro (137). Abono: venda de 1/3 (143)."
+   "p": "O empregador não sabia da gravidez ao dispensar. A empregada perde a estabilidade?",
+   "r": "Não. O desconhecimento não afasta o direito; para o STF, basta a gravidez ser anterior à dispensa.",
+   "d": "Súmula 244, I, do TST; STF, Tema 497"
   },
   {
-   "id": "dt18",
+   "id": "ges3",
    "m": "Direito do Trabalho",
-   "p": "Greve",
-   "d": "Lei 7.783/1989",
-   "r": "Aviso prévio ao empregador de 48 horas (art. 3º) e de 72 horas nos serviços essenciais (art. 13), com atendimento das necessidades inadiáveis da comunidade."
+   "p": "A gravidez foi confirmada durante o aviso prévio indenizado. Há estabilidade?",
+   "r": "Sim, a confirmação no curso do aviso, ainda que indenizado, garante a estabilidade.",
+   "d": "CLT, art. 391-A"
   },
   {
-   "id": "con01",
+   "id": "ges4",
+   "m": "Direito do Trabalho",
+   "p": "A gestante só ajuizou a ação depois de terminado o período de estabilidade. O que cabe?",
+   "r": "Não cabe reintegração, mas indenização substitutiva dos salários e direitos do período; não há abuso de direito.",
+   "d": "Súmula 244, II, e OJ 399 da SDI-1"
+  },
+  {
+   "id": "ter1",
+   "m": "Direito do Trabalho",
+   "p": "A terceirização da atividade principal (atividade-fim) é lícita?",
+   "r": "Sim, em qualquer atividade, desde que sem pessoalidade e subordinação direta ao tomador.",
+   "d": "STF, ADPF 324 e Tema 725; Lei 6.019, art. 4º-A"
+  },
+  {
+   "id": "ter2",
+   "m": "Direito do Trabalho",
+   "p": "O chefe da tomadora aplica advertência ao terceirizado. O que isso revela?",
+   "r": "Subordinação direta ao tomador: terceirização irregular, com vínculo com a tomadora (salvo se for a Administração).",
+   "d": "Súmula 331, I e III, do TST"
+  },
+  {
+   "id": "ter3",
+   "m": "Direito do Trabalho",
+   "p": "Terceirização irregular com a Administração gera vínculo com o ente público?",
+   "r": "Não, porque o vínculo exige concurso público.",
+   "d": "CF, art. 37, II; Súmula 331, II, do TST"
+  },
+  {
+   "id": "ter4",
+   "m": "Direito do Trabalho",
+   "p": "O inadimplemento da prestadora transfere automaticamente a responsabilidade à Administração?",
+   "r": "Não. A Administração só responde subsidiariamente se comprovada falha na fiscalização (culpa in vigilando).",
+   "d": "ADC 16; Súmula 331, V; Lei 14.133, art. 121"
+  },
+  {
+   "id": "ter5",
+   "m": "Direito do Trabalho",
+   "p": "Quem prova a falha da Administração na fiscalização do contrato de terceirização?",
+   "r": "O trabalhador (autor); não basta inverter o ônus da prova.",
+   "d": "STF, Tema 1.118"
+  },
+  {
+   "id": "ter6",
+   "m": "Direito do Trabalho",
+   "p": "O fiscal registrou mês a mês a falta de FGTS e o ente ficou inerte. Há culpa da Administração?",
+   "r": "Sim: culpa in vigilando comprovada, e o ente responde subsidiariamente.",
+   "d": "Lei 14.133, art. 121, § 2º; Súmula 331, V"
+  },
+  {
+   "id": "ter7",
+   "m": "Direito do Trabalho",
+   "p": "A responsabilidade subsidiária do tomador abrange as multas dos arts. 467 e 477?",
+   "r": "Sim, abrange todas as verbas da condenação do período da prestação, inclusive multas.",
+   "d": "Súmula 331, VI, do TST"
+  },
+  {
+   "id": "ter8",
+   "m": "Direito do Trabalho",
+   "p": "O terceirizado tem direito às mesmas vantagens dos servidores ou empregados da tomadora?",
+   "r": "Não. A equiparação de remuneração não é obrigatória, por violar a livre iniciativa.",
+   "d": "STF, Tema 383"
+  },
+  {
+   "id": "hon1",
+   "m": "Processo do Trabalho",
+   "p": "Qual o percentual dos honorários de sucumbência na Justiça do Trabalho?",
+   "r": "De 5% a 15% sobre o valor da liquidação, do proveito econômico ou da causa.",
+   "d": "CLT, art. 791-A"
+  },
+  {
+   "id": "hon2",
+   "m": "Processo do Trabalho",
+   "p": "O beneficiário da justiça gratuita pode ser condenado em honorários de sucumbência?",
+   "r": "Pode, mas o STF proibiu usar créditos do processo para pagar: a dívida fica suspensa por 2 anos e se extingue se não mudar a situação.",
+   "d": "CLT, art. 791-A, § 4º; STF, ADI 5.766"
+  },
+  {
+   "id": "hon3",
+   "m": "Processo do Trabalho",
+   "p": "Procedência parcial na Justiça do Trabalho: como ficam os honorários?",
+   "r": "Há sucumbência recíproca, vedada a compensação entre os honorários.",
+   "d": "CLT, art. 791-A, § 3º"
+  },
+  {
+   "id": "hon4",
+   "m": "Processo do Trabalho",
+   "p": "Antes da Reforma, quando cabiam honorários na Justiça do Trabalho?",
+   "r": "Só com assistência sindical e hipossuficiência; hoje basta a sucumbência.",
+   "d": "Súmula 219, I, do TST; Lei 5.584/1970"
+  },
+  {
+   "id": "rr1",
+   "m": "Processo do Trabalho",
+   "p": "Contra acórdão de TRT em recurso ordinário, que recurso cabe e com que pressuposto específico?",
+   "r": "Recurso de revista, em 8 dias, por divergência ou violação de lei ou da CF, com transcendência e prequestionamento.",
+   "d": "CLT, arts. 896 e 896-A"
+  },
+  {
+   "id": "prc1",
+   "m": "Processo do Trabalho",
+   "p": "O que é preclusão e quais as três espécies?",
+   "r": "Perda da faculdade de praticar ato processual: temporal (prazo), lógica (ato incompatível) e consumativa (ato já praticado).",
+   "d": "Doutrina; CPC, art. 507"
+  },
+  {
+   "id": "prc2",
+   "m": "Processo do Trabalho",
+   "p": "Quando a parte deve arguir nulidade no processo do trabalho?",
+   "r": "Na primeira vez em que tiver de falar nos autos ou em audiência, sob pena de preclusão.",
+   "d": "CLT, art. 795"
+  },
+  {
+   "id": "prc3",
+   "m": "Processo do Trabalho",
+   "p": "A parte intimada da conta de liquidação não a impugnou no prazo. Consequência?",
+   "r": "Preclusão: perde o direito de discutir os cálculos (prazo comum de 8 dias).",
+   "d": "CLT, art. 879, § 2º"
+  },
+  {
+   "id": "bh1",
+   "m": "Direito do Trabalho",
+   "p": "Banco de horas: quais prazos de compensação conforme a forma de ajuste?",
+   "r": "Por norma coletiva, até 1 ano; por acordo individual escrito, até 6 meses; limite de 10h diárias.",
+   "d": "CLT, art. 59, §§ 2º e 5º"
+  },
+  {
+   "id": "int1",
+   "m": "Direito do Trabalho",
+   "p": "A redução do intervalo intrajornada para 30 minutos é válida por acordo individual?",
+   "r": "Não. Só por negociação coletiva, respeitado o mínimo de 30 minutos para jornada acima de 6h.",
+   "d": "CLT, art. 611-A, III"
+  },
+  {
+   "id": "int2",
+   "m": "Direito do Trabalho",
+   "p": "Quem pode punir o empregado terceirizado?",
+   "r": "Só o empregador (a prestadora); a punição pelo tomador revela subordinação direta.",
+   "d": "CLT, art. 2º; Lei 6.019, art. 4º-A"
+  },
+  {
+   "id": "ri1",
+   "m": "Direito do Trabalho",
+   "p": "Salários e FGTS em atraso permitem ao empregado pedir o quê?",
+   "r": "Rescisão indireta, por descumprimento das obrigações do contrato.",
+   "d": "CLT, art. 483, d"
+  },
+  {
+   "id": "ri2",
+   "m": "Direito do Trabalho",
+   "p": "Jornada extenuante habitual pode fundamentar a rescisão indireta?",
+   "r": "Sim: exigência de serviços superiores às forças do empregado.",
+   "d": "CLT, art. 483, a"
+  },
+  {
+   "id": "ri3",
+   "m": "Direito do Trabalho",
+   "p": "Na rescisão indireta, que verbas são devidas?",
+   "r": "As da dispensa sem justa causa: aviso prévio, 13º e férias proporcionais + 1/3, FGTS + 40% e guias do seguro-desemprego.",
+   "d": "CLT, art. 483"
+  },
+  {
+   "id": "ri4",
+   "m": "Direito do Trabalho",
+   "p": "O empregador paga os salários atrasados na audiência. Isso afasta a rescisão indireta?",
+   "r": "Não: só quita as parcelas, sem afastar a mora contumaz.",
+   "d": "Súmula 13 do TST; CLT, art. 483, § 3º"
+  },
+  {
+   "id": "ex1",
+   "m": "Processo do Trabalho",
+   "p": "Após a Reforma, quando o juiz do trabalho promove a execução de ofício?",
+   "r": "Só quando as partes não estiverem representadas por advogado.",
+   "d": "CLT, art. 878"
+  },
+  {
+   "id": "ex2",
+   "m": "Processo do Trabalho",
+   "p": "A dívida com a empregada doméstica autoriza penhorar o bem de família do empregador?",
+   "r": "Não. A exceção foi revogada pela LC 150/2015; o imóvel residencial é impenhorável.",
+   "d": "Lei 8.009, art. 1º; LC 150, art. 46"
+  },
+  {
+   "id": "ex3",
+   "m": "Processo do Trabalho",
+   "p": "O imóvel de pessoa solteira é bem de família?",
+   "r": "Sim, também é impenhorável.",
+   "d": "Súmula 364 do STJ"
+  },
+  {
+   "id": "ex4",
+   "m": "Processo do Trabalho",
+   "p": "Contra decisão do juiz na execução, que recurso cabe e com que exigência?",
+   "r": "Agravo de petição, em 8 dias, com delimitação justificada das matérias e valores impugnados.",
+   "d": "CLT, art. 897, a e § 1º"
+  },
+  {
+   "id": "alt1",
+   "m": "Direito do Trabalho",
+   "p": "O empregador muda a data de pagamento do dia 1º para o 5º dia útil do mês seguinte. É válido?",
+   "r": "Sim, se a data não estava fixada em contrato ou norma coletiva, respeitado o 5º dia útil.",
+   "d": "CLT, art. 459, § 1º; OJ 159 da SDI-1"
+  },
+  {
+   "id": "alt2",
+   "m": "Direito do Trabalho",
+   "p": "Transferido do turno noturno para o diurno, o empregado mantém o adicional noturno?",
+   "r": "Não. A mudança é lícita e implica a perda do adicional.",
+   "d": "Súmula 265 do TST"
+  },
+  {
+   "id": "alt3",
+   "m": "Direito do Trabalho",
+   "p": "Revertido ao cargo efetivo após 12 anos de função de confiança, o empregado incorpora a gratificação?",
+   "r": "Após a Reforma, não, qualquer que seja o tempo (salvo quem completou 10 anos antes de 11/11/2017).",
+   "d": "CLT, art. 468, §§ 1º e 2º; Súmula 372"
+  },
+  {
+   "id": "alt4",
+   "m": "Direito do Trabalho",
+   "p": "Transferência provisória por necessidade de serviço exige anuência? Gera adicional?",
+   "r": "Não exige anuência e gera adicional de pelo menos 25% enquanto durar.",
+   "d": "CLT, art. 469, § 3º; OJ 113 da SDI-1"
+  },
+  {
+   "id": "nc1",
+   "m": "Direito do Trabalho",
+   "p": "Qual a diferença entre os róis dos arts. 611-A e 611-B da CLT?",
+   "r": "O 611-A (o que pode ser negociado) é exemplificativo; o 611-B (o que não pode) é taxativo.",
+   "d": "CLT, arts. 611-A e 611-B"
+  },
+  {
+   "id": "nc2",
+   "m": "Direito do Trabalho",
+   "p": "Norma coletiva que limita direito sem dar contrapartida é válida?",
+   "r": "Sim, desde que respeite direitos absolutamente indisponíveis.",
+   "d": "STF, Tema 1.046; CLT, art. 611-A, § 2º"
+  },
+  {
+   "id": "nc3",
+   "m": "Direito do Trabalho",
+   "p": "Regras de jornada e intervalos são normas de saúde e segurança, intocáveis pela negociação?",
+   "r": "Não, para fins do art. 611-B não são consideradas normas de saúde e segurança.",
+   "d": "CLT, art. 611-B, parágrafo único"
+  },
+  {
+   "id": "nc4",
+   "m": "Direito do Trabalho",
+   "p": "Norma coletiva pode suprimir o adicional de periculosidade com compensação?",
+   "r": "Não. É objeto ilícito, ainda que haja compensação.",
+   "d": "CLT, art. 611-B, XVIII"
+  },
+  {
+   "id": "nc5",
+   "m": "Direito do Trabalho",
+   "p": "Redução salarial por norma coletiva: o que ela precisa garantir?",
+   "r": "Proteção contra dispensa imotivada durante a vigência do instrumento.",
+   "d": "CF, art. 7º, VI; CLT, art. 611-A, § 3º"
+  },
+  {
+   "id": "nc6",
+   "m": "Direito do Trabalho",
+   "p": "Qual a vigência máxima de convenção ou acordo coletivo? E a ultratividade?",
+   "r": "2 anos, vedada a ultratividade.",
+   "d": "CLT, art. 614, § 3º"
+  },
+  {
+   "id": "nc7",
+   "m": "Processo do Trabalho",
+   "p": "Ação que discute a anulação de cláusula coletiva: quem precisa participar?",
+   "r": "Os sindicatos subscritores, como litisconsortes necessários.",
+   "d": "CLT, art. 611-A, § 5º"
+  },
+  {
+   "id": "sum1",
+   "m": "Processo do Trabalho",
+   "p": "Quantas testemunhas por parte em cada rito trabalhista?",
+   "r": "Sumaríssimo 2; ordinário 3; inquérito para apuração de falta grave 6.",
+   "d": "CLT, arts. 821 e 852-H, § 2º"
+  },
+  {
+   "id": "sum2",
+   "m": "Processo do Trabalho",
+   "p": "No sumaríssimo, a testemunha que não compareceu será intimada?",
+   "r": "Só se a parte provar que a convidou; elas comparecem independentemente de intimação.",
+   "d": "CLT, art. 852-H, § 3º"
+  },
+  {
+   "id": "aud1",
+   "m": "Processo do Trabalho",
+   "p": "O reclamado faltou, mas o advogado dele compareceu com contestação. Consequência?",
+   "r": "Revelia e confissão quanto aos fatos, mas são aceitos a contestação e os documentos.",
+   "d": "CLT, art. 844, § 5º"
+  },
+  {
+   "id": "aud2",
+   "m": "Processo do Trabalho",
+   "p": "O preposto precisa ser empregado da reclamada?",
+   "r": "Não, após a Reforma; basta conhecer os fatos, e suas declarações obrigam a empresa.",
+   "d": "CLT, art. 843, §§ 1º e 3º"
+  },
+  {
+   "id": "aud3",
+   "m": "Processo do Trabalho",
+   "p": "A testemunha move ação contra o mesmo empregador. A contradita por suspeição procede?",
+   "r": "Não. Litigar contra o mesmo empregador não torna a testemunha suspeita.",
+   "d": "Súmula 357 do TST"
+  },
+  {
+   "id": "aud4",
+   "m": "Processo do Trabalho",
+   "p": "Irmão do reclamante ou inimigo da parte pode ser testemunha compromissada?",
+   "r": "Não; acolhida a contradita, pode ser ouvido como informante, sem compromisso.",
+   "d": "CLT, art. 829"
+  },
+  {
+   "id": "aud5",
+   "m": "Processo do Trabalho",
+   "p": "O preposto quer sair após o seu depoimento e a parte pede audiência a portas fechadas. O juiz defere?",
+   "r": "O preposto pode sair, prosseguindo a instrução com o advogado; as audiências são públicas, salvo segredo de justiça.",
+   "d": "CLT, arts. 813 e 848, § 1º; CF, art. 93, IX"
+  },
+  {
+   "id": "aud6",
+   "m": "Processo do Trabalho",
+   "p": "Qual a ordem da audiência de instrução trabalhista?",
+   "r": "Depoimentos do reclamante e do reclamado, testemunhas do reclamante e do reclamado; razões finais em 10 min e nova proposta de conciliação.",
+   "d": "CLT, arts. 848 e 850"
+  },
+  {
+   "id": "eq1",
+   "m": "Direito do Trabalho",
+   "p": "Quais os requisitos da equiparação salarial após a Reforma?",
+   "r": "Identidade de função, igual valor, mesmo empregador e estabelecimento, diferença de até 4 anos no empregador e até 2 na função.",
+   "d": "CLT, art. 461"
+  },
+  {
+   "id": "eq2",
+   "m": "Direito do Trabalho",
+   "p": "Cargos com nomes diferentes impedem a equiparação salarial?",
+   "r": "Não. Importa a identidade de funções, que deve ser provada.",
+   "d": "Súmula 6, III, do TST"
+  },
+  {
+   "id": "eq3",
+   "m": "Direito do Trabalho",
+   "p": "Empregados de filiais diferentes da mesma cidade podem ser equiparados após a Reforma?",
+   "r": "Não. Exige-se o mesmo estabelecimento empresarial, e não mais a mesma localidade.",
+   "d": "CLT, art. 461, caput"
+  },
+  {
+   "id": "av1",
+   "m": "Direito do Trabalho",
+   "p": "Dispensado, o empregado arruma novo emprego durante o aviso. A empresa paga os dias restantes?",
+   "r": "Não, se ele comprovar o novo emprego: fica dispensada do restante.",
+   "d": "Súmula 276 do TST"
+  },
+  {
+   "id": "av2",
+   "m": "Direito do Trabalho",
+   "p": "No pedido de demissão, o empregador dispensa o cumprimento do aviso. Há pagamento ou desconto?",
+   "r": "Nenhum dos dois: o aviso é direito do empregador, que pode renunciar a ele.",
+   "d": "CLT, art. 487"
+  },
+  {
+   "id": "av3",
+   "m": "Direito do Trabalho",
+   "p": "Extinção do contrato por comum acordo: o que muda nas verbas?",
+   "r": "Aviso indenizado e multa do FGTS pela metade (20%), saque de até 80% do FGTS e sem seguro-desemprego.",
+   "d": "CLT, art. 484-A"
+  },
+  {
+   "id": "adi1",
+   "m": "Direito do Trabalho",
+   "p": "Atividade em motocicleta gera que adicional? Qual o valor e a base?",
+   "r": "Periculosidade: 30% do salário básico, sem gratificações e prêmios.",
+   "d": "CLT, art. 193, § 1º e § 4º"
+  },
+  {
+   "id": "adi2",
+   "m": "Direito do Trabalho",
+   "p": "Qual o adicional de insalubridade e a base de cálculo?",
+   "r": "40%, 20% ou 10% (graus máximo, médio e mínimo), sobre o salário mínimo enquanto não houver outra base.",
+   "d": "CLT, art. 192; Súmula Vinculante 4"
+  },
+  {
+   "id": "adi3",
+   "m": "Direito do Trabalho",
+   "p": "O empregado exposto a agente insalubre e a risco perigoso recebe os dois adicionais?",
+   "r": "Não. Os adicionais não se acumulam: ele opta pelo mais vantajoso.",
+   "d": "CLT, art. 193, § 2º"
+  },
+  {
+   "id": "mul1",
+   "m": "Direito do Trabalho",
+   "p": "Verbas rescisórias incontroversas não pagas na primeira audiência: que multa incide?",
+   "r": "Acréscimo de 50% sobre essas verbas (não se aplica quando o empregador é ente público, mas o tomador subsidiário responde por ela).",
+   "d": "CLT, art. 467; Súmula 331, VI"
+  },
+  {
+   "id": "dc1",
+   "m": "Direito do Trabalho",
+   "p": "Dispensa em massa precisa de autorização do sindicato ou de norma coletiva?",
+   "r": "Não precisa de autorização nem de acordo, mas exige intervenção sindical prévia, isto é, abertura de diálogo com o sindicato.",
+   "d": "STF, Tema 638; CLT, art. 477-A"
+  },
+  {
+   "id": "dc2",
+   "m": "Direito do Trabalho",
+   "p": "Diferencie dispensa individual, plúrima e coletiva.",
+   "r": "Individual: um empregado; plúrima: grupo por motivo comum; coletiva: número expressivo, por motivo único, sem intenção de substituir.",
+   "d": "Doutrina; CLT, art. 477-A"
+  },
+  {
+   "id": "dc3",
+   "m": "Direito do Trabalho",
+   "p": "Membro eleito da CIPA: qual a garantia e o que acontece se o estabelecimento fecha?",
+   "r": "Do registro da candidatura até 1 ano após o mandato; fechado o estabelecimento, a dispensa é possível, sem reintegração nem indenização.",
+   "d": "ADCT, art. 10, II, a; Súmula 339, II, do TST"
+  },
+  {
+   "id": "dc4",
+   "m": "Direito do Trabalho",
+   "p": "Quem aderiu a PDV previsto em norma coletiva pode cobrar diferenças depois?",
+   "r": "Não: há quitação plena e irrevogável, salvo disposição em contrário no instrumento.",
+   "d": "CLT, art. 477-B; STF, Tema 152"
+  },
+  {
+   "id": "cit1",
+   "m": "Processo do Trabalho",
+   "p": "Como é feita a citação na Justiça do Trabalho e quando vai ao oficial de justiça?",
+   "r": "Em regra pelo correio; sem entrega domiciliar, por mandado cumprido pelo oficial de justiça.",
+   "d": "CLT, art. 841, § 1º"
+  },
+  {
+   "id": "cit2",
+   "m": "Processo do Trabalho",
+   "p": "Em que horário se realizam os atos processuais trabalhistas?",
+   "r": "Em dias úteis, das 6h às 20h.",
+   "d": "CLT, art. 770"
+  },
+  {
+   "id": "cit3",
+   "m": "Processo do Trabalho",
+   "p": "No rito sumaríssimo, cabe citação por edital?",
+   "r": "Não. O autor deve indicar corretamente nome e endereço do réu, sob pena de arquivamento.",
+   "d": "CLT, art. 852-B, II e § 1º"
+  },
+  {
+   "id": "cit4",
+   "m": "Processo do Trabalho",
+   "p": "Até que valor da causa se aplica o rito sumaríssimo?",
+   "r": "Até 40 salários mínimos (excluída a Administração Pública).",
+   "d": "CLT, art. 852-A"
+  },
+  {
+   "id": "sin1",
+   "m": "Direito do Trabalho",
+   "p": "A contribuição sindical ainda é obrigatória?",
+   "r": "Não. Desde a Reforma depende de autorização prévia e expressa, e o STF validou o fim da obrigatoriedade.",
+   "d": "CLT, arts. 545, 578 e 579; STF, ADI 5.794"
+  },
+  {
+   "id": "sin2",
+   "m": "Direito do Trabalho",
+   "p": "A contribuição confederativa pode ser cobrada de não filiados?",
+   "r": "Não, só dos filiados; ela não tem natureza tributária.",
+   "d": "CF, art. 8º, IV; Súmula Vinculante 40"
+  },
+  {
+   "id": "sin3",
+   "m": "Direito do Trabalho",
+   "p": "A contribuição assistencial pode ser cobrada de toda a categoria?",
+   "r": "Sim, se prevista em norma coletiva e assegurado o direito de oposição.",
+   "d": "STF, Tema 935 (2023)"
+  },
+  {
+   "id": "msp1",
    "m": "Constitucional",
-   "p": "Responsabilidade civil do Estado",
-   "d": "CF, art. 37, § 6º; STF, Tema 940",
-   "r": "Objetiva (risco administrativo), com direito de regresso contra o agente que agiu com dolo ou culpa. A vítima deve acionar o Estado ou a prestadora, não o agente diretamente."
+   "p": "Parlamentar quer barrar no STF uma PEC tendente a abolir cláusula pétrea. Que ação usa e que controle é esse?",
+   "r": "Mandado de segurança no STF, pelo direito ao devido processo legislativo: controle judicial preventivo, via difusa, excepcional.",
+   "d": "CF, art. 60, § 4º; jurisprudência do STF"
   },
   {
-   "id": "con02",
+   "id": "msp2",
    "m": "Constitucional",
-   "p": "Declaração de inconstitucionalidade pelos tribunais",
-   "d": "CF, art. 97; Súmula Vinculante 10",
-   "r": "Só pela maioria absoluta do tribunal ou do órgão especial (reserva de plenário). Afastar a lei sem declarar a inconstitucionalidade também viola a regra."
+   "p": "Um cidadão pode impetrar MS contra a tramitação de PEC? E se o parlamentar perde o mandato?",
+   "r": "Não: só parlamentar da Casa onde tramita. Perdido o mandato, o MS é extinto por ilegitimidade superveniente.",
+   "d": "Jurisprudência do STF"
   },
   {
-   "id": "con03",
+   "id": "rce1",
    "m": "Constitucional",
-   "p": "Dever de fundamentação das decisões",
-   "d": "CF, art. 93, IX; CPC, art. 489, § 1º",
-   "r": "Decisões sem fundamentação são nulas. O CPC lista o que não é fundamentação, como não enfrentar argumentos capazes de, em tese, infirmar a conclusão."
+   "p": "Qual a teoria da responsabilidade civil do Estado e a quem se aplica?",
+   "r": "Objetiva, risco administrativo: pessoas jurídicas de direito público e de direito privado prestadoras de serviço público.",
+   "d": "CF, art. 37, § 6º"
   },
   {
-   "id": "adm01",
+   "id": "rce2",
+   "m": "Constitucional",
+   "p": "Quais os requisitos e as excludentes da responsabilidade objetiva do Estado?",
+   "r": "Conduta do agente, dano e nexo causal, sem prova de culpa; excludentes: culpa exclusiva da vítima, caso fortuito ou força maior, fato de terceiro.",
+   "d": "CF, art. 37, § 6º"
+  },
+  {
+   "id": "rce3",
+   "m": "Constitucional",
+   "p": "A vítima pode processar diretamente o servidor causador do dano?",
+   "r": "Não. Deve acionar o Estado ou a prestadora, que tem regresso contra o agente em caso de dolo ou culpa.",
+   "d": "STF, Tema 940 (dupla garantia)"
+  },
+  {
+   "id": "lc1",
    "m": "Administrativo",
-   "p": "Estabilidade e perda do cargo do servidor",
-   "d": "CF, art. 41",
-   "r": "Estável após 3 anos de efetivo exercício e avaliação especial de desempenho. Perde o cargo por sentença transitada em julgado, processo administrativo com ampla defesa ou avaliação periódica insatisfatória."
+   "p": "O contratado descumpriu prazos da obra. A Administração pode extinguir o contrato sozinha? Como?",
+   "r": "Sim, por ato unilateral motivado, assegurados contraditório e ampla defesa.",
+   "d": "Lei 14.133, arts. 137, I, e 138, I"
   },
   {
-   "id": "adm02",
+   "id": "lc2",
    "m": "Administrativo",
-   "p": "Penalidades e prazo do PAD na Lei 8.112",
-   "d": "Arts. 127 e 152 da Lei 8.112/1990",
-   "r": "Advertência, suspensão, demissão, cassação de aposentadoria ou disponibilidade, destituição de cargo em comissão e de função comissionada (127). O PAD deve terminar em 60 dias, prorrogáveis por igual prazo (152)."
+   "p": "Extinto o contrato por culpa do contratado, ele tem direito à devolução da garantia?",
+   "r": "Não. A Administração pode executá-la para ressarcir prejuízos e cobrar multas.",
+   "d": "Lei 14.133, art. 139, III"
   },
   {
-   "id": "adm03",
+   "id": "lc3",
    "m": "Administrativo",
-   "p": "Sanções nas licitações e contratos",
-   "d": "Art. 156 da Lei 14.133/2021",
-   "r": "Advertência, multa, impedimento de licitar e contratar (até 3 anos) e declaração de inidoneidade (de 3 a 6 anos). Só a multa pode ser aplicada junto com as demais (§ 7º)."
+   "p": "Quais sanções a Lei 14.133 prevê e qual pode ser cumulada?",
+   "r": "Advertência, multa, impedimento de licitar e inidoneidade; só a multa se cumula com as demais.",
+   "d": "Lei 14.133, art. 156 e § 7º"
   },
   {
-   "id": "pc01",
+   "id": "lc4",
+   "m": "Administrativo",
+   "p": "A Administração atrasou pagamentos ao contratado. Ele pode suspender a execução?",
+   "r": "Sim, se o atraso passar de 2 meses (salvo calamidade, grave perturbação da ordem ou guerra, ou se ele contribuiu para o fato).",
+   "d": "Lei 14.133, art. 137, §§ 2º e 3º"
+  },
+  {
+   "id": "lc5",
+   "m": "Administrativo",
+   "p": "Por que, em regra, o particular não paralisa logo o contrato quando a Administração descumpre?",
+   "r": "Pela continuidade do serviço público e supremacia do interesse público: deve continuar e pedir extinção e perdas e danos.",
+   "d": "Doutrina; Lei 14.133, art. 137"
+  },
+  {
+   "id": "fr1",
    "m": "Processo Civil",
-   "p": "Fraude à execução e fraude contra credores",
-   "d": "CPC, art. 792; CC, arts. 158 a 165",
-   "r": "Fraude à execução: alienação quando já há ação capaz de levar à insolvência; reconhecida no próprio processo e ineficaz perante o credor (Súmula 375 do STJ: exige registro da penhora ou má-fé do terceiro). Fraude contra credores: anulável por ação pauliana."
+   "p": "Diferença de momento entre fraude contra credores e fraude à execução.",
+   "r": "Contra credores: alienação antes de qualquer ação; à execução: quando já há ação capaz de levar o devedor à insolvência.",
+   "d": "CC, arts. 158 a 165; CPC, art. 792"
   },
   {
-   "id": "pc02",
+   "id": "fr2",
    "m": "Processo Civil",
-   "p": "Tutelas de urgência e de evidência",
-   "d": "CPC, arts. 300 e 311",
-   "r": "Urgência: probabilidade do direito e perigo de dano ou risco ao resultado útil do processo; não se concede a antecipada se houver perigo de irreversibilidade. Evidência: dispensa o perigo de dano, nas hipóteses do art. 311."
+   "p": "Como se alega cada fraude?",
+   "r": "Contra credores: ação pauliana, em processo próprio; à execução: por simples petição no próprio processo, intimado o terceiro adquirente.",
+   "d": "CC, art. 161; CPC, art. 792, § 4º"
+  },
+  {
+   "id": "fr3",
+   "m": "Processo Civil",
+   "p": "Qual o efeito de cada fraude sobre o negócio?",
+   "r": "Contra credores: anulabilidade; à execução: ineficácia da alienação perante o exequente, sem anular o negócio.",
+   "d": "CC, art. 165; CPC, art. 792, § 1º"
+  },
+  {
+   "id": "fun1",
+   "m": "Processo Civil",
+   "p": "Onde está o dever de fundamentar as decisões e qual a consequência da falta?",
+   "r": "No art. 93, IX, da CF: decisões não fundamentadas são nulas.",
+   "d": "CF, art. 93, IX"
+  },
+  {
+   "id": "fun2",
+   "m": "Processo Civil",
+   "p": "Quais as funções endoprocessual e extraprocessual da fundamentação?",
+   "r": "Endo: permite recorrer e revisar a decisão; extra: permite o controle social da atividade judicial.",
+   "d": "Doutrina"
+  },
+  {
+   "id": "fun3",
+   "m": "Processo Civil",
+   "p": "O juiz precisa responder a todos os argumentos das partes?",
+   "r": "Só aos capazes de, em tese, infirmar a conclusão; achado motivo suficiente, não precisa rebater os demais (STJ).",
+   "d": "CPC, art. 489, § 1º, IV"
+  },
+  {
+   "id": "trt1",
+   "m": "Constitucional",
+   "p": "Tratado de direitos humanos aprovado em dois turnos por 3/5 em cada Casa tem que status?",
+   "r": "Equivale a emenda constitucional.",
+   "d": "CF, art. 5º, § 3º"
+  },
+  {
+   "id": "trt2",
+   "m": "Constitucional",
+   "p": "Tratado de direitos humanos aprovado pelo rito comum tem que status? E os demais tratados?",
+   "r": "Supralegal (abaixo da CF, acima das leis); os demais têm status de lei ordinária.",
+   "d": "STF, RE 466.343"
+  },
+  {
+   "id": "trt3",
+   "m": "Constitucional",
+   "p": "Turma de tribunal afasta a aplicação de norma sem declarar expressamente sua inconstitucionalidade. Pode?",
+   "r": "Não. Viola a reserva de plenário: só a maioria absoluta do tribunal ou do órgão especial pode.",
+   "d": "CF, art. 97; Súmula Vinculante 10"
+  },
+  {
+   "id": "pcn1",
+   "m": "Constitucional",
+   "p": "Características do poder constituinte originário e do derivado.",
+   "r": "Originário: inicial, autônomo, ilimitado e incondicionado. Derivado: limitado e condicionado (reformador, decorrente e revisor).",
+   "d": "Doutrina"
+  },
+  {
+   "id": "pcn2",
+   "m": "Constitucional",
+   "p": "Há hierarquia entre leis federais, estaduais e municipais?",
+   "r": "Não. O conflito se resolve pela repartição constitucional de competências.",
+   "d": "CF, arts. 21 a 30"
+  },
+  {
+   "id": "tin1",
+   "m": "Processo Civil",
+   "p": "O que é tutela inibitória e o que dispensa?",
+   "r": "Tutela preventiva para impedir a prática, a repetição ou a continuação do ilícito; dispensa prova de dano e de culpa ou dolo.",
+   "d": "CF, art. 5º, XXXV; CPC, art. 497, parágrafo único"
+  },
+  {
+   "id": "tin2",
+   "m": "Processo Civil",
+   "p": "Quais as técnicas para efetivar a tutela inibitória?",
+   "r": "Coerção indireta (multa periódica), execução direta (busca e apreensão, interdição) e sub-rogação (terceiro cumpre à custa do réu).",
+   "d": "CPC, arts. 536, § 1º, e 537"
+  },
+  {
+   "id": "cap1",
+   "m": "Direito Civil",
+   "p": "Diferença entre capacidade de direito e capacidade de fato.",
+   "r": "De direito (gozo): todos têm. De fato (exercício): aptidão para exercer sozinho os direitos, que pode faltar.",
+   "d": "CC, art. 1º"
+  },
+  {
+   "id": "cap2",
+   "m": "Direito Civil",
+   "p": "Quem é absolutamente incapaz hoje? A deficiência gera incapacidade?",
+   "r": "Só os menores de 16 anos; a deficiência, por si, não afeta a capacidade.",
+   "d": "CC, art. 3º; Lei 13.146/2015"
+  },
+  {
+   "id": "cap3",
+   "m": "Direito Civil",
+   "p": "Quem é relativamente incapaz?",
+   "r": "Maiores de 16 e menores de 18, ébrios habituais e viciados em tóxico, quem não pode exprimir a vontade e os pródigos.",
+   "d": "CC, art. 4º"
+  },
+  {
+   "id": "est1",
+   "m": "Direito do Trabalho",
+   "p": "Gestante contratada por experiência tem estabilidade?",
+   "r": "Sim, inclusive em contrato por prazo determinado.",
+   "d": "Súmula 244, III, do TST"
+  },
+  {
+   "id": "est2",
+   "m": "Direito do Trabalho",
+   "p": "Estabilidade acidentária: quanto dura e quais os requisitos?",
+   "r": "12 meses após cessar o auxílio acidentário; exige afastamento acima de 15 dias e o benefício, salvo doença ocupacional constatada após a dispensa.",
+   "d": "Lei 8.213, art. 118; Súmula 378, II"
+  },
+  {
+   "id": "est3",
+   "m": "Direito do Trabalho",
+   "p": "Dirigente sindical: de quando até quando vai a estabilidade?",
+   "r": "Do registro da candidatura até 1 ano após o fim do mandato, inclusive do suplente.",
+   "d": "CF, art. 8º, VIII; CLT, art. 543, § 3º"
+  },
+  {
+   "id": "est4",
+   "m": "Direito do Trabalho",
+   "p": "Quantos dirigentes sindicais têm estabilidade?",
+   "r": "Até 7 titulares e 7 suplentes.",
+   "d": "CLT, art. 522; Súmula 369, II"
+  },
+  {
+   "id": "est5",
+   "m": "Direito do Trabalho",
+   "p": "O sindicato não comunicou formalmente a candidatura ao empregador. O dirigente perde a estabilidade?",
+   "r": "Não, se o empregador soube por qualquer meio durante o contrato.",
+   "d": "Súmula 369, I, do TST"
+  },
+  {
+   "id": "est6",
+   "m": "Processo do Trabalho",
+   "p": "Como a empresa dispensa por falta grave um dirigente sindical?",
+   "r": "Por inquérito judicial: pode suspendê-lo e deve ajuizar em 30 dias da suspensão (prazo decadencial).",
+   "d": "CLT, arts. 494 e 853; Súmula 379 do TST; Súmula 403 do STF"
+  },
+  {
+   "id": "rec1",
+   "m": "Processo do Trabalho",
+   "p": "Prazo do recurso ordinário e forma de contagem.",
+   "r": "8 dias, contados em dias úteis.",
+   "d": "CLT, arts. 775 e 895, I"
+  },
+  {
+   "id": "rec2",
+   "m": "Processo do Trabalho",
+   "p": "Até quando custas e depósito recursal devem ser comprovados?",
+   "r": "Dentro do prazo do recurso.",
+   "d": "CLT, art. 789, § 1º; Súmula 245 do TST"
+  },
+  {
+   "id": "rec3",
+   "m": "Processo do Trabalho",
+   "p": "Microempresa recolhe depósito recursal integral?",
+   "r": "Não, pela metade.",
+   "d": "CLT, art. 899, § 9º"
+  },
+  {
+   "id": "rec4",
+   "m": "Processo do Trabalho",
+   "p": "As custas foram recolhidas a menor. O recurso é deserto de imediato?",
+   "r": "Não. Concede-se prazo de 5 dias para complementar; só há deserção se não complementar.",
+   "d": "CPC, art. 1.007, § 2º; OJ 140 da SDI-1"
+  },
+  {
+   "id": "rec5",
+   "m": "Processo do Trabalho",
+   "p": "Cabe recurso adesivo no processo do trabalho? Em que prazo?",
+   "r": "Sim, com sucumbência recíproca, em 8 dias (o das contrarrazões); não precisa ter relação com a matéria do principal.",
+   "d": "Súmula 283 do TST; CPC, art. 997"
+  },
+  {
+   "id": "rec6",
+   "m": "Processo do Trabalho",
+   "p": "Recurso de revista no rito sumaríssimo: em que hipóteses cabe?",
+   "r": "Só por contrariedade a súmula do TST ou súmula vinculante, ou por violação direta da Constituição.",
+   "d": "CLT, art. 896, § 9º"
+  },
+  {
+   "id": "rec7",
+   "m": "Processo do Trabalho",
+   "p": "Recurso de revista serve para reexaminar fatos e provas?",
+   "r": "Não.",
+   "d": "Súmula 126 do TST"
+  },
+  {
+   "id": "pre3",
+   "m": "Processo do Trabalho",
+   "p": "Qual o prazo prescricional do FGTS hoje?",
+   "r": "5 anos (não mais 30), com modulação para lesões anteriores a 13/11/2014.",
+   "d": "STF, ARE 709.212; Súmula 362 do TST"
+  },
+  {
+   "id": "pre4",
+   "m": "Processo do Trabalho",
+   "p": "Gratificação prevista só em regulamento foi suprimida em 2018. Que prescrição se aplica?",
+   "r": "Prescrição total, contada da lesão, porque a parcela não está prevista em lei.",
+   "d": "CLT, art. 11, § 2º; Súmula 294 do TST"
+  },
+  {
+   "id": "pre5",
+   "m": "Processo do Trabalho",
+   "p": "Reclamação arquivada interrompe a prescrição? De quais pedidos?",
+   "r": "Sim, mas só dos pedidos idênticos; a interrupção ocorre uma vez e o prazo recomeça.",
+   "d": "CLT, art. 11, § 3º; Súmula 268 do TST"
+  },
+  {
+   "id": "pre6",
+   "m": "Processo do Trabalho",
+   "p": "Prescrição intercorrente: prazo, início e quem declara.",
+   "r": "2 anos do descumprimento de determinação judicial na execução; pode ser requerida ou declarada de ofício em qualquer grau.",
+   "d": "CLT, art. 11-A"
+  },
+  {
+   "id": "ge4",
+   "m": "Processo do Trabalho",
+   "p": "Empresa do grupo que não participou da fase de conhecimento pode ser incluída direto na execução?",
+   "r": "Não. Exige contraditório prévio, pelo incidente de desconsideração (IDPJ).",
+   "d": "CLT, art. 855-A; CPC, arts. 133 a 137"
+  },
+  {
+   "id": "suc1",
+   "m": "Direito do Trabalho",
+   "p": "Quando há sucessão de empregadores e quem responde pelas dívidas?",
+   "r": "Na transferência da unidade econômico-produtiva; responde a sucessora, inclusive por contratos anteriores.",
+   "d": "CLT, arts. 10, 448 e 448-A"
+  },
+  {
+   "id": "suc2",
+   "m": "Direito do Trabalho",
+   "p": "A empresa sucedida continua responsável pelas dívidas trabalhistas?",
+   "r": "Só solidariamente, se comprovada fraude na transferência.",
+   "d": "CLT, art. 448-A, parágrafo único"
+  },
+  {
+   "id": "soc1",
+   "m": "Direito do Trabalho",
+   "p": "Sócio retirante responde por dívida trabalhista? Até quando e em que ordem?",
+   "r": "Subsidiariamente, pelo período em que foi sócio, em ações ajuizadas até 2 anos após a averbação; depois da empresa e dos sócios atuais.",
+   "d": "CLT, art. 10-A"
+  },
+  {
+   "id": "idp1",
+   "m": "Processo do Trabalho",
+   "p": "IDPJ na Justiça do Trabalho: o processo fica suspenso? Cabe tutela de urgência?",
+   "r": "Sim, suspende o processo, sem prejuízo de tutela de urgência cautelar.",
+   "d": "CLT, art. 855-A, § 2º"
+  },
+  {
+   "id": "idp2",
+   "m": "Processo do Trabalho",
+   "p": "Que recurso cabe contra a decisão do IDPJ em cada fase?",
+   "r": "Na execução, agravo de petição, sem garantia do juízo; na fase de conhecimento, não cabe recurso imediato.",
+   "d": "CLT, art. 855-A, § 1º"
+  },
+  {
+   "id": "cmp1",
+   "m": "Processo do Trabalho",
+   "p": "Ação de servidor estatutário contra o ente público é da Justiça do Trabalho?",
+   "r": "Não, é da Justiça comum: o STF excluiu as relações jurídico-administrativas.",
+   "d": "STF, ADI 3.395"
+  },
+  {
+   "id": "cmp2",
+   "m": "Processo do Trabalho",
+   "p": "Indenização por acidente de trabalho pedida pelo empregado contra o empregador: de quem é a competência?",
+   "r": "Da Justiça do Trabalho.",
+   "d": "CF, art. 114, VI; Súmula Vinculante 22"
+  },
+  {
+   "id": "cmp3",
+   "m": "Processo do Trabalho",
+   "p": "Ações possessórias ligadas a greve e multas da fiscalização do trabalho: que Justiça julga?",
+   "r": "A Justiça do Trabalho, nos dois casos.",
+   "d": "CF, art. 114, II e VII; Súmula Vinculante 23"
+  },
+  {
+   "id": "cmp4",
+   "m": "Processo do Trabalho",
+   "p": "Complementação de aposentadoria contra entidade de previdência privada: que Justiça julga?",
+   "r": "A Justiça comum: a relação é previdenciária e autônoma do contrato de trabalho.",
+   "d": "STF, Tema 190; CF, art. 202, § 2º"
+  },
+  {
+   "id": "cmp5",
+   "m": "Processo do Trabalho",
+   "p": "Regra de competência territorial trabalhista e exceção do viajante comercial.",
+   "r": "Local da prestação dos serviços; para viajante, a Vara da agência ou filial a que está subordinado (ou do domicílio, na falta).",
+   "d": "CLT, art. 651, caput e § 1º"
+  },
+  {
+   "id": "cmp6",
+   "m": "Processo do Trabalho",
+   "p": "Quem julga conflito de competência entre juiz do trabalho e juiz estadual?",
+   "r": "O STJ, por não estarem vinculados ao mesmo tribunal.",
+   "d": "CF, art. 105, I, d"
+  },
+  {
+   "id": "fer1",
+   "m": "Direito do Trabalho",
+   "p": "Empregado com 10 faltas injustificadas no período aquisitivo tem quantos dias de férias?",
+   "r": "24 dias corridos (de 6 a 14 faltas).",
+   "d": "CLT, art. 130, II"
+  },
+  {
+   "id": "fer2",
+   "m": "Direito do Trabalho",
+   "p": "Regras do fracionamento das férias.",
+   "r": "Até 3 períodos, com concordância do empregado: um de no mínimo 14 dias e os demais de no mínimo 5.",
+   "d": "CLT, art. 134, § 1º"
+  },
+  {
+   "id": "fer3",
+   "m": "Direito do Trabalho",
+   "p": "As férias podem começar numa quinta-feira se sábado é descanso semanal?",
+   "r": "Não: é vedado iniciar nos 2 dias que antecedem feriado ou repouso semanal remunerado.",
+   "d": "CLT, art. 134, § 3º"
+  },
+  {
+   "id": "fer4",
+   "m": "Direito do Trabalho",
+   "p": "Prazos de aviso e de pagamento das férias.",
+   "r": "Aviso por escrito com 30 dias de antecedência; pagamento até 2 dias antes do início.",
+   "d": "CLT, arts. 135 e 145"
+  },
+  {
+   "id": "fer5",
+   "m": "Direito do Trabalho",
+   "p": "Férias pagas com atraso, mas gozadas no prazo, geram pagamento em dobro?",
+   "r": "Não. O STF derrubou a Súmula 450 do TST; cabe só sanção administrativa.",
+   "d": "STF, ADPF 501"
+  },
+  {
+   "id": "fer6",
+   "m": "Direito do Trabalho",
+   "p": "Férias concedidas depois do período concessivo: consequência?",
+   "r": "Pagamento em dobro, incluído o terço constitucional.",
+   "d": "CLT, art. 137; Súmula 81 do TST"
+  },
+  {
+   "id": "fer7",
+   "m": "Direito do Trabalho",
+   "p": "O abono de férias depende da concordância da empresa?",
+   "r": "Não: é direito do empregado converter 1/3, se pedir até 15 dias antes do fim do período aquisitivo.",
+   "d": "CLT, art. 143, § 1º"
+  },
+  {
+   "id": "sus1",
+   "m": "Direito do Trabalho",
+   "p": "Diferença entre interrupção e suspensão do contrato.",
+   "r": "Interrupção: não trabalha, mas recebe e conta tempo. Suspensão: sem trabalho, sem salário e, em regra, sem contar tempo.",
+   "d": "CLT, arts. 471 a 476"
+  },
+  {
+   "id": "sus2",
+   "m": "Direito do Trabalho",
+   "p": "Empregado afastado por doença comum, com benefício do INSS: a empresa pode cortar o plano de saúde?",
+   "r": "Não. Mantém-se o plano durante o auxílio-doença ou a aposentadoria por invalidez.",
+   "d": "Súmula 440 do TST"
+  },
+  {
+   "id": "sus3",
+   "m": "Direito do Trabalho",
+   "p": "Há depósito de FGTS durante o afastamento previdenciário?",
+   "r": "Só no afastamento por acidente de trabalho; no auxílio por doença comum, não.",
+   "d": "Lei 8.036, art. 15, § 5º"
+  },
+  {
+   "id": "sus4",
+   "m": "Direito do Trabalho",
+   "p": "Suspensão disciplinar de 35 dias é válida?",
+   "r": "Não: acima de 30 dias consecutivos importa rescisão injusta do contrato.",
+   "d": "CLT, art. 474"
+  },
+  {
+   "id": "sus5",
+   "m": "Direito do Trabalho",
+   "p": "Suspensão do contrato para curso de qualificação: requisitos.",
+   "r": "De 2 a 5 meses, com previsão em norma coletiva e concordância formal do empregado; acordo individual não basta.",
+   "d": "CLT, art. 476-A"
+  },
+  {
+   "id": "liq1",
+   "m": "Processo do Trabalho",
+   "p": "Na liquidação, pode-se incluir reflexo que a sentença não deferiu?",
+   "r": "Não: é vedado modificar ou inovar a sentença liquidanda (ofensa à coisa julgada).",
+   "d": "CLT, art. 879, § 1º"
+  },
+  {
+   "id": "liq2",
+   "m": "Processo do Trabalho",
+   "p": "A empresa não impugnou a conta no prazo. Pode impugná-la nos embargos à execução?",
+   "r": "Não, há preclusão; salvo matéria de ordem pública, como ofensa à coisa julgada.",
+   "d": "CLT, arts. 879, § 2º, e 884, § 3º"
+  },
+  {
+   "id": "liq3",
+   "m": "Processo do Trabalho",
+   "p": "Como se corrigem os créditos trabalhistas segundo o STF?",
+   "r": "Fase pré-judicial: IPCA-E e juros legais; após o ajuizamento: SELIC. Desde 30/8/2024, IPCA + taxa legal (Lei 14.905/2024, TST).",
+   "d": "STF, ADCs 58 e 59"
+  },
+  {
+   "id": "liq4",
+   "m": "Processo do Trabalho",
+   "p": "Em que prazo a União se manifesta sobre os cálculos das contribuições previdenciárias?",
+   "r": "10 dias, sob pena de preclusão.",
+   "d": "CLT, art. 879, § 3º"
+  },
+  {
+   "id": "ms1",
+   "m": "Processo do Trabalho",
+   "p": "Tutela de urgência concedida antes da sentença: como impugnar no processo do trabalho?",
+   "r": "Por mandado de segurança, porque não há recurso próprio.",
+   "d": "Súmula 414, II, do TST"
+  },
+  {
+   "id": "ms2",
+   "m": "Processo do Trabalho",
+   "p": "Tutela concedida na própria sentença: como impugnar?",
+   "r": "Por recurso ordinário, com pedido de efeito suspensivo; não cabe MS.",
+   "d": "Súmula 414, I; OJ 92 da SDI-2"
+  },
+  {
+   "id": "ms3",
+   "m": "Processo do Trabalho",
+   "p": "Prazo do mandado de segurança e recurso contra acórdão do TRT em MS originário.",
+   "r": "120 dias da ciência do ato; contra o acórdão, recurso ordinário para o TST.",
+   "d": "Lei 12.016, art. 23; CLT, art. 895, II"
+  },
+  {
+   "id": "ar1",
+   "m": "Processo do Trabalho",
+   "p": "Ação rescisória trabalhista: prazo e depósito.",
+   "r": "2 anos do trânsito em julgado da última decisão; depósito prévio de 20% do valor da causa, salvo miserabilidade.",
+   "d": "CPC, art. 975; Súmula 100; CLT, art. 836"
+  },
+  {
+   "id": "ar2",
+   "m": "Processo do Trabalho",
+   "p": "Cabe rescisória por violação de lei de interpretação controvertida nos tribunais?",
+   "r": "Não.",
+   "d": "Súmula 83 do TST; Súmula 343 do STF"
+  },
+  {
+   "id": "faz1",
+   "m": "Processo do Trabalho",
+   "p": "Prerrogativas da Fazenda Pública para recorrer na Justiça do Trabalho.",
+   "r": "Prazo em dobro (16 dias), dispensa do depósito recursal e isenção de custas.",
+   "d": "Decreto-lei 779/1969; CLT, art. 790-A"
+  },
+  {
+   "id": "faz2",
+   "m": "Processo do Trabalho",
+   "p": "Condenação de Município do interior em R$ 120 mil: há remessa necessária?",
+   "r": "Não, abaixo de 100 salários mínimos para Municípios que não são capitais.",
+   "d": "CPC, art. 496, § 3º, III; Súmula 303 do TST"
+  },
+  {
+   "id": "faz3",
+   "m": "Processo do Trabalho",
+   "p": "Como a Fazenda se defende na execução e como paga?",
+   "r": "Impugna em 30 dias, sem garantia do juízo; paga por precatório ou RPV, vedada a penhora de bens públicos.",
+   "d": "CPC, art. 535; CF, art. 100"
+  },
+  {
+   "id": "faz4",
+   "m": "Processo do Trabalho",
+   "p": "Quem tem superpreferência no precatório e até quanto?",
+   "r": "Credores com 60 anos ou mais, doença grave ou deficiência, até o triplo do pequeno valor.",
+   "d": "CF, art. 100, § 2º"
+  },
+  {
+   "id": "faz5",
+   "m": "Processo do Trabalho",
+   "p": "Pode fracionar o crédito para receber por RPV? Em litisconsórcio, como se afere?",
+   "r": "Não pode fracionar; em litisconsórcio, o valor é aferido por credor.",
+   "d": "CF, art. 100, § 8º"
+  },
+  {
+   "id": "faz6",
+   "m": "Processo do Trabalho",
+   "p": "Os Correios (ECT) podem ter bens penhorados?",
+   "r": "Não: têm as prerrogativas da Fazenda, com execução por precatório.",
+   "d": "OJ 247, II, da SDI-1"
+  },
+  {
+   "id": "gr1",
+   "m": "Direito do Trabalho",
+   "p": "Greve em serviço essencial: antecedência do aviso e outra exigência.",
+   "r": "72 horas aos empregadores e usuários, garantindo os serviços indispensáveis à comunidade.",
+   "d": "Lei 7.783, arts. 11 e 13"
+  },
+  {
+   "id": "gr2",
+   "m": "Direito do Trabalho",
+   "p": "Durante a greve, a empresa pode contratar substitutos? E descontar os dias parados?",
+   "r": "Substitutos, em regra, não. Os dias podem ser descontados, salvo acordo ou greve por atraso salarial ou falta grave do empregador.",
+   "d": "Lei 7.783, art. 7º"
+  },
+  {
+   "id": "gr3",
+   "m": "Direito do Trabalho",
+   "p": "Quem pode ajuizar dissídio coletivo de greve? E o de natureza econômica?",
+   "r": "De greve: as partes e o MPT em atividade essencial. Econômico: exige comum acordo.",
+   "d": "CF, art. 114, §§ 2º e 3º"
+  },
+  {
+   "id": "gr4",
+   "m": "Direito do Trabalho",
+   "p": "Vencida a convenção coletiva, as cláusulas continuam valendo até a nova?",
+   "r": "Não: a ultratividade é vedada e o STF derrubou a Súmula 277 do TST.",
+   "d": "CLT, art. 614, § 3º; STF, ADPF 323"
+  },
+  {
+   "id": "pad1",
+   "m": "Administrativo",
+   "p": "O que é inassiduidade habitual e como é punida?",
+   "r": "60 faltas injustificadas, interpoladas, em 12 meses; demissão, apurada pelo rito sumário.",
+   "d": "Lei 8.112, arts. 132, III, 139 e 140"
+  },
+  {
+   "id": "pad2",
+   "m": "Administrativo",
+   "p": "Prescrição da demissão na Lei 8.112: prazo e início.",
+   "r": "5 anos, da data em que o fato se tornou conhecido; a instauração do processo interrompe.",
+   "d": "Lei 8.112, art. 142, I e §§ 1º e 3º"
+  },
+  {
+   "id": "pad3",
+   "m": "Administrativo",
+   "p": "Servidor comissionado sem vínculo pode integrar comissão de PAD?",
+   "r": "Não: a comissão tem 3 servidores estáveis; a irregularidade gera nulidade.",
+   "d": "Lei 8.112, art. 149"
+  },
+  {
+   "id": "pad4",
+   "m": "Administrativo",
+   "p": "Falta de advogado no PAD gera nulidade?",
+   "r": "Não.",
+   "d": "Súmula Vinculante 5"
+  },
+  {
+   "id": "pad5",
+   "m": "Administrativo",
+   "p": "A autoridade pode agravar a penalidade proposta pela comissão?",
+   "r": "Sim, motivadamente, se o relatório contrariar as provas dos autos.",
+   "d": "Lei 8.112, art. 168, parágrafo único"
+  },
+  {
+   "id": "pad6",
+   "m": "Administrativo",
+   "p": "Absolvição criminal afasta a punição administrativa?",
+   "r": "Só se negar a existência do fato ou a autoria; as instâncias são independentes.",
+   "d": "Lei 8.112, arts. 125 e 126"
+  },
+  {
+   "id": "exe1",
+   "m": "Processo do Trabalho",
+   "p": "Prazo dos embargos à execução trabalhista e de quando conta.",
+   "r": "5 dias da garantia do juízo ou da penhora.",
+   "d": "CLT, art. 884"
+  },
+  {
+   "id": "exe2",
+   "m": "Processo do Trabalho",
+   "p": "Seguro-garantia na execução trabalhista: precisa de acréscimo?",
+   "r": "Sim, de 30% sobre o valor do débito.",
+   "d": "CLT, art. 882; CPC, art. 835, § 2º; OJ 59 da SDI-2"
+  },
+  {
+   "id": "exe3",
+   "m": "Processo do Trabalho",
+   "p": "Pode penhorar salário do devedor por crédito trabalhista? Até quanto?",
+   "r": "Sim, por ser crédito alimentar, até 50% dos ganhos líquidos.",
+   "d": "CPC, arts. 529, § 3º, e 833, § 2º"
+  },
+  {
+   "id": "exe4",
+   "m": "Processo do Trabalho",
+   "p": "Carro penhorado pertence a terceiro que comprou e não transferiu no Detran. Como ele se defende e até quando?",
+   "r": "Embargos de terceiro (a propriedade do móvel passa pela tradição), até 5 dias após a arrematação, antes da carta.",
+   "d": "CPC, arts. 674 e 675"
+  },
+  {
+   "id": "exe5",
+   "m": "Processo do Trabalho",
+   "p": "Garantido o juízo, o agravo de petição exige novo depósito recursal?",
+   "r": "Não.",
+   "d": "Súmula 128, II, do TST"
+  },
+  {
+   "id": "jor4",
+   "m": "Direito do Trabalho",
+   "p": "Compensação de jornada dentro do mesmo mês: que forma de acordo basta?",
+   "r": "Acordo individual, tácito ou escrito.",
+   "d": "CLT, art. 59, § 6º"
+  },
+  {
+   "id": "jor5",
+   "m": "Direito do Trabalho",
+   "p": "Banco de horas inválido: o que é devido?",
+   "r": "As horas além da 8ª diária e da 44ª semanal, como extras, com adicional de no mínimo 50%.",
+   "d": "Súmula 85, V, do TST; CF, art. 7º, XVI"
+  },
+  {
+   "id": "jor6",
+   "m": "Direito do Trabalho",
+   "p": "Entre duas jornadas houve só 8 horas de descanso. O que é devido?",
+   "r": "As 3 horas subtraídas do intervalo mínimo de 11h, pagas como extras.",
+   "d": "CLT, art. 66; OJ 355 da SDI-1"
+  },
+  {
+   "id": "ri5",
+   "m": "Direito do Trabalho",
+   "p": "Na rescisão indireta por atraso salarial, o empregado precisa sair do emprego para ajuizar?",
+   "r": "Não: pode permanecer no serviço até a decisão final; não há abandono.",
+   "d": "CLT, art. 483, § 3º"
+  },
+  {
+   "id": "ri6",
+   "m": "Direito do Trabalho",
+   "p": "Crise financeira da empresa afasta a falta grave do atraso salarial?",
+   "r": "Não: o risco do negócio é do empregador.",
+   "d": "CLT, art. 2º"
+  },
+  {
+   "id": "jc1",
+   "m": "Direito do Trabalho",
+   "p": "Empregado com alcoolismo crônico pode ser dispensado por justa causa por embriaguez habitual?",
+   "r": "Não, segundo o TST: é doença; deve ser encaminhado a tratamento e ao INSS.",
+   "d": "CLT, art. 482, f; jurisprudência do TST"
+  },
+  {
+   "id": "jc2",
+   "m": "Direito do Trabalho",
+   "p": "Que verbas são devidas na dispensa por justa causa?",
+   "r": "Só saldo de salário e férias vencidas + 1/3; não há férias e 13º proporcionais, aviso nem multa de 40%.",
+   "d": "CLT, art. 146, parágrafo único; Súmula 171"
+  },
+  {
+   "id": "jc3",
+   "m": "Direito do Trabalho",
+   "p": "Prazo para pagar as verbas rescisórias e consequência do atraso.",
+   "r": "10 dias do término do contrato, sob pena de multa de um salário.",
+   "d": "CLT, art. 477, §§ 6º e 8º"
+  },
+  {
+   "id": "sum3",
+   "m": "Processo do Trabalho",
+   "p": "Causa de 30 salários mínimos contra um Município segue o rito sumaríssimo?",
+   "r": "Não: a Administração direta, autárquica e fundacional fica fora do sumaríssimo.",
+   "d": "CLT, art. 852-A, parágrafo único"
+  },
+  {
+   "id": "sum4",
+   "m": "Processo do Trabalho",
+   "p": "Requisito do pedido no rito sumaríssimo.",
+   "r": "Pedido certo e determinado, com o valor correspondente, sob pena de arquivamento.",
+   "d": "CLT, art. 852-B, I e § 1º"
+  },
+  {
+   "id": "arq1",
+   "m": "Processo do Trabalho",
+   "p": "O reclamante faltou à audiência inicial e é beneficiário da justiça gratuita. Paga custas?",
+   "r": "Sim, salvo motivo justificado comprovado em 15 dias; o pagamento é condição para nova ação (STF validou).",
+   "d": "CLT, art. 844, §§ 2º e 3º; STF, ADI 5.766"
+  },
+  {
+   "id": "cf1",
+   "m": "Processo do Trabalho",
+   "p": "Parte intimada com a cominação não comparece para depor. Consequência e alcance?",
+   "r": "Confissão ficta, presunção relativa que pode ser afastada pela prova pré-constituída nos autos.",
+   "d": "Súmula 74, I e II, do TST"
+  },
+  {
+   "id": "eq4",
+   "m": "Direito do Trabalho",
+   "p": "Pode indicar paradigma remoto que obteve a vantagem por ação judicial?",
+   "r": "Não: é vedado; a equiparação só se dá com empregado contemporâneo no cargo.",
+   "d": "CLT, art. 461, § 5º"
+  },
+  {
+   "id": "eq5",
+   "m": "Direito do Trabalho",
+   "p": "Plano de cargos e salários afasta a equiparação? Precisa de homologação?",
+   "r": "Afasta, e dispensa homologação ou registro em órgão público.",
+   "d": "CLT, art. 461, § 2º"
+  },
+  {
+   "id": "eq6",
+   "m": "Direito do Trabalho",
+   "p": "Diferença salarial por discriminação de sexo ou raça: que multa se soma às diferenças?",
+   "r": "Multa de 10 vezes o novo salário devido, em dobro na reincidência, sem prejuízo do dano moral.",
+   "d": "CLT, art. 461, §§ 6º e 7º (Lei 14.611/2023)"
+  },
+  {
+   "id": "df1",
+   "m": "Direito do Trabalho",
+   "p": "Desvio de função dá direito a reenquadramento?",
+   "r": "Não, só às diferenças salariais do período, observada a prescrição quinquenal.",
+   "d": "OJ 125 da SDI-1; Súmula 275, I"
+  },
+  {
+   "id": "adi4",
+   "m": "Direito do Trabalho",
+   "p": "Exposição intermitente a agente perigoso dá direito ao adicional?",
+   "r": "Sim, se habitual; só a eventual ou por tempo extremamente reduzido o afasta.",
+   "d": "Súmula 364 do TST"
+  },
+  {
+   "id": "adi5",
+   "m": "Direito do Trabalho",
+   "p": "O fornecimento de EPI afasta o adicional de insalubridade?",
+   "r": "Só se eliminar o agente, comprovado por perícia; o empregador deve fiscalizar o uso.",
+   "d": "Súmulas 80 e 289 do TST; CLT, art. 191"
+  },
+  {
+   "id": "adi6",
+   "m": "Direito do Trabalho",
+   "p": "A gestante pode trabalhar em atividade insalubre de grau mínimo?",
+   "r": "Não: deve ser afastada de qualquer grau, sem prejuízo da remuneração; o STF derrubou a exigência de atestado.",
+   "d": "CLT, art. 394-A; STF, ADI 5.938"
+  },
+  {
+   "id": "adi7",
+   "m": "Direito do Trabalho",
+   "p": "Radiação ionizante gera que adicional?",
+   "r": "Periculosidade, de 30% sobre o salário básico.",
+   "d": "OJ 345 da SDI-1"
   }
  ]
 }
