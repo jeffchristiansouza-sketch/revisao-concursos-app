@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 72e4a6b';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='21/11/2026 · 065f9fb';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1422,9 +1422,9 @@ function vSim(){
     const nG=sim.questoes.filter(q=>q.area==='G').length;
     let st='<span class="badge b-neu">não iniciado</span>',res='';
     if(and){const nr=Object.keys(and.resp||{}).length;st=`<span class="badge b-media">em andamento · ${nr}/${sim.questoes.length}</span>`}
-    else if(last&&gp){st='<span class="badge b-media">entregue · aguardando gabarito</span>'}
+    else if(last&&gp){st='<span class="badge b-media">entregue · aguardando gabarito</span>';res=`<div class="meta">${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     else if(last){const r=simCalc(sim,last);st=`<span class="badge ${r.nota>=6?'b-ok':'b-alta'}">nota ${nf(r.nota)}</span>`;
-      res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}</div>`}
+      res=`<div class="meta"><span>Acertos <b>${r.ac}/${r.tot}</b></span><span>Gerais <b>${r.G[0]}/${r.G[1]}</b></span><span>Específicos <b>${r.E[0]}/${r.E[1]}</b></span>${last.discNota!=null?`<span>Estudo de caso <b>${nf(last.discNota,1)}</b></span>`:''}<span>Tempo <b>${simFmtT(last.gasto||0)}</b></span></div>`}
     h+=`<div class="card"><div class="row sp"><div class="tag">${esc(sim.rotulo||'Simulado nº '+sim.n)} · ${esc(sim.criado?fdi(sim.criado):'')}</div>${st}</div>
      <div class="ttl">${esc(sim.titulo)}</div><div class="sub">${sim.questoes.length} objetivas (${nG} gerais + ${sim.questoes.length-nG} específicas)${sim.disc?' + 1 estudo de caso':''} · ${Math.round((sim.duracao_min||240)/60)}h</div>${res}${gp?`<div class="msg" style="margin-top:8px">O gabarito oficial ainda não saiu. Você já pode fazer a prova: as respostas ficam guardadas e a correção aparece assim que o gabarito for gravado.</div>`:''}${sim.nota&&sim.rotulo?`<div class="sub" style="margin-top:6px">${esc(sim.nota)}</div>`:''}
      <div class="row" style="margin-top:10px;flex-wrap:wrap">${and?`<button class="btn p s" onclick="simOpen('${and._id}')">Continuar</button>`:`<button class="btn p s" onclick="simStart('${sim.id}')">${fin.length?'Refazer':'Começar'}</button>`}${last?`<button class="btn s" onclick="simOpen('${last._id}')">${gp?'Ver respostas':'Ver correção'}</button>`:''}</div></div>`}
