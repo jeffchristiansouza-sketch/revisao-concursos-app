@@ -3,6 +3,41 @@
  "titulo": "Dispositivos-chave para o estudo de caso",
  "cartoes": [
   {
+   "id": "dt19",
+   "m": "Direito do Trabalho",
+   "p": "Dano extrapatrimonial na CLT: o que é, quem responde e como se fixa o valor",
+   "d": "Arts. 223-A a 223-G da CLT; STF, ADIs 6.050, 6.069 e 6.082",
+   "r": "Ofensa à esfera moral ou existencial da pessoa (art. 223-B): honra, imagem, intimidade, liberdade de ação, autoestima, saúde, lazer e integridade física (art. 223-C). Respondem todos os que colaboraram para a ofensa, na proporção da ação ou omissão (art. 223-E). O valor segue os critérios do art. 223-G (natureza do bem, intensidade do sofrimento, reiteração, publicidade, esforço para minimizar, situação econômica das partes etc.) e os parâmetros do § 1º: ofensa leve até 3, média até 5, grave até 20 e gravíssima até 50 vezes o último salário do ofendido. O STF decidiu que esses limites são ORIENTATIVOS: o juiz pode ultrapassá-los, com fundamentação, razoabilidade e proporcionalidade."
+  },
+  {
+   "id": "dt20",
+   "m": "Direito do Trabalho",
+   "p": "Assédio moral no trabalho: como identificar e por que a empresa responde",
+   "d": "Arts. 223-B, 223-C e 223-E da CLT; arts. 932, III, e 933 do CC",
+   "r": "Assédio moral: condutas abusivas, REITERADAS, que humilham ou expõem o empregado (por exemplo, \"prêmio\" vexatório para quem não bate a meta, exposição diante de colegas, clientes ou em grupo de mensagens). A cobrança de metas é lícita; a exposição vexatória excede o poder diretivo. A empresa responde OBJETIVAMENTE pelo ato do gerente, seu preposto (arts. 932, III, e 933 do CC): o código de conduta descumprido e a \"culpa só do gerente\" não a eximem, e a omissão do RH reforça a responsabilidade. O gerente também responde, na proporção da sua conduta (art. 223-E da CLT). Na discursiva, dê o NOME (assédio moral) e ligue-o aos fatos do caso."
+  },
+  {
+   "id": "dt21",
+   "m": "Direito do Trabalho",
+   "p": "Danos materiais junto com o dano moral: pode cumular? Como classificar cada parcela?",
+   "d": "Súmula 37 do STJ; art. 223-F da CLT; arts. 949 e 950 do CC",
+   "r": "Pode: danos materiais e morais do mesmo fato são cumuláveis (Súmula 37 do STJ; art. 223-F, caput). Despesas com tratamento, remédios e terapia = DANOS EMERGENTES (o que a vítima perdeu). O que ela deixou de ganhar no afastamento = LUCROS CESSANTES (art. 949 do CC; se houver redução da capacidade de trabalho, pensão do art. 950). As parcelas materiais NÃO reduzem a indenização extrapatrimonial (art. 223-F, § 2º)."
+  },
+  {
+   "id": "dt22",
+   "m": "Direito do Trabalho",
+   "p": "Benefício do INSS pode ser descontado da indenização paga pelo empregador?",
+   "d": "Art. 7º, XXVIII, da CF; art. 121 da Lei 8.213/1991",
+   "r": "Não. O benefício previdenciário tem natureza e fonte diferentes (seguro social, custeado por contribuições) e não exclui a responsabilidade civil do empregador: o art. 7º, XXVIII, da CF garante o seguro contra acidentes de trabalho \"sem excluir a indenização a que este está obrigado, quando incorrer em dolo ou culpa\", e o art. 121 da Lei 8.213 diz o mesmo. O TST não admite compensar o benefício com a pensão ou os lucros cessantes. Na discursiva, explique o MOTIVO (natureza previdenciária), e não só que \"não se desconta\"."
+  },
+  {
+   "id": "dt23",
+   "m": "Direito do Trabalho",
+   "p": "Doença ocupacional: o que é e que efeitos trabalhistas gera",
+   "d": "Arts. 19, 20 e 118 da Lei 8.213/1991; Súmula 378 do TST",
+   "r": "Doença profissional ou do trabalho, produzida ou desencadeada pelo trabalho (inclusive transtornos psíquicos ligados ao assédio), equipara-se a acidente de trabalho (art. 20). O nexo causal costuma ser provado por perícia. Afastamento acima de 15 dias com auxílio acidentário gera estabilidade de 12 meses após a alta (art. 118); a Súmula 378, II, dispensa o auxílio se a doença ocupacional for constatada depois da dispensa e tiver relação com o contrato. Os primeiros 15 dias são pagos pela empresa (interrupção); depois, o contrato fica suspenso."
+  },
+  {
    "id": "pt01",
    "m": "Processo do Trabalho",
    "p": "Recurso contra acórdão de TRT em recurso ordinário: qual é e quando cabe?",
