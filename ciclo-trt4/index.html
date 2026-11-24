@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='21/11/2026 · 0c4bbf2';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
+<script>window.RC_VER='24/11/2026 · 5d354a6';window.RC_ED={pref:"rct4_",nome:"Ciclo TRT4"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -1127,7 +1127,7 @@ function cicUpcoming(n){
     else if(k==='CORR'){b.modo='Corrija o simulado, registre os erros por assunto no app e crie flashcards'}
     else if(k==='SUM'){b.modo='Súmulas e OJs do TST mais cobradas (processo e direito material) + teses do STF'}
     else if(k==='ERR'){b.modo='Releia só o que você errou ou grifou. Nada de conteúdo novo.'}
-    else {let sg=cicSuggest(k,ord,f); const pk=cicPickGet();if(!out.length&&pk&&pk.k===k){const r=M.rows.find(r=>r.it.m===pk.m&&r.it.a===pk.a&&r.it.s===pk.s);if(r)sg={it:{m:r.it.m,a:r.it.a,s:r.it.s},idx:-1,k,app:true}} b.sg=sg; b.modo=sg&&sg.simp?'Simulado do Passo com tempo cronometrado · corrija e registre os erros':cicModo(k,sg&&sg.it,f)}
+    else {let sg=cicSuggest(k,ord,f); const pk=cicPickGet();if(!out.length&&pk&&pk.k===k){const r=M.rows.find(r=>r.it.m===pk.m&&r.it.a===pk.a&&r.it.s===pk.s);if(r)sg={it:{m:r.it.m,a:r.it.a,s:r.it.s,id:r.it.id,cid:r.it.cic},idx:-1,k,app:true}} b.sg=sg; b.modo=sg&&sg.simp?'Simulado do Passo com tempo cronometrado · corrija e registre os erros':cicModo(k,sg&&sg.it,f)}
     out.push(b);
   }
   return {f,pos,out};
@@ -1213,7 +1213,9 @@ function cicVenc(b){if(!b.sg||b.sg.simp||!M)return [];const m=cicMatName(b),t=T(
   return M.rows.filter(r=>r.it.m===m&&r.ativo&&r.AS!=null&&r.AS<=t&&!cicIsFora(r)&&r.key!==cur).sort((a,b)=>(pl(a)-pl(b))||((b.idxP||0)-(a.idxP||0))).slice(0,3)}
 function cicVencHtml(b){const l=cicVenc(b);if(!l.length)return '';
   return `<div class="cic-venc"><div class="tag">Revisões vencidas desta matéria no app</div>`+l.map(r=>`<div class="row sp hist"><div class="grow"><b>${esc(r.it.a)}</b><div class="sub">${esc(r.it.s)} · ${r.AT<0?(-r.AT)+'d atrasada':'vence hoje'} · acerto ${pc(r.pHist,0)}</div></div><button class="btn s" onclick="cicPick('${b.k}',${r.idx})">Usar neste bloco</button></div>`).join('')+`</div>`}
-function cicPick(k,idx){S.cicPick={k,idx};render();scrollTo(0,0)}
+/* "Usar neste bloco": guarda o assunto escolhido (vale até concluir o bloco ou virar o dia) */
+function cicPick(k,idx){const r=M&&M.rows.find(r=>r.idx===idx);if(!r)return toast('Assunto não encontrado');
+  S.cicPick={k,m:r.it.m,a:r.it.a,s:r.it.s,d:iso(T())};try{localStorage.setItem('rc_cicpick',JSON.stringify(S.cicPick))}catch(e){}render();scrollTo(0,0)}
 function cicTrocar(k){S.cicPick=null;S.cicAlt=S.cicAlt||{};S.cicAlt[k+'|0']=(S.cicAlt[k+'|0']||0)+1;render()}
 /* ---- concluir / adiar ---- */
 function cicSnap(b){const o={f:b.f,p:b.p,k0:b.k0,k:b.k,lbl:b.tema||(b.sg?(b.sg.simp?b.sg.lbl:b.sg.it.a+(b.sg.it.s&&b.sg.it.s!=='Todo o conteúdo do assunto'?' · '+b.sg.it.s:'')):b.nome)};
