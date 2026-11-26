@@ -87,7 +87,7 @@ nav button{font-size:10px;padding:6px 0}
 </style>
 <div class="wrap" id="app"><div class="empty">Carregando…</div></div>
 <nav id="nav"></nav><div id="ov"></div><div id="toast"></div>
-<script>window.RC_VER='24/11/2026 · 5d354a6';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
+<script>window.RC_VER='26/11/2026 · 6daae1c';window.RC_GH={owner:'jeffchristiansouza-sketch',repo:'revisao-concursos',branch:"dados",dir:"dados"};</script>
 <script>
 /* Revisão Concursos — versão fora do Claude.
    Substitui o armazenamento do Claude (claude.use('db') e claude.use('downloads')) por:
@@ -515,8 +515,15 @@ const DEFAULT_CFG = {limite:4,minAmostra:10,altaPct:0.7,consPct:0.85,janela:7,es
 function fPeso(peso,cfg){peso=+peso||3;return peso>=5?cfg.fPeso5:peso>=4?cfg.fPeso4:peso>=3?cfg.fPeso3:cfg.fPeso12}
 function fAc(pct,cfg){return pct>=cfg.pctAlto?cfg.fAcAlto:pct>=cfg.pctMed?cfg.fAcMed:cfg.fAcBaixo}
 function degInicial(hist,cfg){if(!hist||!(hist.q>=cfg.minAmostra)||hist.p==null)return 0;return hist.p>=cfg.pctAlto?2:hist.p>=cfg.pctMed?1:0}
-function intervalo(V,pct,conf,peso,cfg){const E=cfg.escada,top=E.length-1;const base=V>top?cfg.degExtra:E[Math.min(V,top)];
-  return Math.max(1,Math.round(base*fPeso(peso,cfg)*(conf&&pct!=null?fAc(pct,cfg):1)))}
+/* plano de revisão por período (cfg.plano: [{ate:'AAAA-MM-DD',escada:[..],max,extra,rot}]): a escada e o teto
+   valem conforme a data da sessão; sem plano, usa cfg.escada/degExtra */
+function planoEm(dia,cfg){const P=cfg.plano;if(!Array.isArray(P)||!P.length)return null;return P.find(p=>dia<=dn(p.ate))||P[P.length-1]}
+function cfgEm(dia,cfg){const p=planoEm(dia,cfg);return p?{...cfg,escada:p.escada,degExtra:p.extra||0,maxInt:p.max||0}:cfg}
+function intervalo(V,pct,conf,peso,cfg){const E=cfg.escada,top=E.length-1;const base=V>top?(cfg.degExtra>0?cfg.degExtra:E[top]):E[Math.max(0,V)];
+  const iv=Math.max(1,Math.round(base*fPeso(peso,cfg)*(conf&&pct!=null?fAc(pct,cfg):1)));return cfg.maxInt>0?Math.min(iv,cfg.maxInt):iv}
+/* a revisão marcada não pode atravessar o início de um período com teto menor sem respeitá-lo */
+function tetoPlano(d0,nx,cfg){const P=cfg.plano;if(!Array.isArray(P))return nx;let ini=null;
+  for(const p of P){const st=ini==null?-1e9:ini;if(st>d0&&st<nx&&p.max>0)nx=Math.min(nx,st+p.max);ini=dn(p.ate)+1}return nx}
 function ladder(list, cfg, peso, hist){
   const top=cfg.escada.length-1; let V=Math.min(degInicial(hist,cfg),top), bq=0, ba=0;
   return list.map(s=>{
@@ -524,12 +531,14 @@ function ladder(list, cfg, peso, hist){
     bq+=q; ba+=+s.ac||0;                       /* soma as amostras pequenas até atingir o mínimo */
     const conf=bq>=cfg.minAmostra, pp=bq>0?ba/bq:0;
     const boa=conf&&pp>=cfg.minSubir, ruim=conf&&pp<cfg.minSubir;
-    if(boa){ V+=1; const max=(cfg.degExtra>0&&pp>=cfg.pctAlto&&(+peso||3)<=3)?top+1:top; V=Math.min(V,max); }
+    if(boa){ const c0=cfgEm(dn(s.d),cfg),t0=c0.escada.length-1; V+=1; const max=(c0.degExtra>0&&pp>=cfg.pctAlto&&(+peso||3)<=3)?t0+1:t0; V=Math.min(V,max); }
     else if(ruim) V=pp<cfg.pctZera?0:Math.max(0,V-2);
-    let interval=intervalo(V,pp,conf,peso,cfg);
-    if(!conf&&V===0&&bq>0&&pp>=cfg.minSubir) interval=Math.max(interval,intervalo(1,null,false,peso,cfg)); /* poucas questões, todas bem: não volta amanhã */
+    const c=cfgEm(dn(s.d),cfg),tp=c.escada.length-1;if(V>tp&&!(c.degExtra>0))V=tp;
+    let interval=intervalo(V,pp,conf,peso,c);
+    if(!conf&&V===0&&bq>0&&pp>=cfg.minSubir) interval=Math.max(interval,intervalo(1,null,false,peso,c)); /* poucas questões, todas bem: não volta amanhã */
     if(conf){bq=0;ba=0}
-    return Object.assign({},s,{pct,boa,ruim,V,interval,next:dn(s.d)+interval});
+    const nx=tetoPlano(dn(s.d),dn(s.d)+interval,cfg);
+    return Object.assign({},s,{pct,boa,ruim,V,interval:nx-dn(s.d),next:nx});
   });
 }
 function sortSess(a,b){ return dn(a.d)-dn(b.d) || (a.n||0)-(b.n||0); }
@@ -552,7 +561,7 @@ function compute(items, sessions, cfg, today){
     const pHist=qTot>0?aTot/qTot:pInf;
     const AA=(X+qSes===0 && pInf!=null)?1:0;
     let M=null; if(U) M=dn(last.d); else if(it.d0) M=dn(it.d0); else if(X>0||AA) M=dn(cfg.dataPadrao);
-    const N=U?last.interval:(M!=null?intervalo(degInicial(hist,cfg),hist.p,hist.q>=cfg.minAmostra,it.peso,cfg):null);
+    const N=U?last.interval:(M!=null?(()=>{const c=cfgEm(M,cfg);const iv=intervalo(Math.min(degInicial(hist,cfg),c.escada.length-1),hist.p,hist.q>=cfg.minAmostra,it.peso,c);return tetoPlano(M,M+iv,cfg)-M})():null);
     const AS=(M!=null&&N!=null)?M+N:null;
     let AB=null, AC=null;
     if(U){AB=last.q;AC=last.ac;} else if(X>0){AB=X;AC=Y;}
@@ -937,6 +946,7 @@ function vMais(){
   const orph=M.orphan;
   return `<h1>Mais</h1><div class="sub">Conta, parâmetros e exportação</div>
   ${window.RC_CONTA?RC_CONTA():''}<h2>Parâmetros</h2><div class="card">${CF.map(([k,l])=>`<label>${l}</label><input type="number" step="any" value="${S.cfg[k]}" onchange="setCfg('${k}',this.value)">`).join('')}
+  ${Array.isArray(S.cfg.plano)&&S.cfg.plano.length?`<label>Plano de revisão por período (em vigor; a escada abaixo só vale sem plano)</label><div class="card">${S.cfg.plano.map(p=>`<div class="sub" style="${planoEm(T(),S.cfg)===p?'font-weight:700;color:var(--fg,inherit)':''}">até ${fdi(p.ate)} · ${esc(p.rot||'')}: escada ${p.escada.join('-')} dias, no máximo ${p.max} dias</div>`).join('')}</div>`:''}
   <label>Escada de revisão (dias, separados por vírgula)</label><input value="${S.cfg.escada.join(',')}" onchange="setEsc(this.value)"><div class="sub" style="margin-top:8px">Intervalo = degrau × multiplicador do acerto × multiplicador do peso. Revisão boa sobe um degrau; ruim desce dois; abaixo do % de volta ao início, recomeça em 1 dia. Com menos questões que o mínimo, o degrau se mantém e as questões somam com as próximas sessões. O histórico do cadastro já define o degrau de partida.</div></div>
   <h2>Exportar</h2><div class="card"><div class="sub">O app guarda seus dados próprios; não sincroniza sozinho com o Google Sheets. Exporte as sessões para colar no HISTÓRICO da planilha.</div>
   <div class="row" style="margin-top:10px;flex-wrap:wrap"><button class="btn" onclick="expCsv()">Baixar sessões (CSV)</button><button class="btn" onclick="expTsv()">Copiar sessões</button><button class="btn" onclick="expCad()">Copiar cadastro</button></div>
