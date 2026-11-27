@@ -1,12 +1,12 @@
 {
  "id": "sim02",
- "versao": 4,
+ "versao": 5,
  "n": 2,
  "titulo": "Simulado inédito nº 2",
  "criado": "2026-11-21",
  "banca": "Estilo FCC — TRT4 AJAJ (edital 2026)",
  "duracao_min": 240,
- "nota": "Versão 4, de 21/11/2026, recalibrada pelo Simulado 1 do Estratégia (nível próximo ao da FCC): nas específicas, casos concretos com jurisprudência do STF e do TST e alternativas longas que diferem em um detalhe (prazo, quórum, solidária x subsidiária); em Raciocínio Lógico, problemas em várias etapas; em Informática, situações práticas. Português, Legislação do TRT4/CNJ, Direitos Humanos e a questão 54 foram mantidos da versão anterior, que já estava nesse padrão.",
+ "nota": "Versão 4, de 21/11/2026, recalibrada pelo Simulado 1 do Estratégia (nível próximo ao da FCC): nas específicas, casos concretos com jurisprudência do STF e do TST e alternativas longas que diferem em um detalhe (prazo, quórum, solidária x subsidiária); em Raciocínio Lógico, problemas em várias etapas; em Informática, situações práticas. Na versão 5, de 27/11/2026, as questões 4, 9 e 17 a 26 foram refeitas no padrão das provas da FCC de 2024 e 2025: itens I a V ou situação concreta, com alternativas de conteúdo distinto, em vez de alternativas que só variavam um detalhe.",
  "textos": [
   {
    "id": "t1",
@@ -122,7 +122,7 @@
     "a punição dos erros individuais, por satisfazer o desejo de reparação, é o meio mais eficaz de evitar que se repitam.",
     "o tratamento do erro como fonte de informação, sem dispensar a responsabilização, torna as instituições mais seguras.",
     "as instituições que registram apenas os próprios acertos conhecem melhor os seus procedimentos e os seus limites.",
-    "o tratamento do erro como fonte de informação, por dispensar a responsabilização, torna as instituições mais seguras."
+    "a investigação técnica dos acidentes, por ser conduzida por especialistas, dispensa as instituições de rever os próprios procedimentos internos."
    ],
    "gab": "C",
    "com": "O texto defende investigar o erro para compreendê-lo, mas ressalva: \"Isso não significa abolir a responsabilidade\". A alternativa quase idêntica troca \"sem dispensar\" por \"por dispensar\" e contraria essa ressalva. O texto também afirma que a punição \"pouco ensina\", que confundir falha e negligência seria \"injusto e ineficaz\" e que quem só registra acertos sabe pouco sobre si.",
@@ -250,12 +250,12 @@
    "alts": [
     "Devem-se aos servidores da secretaria, e não à informatização, os bons resultados obtidos no último biênio.",
     "Haviam, entre os processos redistribuídos, vários cuja tramitação já se encontrava bastante adiantada.",
-    "Deve-se aos servidores da secretaria, e não à informatização, os bons resultados obtidos no último biênio.",
+    "Cabe aos servidores da secretaria, e não à informatização, os créditos pelos bons resultados obtidos no último biênio.",
     "Fazem mais de dois anos que não se realizam, naquela unidade, cursos voltados à redação de minutas.",
     "Segue anexo ao ofício as planilhas que foram solicitadas pela coordenadoria na semana passada."
    ],
    "gab": "A",
-   "com": "O sujeito de \"devem-se\" é \"os bons resultados\" (voz passiva sintética), daí o plural. \"Fazer\", indicando tempo decorrido, e \"haver\", no sentido de existir, são impessoais: \"Faz mais de dois anos\", \"Havia vários\". Em \"Seguem anexas as planilhas\", verbo e adjetivo concordam com o sujeito posposto.",
+   "com": "O sujeito de \"devem-se\" é \"os bons resultados\" (voz passiva sintética), daí o plural. \"Fazer\", indicando tempo decorrido, e \"haver\", no sentido de existir, são impessoais: \"Faz mais de dois anos\", \"Havia vários\". Em \"Seguem anexas as planilhas\", verbo e adjetivo concordam com o sujeito posposto. Na alternativa C, \"Cabe\" deveria concordar com o sujeito \"os créditos\": \"Cabem aos servidores (...) os créditos\".",
    "fc": {
     "f": "Concordância na voz passiva sintética e com sujeito posposto.",
     "v": "O verbo com \"se\" apassivador concorda com o sujeito paciente: \"Devem-se aos servidores os bons resultados\".\nSujeito posposto também manda: \"Seguem anexas as planilhas\".\nHaver (existir) e fazer (tempo) são impessoais: \"Havia vários\", \"Faz dois anos\"."
@@ -422,20 +422,16 @@
     "a": "Regimento Interno do TRT4",
     "s": "Leitura 1 de 4: arts. 1º a 38 (organização, Pleno, Órgão Especial, Seções e Turmas)"
    },
-   "enun": "Nos termos do Regimento Interno do TRT da 4ª Região, o Órgão Especial",
+   "enun": "Sobre o funcionamento do Tribunal Pleno e do Órgão Especial, de acordo com o Regimento Interno do TRT da 4ª Região, considere:\nI. O Tribunal Pleno funciona com o quórum de dois terços de seus membros efetivos, excluído o Desembargador que o estiver presidindo.\nII. O Órgão Especial é composto por dezesseis Desembargadores, provendo-se metade das vagas por antiguidade e metade por eleição pelo Tribunal Pleno.\nIII. As decisões do Tribunal Pleno e do Órgão Especial são tomadas, em qualquer matéria, pelo voto da maioria absoluta de seus membros efetivos.\nIV. O Órgão Especial funciona com o quórum de dez Desembargadores, incluído o que o estiver presidindo, convocando-se tantos Desembargadores quantos forem os afastados.\nEstá correto o que se afirma APENAS em",
    "alts": [
-    "é composto por 16 desembargadores, providos exclusivamente por antiguidade, e funciona com a maioria absoluta de seus membros, excluído o que o presidir.",
-    "é composto por 16 desembargadores, metade por antiguidade e metade por eleição pelo Tribunal Pleno, e funciona com o quórum de dez, incluído o que o presidir.",
-    "é composto por 16 desembargadores, metade por antiguidade e metade por eleição pelo Tribunal Pleno, e funciona com o quórum de nove, excluído o que o presidir.",
-    "é composto por 16 desembargadores, todos eleitos pelo Tribunal Pleno para mandato de dois anos, e funciona com o quórum de dez, incluído o que o presidir.",
-    "é composto por 12 desembargadores, metade por antiguidade e metade por eleição pelo Tribunal Pleno, e funciona com o quórum de oito, incluído o que o presidir."
+    "III e IV.",
+    "II e IV.",
+    "I, II e IV.",
+    "II, III e IV.",
+    "I e III."
    ],
    "gab": "B",
-   "com": "Art. 21 do Regimento: \"O Órgão Especial é composto por 16 (dezesseis) Desembargadores, provendo-se a metade das vagas por antiguidade e a outra metade por eleição pelo Tribunal Pleno.\" Art. 22: quórum de \"dez Desembargadores, entre estes incluído o Desembargador que o estiver presidindo\".",
-   "fc": {
-    "f": "Regimento do TRT4: composição e quórum do Órgão Especial (arts. 21 e 22).",
-    "v": "16 desembargadores: metade por antiguidade e metade por eleição pelo Tribunal Pleno.\nQuórum de 10, incluído o desembargador que presidir.\nDecisões por maioria dos presentes; maioria absoluta para declarar inconstitucionalidade."
-   }
+   "com": "II: art. 21 do RI. IV: art. 22 e parágrafo único. I está errada: o Pleno funciona com metade mais um dos membros efetivos, incluído quem o preside (art. 20). III está errada: as decisões são tomadas pela maioria dos Desembargadores PRESENTES (art. 23); a maioria absoluta dos membros efetivos do Pleno só é exigida para declarar a inconstitucionalidade de lei ou ato do Poder Público (art. 23, § 1º)."
   },
   {
    "n": 18,
@@ -447,20 +443,16 @@
     "a": "Regimento Interno do TRT4",
     "s": "Leitura 1 de 4: arts. 1º a 38 (organização, Pleno, Órgão Especial, Seções e Turmas)"
    },
-   "enun": "De acordo com o Regimento Interno do TRT da 4ª Região, a Seção Especializada em Execução",
+   "enun": "Quanto à composição e ao funcionamento das Seções Especializadas, previstos no Regimento Interno do TRT da 4ª Região, considere:\nI. A Seção de Dissídios Coletivos é constituída pelo Presidente do Tribunal, pelo Vice-Presidente Institucional e de Atuação em Demandas Coletivas e por oito Desembargadores, e funciona com a presença de, no mínimo, cinco de seus integrantes.\nII. A 1ª Seção de Dissídios Individuais é constituída por dezessete Desembargadores, é presidida pelo mais antigo da Seção e funciona com, no mínimo, nove de seus integrantes.\nIII. A 2ª Seção de Dissídios Individuais é constituída por onze Desembargadores e funciona com a presença de, no mínimo, seis de seus integrantes.\nIV. A Seção Especializada em Execução é constituída por oito Desembargadores, vinculados a quatro Turmas do Tribunal, e funciona com o quórum mínimo de seis de seus integrantes.\nEstá correto o que se afirma APENAS em",
    "alts": [
-    "é constituída por dez desembargadores, vinculados a duas Turmas, funciona com o mínimo de seis e julga os agravos de petição.",
-    "é constituída por oito desembargadores, vinculados a duas Turmas, funciona com o mínimo de cinco e julga os agravos de petição.",
-    "é constituída por oito desembargadores, vinculados a quatro Turmas, funciona com o mínimo de seis e julga os agravos de petição.",
-    "é constituída por oito desembargadores, vinculados a duas Turmas, funciona com o mínimo de cinco e julga os dissídios coletivos.",
-    "é constituída por oito desembargadores, vinculados a duas Turmas, funciona com o mínimo de cinco e julga os recursos ordinários."
+    "II, III e IV.",
+    "I, II e III.",
+    "I e IV.",
+    "II e III.",
+    "I, III e IV."
    ],
    "gab": "B",
-   "com": "Art. 34-A: \"A Seção Especializada em Execução será constituída por oito Desembargadores, vinculados a duas Turmas do Tribunal, funcionando com o quórum de, no mínimo, cinco\". Art. 34-B, \"a\": compete-lhe julgar os agravos de petição. Recursos ordinários são das Turmas (art. 37, \"a\"), e dissídios coletivos, da SDC (art. 30).",
-   "fc": {
-    "f": "Regimento do TRT4: Seção Especializada em Execução (arts. 34-A e 34-B).",
-    "v": "8 desembargadores, vinculados a 2 Turmas; quórum mínimo de 5.\nJulga os agravos de petição.\nRecursos ordinários: Turmas. Dissídios coletivos: SDC."
-   }
+   "com": "I: art. 29, caput e § 2º. II: art. 31, caput e §§ 1º e 2º. III: art. 33, caput e § 2º. IV está errada em dois pontos: os oito Desembargadores da Seção Especializada em Execução são vinculados a DUAS Turmas, e o quórum é de, no mínimo, CINCO, incluído quem a preside (art. 34-A). Em todas as Seções, quem preside entra na conta do quórum."
   },
   {
    "n": 19,
@@ -472,20 +464,16 @@
     "a": "Código de Conduta e Valores Éticos do TRT4",
     "s": "Portaria GP.TRT4 4.573/2023 (com Portaria 2.808/2025)"
    },
-   "enun": "Segundo o Código de Conduta e Valores Éticos do TRT da 4ª Região, o procedimento de apuração de infrações ao Código",
+   "enun": "O Comitê de Ética e Integridade do TRT da 4ª Região recebeu denúncia fundamentada de que um servidor lotado em vara do trabalho de Pelotas teria repassado a terceiros informações sigilosas de processos. O denunciante, também servidor, pediu que sua identidade fosse preservada, por temer retaliação.\nNos termos do Código de Conduta e Valores Éticos do TRT4,",
    "alts": [
-    "é iniciado, de ofício ou por denúncia fundamentada, pela Corregedoria Regional, que pode preservar a identidade do denunciante por decisão motivada.",
-    "é iniciado, de ofício ou por denúncia fundamentada, pelo Comitê de Ética e Integridade, que pode preservar a identidade do denunciante por decisão motivada.",
-    "é iniciado, de ofício ou por denúncia anônima, pela chefia imediata do agente, que pode preservar a identidade do denunciante se o julgar necessário.",
-    "é iniciado, de ofício ou por denúncia fundamentada, pelo Comitê de Ética e Integridade, dispensado o contraditório na fase de apuração preliminar.",
-    "é iniciado, apenas por denúncia fundamentada, pelo Comitê de Ética e Integridade, que deve dar ciência ao denunciado da identidade do denunciante."
+    "o Comitê, concluindo pela infração, aplicará diretamente ao servidor a penalidade de advertência, da qual cabe recurso ao Presidente do Tribunal em dez dias contínuos.",
+    "o Comitê, após breve manifestação sobre os indícios de autoria e materialidade, remeterá o processo à Corregedoria Regional, que decidirá fundamentadamente sobre a caracterização da infração.",
+    "o Comitê remeterá o processo à Presidência do Tribunal, por se tratar de servidor, e a decisão que determinar a instauração de processo disciplinar poderá ser impugnada por recurso administrativo.",
+    "caracterizada infração de menor potencial ofensivo, a celebração de Termo de Ajustamento de Conduta é obrigatória e dispensa a decisão da autoridade competente sobre a infração.",
+    "a identidade do denunciante não pode ser preservada, pois a denúncia fundamentada exige a identificação do autor para assegurar o contraditório e a ampla defesa do denunciado."
    ],
    "gab": "B",
-   "com": "Art. 16 do Código (Portaria GP.TRT4 nº 4.573/2023): o procedimento \"será iniciado, de ofício ou em razão de denúncia fundamentada, pelo Comitê de Ética e Integridade, respeitando-se, sempre, as garantias do contraditório e da ampla defesa\". Parágrafo único: a identidade do denunciante \"poderá ser preservada nos casos em que o Comitê julgar necessário, inclusive para prevenir eventual retaliação, mediante decisão fundamentada\".",
-   "fc": {
-    "f": "Código de Conduta do TRT4: quem inicia a apuração e como fica a identidade do denunciante (art. 16)?",
-    "v": "O Comitê de Ética e Integridade, de ofício ou por denúncia fundamentada, sempre com contraditório e ampla defesa.\nA identidade do denunciante pode ser preservada, por decisão fundamentada do Comitê, inclusive para prevenir retaliação."
-   }
+   "com": "Arts. 16 a 19 do Código (redação da Portaria GP.TRT4 nº 2.808/2025): o procedimento é iniciado pelo Comitê, de ofício ou por denúncia fundamentada; a identidade do denunciante pode ser preservada, por decisão fundamentada, inclusive para prevenir retaliação (art. 16, parágrafo único); após manifestação sobre os indícios, o processo vai à Corregedoria Regional quando o agente atua no primeiro grau (art. 18, II), ou à Presidência quando atua no segundo grau (art. 18, I). O Comitê não aplica penalidades: a advertência do art. 20, IV, é só para estagiários; o TAC é uma proposta possível (art. 20, III), não obrigatória; e não cabe recurso contra a determinação de instaurar processo disciplinar (art. 22, § 4º)."
   },
   {
    "n": 20,
@@ -497,20 +485,16 @@
     "a": "Assédio e discriminação (Res. CNJ 351/2020 e Res. CSJT 360/2023)",
     "s": "Políticas de prevenção e enfrentamento no Judiciário e na JT"
    },
-   "enun": "Nos termos da Resolução CNJ nº 351/2020, com a redação dada pela Resolução CNJ nº 518/2023, a Comissão de Prevenção e Enfrentamento do Assédio Moral, do Assédio Sexual e da Discriminação instituída em cada tribunal",
+   "enun": "Uma servidora de vara do trabalho procurou a Comissão de Prevenção e Enfrentamento do Assédio Moral, do Assédio Sexual e da Discriminação do tribunal e relatou ter sido vítima de assédio moral praticado por sua chefia. Disse, porém, que não queria, por ora, que o relato fosse registrado ou encaminhado formalmente.\nNos termos da Resolução CNJ nº 351/2020, com as alterações posteriores,",
    "alts": [
-    "terá caráter permanente e será vinculada à Corregedoria, com participação de magistrados, servidores e terceirizados, e se reunirá ao menos semestralmente.",
-    "terá caráter temporário, autônomo e independente, com participação de magistrados, servidores e terceirizados, e se reunirá ao menos mensalmente.",
-    "terá caráter permanente, autônomo e independente, com participação de magistrados, servidores e terceirizados, e se reunirá ao menos anualmente.",
-    "terá caráter permanente, autônomo e independente, com participação de magistrados, servidores e terceirizados, e se reunirá ao menos semestralmente.",
-    "terá caráter permanente, autônomo e independente, com participação exclusiva de magistrados e servidores efetivos, e se reunirá ao menos semestralmente."
+    "a recusa da servidora em representar poderá ser considerada indício de que o relato não é verdadeiro e, por si só, justificar o arquivamento definitivo do caso e sua responsabilização.",
+    "a Comissão deverá registrar o relato e encaminhá-lo à Corregedoria, independentemente da vontade da servidora, pois a apuração de assédio moral é obrigatória e indisponível.",
+    "a Comissão, por ser órgão vinculado à Presidência do tribunal, deverá comunicar o relato à chefia imediata da servidora, para que adote as providências de proteção cabíveis.",
+    "sem o consentimento expresso da servidora, o relato não será registrado nem encaminhado, e ela deverá ser cientificada verbalmente de que a atuação da Comissão ficará restrita ao acolhimento.",
+    "a servidora poderá formalizar a notícia de forma anônima, hipótese em que a Comissão deverá encaminhá-la à apuração, assegurado o sigilo da sua identidade."
    ],
    "gab": "D",
-   "com": "Art. 15: em cada tribunal, no prazo máximo de 45 dias, em caráter permanente, ao menos uma Comissão \"revestida de caráter autônomo e independente com participação plúrima de magistrados(as); servidores(as); e terceirizados(as), os quais se reunirão, ao menos, semestralmente\".",
-   "fc": {
-    "f": "Res. CNJ 351: características da Comissão de Prevenção e Enfrentamento do Assédio (art. 15).",
-    "v": "Permanente, autônoma e independente.\nParticipação plúrima: magistrados, servidores e terceirizados.\nReúne-se ao menos semestralmente.\nInstituída em até 45 dias; nos tribunais de médio e grande porte, ao menos uma em cada grau."
-   }
+   "com": "Art. 14 da Res. CNJ 351/2020 (redação da Res. 518/2023): resguardam-se o sigilo e a confidencialidade, VEDADO O ANONIMATO; o registro ou encaminhamento formal exige consentimento expresso (§ 1º); sem autorização, a pessoa é cientificada verbalmente de que não haverá encaminhamento, ficando a atuação restrita ao acolhimento (§ 3º). O exercício do direito de não representar não pode gerar, por si só, consequências penais, cíveis ou administrativas (art. 13, § 6º). As Comissões são permanentes, autônomas e independentes, com participação de magistrados, servidores e terceirizados, e se reúnem ao menos semestralmente (art. 15)."
   },
   {
    "n": 21,
@@ -522,20 +506,16 @@
     "a": "Noções de Sustentabilidade (Res. CNJ 400/2021)",
     "s": "Parte 1: princípios, diretrizes, PLS e unidades de sustentabilidade"
    },
-   "enun": "Conforme a Resolução CNJ nº 400/2021, o Plano de Logística Sustentável (PLS)",
+   "enun": "Sobre o Plano de Logística Sustentável (PLS), nos termos da Resolução CNJ nº 400/2021, considere:\nI. O PLS é instituído por ato do Presidente do órgão do Poder Judiciário e publicado no sítio eletrônico do respectivo órgão.\nII. A revisão do PLS, no máximo a cada dois anos, é proposta pela Comissão Gestora e promovida pela unidade de sustentabilidade, com o apoio das unidades gestoras responsáveis pela execução.\nIII. O plano de ações deve integrar obrigatoriamente o texto do PLS, na forma de anexo aprovado pelo Presidente do órgão.\nIV. O Relatório de Desempenho do PLS deve ser publicado e encaminhado ao CNJ, pelo PLS-Jud, até 30 de junho do ano posterior ao que se refere.\nEstá correto o que se afirma APENAS em",
    "alts": [
-    "é instituído por ato do Presidente do órgão e revisado, no máximo, a cada dois anos, por proposta da Comissão Gestora, cabendo à unidade de sustentabilidade promover a revisão.",
-    "é instituído por ato do Presidente do órgão e revisado, no máximo, a cada quatro anos, por proposta da Comissão Gestora, cabendo à unidade de sustentabilidade promover a revisão.",
-    "é instituído por ato do Presidente do órgão e revisado, no máximo, a cada dois anos, por proposta da unidade de sustentabilidade, cabendo à Comissão Gestora promover a revisão.",
-    "é instituído por ato do Conselho Nacional de Justiça e revisado, no máximo, a cada dois anos, por proposta da Comissão Gestora, cabendo a cada órgão promover a revisão.",
-    "é instituído por ato da Comissão Gestora e revisado, no máximo, a cada dois anos, por proposta do Presidente do órgão, cabendo à unidade de sustentabilidade promover a revisão."
+    "I e II.",
+    "I, III e IV.",
+    "I, II e IV.",
+    "III e IV.",
+    "II e III."
    ],
    "gab": "A",
-   "com": "Art. 8º: o PLS é instituído por ato do Presidente do órgão e publicado no sítio eletrônico. Parágrafo único: a Comissão Gestora PROPÕE a revisão, \"que será promovida pela unidade de sustentabilidade com o apoio das unidades gestoras\", no máximo a cada 2 anos. A alternativa parecida inverte quem propõe e quem promove.",
-   "fc": {
-    "f": "Res. CNJ 400: quem institui, quem propõe e quem promove a revisão do PLS (art. 8º)?",
-    "v": "Institui: o Presidente do órgão, por ato.\nPropõe a revisão: a Comissão Gestora.\nPromove a revisão: a unidade de sustentabilidade, com apoio das unidades gestoras.\nPeriodicidade: no máximo a cada 2 anos."
-   }
+   "com": "I: art. 8º. II: art. 8º, parágrafo único (a Comissão Gestora só PROPÕE; quem promove a revisão é a unidade de sustentabilidade). III está errada: o plano de ações não precisa integrar o texto do PLS nem vir como anexo, mas é elaborado e alterado com aprovação da Comissão Gestora (art. 9º). IV está errada: o Relatório de Desempenho é publicado e enviado ao CNJ até 28 de fevereiro do ano seguinte, e os resultados são avaliados pela Comissão Gestora ao menos uma vez por ano."
   },
   {
    "n": 22,
@@ -547,20 +527,16 @@
     "a": "Fundamentos dos Direitos Humanos",
     "s": "Incorporação dos Tratados Internacionais de DH ao Direito Brasileiro. Posição Hierárquica. + A Execução de Decisões de Tribunais Internacionais de DH no Brasil + Direitos Humanos na Constituição Federal + Jurisprudência dos Tribunais Superiores sobre Incorporação dos Tratados Internacionais de DHU"
    },
-   "enun": "Nas hipóteses de grave violação de direitos humanos, a Constituição Federal prevê o incidente de deslocamento de competência para a Justiça Federal, que",
+   "enun": "Uma defensora de direitos humanos foi assassinada em município do interior. Três anos depois, o inquérito permanece paralisado, as testemunhas relatam ameaças de agentes locais e a Comissão Interamericana de Direitos Humanos já solicitou informações ao Estado brasileiro.\nConsiderando a Constituição Federal e a jurisprudência do Superior Tribunal de Justiça sobre o incidente de deslocamento de competência,",
    "alts": [
-    "pode ser suscitado pelo Procurador-Geral da República, perante o Superior Tribunal de Justiça, em qualquer fase do inquérito ou processo.",
-    "pode ser suscitado pelo Defensor Público-Geral Federal, perante o Supremo Tribunal Federal, em qualquer fase do processo judicial.",
-    "pode ser suscitado pelo Procurador-Geral da República, perante o Supremo Tribunal Federal, em qualquer fase do inquérito ou processo.",
-    "pode ser suscitado pelo Advogado-Geral da União, perante o Superior Tribunal de Justiça, em qualquer fase do inquérito ou processo.",
-    "pode ser suscitado pelo Procurador-Geral da República, perante o Superior Tribunal de Justiça, apenas depois de encerrado o inquérito."
+    "o Procurador-Geral da República poderá suscitar o incidente perante o STJ, que exige grave violação, risco de responsabilização internacional e inércia ou incapacidade das autoridades locais.",
+    "deferido o incidente, a investigação passa à Polícia Federal, mas o julgamento do crime doloso contra a vida permanece com o Tribunal do Júri estadual.",
+    "o deslocamento para a Justiça Federal é automático, bastando a configuração de grave violação de direitos humanos decorrente de obrigação assumida em tratado internacional ratificado.",
+    "o incidente só é cabível enquanto não oferecida a denúncia, pois, a partir dela, a competência da Justiça estadual se perpetua até o julgamento definitivo do processo.",
+    "o incidente pode ser suscitado pelo Governador do Estado ou pelo Conselho Nacional dos Direitos Humanos, perante o Supremo Tribunal Federal, a qualquer tempo."
    ],
    "gab": "A",
-   "com": "Art. 109, § 5º, da CF (EC 45/2004): o Procurador-Geral da República, para assegurar o cumprimento de obrigações decorrentes de tratados de direitos humanos, \"poderá suscitar, perante o Superior Tribunal de Justiça, em qualquer fase do inquérito ou processo, incidente de deslocamento de competência para a Justiça Federal\".",
-   "fc": {
-    "f": "Incidente de deslocamento de competência (art. 109, § 5º, da CF): quem, onde e quando?",
-    "v": "Quem suscita: o Procurador-Geral da República.\nOnde: perante o Superior Tribunal de Justiça.\nQuando: em qualquer fase do inquérito ou processo, em caso de grave violação de direitos humanos.\nEfeito: desloca a competência para a Justiça Federal."
-   }
+   "com": "Art. 109, V-A e § 5º, da CF (EC 45/2004): nas hipóteses de grave violação de direitos humanos, o PGR, para assegurar o cumprimento de obrigações de tratados, poderá suscitar perante o STJ, em qualquer fase do inquérito ou processo, o deslocamento para a Justiça Federal. O STJ (IDC 1, caso Dorothy Stang, e precedentes seguintes) exige três requisitos: grave violação, risco de responsabilização internacional do Brasil e incapacidade ou inércia das instâncias locais. Não é automático. Deslocado, o processo segue na Justiça Federal, inclusive com júri federal."
   },
   {
    "n": 23,
@@ -572,20 +548,16 @@
     "a": "Sistema Internacional de Proteção",
     "s": "Sistema Internacional de Proteção dos Direitos Humanos + Convenção Americana sobre Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Sistema Interamericano de Direitos Humanos + Jurisprudência dos Tribunais Superiores sobre Convenção Americana sobre Direitos Humanos (CADH-OAS)"
    },
-   "enun": "No Sistema Interamericano de Direitos Humanos, nos termos da Convenção Americana, têm direito de submeter um caso à decisão da Corte Interamericana",
+   "enun": "A família de um trabalhador submetido a condição análoga à de escravo em fazenda no Pará, em fatos ocorridos em 2000, pretende levar o caso ao Sistema Interamericano de Direitos Humanos, alegando que as investigações internas nunca foram concluídas.\nNos termos da Convenção Americana sobre Direitos Humanos,",
    "alts": [
-    "somente os Estados Partes e a Comissão Interamericana, cabendo às pessoas e às entidades peticionar à Assembleia da OEA.",
-    "os Estados Partes, a Comissão Interamericana e as vítimas, estas depois de esgotados os recursos da jurisdição interna.",
-    "os Estados Partes e qualquer entidade não governamental legalmente reconhecida em um Estado-membro da OEA.",
-    "somente os Estados Partes e a Comissão Interamericana, cabendo às pessoas e às entidades peticionar à Comissão.",
-    "somente a Comissão Interamericana, cabendo aos Estados Partes e às vítimas apresentar-lhe as respectivas petições."
+    "a sentença da Corte, se desfavorável ao Brasil, pode ser objeto de recurso à Assembleia Geral da OEA, no prazo de noventa dias contados da notificação do Estado condenado.",
+    "o caso só pode ser examinado se a família for representada por entidade não governamental legalmente reconhecida em Estado-membro da OEA, a única legitimada a peticionar em nome de vítimas.",
+    "a Corte não pode examinar o caso, porque o reconhecimento da sua competência contenciosa pelo Brasil alcança apenas fatos posteriores à promulgação do decreto, em 2002.",
+    "a família pode peticionar à Comissão Interamericana, que, admitido o caso e não cumpridas pelo Estado as suas recomendações, poderá submetê-lo à Corte, cuja sentença é definitiva e inapelável.",
+    "a família pode submeter o caso diretamente à Corte Interamericana, pois o Brasil reconheceu a sua competência contenciosa em 1998, dispensada a manifestação prévia da Comissão."
    ],
    "gab": "D",
-   "com": "Art. 61.1 da Convenção Americana: \"Somente os Estados Partes e a Comissão têm direito de submeter caso à decisão da Corte.\" Qualquer pessoa, grupo de pessoas ou entidade não governamental legalmente reconhecida pode apresentar petições à COMISSÃO (art. 44), e não diretamente à Corte.",
-   "fc": {
-    "f": "Sistema interamericano: quem leva um caso à Corte e a quem as pessoas peticionam?",
-    "v": "À Corte: somente os Estados Partes e a Comissão Interamericana (art. 61.1).\nPessoas, grupos e ONGs legalmente reconhecidas peticionam à Comissão (art. 44)."
-   }
+   "com": "Art. 44 da Convenção: qualquer pessoa, grupo de pessoas ou entidade não governamental reconhecida pode peticionar à COMISSÃO. Art. 61: só os Estados Partes e a Comissão submetem casos à CORTE. Art. 67: a sentença é definitiva e inapelável (cabe apenas pedido de interpretação em 90 dias). O Brasil reconheceu a competência contenciosa para fatos posteriores a 10/12/1998 (Decreto 4.463/2002), o que alcança fatos de 2000; foi o que ocorreu no caso Trabalhadores da Fazenda Brasil Verde (2016)."
   },
   {
    "n": 24,
@@ -597,20 +569,16 @@
     "a": "Principais Convenções Internacionais de Direitos Humanos",
     "s": "Convenção de Haia sobre os Aspectos Civis do Sequestro Internacional de Crianças + Convenção do Estatuto dos Refugiados + Convenção sobre a Cobrança Internacional de Alimentos para Crianças e Outros Membros da Família + Convenções da OIT sobre Direitos Humanos + Convenção sobre a Proteção e Promoção da Diversidade das Expressões Culturais + Agenda 2030 - Desenvolvimento Sustentável + Nova Agenda Urbana (NAU)"
    },
-   "enun": "A Declaração da OIT sobre os Princípios e Direitos Fundamentais no Trabalho, de 1998, foi alterada em 2022 para incluir, entre os princípios e direitos fundamentais,",
+   "enun": "Sobre a Declaração da OIT sobre os Princípios e Direitos Fundamentais no Trabalho, de 1998, e sua alteração de 2022, considere:\nI. Os Estados-membros da OIT têm o compromisso de respeitar e promover os princípios fundamentais, ainda que não tenham ratificado as convenções correspondentes, pelo simples fato de pertencerem à Organização.\nII. Em 2022, o ambiente de trabalho seguro e saudável foi incluído como quinta categoria de princípios e direitos fundamentais.\nIII. Com a Declaração, as convenções fundamentais deixaram de depender de ratificação para obrigar os Estados-membros no plano interno.\nIV. Entre as categorias previstas desde 1998 está a proteção contra a dispensa arbitrária, objeto da Convenção nº 158.\nV. Com a alteração de 2022, as Convenções nº 155 e nº 187, sobre segurança e saúde no trabalho, passaram a ser consideradas convenções fundamentais.\nEstá correto o que se afirma APENAS em",
    "alts": [
-    "a proteção contra a dispensa arbitrária, que se somou às quatro categorias previstas desde 1998.",
-    "o ambiente de trabalho seguro e saudável, que se somou às quatro categorias previstas desde 1998.",
-    "o salário mínimo adequado às necessidades do trabalhador, que se somou às cinco categorias de 1998.",
-    "o ambiente de trabalho seguro e saudável, que substituiu a categoria relativa ao trabalho infantil.",
-    "a eliminação da discriminação em matéria de emprego e ocupação, que não constava do texto de 1998."
+    "II, IV e V.",
+    "I, II e V.",
+    "I, III e IV.",
+    "I e IV.",
+    "II, III e V."
    ],
    "gab": "B",
-   "com": "A Declaração de 1998 listava quatro categorias: liberdade sindical e negociação coletiva; eliminação do trabalho forçado; abolição do trabalho infantil; e eliminação da discriminação em matéria de emprego e ocupação. Em junho de 2022, a Conferência Internacional do Trabalho incluiu a quinta: ambiente de trabalho seguro e saudável.",
-   "fc": {
-    "f": "OIT: quais são os cinco princípios e direitos fundamentais no trabalho?",
-    "v": "1) liberdade sindical e negociação coletiva; 2) eliminação do trabalho forçado; 3) abolição do trabalho infantil; 4) eliminação da discriminação no emprego e na ocupação (Declaração de 1998); 5) ambiente de trabalho seguro e saudável (incluído em 2022)."
-   }
+   "com": "I: item 2 da Declaração (o compromisso decorre da própria condição de membro). II e V: a Conferência de 2022 incluiu o ambiente seguro e saudável, e as Convenções 155 e 187 passaram a ser fundamentais (hoje são 10). As quatro categorias de 1998 são: liberdade sindical e negociação coletiva; eliminação do trabalho forçado; abolição do trabalho infantil; eliminação da discriminação. III está errada: as convenções continuam dependendo de ratificação para vincular o Estado como tratado. IV está errada: a dispensa arbitrária (Convenção 158) nunca integrou a Declaração."
   },
   {
    "n": 25,
@@ -622,20 +590,16 @@
     "a": "Principais Convenções Internacionais de Direitos Humanos",
     "s": "Convenção Internacional Sobre Eliminação de Todas as Formas de Discriminação Racial + Convenção sobre Eliminação de Todas as Formas de Discriminação Contra a Mulher + Convenção Interamericana para Prevenir, Punir e Erradicar a Violência Contra a Mulher + Convenção Interamericana contra o Racismo e Discriminação Racial + Convenção Contra a Tortura e Tratamentos Degradantes + Convenção Interamericana para Prevenir e Punir a Tortura + Convenção para a Prevenção e Repressão do Crime de Genocídio + Convenção Interamericana sobre o Desaparecimento Forçado de Pessoas (Decreto nº 8.766/2016 + Convenção para Proteção Contra Desaparecimento Forçado"
    },
-   "enun": "Nos termos da Convenção Internacional sobre a Eliminação de Todas as Formas de Discriminação Racial, as medidas especiais tomadas com o objetivo exclusivo de assegurar o progresso adequado de certos grupos raciais ou étnicos",
+   "enun": "Considere as seguintes afirmações sobre a Convenção Internacional sobre a Eliminação de Todas as Formas de Discriminação Racial:\nI. Medidas especiais tomadas com o objetivo exclusivo de assegurar o progresso adequado de grupos raciais ou étnicos não são consideradas discriminação racial, desde que não levem à manutenção de direitos separados e não prossigam após alcançados os seus objetivos.\nII. A Convenção não se aplica às distinções, exclusões, restrições ou preferências que um Estado Parte estabeleça entre cidadãos e não cidadãos.\nIII. O Comitê para a Eliminação da Discriminação Racial pode receber comunicações de pessoas sob a jurisdição de qualquer Estado Parte, independentemente de declaração do Estado reconhecendo essa competência.\nIV. O Supremo Tribunal Federal considerou constitucional a reserva de vagas com critério étnico-racial no acesso ao ensino superior público, em linha com as medidas especiais previstas na Convenção.\nEstá correto o que se afirma APENAS em",
    "alts": [
-    "não são consideradas discriminação racial, desde que não mantenham direitos separados nem prossigam após alcançados os objetivos.",
-    "são consideradas discriminação racial admitida, enquanto perdurar a desigualdade e pelo prazo máximo de dez anos.",
-    "não são consideradas discriminação racial, desde que adotadas por prazo certo e aprovadas pelo Comitê instituído pela Convenção.",
-    "são consideradas discriminação racial, salvo se previamente autorizadas pelo Comitê para a Eliminação da Discriminação Racial.",
-    "não são consideradas discriminação racial, ainda que mantenham direitos separados e prossigam após alcançados os objetivos."
+    "I, II e IV.",
+    "III e IV.",
+    "I, II e III.",
+    "II, III e IV.",
+    "I e III."
    ],
    "gab": "A",
-   "com": "Art. 1º, § 4º, da Convenção (Decreto nº 65.810/1969): as medidas especiais \"não serão consideradas discriminação racial\", desde que \"não conduzam à manutenção de direitos separados para diferentes grupos raciais e não prossigam após terem sido alcançados os seus objetivos\". A Convenção não exige autorização do Comitê nem fixa prazo certo. É o fundamento internacional das ações afirmativas.",
-   "fc": {
-    "f": "Convenção sobre Discriminação Racial: quando as medidas especiais (ações afirmativas) são legítimas?",
-    "v": "Não são consideradas discriminação, desde que não mantenham direitos separados para grupos raciais diferentes e não prossigam depois de alcançados os objetivos (art. 1º, § 4º).\nA Convenção não exige autorização do Comitê nem prazo certo."
-   }
+   "com": "I: art. 1º, § 4º. II: art. 1º, § 2º. IV: STF, ADPF 186 (2012), e, depois, ADC 41 (cotas em concursos públicos). III está errada: a competência do Comitê para receber comunicações individuais depende de declaração do Estado Parte (art. 14); o Brasil a fez em 2002."
   },
   {
    "n": 26,
@@ -647,20 +611,16 @@
     "a": "Gênero e equidade na Justiça (Res. CNJ 492/2023 e Res. CSJT 368/2023)",
     "s": "Todo o conteúdo do assunto"
    },
-   "enun": "A Resolução CNJ nº 492/2023, que trata da adoção da perspectiva de gênero nos julgamentos,",
+   "enun": "Em reclamação trabalhista em que se pede indenização por assédio sexual praticado por superior hierárquico, sem testemunhas presenciais, a defesa sustentou que o Protocolo para Julgamento com Perspectiva de Gênero do CNJ é mera recomendação e não vincula a Justiça do Trabalho.\nNos termos da Resolução CNJ nº 492/2023,",
    "alts": [
-    "torna obrigatórias, em todo o Poder Judiciário, as diretrizes do Protocolo, ressalvada a Justiça do Trabalho, que se sujeita a ato próprio do CSJT.",
-    "torna obrigatórias as diretrizes do Protocolo nos processos de violência doméstica e a capacitação dos magistrados que atuem nas varas especializadas.",
-    "torna obrigatórias, em todo o Poder Judiciário, as diretrizes do Protocolo e a capacitação de magistrados em direitos humanos, gênero, raça e etnia.",
-    "torna obrigatórias, apenas na Justiça Estadual e na Justiça Federal, as diretrizes do Protocolo e a capacitação de magistrados em gênero, raça e etnia.",
-    "recomenda, em todo o Poder Judiciário, as diretrizes do Protocolo e torna facultativa a capacitação de magistrados em direitos humanos, gênero, raça e etnia."
+    "a Justiça do Trabalho rege-se por ato próprio do Conselho Superior da Justiça do Trabalho, não se submetendo às diretrizes do Protocolo editado pelo CNJ.",
+    "o Protocolo é recomendação aos magistrados, e sua aplicação depende de adesão formal de cada tribunal, por ato do respectivo Órgão Especial ou do Tribunal Pleno.",
+    "as diretrizes do Protocolo são obrigatórias em todo o Poder Judiciário, inclusive na Justiça do Trabalho, e orientam o juiz a considerar a especial relevância da palavra da vítima.",
+    "a aplicação do Protocolo impõe a inversão automática do ônus da prova em favor da vítima, dispensando a produção de qualquer outro meio de prova pela reclamante.",
+    "as diretrizes do Protocolo são obrigatórias apenas nos processos criminais e nos de violência doméstica e familiar contra a mulher, sendo facultativas nas demais matérias, como a trabalhista."
    ],
    "gab": "C",
-   "com": "A Resolução CNJ nº 492/2023 estabelece, para todo o Poder Judiciário, a adoção das diretrizes do Protocolo para Julgamento com Perspectiva de Gênero (antes apenas recomendado), institui a capacitação obrigatória de magistrados e magistradas em direitos humanos, gênero, raça e etnia, em perspectiva interseccional, e cria comitês de acompanhamento. A Res. CSJT nº 368/2023 trata do tema na Justiça do Trabalho e não afasta a resolução do CNJ.",
-   "fc": {
-    "f": "Res. CNJ 492/2023: o que ela estabelece?",
-    "v": "Torna obrigatórias, em todo o Poder Judiciário, as diretrizes do Protocolo para Julgamento com Perspectiva de Gênero (antes só recomendado).\nInstitui a capacitação obrigatória de magistrados em direitos humanos, gênero, raça e etnia.\nCria comitês de acompanhamento."
-   }
+   "com": "A Res. CNJ 492/2023 tornou obrigatórias as diretrizes do Protocolo para Julgamento com Perspectiva de Gênero (2021) em todo o Poder Judiciário, sem exceção da Justiça do Trabalho, e obrigatória a capacitação de magistrados em direitos humanos, gênero, raça e etnia, em perspectiva interseccional. O Protocolo orienta, em casos de assédio e violência de gênero, a valorizar a palavra da vítima, frequentemente o principal meio de prova em fatos sem testemunhas, sem que haja inversão automática do ônus da prova."
   },
   {
    "n": 27,
@@ -698,7 +658,7 @@
     "o arquivo baixado e o favorito permanecem no computador, mas o histórico, os cookies e os dados de formulários da sessão são descartados.",
     "o histórico, os cookies, o arquivo baixado e o favorito são descartados, pois a janela anônima não grava nada no disco.",
     "o histórico de navegação é descartado, mas os cookies são mantidos até o fim do dia, para permitir o retorno às páginas acessadas.",
-    "nenhum vestígio permanece no computador, e a navegação também fica oculta para o provedor de internet e para a rede do tribunal.",
+    "nenhum vestígio permanece no computador, e a navegação também fica oculta para o provedor de internet, para o empregador e para a rede do tribunal.",
     "o arquivo baixado é apagado ao fechar a janela, mas o favorito permanece, por ficar gravado na conta do navegador e não na sessão."
    ],
    "gab": "A",
@@ -740,7 +700,7 @@
     "a exclusão só alcança a nuvem após 30 dias, prazo em que o arquivo fica bloqueado, para leitura, nos demais dispositivos.",
     "a planilha é removida da nuvem de forma definitiva, pois a exclusão feita no computador não passa pela Lixeira do OneDrive.",
     "a planilha permanece na nuvem, pois a sincronização só envia ao OneDrive arquivos novos ou alterados, nunca as exclusões.",
-    "a planilha é removida da nuvem, mas pode ser recuperada a qualquer tempo, pois o OneDrive guarda para sempre todos os itens excluídos.",
+    "a planilha é removida da nuvem, mas pode ser recuperada a qualquer tempo, inclusive anos depois, pois o OneDrive guarda para sempre todos os itens excluídos.",
     "a exclusão é sincronizada e a planilha também é removida da nuvem, podendo ser recuperada, por tempo limitado, na Lixeira do OneDrive na web."
    ],
    "gab": "E",
@@ -1034,7 +994,7 @@
     "a empresa poderá suspender Davi e deverá ajuizar inquérito para apuração de falta grave, por petição escrita, no prazo decadencial de 30 dias contados da suspensão.",
     "a empresa deverá ajuizar inquérito no prazo prescricional de 30 dias, contados da ciência da falta, e não poderá suspender Davi antes da decisão judicial.",
     "o inquérito é dispensável se a falta estiver comprovada por documentos, bastando a comunicação da dispensa ao sindicato em 24 horas.",
-    "julgado improcedente o inquérito, a reintegração de Davi será obrigatoriamente convertida em indenização em dobro, pela incompatibilidade com o empregador.",
+    "julgado improcedente o inquérito, a reintegração de Davi será obrigatoriamente convertida em indenização em dobro, pela incompatibilidade presumida entre o dirigente e o empregador.",
     "no inquérito, cada parte pode indicar até três testemunhas, e a petição inicial pode ser verbal, reduzida a termo pela secretaria da vara."
    ],
    "gab": "A",
